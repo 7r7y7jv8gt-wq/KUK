@@ -37,6 +37,19 @@ for p in OUTPUT.rglob('*'):
                     errors.append(f'{p.name}: missing local resource {value}')
 
 original = ET.parse(SOURCE / 'JohnDeere6030.i3d')
+import re
+shader_original = (ROOT/'source/FS25_vehicleShader_original.xml').read_text(encoding='utf-8-sig')
+shader_fixed = (OUTPUT/'shaders/vehicleShader.xml').read_text()
+expected, count = re.subn(
+    r'(tex2DSample\(\s*mArray(?:Specular|Normal|Diffuse),\s*standardMaterialSampler,\s*uvs,\s*(?:aIndex|8|15)\s*\))(?=\s*;)',
+    r'\1.xyz', shader_original)
+assert count == 6
+for kind in ['specular', 'normal', 'diffuse']:
+    expected = expected.replace(f'../shared/detailArray_{kind}.png', f'$data/fs22support/shared/detailArray_{kind}.dds')
+assert shader_fixed == expected, 'Shader changed outside the six casts and texture paths'
+for p in OUTPUT.rglob('*.i3d'):
+    for f in ET.parse(p).findall('./Files/File'):
+        assert f.get('filename') != '$data/fs22support/shaders/vehicleShader.xml', 'Unpatched shader remains'
 model = ET.parse(OUTPUT / 'JohnDeere6030.i3d')
 def scene_signature(el):
     return el.tag, sorted(el.attrib.items()), [scene_signature(child) for child in el]
@@ -93,12 +106,9 @@ MathUtil = {
  round=function(v, decimals) local scale=10^decimals; return math.floor(v*scale+0.5)/scale end,
  sign=function(v) return v == 0 and 0 or (v > 0 and 1 or -1) end
 }
-Utils = {getNoNil=function(v, default) if v == nil then return default end; return v end}
-function string.getVectorN(value)
- if value == nil then return nil end
- local result = {}; for n in string.gmatch(value, "%S+") do table.insert(result, tonumber(n)) end
- return result
-end
+-- Deliberately omit Utils.getNoNil and string.getVectorN: these legacy globals
+-- failed in the user's actual FS25 load and must not be mocked into existence.
+Utils = {}
 AudioGroup = {VEHICLE=1}
 g_soundManager = {
  registerModifierType=function() end,
@@ -150,12 +160,19 @@ vehicle:onLoad()
 assert(not vehicle.spec_tirePressure.isActive)
 assert(vehicle:getCanBeSelected(function() return false end) == false)
 vehicle:onDelete()
+vehicle.spec_tirePressure = nil
+vehicle:onDelete()
+assert(TirePressure.valueOrDefault(false, true) == false)
+assert(TirePressure.parseConfigurationIndices(nil)[1] == 1)
+assert(#TirePressure.parseConfigurationIndices("2 8 9") == 3)
+assert(#TirePressure.parseConfigurationIndices("bad") == 0)
 ''')
 with zipfile.ZipFile(OUTPUT.with_suffix('.zip')) as z:
     assert z.testzip() is None
     assert 'modDesc.xml' in z.namelist()
     assert all(not name.startswith('/') and '..' not in Path(name).parts for name in z.namelist())
 result = {'static_checks': 'passed' if not errors else 'failed', 'counts': counts,
+          'shader_six_float3_assignments': 'passed', 'shader_engine_compilation': 'not_run',
           'lua_5_1_isolated_checks': 'passed', 'light_graph_preserved': True,
           'geometry_unchanged': True, 'zip_crc': 'passed', 'engine_tests': 'not_run', 'errors': errors}
 (ROOT/'reports/validation_result.json').write_text(json.dumps(result, indent=2))

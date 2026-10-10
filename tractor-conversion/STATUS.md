@@ -1,15 +1,41 @@
-# John Deere 6030 Lights — FS25 compatibility test
+# John Deere 6030 lights — v0.3 repair candidate
 
-The user cancelled the map conversion and authorized FS25 substitutes for missing tractor resources. The working package preserves the tractor geometry, complete light scene graph, light state bindings, added light bar, cruise lights, and double-blink/triple-wait strobes. Original author credits remain in modDesc.xml.
+The v0.1 FS25 game log confirmed a purchase/loading failure: TirePressure used
+missing legacy helper functions, causing incomplete initialization and later
+pressure/cleanup failures. The bundled game compatibility shader also failed
+compilation at six float4-to-float3 assignments. Legacy vehicle sound template
+names were unavailable.
 
-This is a test candidate, not an engine-validated conversion. FS25 and GIANTS Editor cannot run here. No claim is made that it loads, drives, or lights correctly in the game.
+v0.3 fixes those identified code issues: local nil/default and configuration
+parsing helpers replace the removed globals; partly initialized vehicle cleanup
+is guarded; the sound set uses the installed FS25 John Deere series6M sound XML.
+A mod-local copy of the supplied shader explicitly selects .xyz at the six failing
+samples and resolves its three default texture arrays through FS25 data paths.
+Every packaged model using that compatibility shader now refers to the local
+copy. No other shader code was changed. The user's installed game files and
+original FS22 archive are unchanged. The supplied shader source is retained at
+source/FS25_vehicleShader_original.xml.
 
-Original source: source/FS22_JohnDeere_6030_edit.zip (SHA256 b278ee4d312b991a0b257c7688263dc9534191f15cfc9a32fc13237e6e4652e1). Original source files are unchanged. Output: output/FS25_JohnDeere_6030_Lights_Test.zip; SHA256 f83c10dc8c8a4a3149429b2dbb7ed4fd68b9093da25c3f50ec14e7454d0f0123.
+Passed: 45 XML/I3D files parse; 336 external resource references resolve against
+the supplied catalog; 514 local file references resolve; 44 light node references
+resolve; original geometry, scene ordering and light-state/strobe wiring unchanged;
+ZIP CRC; isolated Lua 5.1 regression tests without legacy globals, including load,
+configuration selection, pressure bounds, friction, savegame pressure, parser
+behavior and failed-load cleanup. Shader source exactly matches the expected six
+RGB selections and three default texture-path changes.
 
-Conversion: modDesc version 92; shop images fixed; legacy vehicle shaders and detail arrays redirected to FS25 fs22support; moved matching textures located; unavailable normal/mask maps use neutral shared assets; missing diffuse atlases use a transparent local texture. Specific-size FS25 tyre meshes replace FS22 generic diameter meshes; missing TM100 sizes use matching-size TM600. Top arms use FS25 XML assets. Diesel tanks receive an exact fill root at the chassis origin. TirePressure uses XMLFile, registered vehicle paths, FS25 Wheel.physics friction and load-finished lifecycle; obsolete suspension deformation is removed.
+Not run: FS25 shader compilation, vehicle purchase, lighting, driving, collision,
+attachment, refilling and multiplayer tests. The new candidate requires another
+FS25 test; these static checks do not prove that the purchase now succeeds.
 
-Checks passed: 44 parsed XML/I3D files; 342 external references found in the supplied FS25 catalog; 505 packaged local references; 44 light node references resolve; identical complete source/output scene graph and geometry; identical light configuration except resource paths; ZIP CRC; isolated Lua 5.1 lifecycle, XML API, configuration activation, bounds, savegame pressure, friction updates and crawler exclusion. These isolated checks stub engine APIs and do not prove runtime compatibility.
+Install: remove the old test ZIP and any extracted copy from the FS25 mods folder.
+Put FS25_JohnDeere_6030_Lights_Test_v03.zip there WITHOUT extracting it; enable the
+new candidate in a test save, try to buy it and test lights/HOME-key strobes.
+Return a fresh game log.txt if loading still fails.
 
-Required next validation: put the ZIP in Documents/My Games/FarmingSimulator2025/mods; enable in a test save; buy tractor; exercise shop configurations, drive/steer, hitch implements, refuel, headlights/worklights/turn/brake lights and HOME-key beacons. Return game log.txt and, if materials or collision conversion fail, GIANTS Editor 10 save/log. Collision masks, dashboard emitter shaders, tyre fit, suspension, sound templates, refilling position, attachments, engine behavior and multiplayer remain unverified. InteractiveControl requires a compatible FS25 IC mod.
+Output generator: tools/convert_tractor.py; validator: tools/validate_candidate.py.
+The generator overwrites its generated output folder/ZIP, so preserve any user
+edits before intentionally rebuilding. No services need startup. Existing source,
+asset catalog, Python/Pillow and retained Lupa 2.8 Lua 5.1 dependencies are used.
 
-Tools: tools/convert_tractor.py builds from original input and OVERWRITES its generated output folder and ZIP. Preserve any user-edited output before intentional rebuilds. tools/validate_candidate.py performs the checks above using the retained tools/python-deps Lupa 2.8 Lua 5.1 runtime. No services run. Python3 and Pillow are installed. FS25 asset catalog is retained under /workspace/attachments.
+Candidate SHA256: cfa1b580b1f6ea86fa2078840e68ce4cfb81758185c4bd8476787c361daa4d42

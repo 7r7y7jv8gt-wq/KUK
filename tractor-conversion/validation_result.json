@@ -1,11 +1,13 @@
 {
   "static_checks": "passed",
   "counts": {
-    "xml_files": 44,
-    "external_resources": 342,
-    "local_resources": 505,
+    "xml_files": 45,
+    "external_resources": 336,
+    "local_resources": 514,
     "light_node_references": 44
   },
+  "shader_six_float3_assignments": "passed",
+  "shader_engine_compilation": "not_run",
   "lua_5_1_isolated_checks": "passed",
   "light_graph_preserved": true,
   "geometry_unchanged": true,
