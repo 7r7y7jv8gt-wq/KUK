@@ -1,0 +1,22 @@
+{
+  "archive_name": "FS25_Walchen_2K20_BuildingsDraft.zip",
+  "archive_sha256": "8f648f7a5e32b9095961923626ef04133d092757bffceeec0968cd1d59f87dad",
+  "archive_size_bytes": 204138206,
+  "parts": [
+    {
+      "name": "Walchen_BuildingsDraft.zip.part01",
+      "size": 83886080,
+      "sha256": "8c6a69fbbc6665b3b923586d92c45059765a79d47c110fc904b2e6c8f15fbf0a"
+    },
+    {
+      "name": "Walchen_BuildingsDraft.zip.part02",
+      "size": 83886080,
+      "sha256": "1bbcf816be0a448db112a8de829c1efb266ab6e42d349e81ad0fd958ba09d6f9"
+    },
+    {
+      "name": "Walchen_BuildingsDraft.zip.part03",
+      "size": 36366046,
+      "sha256": "875e7ac03f552f53f8bfba1dbb34c4ca369a40fd7c6249b94fa1c371f054f93d"
+    }
+  ]
+}
