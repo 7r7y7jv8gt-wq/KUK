@@ -1,0 +1,456 @@
+{
+  "status": "static_checks_only_engine_validation_pending",
+  "source_sha256": "b278ee4d312b991a0b257c7688263dc9534191f15cfc9a32fc13237e6e4652e1",
+  "included_source_files": 164,
+  "resource_changes": [
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/fs17support/shaders/fs17VehicleShader.xml",
+      "to": "$data/fs22support/shaders/vehicleShader.xml"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/fs19support/shaders/dashboardLightsShader.xml",
+      "to": "$data/fs22support/shaders/vehicleShader.xml"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/fs19support/shaders/dashboardSymbolsShader.xml",
+      "to": "$data/fs22support/shaders/vehicleShader.xml"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/fs19support/shaders/vehicleShader.xml",
+      "to": "$data/fs22support/shaders/vehicleShader.xml"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shaders/vehicleShader.xml",
+      "to": "$data/fs22support/shaders/vehicleShader.xml"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/assets/assetLibraryDecals_diffuse.png",
+      "to": "$data/shared/assets/assetLibraryDecals_diffuse.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/assets/assetLibraryDecals_normal.png",
+      "to": "$data/shared/assets/assetLibraryDecals_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/assets/assetLibraryStickers_diffuse.png",
+      "to": "$data/shared/assets/assetLibraryStickers_diffuse.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/assets/dashboardSymbols_diffuse.png",
+      "to": "$data/shared/assets/dashboardSymbols_diffuse.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/assets/rearHitch_normal.png",
+      "to": "$data/shared/assets/rearHitch_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/assets/starfireDecals_diffuse.dds",
+      "to": "Textures/fs25_missing_atlas_transparent.dds",
+      "note": "Unavailable old atlas; corresponding decorative texture is transparent."
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/assets/starfire_normal.png",
+      "to": "$data/shared/default_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/assets/starfire_vmask.png",
+      "to": "$data/shared/default_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/clearPlastic_diffuse.png",
+      "to": "$data/shared/clearPlastic_diffuse.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/connectionHoses/hosesPipes_vmask.png",
+      "to": "$data/shared/connectionHoses/hosesPipes_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/connectionHoses/hoses_normal.dds",
+      "to": "$data/shared/default_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/connectionHoses/hoses_vmask.dds",
+      "to": "$data/shared/default_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/default_normal.png",
+      "to": "$data/shared/default_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/default_specular.png",
+      "to": "$data/shared/default_specular.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/detailArray_diffuse.png",
+      "to": "$data/fs22support/shared/detailArray_diffuse.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/detailArray_normal.png",
+      "to": "$data/fs22support/shared/detailArray_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/detailArray_specular.png",
+      "to": "$data/fs22support/shared/detailArray_specular.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/window_diffuse.png",
+      "to": "$data/shared/window_diffuse.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/shared/window_specular.png",
+      "to": "$data/shared/window_specular.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/claas/arion600/arion600_normal.dds",
+      "to": "$data/shared/default_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/claas/arion600/arion600_vmask.dds",
+      "to": "$data/shared/default_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/fendt/favorit500/favorit500Light06_normal.dds",
+      "to": "$data/shared/default_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/fendt/favorit500/favorit500Light08_normal.dds",
+      "to": "$data/shared/default_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/fendt/favorit500/favorit500Light08_vmask.dds",
+      "to": "$data/shared/default_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/hauer/xb150/xb150_normal.png",
+      "to": "$data/vehicles/hauer/xb150/xb150_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/hauer/xb150/xb150_vmask.png",
+      "to": "$data/vehicles/hauer/xb150/xb150_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/frontloader643R/frontloader643RDecal_diffuse.png",
+      "to": "Textures/fs25_missing_atlas_transparent.dds",
+      "note": "Unavailable old atlas; corresponding decorative texture is transparent."
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/frontloader643R/frontloader643RDecal_vmask.png",
+      "to": "$data/shared/default_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/frontloader643R/frontloader643R_normal.dds",
+      "to": "$data/shared/default_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/frontloader643R/frontloader643R_vmask.dds",
+      "to": "$data/shared/default_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/series6M/series6MAlpha_diffuse.dds",
+      "to": "Textures/fs25_missing_atlas_transparent.dds",
+      "note": "Unavailable old atlas; corresponding decorative texture is transparent."
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/series6M/series6MAlpha_normal.dds",
+      "to": "$data/shared/default_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/series6M/series6MDecal_diffuse.dds",
+      "to": "Textures/fs25_missing_atlas_transparent.dds",
+      "note": "Unavailable old atlas; corresponding decorative texture is transparent."
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/series6M/series6MGrids_vmask.dds",
+      "to": "$data/shared/default_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/series6M/series6MInterior_normal.dds",
+      "to": "$data/shared/default_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/series6M/series6MInterior_vmask.dds",
+      "to": "$data/shared/default_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/series8RInterior_normal.dds",
+      "to": "$data/vehicles/johnDeere/series8R/series8RInterior_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/series8RInterior_vmask.dds",
+      "to": "$data/vehicles/johnDeere/series8R/series8RInterior_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/weightSet_normal.dds",
+      "to": "$data/vehicles/johnDeere/shared/weightSet/weightSet_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/johnDeere/weightSet_vmask.dds",
+      "to": "$data/vehicles/johnDeere/shared/weightSet/weightSet_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/masseyFerguson/series3670/series3670_normal.dds",
+      "to": "$data/shared/default_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/masseyFerguson/series3670/series3670_vmask.dds",
+      "to": "$data/shared/default_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/quicke/frames/johnDeere6R/johnDeere6R_normal.png",
+      "to": "$data/vehicles/quicke/frames/johnDeere6R/johnDeere6R_normal.dds"
+    },
+    {
+      "file": "JohnDeere6030.i3d",
+      "from": "$data/vehicles/quicke/frames/johnDeere6R/johnDeere6R_vmask.png",
+      "to": "$data/vehicles/quicke/frames/johnDeere6R/johnDeere6R_vmask.dds"
+    },
+    {
+      "file": "JohnDeere6030.xml",
+      "from": "$data/shared/assets/upperLinks/walterscheid03.i3d",
+      "to": "$data/shared/assets/upperLinks/walterscheidHO_110_610.xml"
+    },
+    {
+      "file": "JohnDeere6030.xml",
+      "from": "$data/shared/assets/upperLinks/johnDeereUpperlink.i3d",
+      "to": "$data/shared/assets/upperLinks/johnDeereUpperlink.xml"
+    },
+    {
+      "file": "Wheels/BKT/540_65R30.xml",
+      "from": "$data/shared/wheels/tires/bkt/agrimaxVFlecto/R30_agrimaxVFlecto.i3d",
+      "to": "$data/shared/wheels/tires/bkt/agrimaxVFlecto/540_65R30.i3d"
+    },
+    {
+      "file": "Wheels/BKT/600_60R28.xml",
+      "from": "$data/shared/wheels/tires/bkt/agrimaxVFlecto/R28_agrimaxVFlecto.i3d",
+      "to": "$data/shared/wheels/tires/bkt/agrimaxVFlecto/600_60R28.i3d"
+    },
+    {
+      "file": "Wheels/BKT/650_65R42.xml",
+      "from": "$data/shared/wheels/tires/bkt/agrimaxVFlecto/R42_agrimaxVFlecto.i3d",
+      "to": "$data/shared/wheels/tires/bkt/agrimaxVFlecto/650_65R42.i3d"
+    },
+    {
+      "file": "Wheels/BKT/710_70R38.xml",
+      "from": "$data/shared/wheels/tires/bkt/agrimaxVFlecto/R38_agrimaxVFlecto.i3d",
+      "to": "$data/shared/wheels/tires/bkt/agrimaxVFlecto/710_70R38.i3d"
+    },
+    {
+      "file": "Wheels/Continental/380_85R34.xml",
+      "from": "$data/shared/wheels/tires/continental/tractor85/R34_tractor85.i3d",
+      "to": "$data/shared/wheels/tires/continental/tractor85/380_85R34.i3d"
+    },
+    {
+      "file": "Wheels/Continental/480_80R46.xml",
+      "from": "$data/shared/wheels/tires/continental/tractor85/R46_tractor85.i3d",
+      "to": "$data/shared/wheels/tires/continental/tractor85/480_80R46.i3d"
+    },
+    {
+      "file": "Wheels/Continental/540_65R30.xml",
+      "from": "$data/shared/wheels/tires/continental/tractorMaster/R30_tractorMaster.i3d",
+      "to": "$data/shared/wheels/tires/continental/tractorMaster/540_65R30.i3d"
+    },
+    {
+      "file": "Wheels/Continental/600_65R28.xml",
+      "from": "$data/shared/wheels/tires/continental/tractorMaster/R28_tractorMaster.i3d",
+      "to": "$data/shared/wheels/tires/continental/tractorMaster/600_65R28.i3d"
+    },
+    {
+      "file": "Wheels/Continental/650_65R42.xml",
+      "from": "$data/shared/wheels/tires/continental/tractorMaster/R42_tractorMaster.i3d",
+      "to": "$data/shared/wheels/tires/continental/tractorMaster/650_65R42.i3d"
+    },
+    {
+      "file": "Wheels/Continental/710_70R38.xml",
+      "from": "$data/shared/wheels/tires/continental/tractorMaster/R38_tractorMaster.i3d",
+      "to": "$data/shared/wheels/tires/continental/tractorMaster/710_70R38.i3d"
+    },
+    {
+      "file": "Wheels/Michelin/380_85R34.xml",
+      "from": "$data/shared/wheels/tires/michelin/yieldBib/R34_yieldBib.i3d",
+      "to": "$data/shared/wheels/tires/michelin/yieldBib/380_85R34.i3d"
+    },
+    {
+      "file": "Wheels/Michelin/480_80R46.xml",
+      "from": "$data/shared/wheels/tires/michelin/yieldBib/R46_yieldBib.i3d",
+      "to": "$data/shared/wheels/tires/michelin/yieldBib/480_80R46.i3d"
+    },
+    {
+      "file": "Wheels/Michelin/540_65R30.xml",
+      "from": "$data/shared/wheels/tires/michelin/multibib/R30_multibib.i3d",
+      "to": "$data/shared/wheels/tires/michelin/multibib/540_65R30.i3d"
+    },
+    {
+      "file": "Wheels/Michelin/600_65R28.xml",
+      "from": "$data/shared/wheels/tires/michelin/machXbib/R28_machXbib.i3d",
+      "to": "$data/shared/wheels/tires/michelin/machXbib/600_65R28.i3d"
+    },
+    {
+      "file": "Wheels/Michelin/650_65R42.xml",
+      "from": "$data/shared/wheels/tires/michelin/multibib/R42_multibib.i3d",
+      "to": "$data/shared/wheels/tires/michelin/multibib/650_65R42.i3d"
+    },
+    {
+      "file": "Wheels/Michelin/710_70R38.xml",
+      "from": "$data/shared/wheels/tires/michelin/machXbib/R38_machXbib.i3d",
+      "to": "$data/shared/wheels/tires/michelin/machXbib/710_70R38.i3d"
+    },
+    {
+      "file": "Wheels/Mitas/380_85R34.xml",
+      "from": "$data/shared/wheels/tires/mitas/HC2000/R34_HC2000.i3d",
+      "to": "$data/shared/wheels/tires/mitas/HC2000/380_85R34.i3d"
+    },
+    {
+      "file": "Wheels/Mitas/420_85R28.xml",
+      "from": "$data/shared/wheels/tires/mitas/HC2000/R28_HC2000.i3d",
+      "to": "$data/shared/wheels/tires/mitas/HC2000/420_85R28.i3d"
+    },
+    {
+      "file": "Wheels/Mitas/480_80R46.xml",
+      "from": "$data/shared/wheels/tires/mitas/HC2000/R46_HC2000.i3d",
+      "to": "$data/shared/wheels/tires/mitas/HC2000/480_80R46.i3d"
+    },
+    {
+      "file": "Wheels/Mitas/520_85R42.xml",
+      "from": "$data/shared/wheels/tires/mitas/HC2000/R42_HC2000.i3d",
+      "to": "$data/shared/wheels/tires/mitas/HC2000/520_85R42.i3d"
+    },
+    {
+      "file": "Wheels/Mitas/540_65R30.xml",
+      "from": "$data/shared/wheels/tires/mitas/AC65/R30_AC65.i3d",
+      "to": "$data/shared/wheels/tires/mitas/AC65/540_65R30.i3d"
+    },
+    {
+      "file": "Wheels/Mitas/600_65R28.xml",
+      "from": "$data/shared/wheels/tires/mitas/AC65/R28_AC65.i3d",
+      "to": "$data/shared/wheels/tires/mitas/AC65/600_65R28.i3d"
+    },
+    {
+      "file": "Wheels/Mitas/650_65R42.xml",
+      "from": "$data/shared/wheels/tires/mitas/AC65/R42_AC65.i3d",
+      "to": "$data/shared/wheels/tires/mitas/AC65/650_65R42.i3d"
+    },
+    {
+      "file": "Wheels/Mitas/710_70R38.xml",
+      "from": "$data/shared/wheels/tires/mitas/AC65/R38_AC65.i3d",
+      "to": "$data/shared/wheels/tires/mitas/AC65/710_70R38.i3d"
+    },
+    {
+      "file": "Wheels/Trelleborg/380_85R34.xml",
+      "from": "$data/shared/wheels/tires/trelleborg/TM100/R38_TM100.i3d",
+      "to": "$data/shared/wheels/tires/trelleborg/TM600/380_85R34.i3d"
+    },
+    {
+      "file": "Wheels/Trelleborg/480_80R46.xml",
+      "from": "$data/shared/wheels/tires/trelleborg/TM100/R50_TM100.i3d",
+      "to": "$data/shared/wheels/tires/trelleborg/TM600/480_80R46.i3d"
+    },
+    {
+      "file": "Wheels/Trelleborg/710_70R38.xml",
+      "from": "$data/shared/wheels/tires/trelleborg/TM800/R38_TM800.i3d",
+      "to": "$data/shared/wheels/tires/trelleborg/TM800/710_70R38.i3d"
+    },
+    {
+      "file": "Wheels/Vredestein/380_85R34.xml",
+      "from": "$data/shared/wheels/tires/vredestein/traxion85/R34_traxion85.i3d",
+      "to": "$data/shared/wheels/tires/vredestein/traxion85/380_85R34.i3d"
+    },
+    {
+      "file": "Wheels/Vredestein/480_80R46.xml",
+      "from": "$data/shared/wheels/tires/vredestein/traxion85/R46_traxion85.i3d",
+      "to": "$data/shared/wheels/tires/vredestein/traxion85/480_80R46.i3d"
+    },
+    {
+      "file": "Wheels/Vredestein/540_65R30.xml",
+      "from": "$data/shared/wheels/tires/vredestein/traxionOptimall/R30_traxionOptimall.i3d",
+      "to": "$data/shared/wheels/tires/vredestein/traxionOptimall/540_65R30.i3d"
+    },
+    {
+      "file": "Wheels/Vredestein/600_65R28.xml",
+      "from": "$data/shared/wheels/tires/vredestein/traxionXXL/R28_traxionXXL.i3d",
+      "to": "$data/shared/wheels/tires/vredestein/traxionXXL/600_65R28.i3d"
+    },
+    {
+      "file": "Wheels/Vredestein/650_65R42.xml",
+      "from": "$data/shared/wheels/tires/vredestein/traxionOptimall/R42_traxionOptimall.i3d",
+      "to": "$data/shared/wheels/tires/vredestein/traxionOptimall/650_65R42.i3d"
+    },
+    {
+      "file": "Wheels/Vredestein/710_70R38.xml",
+      "from": "$data/shared/wheels/tires/vredestein/traxionXXL/R38_traxionXXL.i3d",
+      "to": "$data/shared/wheels/tires/vredestein/traxionXXL/710_70R38.i3d"
+    },
+    {
+      "file": "Wheels/johnDeereWeights.i3d",
+      "from": "$data/shaders/vehicleShader.xml",
+      "to": "$data/fs22support/shaders/vehicleShader.xml"
+    },
+    {
+      "file": "Wheels/kleber/Kleber_wheel.i3d",
+      "from": "$data/shaders/vehicleShader.xml",
+      "to": "$data/fs22support/shaders/vehicleShader.xml"
+    },
+    {
+      "file": "Wheels/rims/FrontRims.i3d",
+      "from": "$data/shaders/vehicleShader.xml",
+      "to": "$data/fs22support/shaders/vehicleShader.xml"
+    },
+    {
+      "file": "Wheels/rims/Rims2.i3d",
+      "from": "$data/shaders/vehicleShader.xml",
+      "to": "$data/fs22support/shaders/vehicleShader.xml"
+    },
+    {
+      "file": "Wheels/rims/rims.i3d",
+      "from": "$data/shaders/vehicleShader.xml",
+      "to": "$data/fs22support/shaders/vehicleShader.xml"
+    }
+  ]
+}

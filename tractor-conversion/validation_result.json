@@ -1,0 +1,15 @@
+{
+  "static_checks": "passed",
+  "counts": {
+    "xml_files": 44,
+    "external_resources": 342,
+    "local_resources": 505,
+    "light_node_references": 44
+  },
+  "lua_5_1_isolated_checks": "passed",
+  "light_graph_preserved": true,
+  "geometry_unchanged": true,
+  "zip_crc": "passed",
+  "engine_tests": "not_run",
+  "errors": []
+}
