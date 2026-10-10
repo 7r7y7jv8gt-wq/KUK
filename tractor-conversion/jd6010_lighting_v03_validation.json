@@ -1,0 +1,22 @@
+{
+  "version": "0.3.0.0",
+  "mirror_diodes": 6,
+  "front_roof_diodes": 5,
+  "rear_roof_diodes": 7,
+  "bar_flash_modules": 20,
+  "separate_mirror_rear_flash_modules": 4,
+  "inline_flash_beacons": 24,
+  "new_point_lights": 42,
+  "resolved_light_references": 247,
+  "local_file_references": 166,
+  "xml_files": 18,
+  "double_flash_pulses_per_period": 2,
+  "flash_period_seconds": 0.6283185307179586,
+  "existing_node_order_and_transforms_preserved": true,
+  "geometry_binary_unchanged": true,
+  "game_tests": "not_run",
+  "shader_compilation": "not_run",
+  "external_game_resources": "validation_outstanding",
+  "zip_crc": "passed",
+  "sha256": "ea5a137d10fe67d46099faac7c8462b0a3432643354df218198acf3db825b4f7"
+}
