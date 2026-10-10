@@ -1,0 +1,15 @@
+{
+  "version": "0.4.0.0",
+  "light_references_resolved": 109,
+  "rear_leds": 6,
+  "front_markers": 5,
+  "michelin_figures": 2,
+  "ozz_high_beams": 2,
+  "geometry_binary_unchanged": true,
+  "existing_node_ids_preserved": true,
+  "zip_crc": "passed",
+  "game_tests": "not_run",
+  "sha256": "35036f0369fc3e33ffa6fbdfcce3dbee2fee82b8d4b3967cf3801392192b3a59",
+  "resource_audit": "passed",
+  "external_references": 336
+}

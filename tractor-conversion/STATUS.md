@@ -1,3 +1,32 @@
+# Current candidate: v0.4 requested lighting changes
+
+User supplied five ordered reference images and requested a thinner lightbar
+cruise strip, rear-window LEDs, OZZ high beams instead of work lights, brighter
+five front markers and illuminated Michelin figurines. Tools/customize_lights.py
+builds output/FS25_JohnDeere_6030_Lights_Test_v04.zip from the retained repaired
+v0.3 folder. It overwrites its own generated v0.4 folder/ZIP; preserve user edits
+before intentionally rebuilding. Original binary geometry and node indices are
+retained, with only the cruise emissive mesh scaled in its cross-section, targeted
+material assignments, and two appended OZZ spot lights. Existing strobe wiring
+and patterns are retained.
+
+Cruise strip cross-section is 55% of original with its full width retained. Six
+rear-window LEDs are red running lights with separate brake meshes. OZZ main
+beams use light type 3 in both graphics profiles; amber position rings keep type 0.
+Five front markers have 3x brightness and 4 m spill, plus 3x lens intensity.
+Both Michelin figurines emit cool white on running lights, using a dedicated
+staticLight_customEmission variation shared with red rear LEDs. Stands stay unlit.
+
+Passed: 109 light node/shader references resolve; all existing IDs preserved and
+unique; original geometry binary unchanged; 336 FS25 references and packaged local
+references resolve; XML/I3D parse; ZIP CRC. Actual appearance/brightness, the new
+shader variation and in-game switching have NOT been tested here. Ask for a new
+FS25 log and screenshots if any requested behavior fails.
+
+Candidate SHA256: 35036f0369fc3e33ffa6fbdfcce3dbee2fee82b8d4b3967cf3801392192b3a59
+
+Historical v0.3 repair information:
+
 # John Deere 6030 lights — v0.3 repair candidate
 
 The v0.1 FS25 game log confirmed a purchase/loading failure: TirePressure used
