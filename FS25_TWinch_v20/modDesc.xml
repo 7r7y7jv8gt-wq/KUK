@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <modDesc descVersion="114">
   <author>Reference model project</author>
-  <version>0.20.0.0</version>
+  <version>0.20.0.1</version>
   <title>
-    <en>T-Winch v20 - Purchase loading fix</en>
+    <en>Føllvik t vinsj</en>
   </title>
   <description>
     <en>TerraFarm machine definition embedded directly in the vehicle XML, with work area on the moving bottom blade edge. TerraFarm core required; separate Engelsen addon not needed. Rear/front winches, FOR9T lights and 40-tonne configuration retained.</en>

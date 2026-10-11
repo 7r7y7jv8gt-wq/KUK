@@ -1,8 +1,5 @@
 {
-  "version": "0.20.0.0",
+  "version": "0.20.0.1",
   "game_test": "not run",
-  "fix": "stable profile base path and non-fatal TerraFarm registration",
-  "local_tests_run": 29,
-  "failures": 0,
-  "errors": 0
+  "fix": "stable profile base path and non-fatal TerraFarm registration"
 }
