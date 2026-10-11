@@ -1,0 +1,5 @@
+V22: only two compact end inserts show steady amber cruise.
+Whole bar flashes using native beacon toggle (default Home); lower glow intensity.
+LED bar white light activates with front work lights (first F stage).
+Amber LED DRL remains engine-controlled. Other lights and vehicle systems retained.
+Disable earlier versions, install unopened ZIP. FS25 visual test pending.

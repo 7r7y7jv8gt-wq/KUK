@@ -1,0 +1,10 @@
+{
+  "version": "0.22.0.0",
+  "game_test": "not run",
+  "cruise": "two end inserts only",
+  "beacons": "whole bar flash",
+  "LED": "front work light stage",
+  "local_tests_run": 32,
+  "failures": 0,
+  "errors": 0
+}
