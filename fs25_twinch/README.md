@@ -125,3 +125,11 @@ Duplicates the existing drum/cable geometry into a close-mounted rear assembly w
 The reported in-game first-lit bank was the rear. V15 reverses bank assignments: negative-Z lamps use the first lighting stage, positive-Z lamps join in the second. Eight emitting work-light insert meshes, switched by native StaticLight visibility, illuminate the reflector centers independently of the prefab's UV light slots. Red engine-controlled DRLs remain. User lamp placements and compiled geometry are unchanged.
 
 Twenty-two local checks pass, including front winch regressions, rear nearest-hook selection and cleanup of both states, light bank pairing, glowing insert configuration, asset/mapping checks and ZIP integrity. No FS25 rendering/operation test is available; rear plate fit and lamp glare need in-game inspection. Build with `python fs25_twinch/package_mod_v15.py`, validate with `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_v15.py`. Disable earlier versions and purchase a fresh v15 for testing.
+
+## Engelsen TerraFarm addon for v15
+
+The newly uploaded addon still has two `</configurations>` tags, leaving valid machine entries outside the XML root. `package_terrafarm_v15.py` removes the premature closure and registers `FS25_TWinch_v15/twinch.xml` against `xml/TWinch/terraFarmBlade.xml`. The profile matches the internal v15 profile exactly to avoid discovery-order differences. It uses `terraFarmBladeEdge`, a child of `bladeLift` at local (0,-.605,.9375), with width 2.23m and FLATTEN/SMOOTH/LOWER/PAINT modes. Original addon machine files/assets are preserved byte-for-byte.
+
+Install `FS25_0_TerraFarmMachines_Engelsen_Anlegg_TWinch_v15.zip` in place of the old Engelsen addon, together with the original unopened v15 vehicle ZIP and TerraFarm core. Do not run both addon variants. Start the engine, enable TerraFarm for the machine and lower the blade into ground contact. Work-area activation is terrain contact rather than merely proximity.
+
+Build with `python fs25_twinch/package_terrafarm_v15.py`; run `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_terrafarm_v15.py`. Three checks pass: complete addon XML/asset preservation, blade attachment position, and actual TerraFarm work-area Lua activation for raised/lowered blade poses. No FS25 engine test was possible.
