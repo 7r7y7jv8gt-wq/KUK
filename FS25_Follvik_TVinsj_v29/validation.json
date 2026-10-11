@@ -1,0 +1,15 @@
+{
+  "version": "0.29.0.0",
+  "local_tests_run": 18,
+  "failures": 0,
+  "errors": 0,
+  "game_test": "not run",
+  "powered_contacts": 10,
+  "suspension_travel_m": 0.3,
+  "friction_scale": 6,
+  "mass_kg": 40000,
+  "hp": 800,
+  "speed_kmh": 12,
+  "minimum_rpm": 1000,
+  "max_crawl_ratio": 2000
+}
