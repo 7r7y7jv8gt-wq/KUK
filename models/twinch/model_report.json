@@ -1,0 +1,27 @@
+{
+  "asset": "Photo-based T-WINCH-style tracked forestry winch",
+  "units": "metres",
+  "reference": "Last three supplied photographs; first rounded machine is a different enclosure",
+  "dimensions_approx_m": [
+    3.115000009536743,
+    3.933807373046875,
+    3.18999981880188
+  ],
+  "mesh_objects": 195,
+  "triangles": 152906,
+  "materials": 13,
+  "measurements": "Estimated from photos; not manufacturer dimensions",
+  "game_status": "3D asset only; no FS25 vehicle configuration or game test",
+  "groups": [
+    "Chassis",
+    "Left_Track",
+    "Right_Track",
+    "Engine_Housing",
+    "Blade_Pivot",
+    "Hydraulics",
+    "Winch_Drum",
+    "Cable_Guide",
+    "Lights_and_Decals"
+  ],
+  "coordinate_convention": "Z up; front is -Y"
+}
