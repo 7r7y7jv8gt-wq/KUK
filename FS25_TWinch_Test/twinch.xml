@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vehicle type="twinchTest">
+  <annotation>FS25 prototype: estimated specifications; requires game validation.</annotation>
+  <storeData>
+    <name>
+      <en>T-Winch Reference Test</en>
+      <de>T-Winch Referenz Test</de>
+    </name>
+    <specs>
+      <power>58</power>
+      <maxSpeed>8</maxSpeed>
+    </specs>
+    <functions>
+      <function>Tracked forestry support vehicle - test prototype</function>
+    </functions>
+    <image>store_twinch.dds</image>
+    <price>85000</price>
+    <lifetime>600</lifetime>
+    <brand>LIZARD</brand>
+    <category>tractorsS</category>
+  </storeData>
+  <base>
+    <typeDesc>$l10n_typeDesc_tractor</typeDesc>
+    <filename>twinch.i3d</filename>
+    <sounds filename="$data/vehicles/johnDeere/series6M/sounds/series6M.xml" />
+    <size width="2.2" length="3.8" height="2.5" />
+    <components>
+      <component centerOfMass="0 0.85 0" solverIterationCount="20" mass="5000" />
+    </components>
+    <schemaOverlay name="VEHICLE" />
+    <mapHotspot type="TRACTOR" />
+  </base>
+  <wheels>
+    <wheelConfigurations>
+      <wheelConfiguration name="Prototype tracks" price="0" saveId="DEFAULT">
+        <wheels autoRotateBackSpeed="2">
+          <wheel isLeft="true" hasTireTracks="false" hasParticles="false">
+            <physics repr="frontLeft" driveNode="frontLeftDrive" radius="0.37" width="0.42" mass="80" rotSpeed="1" rotMin="-30" rotMax="30" restLoad="1.25" initialCompression="20" suspTravel="0.08" spring="65" damper="50" frictionScale="2" />
+          </wheel>
+          <wheel isLeft="false" hasTireTracks="false" hasParticles="false">
+            <physics repr="frontRight" driveNode="frontRightDrive" radius="0.37" width="0.42" mass="80" rotSpeed="1" rotMin="-30" rotMax="30" restLoad="1.25" initialCompression="20" suspTravel="0.08" spring="65" damper="50" frictionScale="2" />
+          </wheel>
+          <wheel isLeft="true" hasTireTracks="false" hasParticles="false">
+            <physics repr="rearLeft" driveNode="rearLeftDrive" radius="0.37" width="0.42" mass="80" rotSpeed="0" restLoad="1.25" initialCompression="20" suspTravel="0.08" spring="65" damper="50" frictionScale="2" />
+          </wheel>
+          <wheel isLeft="false" hasTireTracks="false" hasParticles="false">
+            <physics repr="rearRight" driveNode="rearRightDrive" radius="0.37" width="0.42" mass="80" rotSpeed="0" restLoad="1.25" initialCompression="20" suspTravel="0.08" spring="65" damper="50" frictionScale="2" />
+          </wheel>
+        </wheels>
+      </wheelConfiguration>
+    </wheelConfigurations>
+    <ackermannSteeringConfigurations>
+      <ackermannSteering rotSpeed="35" rotMax="30" rotCenterWheel1="3" rotCenterWheel2="4" />
+    </ackermannSteeringConfigurations>
+  </wheels>
+  <motorized>
+    <consumerConfigurations>
+      <consumerConfiguration>
+        <consumer fillUnitIndex="1" usage="8" fillType="diesel" />
+      </consumerConfiguration>
+    </consumerConfigurations>
+    <motorConfigurations>
+      <motorConfiguration name="58 hp prototype" hp="58" price="0">
+        <motor torqueScale="0.24" minRpm="850" maxRpm="2200" maxForwardSpeed="8" maxBackwardSpeed="8" brakeForce="8" lowBrakeForceScale="0.5">
+          <torque normRpm="0.45" torque="0.85" />
+          <torque normRpm="0.6" torque="1" />
+          <torque normRpm="0.8" torque="0.95" />
+          <torque normRpm="1" torque="0.7" />
+        </motor>
+        <transmission minForwardGearRatio="90" maxForwardGearRatio="300" minBackwardGearRatio="90" maxBackwardGearRatio="300" />
+      </motorConfiguration>
+    </motorConfigurations>
+    <differentialConfigurations>
+      <differentialConfiguration>
+        <differentials>
+          <differential torqueRatio="0.5" maxSpeedRatio="1.2" wheelIndex1="1" wheelIndex2="2" />
+          <differential torqueRatio="0.5" maxSpeedRatio="1.2" wheelIndex1="3" wheelIndex2="4" />
+          <differential torqueRatio="0.5" maxSpeedRatio="1" differentialIndex1="1" differentialIndex2="2" />
+        </differentials>
+      </differentialConfiguration>
+    </differentialConfigurations>
+  </motorized>
+  <fillUnit>
+    <fillUnitConfigurations>
+      <fillUnitConfiguration>
+        <fillUnits>
+          <fillUnit capacity="80" fillTypes="diesel" showOnHud="false" showInShop="false">
+            <exactFillRootNode node="0&gt;" />
+          </fillUnit>
+        </fillUnits>
+      </fillUnitConfiguration>
+    </fillUnitConfigurations>
+  </fillUnit>
+  <enterable isTabbable="true">
+    <exitPoint node="exitPoint" />
+    <enterReferenceNode node="0&gt;" />
+    <cameras>
+      <camera node="outdoorCamera" rotateNode="cameraTarget" rotatable="true" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="4" transMax="20" />
+    </cameras>
+  </enterable>
+  <drivable />
+  <foldable>
+    <foldingParts startMoveDirection="1">
+      <foldingPart animationName="bladeLift" speedScale="1" />
+    </foldingParts>
+  </foldable>
+  <animations>
+    <animation name="bladeLift">
+      <part node="bladeLift" startTime="0" endTime="1.5" startTrans="0 0 0" endTrans="0 0.35 0" />
+    </animation>
+  </animations>
+  <i3dMappings>
+    <i3dMapping id="frontLeft" node="0&gt;2" />
+    <i3dMapping id="frontLeftDrive" node="0&gt;2|0" />
+    <i3dMapping id="frontRight" node="0&gt;3" />
+    <i3dMapping id="frontRightDrive" node="0&gt;3|0" />
+    <i3dMapping id="rearLeft" node="0&gt;4" />
+    <i3dMapping id="rearLeftDrive" node="0&gt;4|0" />
+    <i3dMapping id="rearRight" node="0&gt;5" />
+    <i3dMapping id="rearRightDrive" node="0&gt;5|0" />
+    <i3dMapping id="exitPoint" node="0&gt;6" />
+    <i3dMapping id="cameraTarget" node="0&gt;7" />
+    <i3dMapping id="outdoorCamera" node="0&gt;8" />
+    <i3dMapping id="motorSound" node="0&gt;9" />
+    <i3dMapping id="bladeLift" node="0&gt;1" />
+  </i3dMappings>
+</vehicle>

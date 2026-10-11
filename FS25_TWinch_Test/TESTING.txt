@@ -1,0 +1,22 @@
+FS25 T-Winch v0.1 - UNTESTED VEHICLE CANDIDATE
+
+Put FS25_TWinch_Test.zip in Documents/My Games/FarmingSimulator2025/mods.
+Do not unpack it. Enable T-Winch Vehicle Test in a NEW test savegame.
+Find LIZARD T-Winch Reference Test under small tractors.
+Try purchase, entering with E/Tab, motor start, forward/reverse, steering,
+braking, camera movement and fold/unfold (default X) to move the blade.
+Save/reload and check that the vehicle remains stable.
+
+This package has not been opened in GIANTS Editor or run in FS25.
+XML checks do not prove game compatibility. If unavailable in the store,
+or it fails purchase/physics, send log.txt from the FS25 user directory.
+Do not use an established savegame for the first test.
+
+Known limitations: no functioning winch or rope, no moving track belts,
+wheel steering rather than skid steering, estimated dimensions and power,
+simple materials, no headlights, no working hydraulic linkage, no AI worker,
+no multiplayer support. Blade movement is visual only; it does not grade
+terrain or manipulate piles. The collision hull covers the body only.
+The XML-based I3D importer and baseDrivable defaults need game verification.
+modDesc version 92 follows the existing FS25 test package in this repository;
+newer game patches may require adjustments.
