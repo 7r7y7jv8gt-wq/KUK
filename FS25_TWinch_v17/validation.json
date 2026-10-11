@@ -1,0 +1,8 @@
+{
+  "version": "0.17.0.0",
+  "game_test": "not run",
+  "change": "direct profile registration during vehicle load using actual registry key",
+  "local_tests_run": 24,
+  "failures": 0,
+  "errors": 0
+}
