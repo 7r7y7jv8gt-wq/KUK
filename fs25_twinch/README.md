@@ -99,3 +99,13 @@ Disable older T-Winch versions and install the unopened v11 ZIP, then buy a fres
 The chassis component is 39,680kg plus four 80kg support wheels, giving a configured total of 40,000kg. Suspension load, spring and damping are scaled to the added chassis mass. Handling and ground stability require FS25 testing. Disable older T-Winch packages, install the unopened v12 ZIP and purchase a fresh vehicle in a test save.
 
 The supplied Volvo crawler files contain shoes and mud meshes only. Their geometry is retained; transferring the actual Volvo frame, wheels and final drives still requires its main I3D and matching shapes. Local tests do not verify FS25 rendering, geometry fit or in-game interaction. Build with `python fs25_twinch/package_mod_v12.py`; run `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_v12.py`.
+
+## Version 13: blade input recovery and darker undercarriage
+
+The supplied log loads both v10 and v12. Repeated v10 `draw` errors come from the winch drawing helper sharing a name with a mod-listener callback: FS25 calls it with the listener instead of a winch instance. V13 renames the helper to `drawWinch` and covers the listener contract in a regression test. Disable all earlier T-Winch versions; this build cannot patch an independently loaded v10.
+
+V13 uses fresh mouse-axis bindings and separate Page Up/Page Down raise/lower events with press, release and continuous callbacks. It explicitly activates the blade event and retries registration while the vehicle is active for input. Blade movement also runs through the frame update, independent of physics-tick availability; a mission-time guard prevents applying it twice per frame. Barrel and rod endpoint alignment remains part of every blade movement.
+
+The Volvo crawler motion-path geometry is retained with darker shader/base steel tint. Exposed carrier plates, wheel axles and hubs use a dedicated dark steel material. A deterministic, restrained cast-steel diffuse texture replaces the mottled brown wheel finish. The full Volvo drivetrain remains unavailable in the supplied crawler-only assets. These changes need in-game visual inspection; shop images have not been regenerated to represent the imported geometry.
+
+Mass remains 39,680kg chassis plus four 80kg support wheels. Build using `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/package_mod_v13.py`; validate using `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_v13.py`. All 56 local checks pass. FS25 is unavailable here, so this is not proof of functioning controls, terrain handling or materials in the game. Install the unopened v13 ZIP, with earlier versions disabled, and buy a fresh vehicle in a test save.
