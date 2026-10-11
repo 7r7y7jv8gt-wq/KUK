@@ -1,0 +1,22 @@
+V24: front and rear hook winches each accept 100 tonnes total and deliver up to 980.665 kN (100 tonne-force).
+Walk up to either winch, R to take hook; walk to a machine and aim at its collider within 4m; R attaches.
+Hold Z to pull, X to pay out, Shift+R releases. Start the engine before pulling. Cable range 60m.
+Equal reaction force remains on the 40-tonne chassis: traction, brakes and anchoring affect recovery.
+Vehicle attachments use a direct hook instead of wrapping a log chain around the entire machine.
+Vehicles must be loaded in physics; same vehicle/attached own equipment and static scenery are rejected.
+Single-player mod; in-game physics and visuals not tested in this environment.
+Disable previous T-Winch versions before loading.
+
+V25: hold left mouse and drag vertically to move hydraulic blade.
+New mouse binding avoids cached older binding; Page Up/Page Down remain available.
+Mouse and keyboard channels are independent; idle keyboard events cannot erase mouse movement.
+Mouse movement is consumed once; idle drag, leaving vehicle, timeout and limits stop motion.
+Both 100-tonne winches and all supplied model assets retained.
+
+V26: front FollvikLogo node 665 parented to bladeLift, retaining its rest placement.
+Side logos remain on the body. Compiled geometry and textures unchanged.
+All scene mappings checked after reparenting. Left-mouse hydraulics and both 100t winches retained.
+
+V27: original logo DDS bundled in textures/follvik_logo.dds.
+Removed external Ponsse texture dependency; alpha blending enabled on all three logos.
+Front logo remains parented to the hydraulic blade. Texture alpha and all main scene file references verified.

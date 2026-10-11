@@ -1,0 +1,14 @@
+{
+  "version": "0.27.0.0",
+  "game_test": "not run",
+  "logo_texture_bundled": true,
+  "original_texture_preserved": true,
+  "alpha_range": [
+    0,
+    255
+  ],
+  "transparent_logo_material": true,
+  "logo_count": 3,
+  "all_main_i3d_local_assets_resolve": true,
+  "front_logo_parent": "bladeLift"
+}
