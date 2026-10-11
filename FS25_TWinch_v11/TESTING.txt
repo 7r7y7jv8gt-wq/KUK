@@ -1,0 +1,16 @@
+T-Winch v11: supplied Volvo EC380 DLC crawler tracks
+Disable older T-Winch versions, install unopened ZIP and buy a fresh v11.
+The supplied external I3D and compiled shapes provide both track LODs and
+mud meshes; all materials use stock FS25 shader/detail/track-array resources.
+Native Crawlers scrolls each track using its own side's powered wheels.
+Old procedural shoes are hidden; T-Winch still animates its running wheels.
+A 74-node limit keeps the asynchronous native track out of the old animator.
+Initial crawler fitting scale: .65 width, .8 height, .65 length. This is an
+estimate because compiled motion-path shapes cannot be inspected here.
+Check track width/height/length, orientation, frame clearance, ground contact,
+forward/reverse and skid steering in FS25. Stock resource availability also
+requires actual engine verification. No GIANTS Editor / FS25 test run here.
+Blade, small protected hook and logging controls are retained: R at blade,
+R at tree/log, hold Z to reel, X to pay out, Shift+R release; engine on.
+TerraFarm work edge remains on the moving blade. Existing Engelsen pack can
+remain installed: this vehicle includes its own equivalent v11 registry.
