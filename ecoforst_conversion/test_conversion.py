@@ -48,6 +48,10 @@ class PackageTests(unittest.TestCase):
   for p in OUT.rglob('*.i3d'):
    for n in E.parse(p).find('Materials'):self.assertNotIn('colorMask',n.get('customShaderVariation',''))
   with ZipFile(ROOT/'FS25_EcoforstTWinch.zip') as z:self.assertIsNone(z.testzip())
+ def test_beacons_use_native_fs25_assets(self):
+  lights=E.parse(OUT/'T_Winch.xml').findall('.//beaconLight')
+  self.assertEqual(len(lights),4)
+  self.assertTrue(all(n.get('filename')=='$data/shared/assets/beaconLights/lizard/beaconLight01.xml' for n in lights))
 class LuaTests(unittest.TestCase):
  def setUp(self):
   self.lua=LuaRuntime(unpack_returned_tuples=True)

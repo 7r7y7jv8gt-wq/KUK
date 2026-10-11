@@ -8,7 +8,7 @@ shutil.copytree(SRC,OUT,dirs_exist_ok=True)
 (OUT/'conversion_audit.json').unlink(missing_ok=True)
 (OUT/'script/FS25Compatibility.lua').unlink(missing_ok=True)
 def save(tree,path):E.indent(tree);tree.write(path,encoding='utf-8',xml_declaration=True)
-d=E.parse(OUT/'modDesc.xml');d.getroot().set('descVersion','114');d.find('version').text='1.0.0.1'
+d=E.parse(OUT/'modDesc.xml');d.getroot().set('descVersion','114');d.find('version').text='1.0.0.2'
 d.find('title/en').text='Ecoforst T-Winch 30.2 – FS25'
 d.find('description/en').text='FS25 conversion of the original PauloModding / Paul Redshaw T-Winch. Original model, crawlers, hydraulic blade, lights, sounds and logging winch retained. Requires in-game validation.'
 # Original custom brand/category images were not supplied: use a stock brand and supplied shop image.
@@ -128,6 +128,10 @@ for p in [OUT/'T_Winch.i3d',OUT/'leitwolfCrawler/leitwolfCrawler.i3d']:
   if 'raptor300_vmask' in n.get('filename',''):n.set('filename','$data/shared/default_diffuse.png')
   if 'raptor300_normal' in n.get('filename',''):n.set('filename','$data/shared/detailLibrary/flat_normal.png')
  save(r,p)
+# Legacy beacon component roots are deleted during FS25 async loading; use native assets.
+r=E.parse(OUT/'T_Winch.xml')
+for n in r.findall('.//beaconLight'):n.set('filename','$data/shared/assets/beaconLights/lizard/beaconLight01.xml')
+save(r,OUT/'T_Winch.xml')
 # Port the original script's inputs, player API, raycasts, and custom XML schema.
 p=OUT/'script/logsWinch.lua';s=p.read_text(encoding='utf-8-sig')
 s=s.replace('Player.INPUT_CONTEXT_NAME','PlayerInputComponent.INPUT_CONTEXT_NAME')

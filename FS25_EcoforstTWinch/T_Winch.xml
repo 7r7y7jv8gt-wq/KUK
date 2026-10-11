@@ -128,10 +128,10 @@
       <defaultLight shaderNode="0&gt;3|1|4|0|1|1|1" lightTypes="0" intensity="80" />
     </defaultLights>
     <beaconLights>
-      <beaconLight node="0&gt;3|1|0|0|2" filename="beacons/Lizard_RKLE_150_O.xml" />
-      <beaconLight node="0&gt;3|1|0|0|5" filename="beaconLights/Lizard_RKLE_150_G.xml" />
-      <beaconLight node="0&gt;3|1|3|0|1" filename="beacons/Lizard_RKLE_150_O.xml" />
-      <beaconLight node="0&gt;3|1|3|0|2" filename="beaconLights/Lizard_RKLE_150_G.xml" />
+      <beaconLight node="0&gt;3|1|0|0|2" filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml" />
+      <beaconLight node="0&gt;3|1|0|0|5" filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml" />
+      <beaconLight node="0&gt;3|1|3|0|1" filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml" />
+      <beaconLight node="0&gt;3|1|3|0|2" filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml" />
     </beaconLights>
     <sounds>
       </sounds>
