@@ -1,0 +1,9 @@
+{
+  "version": "0.31.0.0",
+  "game_test": "not run",
+  "friction_scale": 250,
+  "multiplier_from_v30": 100,
+  "wheel_count": 4,
+  "wheel_geometry_suspension_unchanged": true,
+  "collision_scene_unchanged": true
+}
