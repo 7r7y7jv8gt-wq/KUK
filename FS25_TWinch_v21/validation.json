@@ -1,0 +1,9 @@
+{
+  "version": "0.21.0.0",
+  "game_test": "not run",
+  "amber": "engine cruise/DRL + native beacon flash",
+  "flood": "lighting type 2, third F stage",
+  "local_tests_run": 31,
+  "failures": 0,
+  "errors": 0
+}
