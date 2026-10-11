@@ -301,6 +301,7 @@ for action in ['TWINCH_BLADE_LIFT','TWINCH_CONNECT','TWINCH_REEL','TWINCH_PAYOUT
 script=script.replace('g_inputBinding:setActionEventTextPriority(id,GS_PRIO_HIGH)',"g_inputBinding:setActionEventTextPriority(id,GS_PRIO_HIGH)\n            g_inputBinding:setActionEventTextVisibility(id,true)")
 script=script.replace('g_inputBinding:setActionEventTextPriority(id,GS_PRIO_HIGH)\n            g_inputBinding:setActionEventTextVisibility(id,true)\n        end',"g_inputBinding:setActionEventTextPriority(id,GS_PRIO_HIGH)\n            g_inputBinding:setActionEventTextVisibility(id,true)\n        else\n            Logging.warning('T-Winch: could not register an input action; check input bindings')\n        end")
 script+='\n'+(HERE/'BladeControl.lua').read_text()
+script='\n'.join(line.rstrip() for line in script.splitlines())+'\n'
 (OUT/'scripts/TWinch.lua').write_text(script)
 desc.find('description/en').text='V06: explicit hydraulic blade input with left mouse and Page Up/Down fallback, aligned cylinders, scratched weathered steel textures. Game validation pending.'
 v.find('annotation').text='v06 explicit blade input/controller and original weathered textures. Game test pending.'

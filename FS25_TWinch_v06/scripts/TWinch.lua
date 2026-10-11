@@ -16,7 +16,7 @@ function TWinch.initSpecialization()
     schema:register(XMLValueType.FLOAT, "vehicle.twinch.track(?)#offsetX", "Track side offset")
     schema:register(XMLValueType.NODE_INDEX, "vehicle.twinch.track(?).roller(?)#node", "Roller pivot")
     schema:register(XMLValueType.FLOAT, "vehicle.twinch.track(?).roller(?)#radius", "Roller radius")
-    
+
     for _,key in ipairs({'node','RightBarrel','RightPin','RightRod','RightBase','LeftBarrel','LeftPin','LeftRod','LeftBase'}) do
         schema:register(XMLValueType.NODE_INDEX,'vehicle.twinch.blade#'..key,'Hydraulic blade endpoint')
     end
