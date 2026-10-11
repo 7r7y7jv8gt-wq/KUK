@@ -1,0 +1,11 @@
+{
+  "version": "0.8.0.0",
+  "game_test": "not run",
+  "max_rope_metres": 60,
+  "max_log_tonnes": 8,
+  "max_objects": 8,
+  "local_tests_run": 43,
+  "local_test_failures": 0,
+  "local_test_errors": 0,
+  "terrafarm_reference": "scfmod/FS25_TerraFarm b50e677cdef062d605ab188f8982ae1faa2789e7"
+}
