@@ -1,0 +1,9 @@
+V19: enable TerraFarm core and only this T-Winch version. Buy fresh v19.
+Directly registers the actual vehicle filename before TerraFarm resolves its machine profile.
+Check log for T-Winch: registered TerraFarm blade profile.
+If manager unavailable, log reports it; send latest log if TerraFarm is still missing.
+All blade/winch/light/mass settings retained. FS25 runtime test pending.
+
+Engine: 800 metric hp peak (588.399kW); shop power 800 hp.
+
+Engine: 800 metric hp peak (588.399kW); shop power 800 hp.

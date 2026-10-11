@@ -149,3 +149,7 @@ The precise cause of the reported v16 failure remains unconfirmed without a curr
 ## Version 18: 800 hp engine
 
 Shop and motor configuration report 800 metric hp. The actual torque scale is 3.360524259, giving 588.399kW at the retained torque curve's peak (normalized RPM .8, torque .95, 2200 maximum RPM). The v17 TerraFarm registration and existing blade, winch, lighting, mass and speed settings are retained. Twenty-five local checks pass, including analytical power across every linear torque segment. FS25 driving/integration remains untested. Build using `python fs25_twinch/package_mod_v18.py`; validate using `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_v18.py`.
+
+## Version 19: 12 km/h
+
+Sets forward/reverse motor speed limits and shop top speed to 12km/h. The 800hp torque curve, 40-tonne mass and TerraFarm registration are retained. Build with `python fs25_twinch/package_mod_v19.py`; validate with `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_v19.py`. Twenty-six local checks pass; FS25 driving remains untested.
