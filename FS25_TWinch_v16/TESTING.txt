@@ -1,0 +1,7 @@
+V16: TerraFarm profile built directly into vehicle XML and included registry.
+No separate Engelsen addon required for this machine. TerraFarm core must be installed/enabled.
+Disable older T-Winch versions, install unopened ZIP, buy fresh vehicle.
+Enable machine in TerraFarm, start engine, choose mode and lower blade into ground.
+Work area is 2.23m along bottom edge, parented to hydraulic blade.
+Front/rear winches, FOR9T lights and 40-tonne mass retained.
+FS25 runtime testing pending.

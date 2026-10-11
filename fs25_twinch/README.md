@@ -133,3 +133,9 @@ The newly uploaded addon still has two `</configurations>` tags, leaving valid m
 Install `FS25_0_TerraFarmMachines_Engelsen_Anlegg_TWinch_v15.zip` in place of the old Engelsen addon, together with the original unopened v15 vehicle ZIP and TerraFarm core. Do not run both addon variants. Start the engine, enable TerraFarm for the machine and lower the blade into ground contact. Work-area activation is terrain contact rather than merely proximity.
 
 Build with `python fs25_twinch/package_terrafarm_v15.py`; run `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_terrafarm_v15.py`. Three checks pass: complete addon XML/asset preservation, blade attachment position, and actual TerraFarm work-area Lua activation for raised/lowered blade poses. No FS25 engine test was possible.
+
+## Version 16: TerraFarm directly on the machine
+
+The complete v16 vehicle ZIP now embeds `vehicle.machine` directly in `twinch.xml`, with a matching internal TerraFarm profile and discovery registry pointing to the v16 filename. The leveler work area uses `terraFarmBladeEdge` under the hydraulically moving blade, with 2.23m width and zero additional offset. The separate Engelsen machine addon is unnecessary for this vehicle; TerraFarm core remains required.
+
+Front/rear logging winches, FOR9T lighting and configured 40-tonne mass are retained. Build with `python fs25_twinch/package_mod_v16.py`; validate with `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_v16.py`. All 23 local checks pass, including the embedded definition, matching registry/profile, blade-edge attachment and actual TerraFarm work-area Lua activation. FS25 operation is untested. Disable older T-Winch versions, install the unopened v16 ZIP, enable TerraFarm in the save and lower the blade into terrain contact.

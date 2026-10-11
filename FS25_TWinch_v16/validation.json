@@ -1,0 +1,10 @@
+{
+  "version": "0.16.0.0",
+  "game_test": "not run",
+  "TerraFarm": "embedded vehicle machine + matching internal profile/registry",
+  "separate_machine_addon_required": false,
+  "TerraFarm_core_required": true,
+  "local_tests_run": 23,
+  "failures": 0,
+  "errors": 0
+}
