@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<modDesc descVersion="114">
+  <author>Reference model project</author>
+  <version>0.25.0.0</version>
+  <title>
+    <en>Føllvik t vinsj</en>
+  </title>
+  <description>
+    <en>Gradual native paint scratches and full-body dirt, with dark crawler steel becoming silver as wear accumulates. User model and lights retained; 800hp, 12km/h, 40 tonnes, winches and TerraFarm.</en>
+  </description>
+  <iconFilename>icon_twinch.dds</iconFilename>
+  <multiplayer supported="false" />
+  <vehicleTypes>
+    <type name="twinchV25" parent="baseDrivable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+      <specialization name="twinch" />
+      <specialization name="bunkerSiloInteractor" />
+      <specialization name="leveler" />
+    </type>
+  </vehicleTypes>
+  <storeItems>
+    <storeItem xmlFilename="twinch.xml" />
+  </storeItems>
+  <specializations>
+    <specialization name="twinch" className="TWinch" filename="scripts/TWinch.lua" />
+  </specializations>
+  <actions>
+    <action name="TWINCH_CONNECT" axisType="HALF" />
+    <action name="TWINCH_REEL" axisType="HALF" />
+    <action name="TWINCH_PAYOUT" axisType="HALF" />
+    <action name="TWINCH_BLADE_MOUSE_V25" axisType="FULL" />
+    <action name="TWINCH_HOOK_V13" axisType="HALF" />
+    <action name="TWINCH_LOG_REEL_V13" axisType="HALF" />
+    <action name="TWINCH_LOG_FAST_V13" axisType="HALF" />
+    <action name="TWINCH_LOG_OUT_V13" axisType="HALF" />
+    <action name="TWINCH_LOG_CLEAR_V13" axisType="HALF" />
+    <action name="TWINCH_BLADE_RAISE_V13" axisType="HALF" />
+    <action name="TWINCH_BLADE_LOWER_V13" axisType="HALF" />
+  </actions>
+  <inputBinding>
+    <actionBinding action="TWINCH_CONNECT">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_b" />
+    </actionBinding>
+    <actionBinding action="TWINCH_REEL">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_r" />
+    </actionBinding>
+    <actionBinding action="TWINCH_PAYOUT">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_n" />
+    </actionBinding>
+    <actionBinding action="TWINCH_BLADE_MOUSE_V25">
+      <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_LEFT AXIS_MOUSE_Y" axisComponent="+" inputComponent="-" />
+      <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_LEFT AXIS_MOUSE_Y" axisComponent="-" inputComponent="+" />
+    </actionBinding>
+    <actionBinding action="TWINCH_HOOK_V13">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_r" />
+    </actionBinding>
+    <actionBinding action="TWINCH_LOG_REEL_V13">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_z" />
+    </actionBinding>
+    <actionBinding action="TWINCH_LOG_FAST_V13">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_z" />
+    </actionBinding>
+    <actionBinding action="TWINCH_LOG_OUT_V13">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_x" />
+    </actionBinding>
+    <actionBinding action="TWINCH_LOG_CLEAR_V13">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_lshift KEY_r" />
+    </actionBinding>
+    <actionBinding action="TWINCH_BLADE_RAISE_V13">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_pageup" />
+    </actionBinding>
+    <actionBinding action="TWINCH_BLADE_LOWER_V13">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_pagedown" />
+    </actionBinding>
+  </inputBinding>
+  <l10n>
+    <text name="input_TWINCH_CONNECT">
+      <en>T-Winch: attach / release vehicle</en>
+    </text>
+    <text name="input_TWINCH_REEL">
+      <en>T-Winch: reel in on / off</en>
+    </text>
+    <text name="input_TWINCH_PAYOUT">
+      <en>T-Winch: pay out on / off</en>
+    </text>
+    <text name="input_TWINCH_BLADE_MOUSE_V25">
+      <en>Blade: hold left mouse and drag up/down</en>
+    </text>
+    <text name="input_TWINCH_BLADE_MOUSE_V25_1">
+      <en>Raise hydraulic blade</en>
+    </text>
+    <text name="input_TWINCH_BLADE_MOUSE_V25_2">
+      <en>Lower hydraulic blade</en>
+    </text>
+    <text name="input_TWINCH_HOOK_V13">
+      <en>Take / attach winch hook</en>
+    </text>
+    <text name="input_TWINCH_LOG_REEL_V13">
+      <en>Winch: hold to reel</en>
+    </text>
+    <text name="input_TWINCH_LOG_FAST_V13">
+      <en>Winch: hold to reel fast</en>
+    </text>
+    <text name="input_TWINCH_LOG_OUT_V13">
+      <en>Winch: hold to pay out</en>
+    </text>
+    <text name="input_TWINCH_LOG_CLEAR_V13">
+      <en>Winch: release all / return hook</en>
+    </text>
+    <text name="input_TWINCH_BLADE_RAISE_V13">
+      <en>Raise blade</en>
+    </text>
+    <text name="input_TWINCH_BLADE_LOWER_V13">
+      <en>Lower blade</en>
+    </text>
+  </l10n>
+</modDesc>
