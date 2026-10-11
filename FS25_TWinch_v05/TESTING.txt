@@ -1,0 +1,14 @@
+T-Winch v05
+Disable older T-Winch versions; place FS25_TWinch_v05.zip unopened in mods.
+Purchase a NEW v05 in a test save. Engine on: hold left mouse and drag vertically
+for blade raise/lower. Inspect both green cylinders, chrome rods, clevis pins
+and hoses throughout the motion. Native Cylindered controls/persists the blade.
+No protruding green fairlead or dangling chain remains. Cable outlet is recessed.
+Track shoes have pins, guide horns, bolts and worn grousers. Both tracks and
+sprockets animate from chassis movement. Check straight travel, reverse, pivot
+turning and slopes. Physics uses approximate crawler wheel contacts.
+Ctrl+B attaches/releases a same-farm vehicle within 25m, Ctrl+R reels in,
+Ctrl+N pays out. Single-player vehicle recovery only, not log winching.
+Check paint/steel at daytime and under shop lights; maps use generic I3D
+materials, not a native dirt/wear vehicle shader. Model remains a reference-
+inspired approximation. FS25/GIANTS Editor validation has not run here.

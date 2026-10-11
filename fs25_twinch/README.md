@@ -23,3 +23,11 @@ Download `FS25_TWinch_v04.zip` at repository root. Disable older T-Winch version
 V04 adds a bent tapered blade, cutting-edge bolts, reinforcement towers, reflector strips, open fairlead and rollers, interlocking recovery chain, front grille and cable drum. Original 1024px diffuse, normal and gloss DDS texture sets have complete mip chains. Geometry and proportions are approximations based on the supplied photographs. It uses generic I3D materials; FS25-specific dirt/wear shader integration is not implemented.
 
 Rebuild with `python fs25_twinch/package_mod_v04.py`, render with `blender -b -t 8 --python fs25_twinch/render_v04.py`, and check with `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_v04.py` (Pillow, NumPy and lupa required). `preview_v04.png` is a Blender render, not an in-game screenshot. FS25 and GIANTS Editor validation remain pending.
+
+## Version 05
+
+`FS25_TWinch_v05.zip` removes the protruding green fairlead, rollers, hook and hanging cosmetic chain shown in the user's screenshot. The working cable outlet is recessed into the front plate. Two exposed green hydraulic cylinders, chrome pistons, clevis brackets, pins, fittings and supply hoses follow the native blade movement. Start the motor; hold left mouse and drag vertically to raise/lower the blade.
+
+Both tracks retain their independent movement controls, with 74 linked steel shoes per side. Each shoe now includes a shaped plate, grouser, rail, hinge pin, guide horns and bolt heads. Rear sprockets have teeth; undercarriage guards and wheel rims add structure. Texture maps use restrained paint variation and darker steel with local wear and grime. Normal-mapped meshes request GIANTS tangent generation; collapsed legacy text triangles and zero normals are repaired.
+
+Build: `python fs25_twinch/package_mod_v05.py`. Render: `blender -b -t 8 --python fs25_twinch/render_v05.py`; add `-- --raised` for the raised-blade preview. Rebuild after rendering to refresh store icons. Check: `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_v05.py` with Pillow, NumPy and lupa installed. Blender previews show geometry/materials, not live GIANTS physics. Native FS25/Editor testing remains pending, and track ground contacts remain an approximation.
