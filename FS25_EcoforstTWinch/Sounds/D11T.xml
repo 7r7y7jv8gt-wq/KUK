@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sounds>
+  <motorized>
+    <sounds>
+      <motor template="engineLarge" file="Sounds/bulldozerIdle.ogg" volumeScale="2" />
+      <motor template="indoorCabinRumble" />
+      <motor template="DEFAULT_BLOW_OFF_VALVE" volumeScale="4" pitchScale="0.6" />
+      <motor template="filterLoop" fadeIn="3" fadeOut="2" volumeScale="2" pitchScale="0.65" linkNodeOffset="0 1.5 -3" />
+      <gearbox template="transmissionLarge" file="Sounds/transmissionOld.ogg" pitchScale="0.8" volumeScale="0.5" />
+      <gearbox template="transmissionLarge" file="Sounds/cat_move.ogg" linkNode="0&gt;" />
+      <motor file="Sounds/cat_move.ogg" linkNode="0&gt;">
+        <volume indoor="1" outdoor="2.2">
+          <modifier type="SPEED" value="0" modifiedValue="0" />
+          <modifier type="SPEED" value="8" modifiedValue="1.2" />
+        </volume>
+        <pitch indoor="1.0" outdoor="1.0">
+          <modifier type="SPEED" value="0" modifiedValue="0.8" />
+          <modifier type="SPEED" value="8" modifiedValue="1.2" />
+        </pitch>
+      </motor>
+    </sounds>
+  </motorized>
+  <lights>
+    <sounds>
+      <toggleLights template="SWITCH_01" />
+    </sounds>
+  </lights>
+  <attacherJoints>
+    <sounds>
+      <attach template="ATTACH_01" />
+      <hydraulic template="defaultHydraulicSound" />
+    </sounds>
+  </attacherJoints>
+  <drivable>
+    <sounds>
+      <waterSplash template="WATER_SPLASH_01" />
+    </sounds>
+  </drivable>
+  <honk>
+    <sound template="HONK_MF_HARVESTER" pitchScale="0.85" volumeScale="4" linkNode="0&gt;" />
+  </honk>
+</sounds>

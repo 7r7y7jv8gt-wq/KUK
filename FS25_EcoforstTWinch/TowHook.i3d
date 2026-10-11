@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<i3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="TowHook.i3d" version="1.6" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6" />
+  </Asset>
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="3" filename="$data/shared/default_normal.dds" />
+    <File fileId="4" filename="Textures/gen_wear_dirt_2.dds" />
+    <File fileId="6" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png" />
+    <File fileId="7" filename="$data/shared/detailLibrary/flat_normal.png" />
+    <File fileId="8" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png" />
+  </Files>
+  <Materials>
+    <Material name="default" materialId="5" diffuseColor="0.294118 0.294118 0.294118 1">
+    </Material>
+    <Material name="hook" materialId="6" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+      <Normalmap fileId="3" />
+      <Glossmap fileId="4" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0" />
+      <Custommap name="detailDiffuse" fileId="6" />
+      <Custommap name="detailNormal" fileId="7" />
+      <Custommap name="detailSpecular" fileId="8" />
+    </Material>
+  </Materials>
+  <Shapes externalShapesFile="TowHook.i3d.shapes">
+  </Shapes>
+  <Dynamics>
+  </Dynamics>
+  <Scene>
+    <Shape shapeId="1" name="Hook_main" dynamic="true" compound="true" density="50" clipDistance="300" nodeId="11" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83">
+      <Shape shapeId="2" name="Hook" nodeId="12" materialIds="6" castsShadows="true" receiveShadows="true" />
+      <Shape shapeId="3" name="hook_col" dynamic="true" compoundChild="true" dynamicFriction="0.01" density="4" nodeId="13" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" />
+      <TransformGroup name="trailerAttacherJoint" translation="-4.31815e-09 0.0576392 -0.0987878" rotation="-0 -90 0" nodeId="14" />
+      <TransformGroup name="bumperAttacher" translation="0 0.0617256 -0.0130863" rotation="90 -0 90" nodeId="15" />
+      <TransformGroup name="transform" translation="-0.00467974 0.0636539 0.107364" nodeId="16">
+        <TransformGroup name="transform" nodeId="17">
+          <TransformGroup name="transform" translation="0 0 -0.27994" nodeId="18" />
+        </TransformGroup>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+</i3D>

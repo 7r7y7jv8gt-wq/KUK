@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<i3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="winch.i3d" version="1.6" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4" />
+  </Asset>
+  <Files>
+    <File fileId="12" filename="textures/tajfunEGV80_decal_diffuse.dds" />
+    <File fileId="13" filename="textures/tajfunEGV80_decal_normal.dds" />
+    <File fileId="14" filename="textures/tajfunEGV80_decal_specular.dds" />
+    <File fileId="15" filename="textures/tajfunEGV80_net_diffuse.dds" />
+    <File fileId="16" filename="textures/tajfunEGV80_net_normal.dds" />
+    <File fileId="17" filename="textures/tajfunEGV80_net_specular.dds" />
+    <File fileId="3" filename="textures/tajfunEGV80_normal.dds" />
+    <File fileId="9" filename="textures/tajfunEGV80_ropes_diffuse.dds" />
+    <File fileId="10" filename="textures/tajfunEGV80_ropes_normal.dds" />
+    <File fileId="11" filename="textures/tajfunEGV80_ropes_specular.dds" />
+    <File fileId="4" filename="textures/tajfunEGV80_specular.dds" />
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="18" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png" />
+    <File fileId="19" filename="$data/shared/detailLibrary/flat_normal.png" />
+    <File fileId="20" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png" />
+  </Files>
+  <Materials>
+    <Material name="default" materialId="5" diffuseColor="0.294118 0.294118 0.294118 1" />
+    <Material name="tajfunEGV80_decal" materialId="6" customShaderId="5" customShaderVariation="decal" alphaBlending="true">
+      <Texture fileId="12" />
+      <Normalmap fileId="13" />
+      <Glossmap fileId="14" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 0" />
+    </Material>
+    <Material name="tajfunEGV80_diffuse" materialId="7" diffuseColor="1 1 1 1" customShaderId="5">
+      <Normalmap fileId="3" />
+      <Glossmap fileId="4" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 10" />
+      <CustomParameter name="colorScale" value="0.4 0.03 0.035" />
+      <Custommap name="detailDiffuse" fileId="18" />
+      <Custommap name="detailNormal" fileId="19" />
+      <Custommap name="detailSpecular" fileId="20" />
+    </Material>
+    <Material name="tajfunEGV80_net" materialId="8" customShaderId="5" diffuseColor="1 1 1 1">
+      <Texture fileId="15" />
+      <Normalmap fileId="16" />
+      <Glossmap fileId="17" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 10" />
+      <CustomParameter name="colorScale" value="0.02 0.02 0.025" />
+      <Custommap name="detailDiffuse" fileId="18" />
+      <Custommap name="detailNormal" fileId="19" />
+      <Custommap name="detailSpecular" fileId="20" />
+    </Material>
+    <Material name="tajfunEGV80_rope" materialId="9" customShaderId="5" customShaderVariation="uvScale" diffuseColor="1 1 1 1">
+      <Texture fileId="9" />
+      <Normalmap fileId="10" />
+      <Glossmap fileId="11" />
+      <CustomParameter name="uvScale" value="1 1 1 -4.436" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 0" />
+      <CustomParameter name="colorScale" value="0.002 0.002 0.002" />
+      <Custommap name="detailDiffuse" fileId="18" />
+      <Custommap name="detailNormal" fileId="19" />
+      <Custommap name="detailSpecular" fileId="20" />
+    </Material>
+    <Material name="tajfunEGV80_rope" materialId="10" customShaderId="5" customShaderVariation="uvScale" diffuseColor="1 1 1 1">
+      <Texture fileId="9" />
+      <Normalmap fileId="10" />
+      <Glossmap fileId="11" />
+      <CustomParameter name="uvScale" value="1 1 1 -4.43577" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 0" />
+      <CustomParameter name="colorScale" value="0.005 0.005 0.005" />
+      <Custommap name="detailDiffuse" fileId="18" />
+      <Custommap name="detailNormal" fileId="19" />
+      <Custommap name="detailSpecular" fileId="20" />
+    </Material>
+    <Material name="tajfunEGV80_ropeScroll" materialId="11" customShaderId="5" customShaderVariation="uvScroll" diffuseColor="1 1 1 1">
+      <Texture fileId="9" />
+      <Normalmap fileId="10" />
+      <Glossmap fileId="11" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 0" />
+      <CustomParameter name="colorScale" value="0.5 0.5 0.5" />
+      <Custommap name="detailDiffuse" fileId="18" />
+      <Custommap name="detailNormal" fileId="19" />
+      <Custommap name="detailSpecular" fileId="20" />
+    </Material>
+  </Materials>
+  <Shapes externalShapesFile="winch.i3d.shapes" />
+  <Dynamics />
+  <Scene>
+    <Shape shapeId="1" name="tajfunEGV80AHK" dynamic="true" compound="true" density="0.08" clipDistance="300" nodeId="34" materialIds="5" nonRenderable="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83">
+      <TransformGroup name="01_attach_frame" nodeId="35">
+        <TransformGroup name="01_attacherJoint" translation="-0 0.390615 0.238867" rotation="-0 90 0" nodeId="36" />
+        <TransformGroup name="02_topReferenceNode" translation="0 1.26709 0.194362" nodeId="37" />
+        <TransformGroup name="03_pto" translation="-0.24751 0.629404 0.11658" rotation="-0 -180 -0" nodeId="38" />
+        <TransformGroup name="04_ptoDetach" translation="-0.0643261 0.0692443 0.534877" rotation="161.298 5.00896e-06 -180" nodeId="39" />
+      </TransformGroup>
+      <TransformGroup name="02_visuals" nodeId="40">
+        <TransformGroup name="01_legs_ref" translation="0 -0.013546 0.263371" rotation="74.069 0 0" nodeId="41">
+          <Shape shapeId="2" name="legs" nodeId="42" materialIds="7" castsShadows="true" receiveShadows="true" />
+        </TransformGroup>
+        <Shape shapeId="3" name="02_topPulley" translation="-0 1.37442 0.056676" nodeId="43" materialIds="7" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="outerRopeSkinned" translation="-0.007134 0.113294 -0.191746" nodeId="44">
+            <TransformGroup name="outerRopeTopJoint" translation="0.007109 0 0" nodeId="45" />
+            <Shape shapeId="4" name="outerRope" translation="-0.211 -0.656104 0.134555" nodeId="46" materialIds="11" castsShadows="true" receiveShadows="true" skinBindNodeIds="45 97" />
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="03_innerRope" translation="-0.218315 0.831607 -0.000515" clipDistance="100" nodeId="47" materialIds="11" castsShadows="true" receiveShadows="true" />
+        <Shape shapeId="6" name="04_trailerHook" translation="0 0.544944 -0.117348" nodeId="48" materialIds="7" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="attacherReference" translation="-0 -0.002384 -0.081025" rotation="-0 90 0" nodeId="49" />
+          <Shape shapeId="7" name="col1.001" translation="-0 0.009999 -0.063801" dynamic="true" compoundChild="true" density="0.08" clipDistance="300" nodeId="50" materialIds="5" nonRenderable="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" />
+        </Shape>
+        <Shape shapeId="8" name="bolts" translation="0.360207 0.250366 0.269387" rotation="90 -0 139.345" scale="0.4 0.4 0.4" clipDistance="100" nodeId="51" materialIds="7" castsShadows="true" receiveShadows="true" />
+        <Shape shapeId="9" name="decals" translation="0 -0.103239 0" nodeId="52" materialIds="6" castsShadows="true" receiveShadows="true" />
+        <TransformGroup name="hydraulics" clipDistance="100" nodeId="53">
+          <Shape shapeId="10" name="hydraulicPlug.001" translation="0.306683 0.831145 0.206116" rotation="-12.377 90 0" nodeId="54" materialIds="7" castsShadows="true" receiveShadows="true" />
+          <Shape shapeId="11" name="hydraulicPlug.004" translation="-0.153825 0.912972 0.183315" rotation="91.838 -43.239 -119.187" nodeId="55" materialIds="7" castsShadows="true" receiveShadows="true" />
+          <Shape shapeId="10" name="hydraulicPlug.005" translation="-0.111083 0.83043 0.06927" rotation="-90 180 0" nodeId="56" materialIds="7" castsShadows="true" receiveShadows="true" />
+          <Shape shapeId="12" name="hydraulicPlug.006" translation="-0.189429 0.766738 0.037741" rotation="-90 173.956 -0.649" nodeId="57" materialIds="7" castsShadows="true" receiveShadows="true" />
+          <Shape shapeId="12" name="hydraulicPlug.007" translation="-0.238165 0.866131 0.082762" rotation="179.355 0.068 -83.951" nodeId="58" materialIds="7" castsShadows="true" receiveShadows="true" />
+          <Shape shapeId="12" name="hydraulicPlug.008" translation="-0.242588 0.768132 0.082831" rotation="-0 -180 -84.063" nodeId="59" materialIds="7" castsShadows="true" receiveShadows="true" />
+          <Shape shapeId="12" name="hydraulicPlug.009" translation="-0.289045 0.815674 0.082929" rotation="-179.932 0.645 6.045" nodeId="60" materialIds="7" castsShadows="true" receiveShadows="true" />
+          <Shape shapeId="12" name="hydraulicPlug.010" translation="-0.383498 0.816841 0.230371" rotation="-129.205 -4.592 93.855" nodeId="61" materialIds="7" castsShadows="true" receiveShadows="true" />
+          <Shape shapeId="12" name="hydraulicPlug.011" translation="-0.422446 0.816839 0.230371" rotation="-129.205 -4.585 93.85" nodeId="62" materialIds="7" castsShadows="true" receiveShadows="true" />
+        </TransformGroup>
+        <Shape shapeId="13" name="mainMesh.001" translation="0 -0.103239 0" nodeId="63" materialIds="7" castsShadows="true" receiveShadows="true" />
+        <Shape shapeId="14" name="mainMeshMirrored" translation="0 -0.103239 0" nodeId="64" materialIds="7" castsShadows="true" receiveShadows="true" />
+        <Shape shapeId="15" name="netBig" translation="0 -0.103239 0" nodeId="65" materialIds="8" castsShadows="true" receiveShadows="true" />
+      </TransformGroup>
+      <TransformGroup name="03_logsWinch" nodeId="66">
+        <TransformGroup name="01_ropeJointRefNode" translation="-0 0.876386 -0.076221" nodeId="67" />
+        <Shape shapeId="16" name="chainMesh" nodeId="68" materialIds="10" castsShadows="true" receiveShadows="true" />
+        <TransformGroup name="05_pulleyRef" translation="-0 0.755057 -0.088166" rotation="5.739 -0 0" nodeId="69">
+          <Shape shapeId="17" name="bottomPulley" nodeId="70" materialIds="7" castsShadows="true" receiveShadows="true">
+            <TransformGroup name="ropeRefNode" translation="0 0.049634 -0.092561" rotation="-5.739 -0 0" nodeId="71">
+              <TransformGroup name="rope" rotation="-0 -180 -0" nodeId="72">
+                <TransformGroup name="01" nodeId="73" />
+                <TransformGroup name="02" translation="-0 0 0.05" nodeId="74" />
+                <TransformGroup name="03" translation="-0 0 0.1" nodeId="75" />
+                <TransformGroup name="04" translation="-0 0 0.15" nodeId="76" />
+                <TransformGroup name="05" translation="-0 0 0.2" nodeId="77" />
+                <TransformGroup name="06" translation="-0 0 0.25" nodeId="78" />
+                <TransformGroup name="07" translation="-0 0 0.3" nodeId="79" />
+                <TransformGroup name="08" translation="-0 0 0.35" nodeId="80" />
+                <TransformGroup name="09" translation="-0 0 0.4" nodeId="81" />
+                <TransformGroup name="10" translation="-0 0 0.45" nodeId="82" />
+                <TransformGroup name="11" translation="-0 0 0.5" nodeId="83" />
+                <TransformGroup name="12" translation="-0 0 0.55" nodeId="84" />
+                <TransformGroup name="13" translation="-0 0 0.6" nodeId="85" />
+                <TransformGroup name="14" translation="-0 0 0.65" nodeId="86" />
+                <TransformGroup name="15" translation="-0 0 0.7" nodeId="87" />
+                <TransformGroup name="16" translation="-0 0 0.75" nodeId="88" />
+                <TransformGroup name="17" translation="-0 0 0.8" nodeId="89" />
+                <TransformGroup name="18" translation="-0 0 0.85" nodeId="90" />
+                <TransformGroup name="19" translation="-0 0 0.9" nodeId="91" />
+                <TransformGroup name="20" translation="-0 0 0.95" nodeId="92" />
+                <TransformGroup name="21" translation="-0 0 1" nodeId="93">
+                  <Shape shapeId="18" name="ropeHook" rotation="-0 180 0" nodeId="94" materialIds="6" castsShadows="true" receiveShadows="true" />
+                </TransformGroup>
+                <Shape shapeId="19" name="ropeMesh" nodeId="95" materialIds="9" castsShadows="true" receiveShadows="true" skinBindNodeIds="73 93 89 87 85 83 81 79 77 75 91 74 92 90 88 86 84 82 80 78 76" />
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="outerRopeSkinned" translation="0 0.126 -0.047" rotation="-5.739 0 0" nodeId="96">
+              <TransformGroup name="outerRopeBottomJoint" nodeId="97" />
+            </TransformGroup>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="04_collisions" nodeId="98">
+        <Shape shapeId="20" name="col1" dynamic="true" compoundChild="true" density="0.08" clipDistance="300" nodeId="99" materialIds="5" nonRenderable="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" />
+        <Shape shapeId="21" name="col2" dynamic="true" compoundChild="true" density="0.08" clipDistance="300" nodeId="100" materialIds="5" nonRenderable="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" />
+      </TransformGroup>
+    </Shape>
+  </Scene>
+</i3D>

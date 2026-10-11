@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<i3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="leitwolfCrawler" version="1.6" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2" />
+  </Asset>
+  <Files>
+    <File fileId="7" filename="curveArray.dds" />
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="12" filename="$data/shared/assets/assetLibraryDecals_diffuse.png" />
+    <File fileId="13" filename="$data/shared/assets/assetLibraryDecals_normal.png" />
+    <File fileId="8" filename="$data/shared/crawlers/johnDeere/series8RTCrawler/series8RTCrawlerBelt01_normal.dds" />
+    <File fileId="9" filename="$data/shared/crawlers/johnDeere/series8RTCrawler/series8RTCrawlerBelt01_vmask.dds" />
+    <File fileId="10" filename="$data/shared/crawlers/prinoth/leitwolfCrawler/leitwolfCrawlerTrackArray.png" />
+    <File fileId="2" filename="$data/shared/default_vmask.dds" />
+    <File fileId="14" filename="$data/vehicles/prinoth/raptor300/raptor300_vmask.png" />
+    <File fileId="15" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png" />
+    <File fileId="16" filename="$data/shared/detailLibrary/flat_normal.png" />
+    <File fileId="17" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png" />
+  </Files>
+  <Materials>
+    <Material name="assetLibraryDecals_mat" materialId="4" customShaderId="3" customShaderVariation="decal" diffuseColor="1 1 1 1" alphaBlending="true">
+      <Texture fileId="12" />
+      <Normalmap fileId="13" />
+      <Glossmap fileId="14" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0" />
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
+      <CustomParameter name="colorScale" value="0.8 0.55 0.05" />
+      <Custommap name="detailDiffuse" fileId="15" />
+      <Custommap name="detailNormal" fileId="16" />
+      <Custommap name="detailSpecular" fileId="17" />
+    </Material>
+    <Material name="leitwolfCrawler_mat" materialId="5" diffuseColor="1 1 1 1" customShaderId="3" customShaderVariation="motionPath_vmaskUV2" shadingRate="4x4">
+      <Normalmap fileId="8" />
+      <Glossmap fileId="9" />
+      <Custommap name="trackArray" fileId="10" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0" />
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
+      <CustomParameter name="scrollPosition" value="0 0 0 0" />
+      <CustomParameter name="prevScrollPosition" value="0 0 0 0" />
+      <CustomParameter name="lengthAndRadius" value="2 0.5 0 0" />
+      <CustomParameter name="colorScale" value="0 0 0" />
+      <Custommap name="detailDiffuse" fileId="15" />
+      <Custommap name="detailNormal" fileId="16" />
+      <Custommap name="detailSpecular" fileId="17" />
+    </Material>
+    <Material name="raptor300_mat" materialId="6" diffuseColor="1 1 1 1" customShaderId="3">
+      <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0" />
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
+      <CustomParameter name="colorScale" value="0.0406 0.0582 0.0784" />
+      <Custommap name="detailDiffuse" fileId="15" />
+      <Custommap name="detailNormal" fileId="16" />
+      <Custommap name="detailSpecular" fileId="17" />
+    </Material>
+    <Material name="tracks" materialId="7" diffuseColor="1 1 1 1" customShaderId="3" customShaderVariation="motionPath_vmaskUV2">
+      <Glossmap fileId="2" />
+      <Custommap name="trackArray" fileId="7" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 0" />
+      <CustomParameter name="dirtColor" value="0.3 0.2 0 0" />
+      <CustomParameter name="scrollPosition" value="0.66 0 0 0" />
+      <CustomParameter name="prevScrollPosition" value="0 0 0 0" />
+      <CustomParameter name="lengthAndRadius" value="2 0.5 0 0" />
+      <CustomParameter name="colorScale" value="0.05 0.05 0.05" />
+      <Custommap name="detailDiffuse" fileId="15" />
+      <Custommap name="detailNormal" fileId="16" />
+      <Custommap name="detailSpecular" fileId="17" />
+    </Material>
+  </Materials>
+  <Shapes externalShapesFile="leitwolfCrawler.i3d.shapes">
+  </Shapes>
+  <Dynamics>
+  </Dynamics>
+  <Scene>
+    <TransformGroup name="beltRight" translation="0 0 3.69779e-34" scale="1 1.376 1.312" clipDistance="600" nodeId="16" lodDistance="0 300">
+      <Shape shapeId="1" name="tracks" translation="0 -0.154738 1.84462e-08" rotation="-6.83019e-06 -0 0" scale="1 1 0.91" nodeId="17" materialIds="7" castsShadows="true" receiveShadows="true" />
+      <Shape shapeId="2" name="beltRightLOD0" visibility="false" clipDistance="600" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true" />
+      <TransformGroup name="RotatingParts" translation="-0.0603747 0 0" nodeId="19">
+        <Shape shapeId="3" name="wheelTop2" translation="0.0161754 0.552513 -0.1" scale="0.763805 1 1" visibility="false" nodeId="20" materialIds="6" castsShadows="true" receiveShadows="true" />
+        <Shape shapeId="4" name="wheelBackLeft" translation="-0.0492585 0.303281 -1.68787" scale="1 0.8 0.8" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="decal2" translation="0.191414 0.00170685 0" clipDistance="300" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1" />
+        </Shape>
+        <Shape shapeId="6" name="wheelFrontLeft" translation="0.00320969 0.313 1.58876" scale="2.31624 1.2 1.2" nodeId="23" materialIds="6" castsShadows="true" receiveShadows="true" />
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="beltLeft" translation="0 0 1.84889e-34" scale="1 1.376 1.312" clipDistance="600" nodeId="24" lodDistance="0 300">
+      <Shape shapeId="1" name="tracks" translation="0 -0.154738 1.84462e-08" rotation="-6.83019e-06 -0 0" scale="1 1 0.91" nodeId="25" materialIds="7" castsShadows="true" receiveShadows="true" />
+      <Shape shapeId="7" name="beltLeftLOD0" translation="0 0 -1.84889e-34" visibility="false" clipDistance="600" nodeId="26" materialIds="5" castsShadows="true" receiveShadows="true" />
+      <TransformGroup name="RotatingParts" translation="-0.197783 0 0" nodeId="27">
+        <Shape shapeId="3" name="wheelTop2" translation="0.280741 0.552513 -0.1" scale="0.763805 1 1" visibility="false" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true" />
+        <Shape shapeId="4" name="wheelBackLeft" translation="0.159575 0.303281 -1.68787" scale="1 0.8 0.8" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="5" name="decal2" translation="0.191414 0.00170685 0" clipDistance="300" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1" />
+        </Shape>
+        <Shape shapeId="6" name="wheelFrontLeft" translation="0.319294 0.313 1.5889" scale="2.05161 1.2 1.2" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true" />
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+</i3D>

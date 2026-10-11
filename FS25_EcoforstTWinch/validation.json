@@ -1,0 +1,9 @@
+{
+  "source": "Original FS22 Ecoforst T-Winch",
+  "conversion": "FS25 candidate",
+  "local_tests_run": 11,
+  "failures": 0,
+  "errors": 0,
+  "game_test": "not run",
+  "original_geometry_crc32": "f76a4312"
+}

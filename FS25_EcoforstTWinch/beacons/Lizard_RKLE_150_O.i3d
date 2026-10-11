@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<i3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Lizard_RKLE_150_O" version="1.6" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3" />
+  </Asset>
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="8" filename="$data/shared/clearPlastic_diffuse.dds" />
+    <File fileId="2" filename="$data/shared/default_normal.dds" />
+    <File fileId="3" filename="$data/shared/default_specular.dds" />
+    <File fileId="9" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png" />
+    <File fileId="10" filename="$data/shared/detailLibrary/flat_normal.png" />
+    <File fileId="11" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png" />
+  </Files>
+  <Materials>
+    <Material name="glass_mat" materialId="4" alphaBlending="true" customShaderId="4" diffuseColor="1 1 1 1">
+      <Texture fileId="8" />
+      <Normalmap fileId="2" />
+      <Glossmap fileId="3" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 0" />
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
+      <CustomParameter name="colorScale" value="1 0.23 0" />
+      <Custommap name="detailDiffuse" fileId="9" />
+      <Custommap name="detailNormal" fileId="10" />
+      <Custommap name="detailSpecular" fileId="11" />
+    </Material>
+    <Material name="Lizard_RKLE_150_mat" materialId="6" diffuseColor="1 1 1 1" customShaderId="4" shadingRate="2x1">
+      <Normalmap fileId="2" />
+      <Glossmap fileId="3" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 0" />
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
+      <CustomParameter name="colorScale" value="0.8 0.55 0.05" />
+      <Custommap name="detailDiffuse" fileId="9" />
+      <Custommap name="detailNormal" fileId="10" />
+      <Custommap name="detailSpecular" fileId="11" />
+    </Material>
+    <Material name="static_mat" materialId="7" diffuseColor="0.0156863 0.8 0 1" customShaderId="4" customShaderVariation="staticLight">
+      <Normalmap fileId="2" />
+      <Glossmap fileId="3" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 0" />
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
+      <CustomParameter name="lightControl" value="0 0 0 0" />
+      <CustomParameter name="blinkOffset" value="0 0 1 0" />
+      <CustomParameter name="lightIds" value="1 1 1 1" />
+      <CustomParameter name="lightControl" value="0 0 0 0" />
+    </Material>
+  </Materials>
+  <Shapes externalShapesFile="Lizard_RKLE_150_O.i3d.shapes">
+  </Shapes>
+  <Dynamics>
+  </Dynamics>
+  <Scene>
+    <TransformGroup name="Lizard_RKLE_150_O" nodeId="13">
+      <Shape shapeId="1" name="Lizard_RKLE_150" nodeId="14" materialIds="6" castsShadows="true" receiveShadows="true" />
+      <Shape shapeId="2" name="Lizard_RKLE_150_glass" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true" />
+      <Shape shapeId="3" name="Lizard_RKLE_150_rotator" translation="9.3984e-08 0.0674257 -2.11876e-08" nodeId="16" materialIds="6" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="4" name="Lizard_RKLE_150_staticLight" nodeId="17" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Light name="Lizard_RKLE_150_light" translation="-1.87968e-07 0.0173097 4.23752e-08" rotation="-180 0 -180" nodeId="21" type="spot" color="1 0.331658 0" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="10" coneAngle="120" dropOff="2" />
+        </Shape>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+</i3D>

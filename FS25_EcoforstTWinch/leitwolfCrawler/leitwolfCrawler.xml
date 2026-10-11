@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<crawler xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/crawler.xsd">
+  <file name="leitwolfCrawler/leitwolfCrawler.i3d" leftNode="0" rightNode="1" />
+  <scrollerNodes>
+    <scrollerNode node="0" scrollSpeed="0.115" scrollLength="1" shaderParameterName="scrollPosition" shaderParameterComponent="1" />
+    <scrollerNode node="1" scrollSpeed="0.115" scrollLength="1" shaderParameterName="scrollPosition" shaderParameterComponent="1" />
+  </scrollerNodes>
+  <rotatingParts>
+    <rotatingPart node="2|0" radius="0.204" />
+    <rotatingPart node="2|1" radius="0.204" />
+    <rotatingPart node="2|2" radius="0.204" />
+  </rotatingParts>
+</crawler>

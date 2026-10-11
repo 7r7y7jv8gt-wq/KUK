@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<i3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="chainMaterialHolder.i3d" version="1.6" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6" />
+  </Asset>
+  <Files>
+    <File fileId="6" filename="$data/shaders/glowShader.xml" />
+    <File fileId="10" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="5" filename="$data/shared/materialHolders/defaultGlow_diffuse.dds" />
+    <File fileId="4" filename="shaders/winchChainShader.xml" />
+    <File fileId="1" filename="Textures/chain_diffuse.dds" />
+    <File fileId="2" filename="Textures/chain_normal.dds" />
+    <File fileId="3" filename="Textures/chain_specular.dds" />
+    <File fileId="7" filename="Textures/tajfunEGV80_decal_diffuse.dds" />
+    <File fileId="8" filename="Textures/tajfunEGV80_decal_normal.dds" />
+    <File fileId="9" filename="Textures/tajfunEGV80_decal_specular.dds" />
+  </Files>
+  <Materials>
+    <Material name="tajfunEGV80_decal" materialId="5" customShaderId="10">
+      <Texture fileId="7" />
+      <Normalmap fileId="8" />
+      <Glossmap fileId="9" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 1 0" />
+    </Material>
+    <Material name="winchChain_mat" materialId="6" customShaderId="4">
+      <Texture fileId="1" />
+      <Normalmap fileId="2" />
+      <Glossmap fileId="3" />
+      <CustomParameter name="beltClipOffsets" value="1 0 0 0" />
+      <CustomParameter name="beltUVScale" value="1 18 0 4" />
+    </Material>
+    <Material name="winchChainDummy_mat" materialId="7" alphaBlending="true" customShaderId="6">
+      <Emissivemap fileId="5" />
+    </Material>
+  </Materials>
+  <Shapes externalShapesFile="chainMaterialHolder.i3d.shapes" />
+  <Dynamics />
+  <Scene>
+    <TransformGroup name="winchChain" nodeId="12">
+      <Shape shapeId="1" name="material" clipDistance="10" nodeId="13" materialIds="6" castsShadows="true" receiveShadows="true" />
+      <Shape shapeId="2" name="dummyMaterial" clipDistance="10" nodeId="14" materialIds="7" castsShadows="true" receiveShadows="true" />
+      <Shape shapeId="3" name="hook" nodeId="15" materialIds="5" castsShadows="true" receiveShadows="true">
+        <TransformGroup name="sizeMarker" translation="0 0 0.971698" nodeId="16" />
+      </Shape>
+    </TransformGroup>
+  </Scene>
+  <UserAttributes>
+    <UserAttribute nodeId="12">
+      <Attribute name="name" type="string" value="chain" />
+      <Attribute name="onCreate" type="scriptCallback" value="TensionBeltUtil.onCreateTensionBelt" />
+    </UserAttribute>
+    <UserAttribute nodeId="13">
+      <Attribute name="isMaterial" type="boolean" value="true" />
+    </UserAttribute>
+    <UserAttribute nodeId="14">
+      <Attribute name="isDummyMaterial" type="boolean" value="true" />
+    </UserAttribute>
+  </UserAttributes>
+</i3D>
