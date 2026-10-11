@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<vehicle>
+  <machine type="leveler" fillUnitIndex="2" requirePoweredOn="true">
+    <input modes="FLATTEN SMOOTH LOWER PAINT" />
+    <workArea referenceNode="terraFarmBladeEdge" width="2.23" density="0.3" raycastDistance="0.15" offset="0 0 0" />
+    <updateCollisionNodes>
+      <updateNode node="bladeCollision" />
+    </updateCollisionNodes>
+  </machine>
+</vehicle>

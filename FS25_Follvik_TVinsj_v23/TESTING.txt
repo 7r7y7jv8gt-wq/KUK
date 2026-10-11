@@ -1,0 +1,9 @@
+V23: native progressive wear and dirt.
+Dark crawler paint gradually fades to silver as native wear rises; both LODs supported.
+Body vehicle materials use native scratch/dirt shader channels.
+Wear duration configured 1200min; actual rate depends on use and game multipliers.
+Dirt duration 60min with working/field/wet multipliers. Wash removes dirt; repaint resets wear.
+Existing worn vehicles retain native wear. Fresh machine begins clean/unworn.
+Use ASCII ZIP filename as supplied; disable older versions.
+User geometry, lighting, 800hp, 12km/h, 40 tonnes, winches and TerraFarm retained.
+FS25 shader appearance and progression need in-game verification.
