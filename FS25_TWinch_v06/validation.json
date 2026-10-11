@@ -1,0 +1,16 @@
+{
+  "version": "0.6.0.0",
+  "game_test": "not run",
+  "v05_log_findings": [
+    "duplicate cylindered specialization inherited from baseDrivable",
+    "missing FULL-axis input labels input_TWINCH_BLADE_1 and _2"
+  ],
+  "removed": "front green fairlead, rollers, hook and pendant chain",
+  "hydraulics": "explicit blade controller with endpoint-aligned barrels and rods, exposed at x +/-0.76m, clevises, pins, supply hoses",
+  "tracks": "74 detailed shared-mesh steel links per side, pins, guides, bolts, grousers, sprockets and guards",
+  "textures": "14 original 1024px texture sets; native FS25 vehicleShader with stock vmask and detail-library finishes; preview gloss maps are not fed to vehicleShader",
+  "local_tests_run": 31,
+  "local_test_failures": 0,
+  "local_test_errors": 0,
+  "native_engine_input_and_physics": "not run"
+}
