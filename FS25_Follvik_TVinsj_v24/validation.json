@@ -1,0 +1,9 @@
+{
+  "version": "0.24.0.0",
+  "local_tests_run": 11,
+  "failures": 0,
+  "errors": 0,
+  "game_test": "not run",
+  "per_winch_capacity_tonnes": 100,
+  "per_winch_force_kN": 980.665
+}
