@@ -1,3 +1,4 @@
+local lwClamp=function(x,a,b) return math.max(a,math.min(b,x)) end
 local lwValue=function(value,default) if value==nil then return default end return value end
 local lwUnpack=unpack or table.unpack
 local lwAtan2=math.atan2 or math.atan
@@ -224,8 +225,8 @@ function LogsWinch:onLoad(savegame)
 	self.lwSpeedup = lwValue(self.xmlFile:getFloat(key .. "#winchingSpeedup"), 2)
 	self.lwWinchPtoRpm = lwValue(self.xmlFile:getFloat(key .. "#winchingPtoRpm"), 340)
 	self.lwSpeedupWinchPtoRpm = lwValue(self.xmlFile:getFloat(key .. "#speedupWinchingPtoRpm"), 540)
-	self.lwRopeLength = MathUtil.clamp(lwValue(self.xmlFile:getFloat(key .. "#ropeLength"), 50), 5, 100)
-	self.lwMaxChainLength = MathUtil.clamp(lwValue(self.xmlFile:getFloat(key .. "#maxChainLength"), 5), 0.5, 20)
+	self.lwRopeLength = lwClamp(lwValue(self.xmlFile:getFloat(key .. "#ropeLength"), 50), 5, 100)
+	self.lwMaxChainLength = lwClamp(lwValue(self.xmlFile:getFloat(key .. "#maxChainLength"), 5), 0.5, 20)
 	self.lwMaxWinchingMass = lwValue(self.xmlFile:getFloat(key .. "#maxWinchingMass"), 4)
 	self.lwChainMargin = lwValue(self.xmlFile:getFloat(key .. "#chainMargin"), 0.001)
 
@@ -345,6 +346,7 @@ function LogsWinch:onLoad(savegame)
 end
 
 function LogsWinch:onLoadFinished(savegame)
+ if self.lwSkinnedRopeJoints==nil then return end
 
 	-- reset rope mesh
 	self:lwUpdateRope(0, true)
@@ -362,6 +364,7 @@ function LogsWinch:onLoadFinished(savegame)
 end
 
 function LogsWinch:onPreDelete()
+ if self.lwAttachedShapes==nil then return end
 
 	-- first make sure everything is detached
 	lwDetachAllEvent.sendEvent(self)
@@ -449,6 +452,7 @@ function LogsWinch:getPtoRpm(superFunc)
 end
 
 function LogsWinch:onUpdate(dt)
+ if self.lwAttachedShapes==nil then return end
 
 	if not self.lwInitialized then
 		return
@@ -1251,7 +1255,7 @@ function LogsWinch:lwWinch(speedup, userId)
 		if speedup ~= nil and speedup == true then
 			diff = diff * self.lwSpeedup
 		end
-		self.lwCurrJointZLimit = MathUtil.clamp(self.lwCurrJointZLimit - diff, LogsWinch.MinJointTransLimit, self.lwCurrJointZLimit)
+		self.lwCurrJointZLimit = lwClamp(self.lwCurrJointZLimit - diff, LogsWinch.MinJointTransLimit, self.lwCurrJointZLimit)
 	else
 		isToHeavy = true
 	end
@@ -1666,6 +1670,7 @@ function lwDetachAllEvent:run(connection)
 end
 
 function lwDetachAllEvent.sendEvent(vehicle, noEventSend)
+ if vehicle.lwAttachedShapes==nil then return end
 
 	if vehicle:lwDetachObject(vehicle.lwAttachedShapes[1]) then
 		if vehicle.lwChainDetachSndSample ~= nil then
@@ -1904,9 +1909,9 @@ function LogsWinch.initSpecialization()
  schema:register(XMLValueType.STRING,"vehicle.logsWinch.ropesUVScroll.rope1#index","Original winch configuration")
  schema:register(XMLValueType.STRING,"vehicle.logsWinch.ropesUVScroll.rope2#index","Original winch configuration")
  schema:register(XMLValueType.STRING,"vehicle.logsWinch.skinnedRope#jointsParentNode","Original winch configuration")
- SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds.winching")
- SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds.chainAttach")
- SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds.chainDetach")
+ SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds","winching")
+ SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds","chainAttach")
+ SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds","chainDetach")
  schema:setXMLSpecializationType()
 end
 

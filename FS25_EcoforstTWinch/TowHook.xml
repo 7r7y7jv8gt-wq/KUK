@@ -14,7 +14,7 @@
     <lifetime>600</lifetime>
     <rotation>0</rotation>
     <brand>LIZARD</brand>
-    <category>woodHarvesting</category>
+    <category>forestryMachines</category>
     <shopHeight>1</shopHeight>
     <vertexBufferMemoryUsage>59232</vertexBufferMemoryUsage>
     <indexBufferMemoryUsage>9060</indexBufferMemoryUsage>

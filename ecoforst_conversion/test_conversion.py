@@ -64,8 +64,8 @@ class LuaTests(unittest.TestCase):
       appendedFunction=function(a,b)return function(...)a(...);return b(...)end end,
       prependedFunction=function(a,b)return function(...)b(...);return a(...)end end,
       overwrittenFunction=function(a,b)return function(self,...)return b(self,a,...)end end}
-    MathUtil={clamp=function(x,a,b)return math.max(a,math.min(b,x))end,vector3Length=function(x,y,z)return math.sqrt(x*x+y*y+z*z)end}
-    SoundManager={registerSampleXMLPaths=function()end}
+    MathUtil={vector3Length=function(x,y,z)return math.sqrt(x*x+y*y+z*z)end}
+    SoundManager={registerSampleXMLPaths=function(schema,base,name)assert(name~=nil,'Missing FS25 sound element name')end}
     AudioGroup={VEHICLE=1};CollisionFlag={TREE=1,DYNAMIC_OBJECT=2,VEHICLE=4}
     nodes={};nextNode=10000
     function entityExists(n)return nodes[n]~=nil end
@@ -141,6 +141,8 @@ class LuaTests(unittest.TestCase):
     assert(vehicle.lwSoundSample==nil)
     LogsWinch.onLoadFinished(vehicle,nil)
   ''')
+ def test_failed_load_cleanup_and_updates(self):
+  self.lua.execute("vehicle.lwAttachedShapes=nil;vehicle.lwSkinnedRopeJoints=nil;LogsWinch.onLoadFinished(vehicle);LogsWinch.onUpdate(vehicle,16);LogsWinch.onPreDelete(vehicle);lwDetachAllEvent.sendEvent(vehicle)")
  def test_server_update_without_local_player_or_sound(self):
   self.lua.execute("""
     LogsWinch.onLoad(vehicle,nil)

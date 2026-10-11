@@ -4,7 +4,6 @@
     <sounds>
       <motor template="engineLarge" file="Sounds/bulldozerIdle.ogg" volumeScale="2" />
       <motor template="indoorCabinRumble" />
-      <motor template="DEFAULT_BLOW_OFF_VALVE" volumeScale="4" pitchScale="0.6" />
       <motor template="filterLoop" fadeIn="3" fadeOut="2" volumeScale="2" pitchScale="0.65" linkNodeOffset="0 1.5 -3" />
       <gearbox template="transmissionLarge" file="Sounds/transmissionOld.ogg" pitchScale="0.8" volumeScale="0.5" />
       <gearbox template="transmissionLarge" file="Sounds/cat_move.ogg" linkNode="0&gt;" />
@@ -22,19 +21,15 @@
   </motorized>
   <lights>
     <sounds>
-      <toggleLights template="SWITCH_01" />
-    </sounds>
+      </sounds>
   </lights>
   <attacherJoints>
     <sounds>
-      <attach template="ATTACH_01" />
-      <hydraulic template="defaultHydraulicSound" />
-    </sounds>
+      </sounds>
   </attacherJoints>
   <drivable>
     <sounds>
-      <waterSplash template="WATER_SPLASH_01" />
-    </sounds>
+      </sounds>
   </drivable>
   <honk>
     <sound template="HONK_MF_HARVESTER" pitchScale="0.85" volumeScale="4" linkNode="0&gt;" />

@@ -14,7 +14,7 @@
     <lifetime>600</lifetime>
     <rotation>0</rotation>
     <brand>LIZARD</brand>
-    <category>woodHarvesting</category>
+    <category>forestryMachines</category>
     <shopTranslationOffset>0 0.3 0</shopTranslationOffset>
     <shopRotationOffset>0 0 0</shopRotationOffset>
     <vertexBufferMemoryUsage>700976</vertexBufferMemoryUsage>
@@ -134,9 +134,7 @@
       <beaconLight node="0&gt;3|1|3|0|2" filename="beaconLights/Lizard_RKLE_150_G.xml" />
     </beaconLights>
     <sounds>
-      <switchLight template="SWITCH_01" linkNode="0&gt;" />
-      <turnLight template="SWITCH_TURNLIGHT" linkNode="0&gt;" />
-    </sounds>
+      </sounds>
   </lights>
   <suspensions>
     <suspension useCharacterTorso="true" weight="90" minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1" />

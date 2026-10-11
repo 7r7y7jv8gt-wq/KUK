@@ -8,7 +8,7 @@ shutil.copytree(SRC,OUT,dirs_exist_ok=True)
 (OUT/'conversion_audit.json').unlink(missing_ok=True)
 (OUT/'script/FS25Compatibility.lua').unlink(missing_ok=True)
 def save(tree,path):E.indent(tree);tree.write(path,encoding='utf-8',xml_declaration=True)
-d=E.parse(OUT/'modDesc.xml');d.getroot().set('descVersion','114');d.find('version').text='1.0.0.0'
+d=E.parse(OUT/'modDesc.xml');d.getroot().set('descVersion','114');d.find('version').text='1.0.0.1'
 d.find('title/en').text='Ecoforst T-Winch 30.2 – FS25'
 d.find('description/en').text='FS25 conversion of the original PauloModding / Paul Redshaw T-Winch. Original model, crawlers, hydraulic blade, lights, sounds and logging winch retained. Requires in-game validation.'
 # Original custom brand/category images were not supplied: use a stock brand and supplied shop image.
@@ -107,9 +107,31 @@ for p in OUT.rglob('*.i3d'):
    n.attrib.pop('collisionMask');n.set('collisionFilterGroup','0x10004');n.set('collisionFilterMask','0xfe3ffb83')
   if n.get('trigger')=='true':n.set('collisionFilterGroup','0x40000000');n.set('collisionFilterMask','0x00100000')
  save(r,p)
+# Repair references reported by the real FS25 purchase log.
+for name in ['T_Winch.xml','TowHook.xml','Sounds/D11T.xml']:
+ r=E.parse(OUT/name)
+ for n in r.iter('category'):n.text='forestryMachines'
+ invalid={'DEFAULT_BLOW_OFF_VALVE','WATER_SPLASH_01','SWITCH_01','SWITCH_TURNLIGHT','defaultHydraulicSound','ATTACH_01'}
+ for parent in r.iter():
+  for n in list(parent):
+   if n.get('template') in invalid:parent.remove(n)
+ save(r,OUT/name)
+for p in OUT.rglob('Lizard_RKLE_150_*.xml'):
+ r=E.parse(p)
+ for n in r.iter():
+  for key in ['node','shaderNode']:
+   if n.get(key,'').startswith('0|'):n.set(key,'0>'+n.get(key)[2:])
+ save(r,p)
+for p in [OUT/'T_Winch.i3d',OUT/'leitwolfCrawler/leitwolfCrawler.i3d']:
+ r=E.parse(p)
+ for n in r.find('Files'):
+  if 'raptor300_vmask' in n.get('filename',''):n.set('filename','$data/shared/default_diffuse.png')
+  if 'raptor300_normal' in n.get('filename',''):n.set('filename','$data/shared/detailLibrary/flat_normal.png')
+ save(r,p)
 # Port the original script's inputs, player API, raycasts, and custom XML schema.
 p=OUT/'script/logsWinch.lua';s=p.read_text(encoding='utf-8-sig')
 s=s.replace('Player.INPUT_CONTEXT_NAME','PlayerInputComponent.INPUT_CONTEXT_NAME')
+s=s.replace('MathUtil.clamp','lwClamp')
 s=s.replace('Utils.getNoNil','lwValue').replace('unpack(','lwUnpack(').replace('math.atan2','lwAtan2')
 s=s.replace('g_currentMission.playerUserId','(g_localPlayer~=nil and g_localPlayer.userId or 0)')
 s=s.replace('g_currentMission.player','LogsWinch.getPlayer()')
@@ -136,13 +158,18 @@ s=s.replace('if oldRegistrationContext ~= InputBinding.NO_REGISTRATION_CONTEXT t
 s=s.replace('g_soundManager:stopSample(self.lwSoundSample)', 'if self.lwSoundSample~=nil then g_soundManager:stopSample(self.lwSoundSample) end')
 s=s.replace('g_soundManager:stopSample(self.lwChainAttachSndSample)','if self.lwChainAttachSndSample~=nil then g_soundManager:stopSample(self.lwChainAttachSndSample) end')
 s=s.replace('g_soundManager:stopSample(self.lwChainDetachSndSample)','if self.lwChainDetachSndSample~=nil then g_soundManager:stopSample(self.lwChainDetachSndSample) end')
+# Failed loads must be safe to update and delete without masking the original error.
+s=s.replace('function LogsWinch:onLoadFinished(savegame)', 'function LogsWinch:onLoadFinished(savegame)\n if self.lwSkinnedRopeJoints==nil then return end')
+s=s.replace('function LogsWinch:onUpdate(dt)', 'function LogsWinch:onUpdate(dt)\n if self.lwAttachedShapes==nil then return end')
+s=s.replace('function LogsWinch:onPreDelete()', 'function LogsWinch:onPreDelete()\n if self.lwAttachedShapes==nil then return end')
+s=s.replace('function lwDetachAllEvent.sendEvent(vehicle, noEventSend)', 'function lwDetachAllEvent.sendEvent(vehicle, noEventSend)\n if vehicle.lwAttachedShapes==nil then return end')
 # Dedicated server does not have a local player: keep network physics, skip local input.
 marker='\tlocal isThisActiveWinch = (self.lwWinchIdx == LogsWinch.ActiveWinchIdx)'
 # Insert a context refresh before the existing client UI branch, not before the physics update.
 needle='\t-- keep currently active whinch alive all the time,'
 s=s.replace(needle,"\tif not self.isClient or g_localPlayer==nil then return end\n\tlocal playerMode=not g_localPlayer:getIsInVehicle()\n\tif self.lwInputPlayerMode~=playerMode then self.lwInputPlayerMode=playerMode;self:lwRegisterActionEvents(isActiveForInput) end\n\n"+needle)
 # Original RDT reads are guarded above; all remaining legacy helper names are local.
-s='local lwValue=function(value,default) if value==nil then return default end return value end\nlocal lwUnpack=unpack or table.unpack\nlocal lwAtan2=math.atan2 or math.atan\n'+s
+s='local lwClamp=function(x,a,b) return math.max(a,math.min(b,x)) end\nlocal lwValue=function(value,default) if value==nil then return default end return value end\nlocal lwUnpack=unpack or table.unpack\nlocal lwAtan2=math.atan2 or math.atan\n'+s
 # Build typed schema registrations directly from all the original XML reads.
 regs=[];varPaths={'key':'vehicle.logsWinch','skinnedRopeKey':'vehicle.logsWinch.skinnedRope','dynamicChainKey':'vehicle.logsWinch.dynamicChain','attacherKey':'vehicle.logsWinch.overridenInputAttacher','trailerHookKey':'vehicle.logsWinch.removableTrailerHook'}
 for method,var,suffix in re.findall(r'self\.xmlFile:get(Float|Int|Bool|String)\((\w+)\s*\.\.\s*"([^"]+)"\)',s):
@@ -150,7 +177,7 @@ for method,var,suffix in re.findall(r'self\.xmlFile:get(Float|Int|Bool|String)\(
 regs += [('INT','vehicle.logsWinch.skinnedRope#jointsCount'),('STRING','vehicle.logsWinch.ropesUVScroll.rope1#index'),('STRING','vehicle.logsWinch.ropesUVScroll.rope2#index')]
 s+='\nfunction LogsWinch.initSpecialization()\n local schema=Vehicle.xmlSchema\n schema:setXMLSpecializationType("LogsWinch")\n'
 for typ,path in sorted(set(regs)):s+=f' schema:register(XMLValueType.{typ},"{path}","Original winch configuration")\n'
-s+=' SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds.winching")\n SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds.chainAttach")\n SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds.chainDetach")\n schema:setXMLSpecializationType()\nend\n'
+s+=' SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds","winching")\n SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds","chainAttach")\n SoundManager.registerSampleXMLPaths(schema,"vehicle.logsWinch.sounds","chainDetach")\n schema:setXMLSpecializationType()\nend\n'
 s+='\n'+(HERE/'FS25Compatibility.lua').read_text()
 p.write_text(s,encoding='utf-8')
 hashes={str(p.relative_to(SRC)):hashlib.sha256(p.read_bytes()).hexdigest() for p in SRC.rglob('*.shapes')}

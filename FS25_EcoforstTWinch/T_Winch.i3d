@@ -8,8 +8,8 @@
     <File fileId="39" filename="$data/shared/assets/lights/lizard/rearLight49_normal.png" />
     <File fileId="40" filename="$data/shared/assets/lights/lizard/rearLight49_vmask.png" />
     <File fileId="41" filename="$data/shared/clearGlass_diffuse.png" />
-    <File fileId="18" filename="$data/vehicles/prinoth/raptor300/raptor300_normal.png" />
-    <File fileId="19" filename="$data/vehicles/prinoth/raptor300/raptor300_vmask.png" />
+    <File fileId="18" filename="$data/shared/detailLibrary/flat_normal.png" />
+    <File fileId="19" filename="$data/shared/default_diffuse.png" />
     <File fileId="31" filename="New folder/textures/tajfunEGV80_decal_diffuse.dds" />
     <File fileId="32" filename="New folder/textures/tajfunEGV80_decal_normal.dds" />
     <File fileId="33" filename="New folder/textures/tajfunEGV80_decal_specular.dds" />

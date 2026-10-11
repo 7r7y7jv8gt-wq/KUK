@@ -12,7 +12,7 @@
     <File fileId="9" filename="$data/shared/crawlers/johnDeere/series8RTCrawler/series8RTCrawlerBelt01_vmask.dds" />
     <File fileId="10" filename="$data/shared/crawlers/prinoth/leitwolfCrawler/leitwolfCrawlerTrackArray.png" />
     <File fileId="2" filename="$data/shared/default_vmask.dds" />
-    <File fileId="14" filename="$data/vehicles/prinoth/raptor300/raptor300_vmask.png" />
+    <File fileId="14" filename="$data/shared/default_diffuse.png" />
     <File fileId="15" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png" />
     <File fileId="16" filename="$data/shared/detailLibrary/flat_normal.png" />
     <File fileId="17" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png" />
