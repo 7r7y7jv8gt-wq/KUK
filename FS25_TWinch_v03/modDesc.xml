@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<modDesc descVersion="114">
+  <author>Reference model project</author>
+  <version>0.3.0.0</version>
+  <title>
+    <en>T-Winch v03 - Mouse Hydraulics and Camera</en>
+  </title>
+  <description>
+    <en>v03: orbit camera repair and articulated hydraulic blade. Hold left mouse button and drag up/down to raise/lower blade. Vehicle recovery winch controls retained. Game validation pending.</en>
+  </description>
+  <iconFilename>icon_twinch.dds</iconFilename>
+  <multiplayer supported="false" />
+  <vehicleTypes>
+    <type name="twinchV03" parent="baseDrivable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+      <specialization name="twinch" />
+      <specialization name="cylindered" />
+    </type>
+  </vehicleTypes>
+  <storeItems>
+    <storeItem xmlFilename="twinch.xml" />
+  </storeItems>
+  <specializations>
+    <specialization name="twinch" className="TWinch" filename="scripts/TWinch.lua" />
+  </specializations>
+  <actions>
+    <action name="TWINCH_CONNECT" axisType="HALF" />
+    <action name="TWINCH_REEL" axisType="HALF" />
+    <action name="TWINCH_PAYOUT" axisType="HALF" />
+    <action name="TWINCH_BLADE" axisType="FULL" />
+  </actions>
+  <inputBinding>
+    <actionBinding action="TWINCH_CONNECT">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_b" />
+    </actionBinding>
+    <actionBinding action="TWINCH_REEL">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_r" />
+    </actionBinding>
+    <actionBinding action="TWINCH_PAYOUT">
+      <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_n" />
+    </actionBinding>
+    <actionBinding action="TWINCH_BLADE">
+      <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_LEFT AXIS_MOUSE_Y" axisComponent="+" inputComponent="+" />
+      <binding device="KB_MOUSE_DEFAULT" input="MOUSE_BUTTON_LEFT AXIS_MOUSE_Y" axisComponent="-" inputComponent="-" />
+    </actionBinding>
+  </inputBinding>
+  <l10n>
+    <text name="input_TWINCH_CONNECT">
+      <en>T-Winch: attach / release vehicle</en>
+    </text>
+    <text name="input_TWINCH_REEL">
+      <en>T-Winch: reel in on / off</en>
+    </text>
+    <text name="input_TWINCH_PAYOUT">
+      <en>T-Winch: pay out on / off</en>
+    </text>
+    <text name="input_TWINCH_BLADE">
+      <en>T-Winch hydraulic blade: raise / lower</en>
+    </text>
+  </l10n>
+</modDesc>
