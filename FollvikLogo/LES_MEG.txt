@@ -1,0 +1,12 @@
+Føllvik Maskin AS – separat logo
+
+Pakk ut hele FollvikLogo-mappen.
+I GIANTS Editor: File > Import, velg FollvikLogo.i3d.
+Behold .i3d, .i3d.shapes og .dds samlet i samme mappe.
+Plasser logoen litt utenfor overflaten for å unngå flimring.
+
+Dette er den originale flate logogeometrien og DDS-teksturen
+fra filene du leverte, ikke en egen kjøretøymod.
+Geometri, UV-er og tekstur er beholdt uten endring.
+Pakken er kontrollert for filreferanser og ZIP-integritet;
+import i GIANTS Editor / FS25 er ikke testet her.
