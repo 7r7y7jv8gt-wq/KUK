@@ -13,7 +13,7 @@ class PackageTests(old.V07PackageTests):
             self.assertIn('winch/chainMaterialHolder.i3d.shapes',z.namelist())
             self.assertNotIn('tajfunEGV80AHK.i3d',z.namelist())
             self.assertIn('machineConfigurations.xml',z.namelist())
-        self.assertEqual(E.parse(OUT/'modDesc.xml').find('version').text,'0.8.0.0')
+        self.assertEqual(E.parse(OUT/'modDesc.xml').find('version').text,'0.8.0.1')
     def test_terrafarm_discovery_and_material_unit(self):
         config=E.parse(OUT/'machineConfigurations.xml').find('configuration')
         self.assertEqual(config.get('vehicle'),'FS25_TWinch_v08/twinch.xml')
@@ -32,6 +32,40 @@ class PackageTests(old.V07PackageTests):
         specs=[n.get('name') for n in E.parse(OUT/'modDesc.xml').find('vehicleTypes/type')]
         self.assertEqual(specs.count('leveler'),1)
         self.assertNotIn('fillUnit',specs) # inherited; duplicate stock specializations break loading
+    def test_leveler_vehicle_type_prerequisites(self):
+        # GIANTS Leveler.prerequisitesPresent requires FillUnit AND
+        # BunkerSiloInteractor. Missing either rejects the entire vehicle type,
+        # not merely the blade function (confirmed by the supplied FS25 log).
+        from lupa import LuaRuntime
+        lua=LuaRuntime(unpack_returned_tuples=True)
+        lua.execute("""
+            FillUnit={}; BunkerSiloInteractor={}; Leveler={}
+            SpecializationUtil={hasSpecialization=function(specialization,specializations)
+                for _,s in ipairs(specializations) do if s==specialization then return true end end
+                return false
+            end}
+            function Leveler.prerequisitesPresent(specializations)
+                return SpecializationUtil.hasSpecialization(FillUnit,specializations)
+                    and SpecializationUtil.hasSpecialization(BunkerSiloInteractor,specializations)
+            end
+        """)
+        g=lua.globals()
+        typ=E.parse(OUT/'modDesc.xml').find('vehicleTypes/type')
+        self.assertEqual(typ.get('parent'),'baseDrivable')
+        # baseDrivable inherits FillUnit; locally declared dependencies must be
+        # available before Leveler is added, without duplicating FillUnit.
+        declared=[n.get('name') for n in typ]
+        specs=[g.FillUnit]
+        for name in declared:
+            if name=='bunkerSiloInteractor':specs.append(g.BunkerSiloInteractor)
+            elif name=='leveler':
+                self.assertTrue(g.Leveler.prerequisitesPresent(lua.table_from(specs)))
+                specs.append(g.Leveler)
+        self.assertEqual(declared.count('bunkerSiloInteractor'),1)
+        self.assertEqual(declared.count('leveler'),1)
+        self.assertFalse(g.Leveler.prerequisitesPresent(lua.table_from([g.FillUnit])))
+        self.assertFalse(g.Leveler.prerequisitesPresent(lua.table_from([g.BunkerSiloInteractor])))
+
     def test_private_asset_references(self):
         asset=E.parse(OUT/'winch/chainMaterialHolder.i3d').getroot()
         self.assertIsNone(asset.find('UserAttributes'))

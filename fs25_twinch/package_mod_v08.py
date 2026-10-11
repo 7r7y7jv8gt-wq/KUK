@@ -16,7 +16,7 @@ script=script.replace('schema:setXMLSpecializationType()','for _,name in ipairs(
 script+='\n'+(HERE/'BladeWinch.lua').read_text()
 (OUT/'scripts/TWinch.lua').write_text(script)
 v=E.parse(OUT/'twinch.xml').getroot();d=E.parse(OUT/'modDesc.xml').getroot()
-v.set('type','twinchV08');d.find('vehicleTypes/type').set('name','twinchV08');d.find('version').text='0.8.0.0'
+v.set('type','twinchV08');d.find('vehicleTypes/type').set('name','twinchV08');d.find('version').text='0.8.0.1'
 d.find('title/en').text='T-Winch v08 - Walk-up Blade Winch'
 for n in v.findall('storeData/name/*'):n.text='T-Winch 30.2 v08'
 v.find('annotation').text='v08: single-player blade winch; R take / attach hook, Z reel, Shift+Z fast, X payout, Shift+R release. Actual engine validation pending.'
@@ -36,6 +36,8 @@ for n in original:
 # TerraFarm's documented external configuration discovery adds its own machine
 # specialization only when TerraFarm is installed. Native Leveler requires the
 # existing inherited FillUnit; material unit is separate from fuel (index 1).
+# Leveler requires BOTH FillUnit (inherited) and BunkerSiloInteractor.
+E.SubElement(d.find('vehicleTypes/type'),'specialization',name='bunkerSiloInteractor')
 E.SubElement(d.find('vehicleTypes/type'),'specialization',name='leveler')
 i=E.parse(OUT/'twinch.i3d').getroot();component=i.find('Scene')[0]
 blade=next(n for n in component.iter() if n.get('name')=='bladeLift')
@@ -92,7 +94,7 @@ The force model is bounded,
 not a port of Tajfun's PTO / implement joints or every attachment feature.
 Packaged Lua and asset checks run locally; actual FS25 play testing is pending.
 ''')
-(OUT/'validation.json').write_text(json.dumps({'version':'0.8.0.0','game_test':'not run','max_rope_metres':60,'max_log_tonnes':8,'max_objects':8},indent=2)+'\n')
+(OUT/'validation.json').write_text(json.dumps({'version':'0.8.0.1','game_test':'not run','max_rope_metres':60,'max_log_tonnes':8,'max_objects':8},indent=2)+'\n')
 with ZipFile(HERE.parent/'FS25_TWinch_v08.zip','w',ZIP_DEFLATED) as z:
     for f in sorted(OUT.rglob('*')):
         if f.is_file():z.write(f,f.relative_to(OUT))
