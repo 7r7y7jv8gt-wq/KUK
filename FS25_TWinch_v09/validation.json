@@ -1,0 +1,15 @@
+{
+  "version": "0.9.0.0",
+  "game_test": "not run",
+  "track_centers_metres": [
+    -1.1,
+    1.1
+  ],
+  "shoe_width_metres": 0.4,
+  "hook_scale": 0.014,
+  "drivetrain": "visible hydrostatic components; existing vehicle driving physics",
+  "local_tests_run": 45,
+  "local_test_failures": 0,
+  "local_test_errors": 0,
+  "terrafarm_reference": "scfmod/FS25_TerraFarm b50e677cdef062d605ab188f8982ae1faa2789e7"
+}

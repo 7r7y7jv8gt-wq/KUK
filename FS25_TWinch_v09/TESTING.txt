@@ -1,0 +1,30 @@
+T-Winch v09 - single-player blade logging / anchor winch
+Disable older T-Winch packages and purchase the v09 in a test save.
+Start the engine, leave the vehicle and walk within 2.5m of the blade.
+R takes the hook. Walk to a tree/log/object, aim at it (within 4m), press R.
+Hold Z to reel, Shift+Z for fast reeling; hold X to pay out. Shift+R returns
+hook / disconnects everything. Remote controls work within 60m of the blade.
+A standing tree pulls the machine toward the fixed anchor; a dynamic log or
+object is pulled toward the machine. Rope force has an equal chassis reaction.
+R beside the blade after attachment takes an additional chain (up to eight
+objects, eight tonnes total). Extra objects must be within 15m of the first.
+Fixed tree anchors are used alone. Invalid/deleted targets disconnect safely.
+Hook and wrapped chain assets come from the supplied 50keda Tajfun mod;
+no physical Tajfun winch is included. Parked interaction is updated globally,
+separately from vehicle selection. On-foot actions use the player input context.
+The old Ctrl+B vehicle recovery mode is exclusive with the logging mode.
+Reeling requires a running engine. Attachments are temporary, not saved.
+No multiplayer support. Install FS25_0_TerraFarm separately for terrain deformation. The external
+machine configuration provides FLATTEN, SMOOTH, LOWER and PAINT on the 2.23m
+cutting edge. Enable the machine in TerraFarm, choose a mode, then lower the
+blade. Work nodes follow the hydraulic blade. TerraFarm handles land access
+and terrain costs. Keep the ZIP filename FS25_TWinch_v09.zip for discovery.
+The force model is bounded,
+not a port of Tajfun's PTO / implement joints or every attachment feature.
+Packaged Lua and asset checks run locally; actual FS25 play testing is pending.
+
+V09: hook scale .014 (one tenth of .14). Excavator-style 400mm shoes,
+track centers +/-1.10m, twin running wheels, return rollers, tensioner,
+central gearbox, travel motors, final drive housings, shafts, lines and skid.
+Underside drivetrain is visible geometry; existing hydrostatic wheel physics
+remain the driving system. Check clearance and ground behavior in FS25.
