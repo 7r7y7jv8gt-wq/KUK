@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<prefabDesc descVersion="1">
+    <author>5oteruud</author>
+    <version>1.0.0.0</version>
+	
+	<title>
+        <en>Lizard FOR9T Pack</en>
+        <de>Lizard FOR9T Pack</de>
+    </title>
+	
+	<description>
+<en><![CDATA[Lizard FOR9T pack
+For installation see: "INSTALLATION_INSTRUCTIONS"
+
+Includes:
+- Lizard FOR9T No-Glare
+- Lizard FOR9T Illusion
+- Lizard FOR9T Gravity
+
+- different DRL options
+]]></en>
+
+<de><![CDATA[Lizard FOR9T pack
+Zum Einbau siehe: "INSTALLATION_INSTRUCTIONS"
+
+Inhalt:
+- Lizard FOR9T No-Glare
+- Lizard FOR9T Illusion
+- Lizard FOR9T Gravity
+
+- verschiedene Tagfahrlicht optionen
+]]></de>
+</description>
+	
+	<categories>
+        <category>others</category>
+    </categories>
+	
+	<iconFilename>icon_FOR9T.dds</iconFilename>
+	
+	<prefabs>
+		<prefab name="Lizard FOR9T No-Glare" i3dFilename="FOR9T_noGlare.i3d" />
+		<prefab name="Lizard FOR9T Illusion" i3dFilename="FOR9T_illusion.i3d" />
+		<prefab name="Lizard FOR9T Gravity" i3dFilename="FOR9T_Gravity.i3d" />
+    </prefabs>	
+</prefabDesc>

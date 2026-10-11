@@ -1,0 +1,6 @@
+V14: disable earlier T-Winch versions, install unopened ZIP, buy fresh vehicle.
+Eight user-positioned FOR9T lights retained. Red DRLs switch with engine.
+F lighting cycle: front white work lights, then front and rear work lights.
+Eight real beams and matching emissive lenses use native Lights.
+V13 blade controls, logging winch and configured 40,000kg total mass retained.
+FS25 visual and functional checks pending.
