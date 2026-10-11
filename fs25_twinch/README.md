@@ -153,3 +153,9 @@ Shop and motor configuration report 800 metric hp. The actual torque scale is 3.
 ## Version 19: 12 km/h
 
 Sets forward/reverse motor speed limits and shop top speed to 12km/h. The 800hp torque curve, 40-tonne mass and TerraFarm registration are retained. Build with `python fs25_twinch/package_mod_v19.py`; validate with `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_v19.py`. Twenty-six local checks pass; FS25 driving remains untested.
+
+## Version 20: purchase loading crash
+
+The supplied v19 log reports `attempt to concatenate nil with string` in TerraFarm registration, followed by update errors because `spec_twinch` was never initialized. `g_currentModDirectory` is a script-loading global and was nil during vehicle onLoad. V20 uses `vehicle.baseDirectory` or the directory captured at script load, validates its presence, initializes T-Winch state before registration and isolates registration with pcall so an external failure cannot abort the vehicle load. Update/delete/action registration also tolerate an uninitialized vehicle.
+
+All 29 local checks pass, including the exact nil-runtime-directory scenario, an external registration exception with successful continuation of blade/winch loading, and safe updates during incomplete loading. The 800hp engine, 12km/h limits, 40-tonne mass, lights and front/rear winches remain. FS25 purchase testing is still pending. Restart FS25, disable earlier versions and use the unopened v20 ZIP. Build using `python fs25_twinch/package_mod_v20.py`, test using `PYTHONPATH=/tmp/twinch-test-deps python fs25_twinch/test_v20.py`.

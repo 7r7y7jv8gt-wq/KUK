@@ -1,0 +1,7 @@
+Original T-Winch integration code: this project.
+Hook mesh, chain DDS textures, winchChainShader.xml and chain/winch sounds: 50keda, supplied FS25_TajfunEGV80AHK v1.0.0.0.
+Tajfun physical winch body and vehicle XML/scripts are not distributed in this package.
+Engelsen TerraFarm profile based on uploaded scfmod machine pack; original configurations retained in companion ZIP.
+Volvo EC380 DLC crawler I3D/XML/compiled geometry supplied by user from excavator mod; original mesh/material names retained. Stock textures/shaders referenced, not redistributed.
+
+Lizard FOR9T Pack: 5oteruud. Prefab and user-installed geometry supplied by the user.
