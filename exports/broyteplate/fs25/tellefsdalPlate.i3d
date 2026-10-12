@@ -4,7 +4,7 @@
     <Export program="GIANTS Editor 64bit" version="9.0.2" />
   </Asset>
   <Files>
-    <File fileId="4" filename="$data/fs22support/shaders/vehicleShader.xml" />
+    <File fileId="4" filename="shaders/vehicleShader.xml" />
     <File fileId="2" filename="$data/shared/default_normal.dds" />
     <File fileId="3" filename="$data/shared/default_vmask.dds" />
     <File fileId="9" filename="textures/Cylinder_normal.dds" />
@@ -18,7 +18,6 @@
     <Material name="Base_Mat" materialId="5" diffuseColor="1 1 1 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="2" />
       <Glossmap fileId="3" />
-      <CustomParameter name="RDT" value="0 0 0 0" />
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
       <CustomParameter name="colorMat0" value="0 0 1 1" />
       <CustomParameter name="colorMat1" value="0 0 1 1" />
@@ -28,10 +27,10 @@
       <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1" />
       <CustomParameter name="colorMat6" value="1 0.1 1 1" />
       <CustomParameter name="colorMat7" value="0.1 1 1 1" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 0" />
     </Material>
     <Material name="UpperlinkCylinderPack" materialId="6" customShaderId="4" customShaderVariation="colorMask">
       <Glossmap fileId="3" />
-      <CustomParameter name="RDT" value="1 1 0 0" />
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
       <CustomParameter name="colorMat0" value="0.5 0.5 0.5 6" />
       <CustomParameter name="colorMat1" value="0.5 0.5 0.5 6" />
@@ -42,11 +41,11 @@
       <CustomParameter name="colorMat6" value="0.5 0.5 0.5 6" />
       <CustomParameter name="colorMat7" value="0.5 0.5 0.5 6" />
       <Normalmap fileId="2" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 0" />
     </Material>
     <Material name="UpperlinkCylinderPack2" materialId="7" diffuseColor="1 1 1 1" customShaderId="4" customShaderVariation="colorMask">
       <Normalmap fileId="9" />
       <Glossmap fileId="10" />
-      <CustomParameter name="RDT" value="0 0 0 0" />
       <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
       <CustomParameter name="colorMat0" value="0.05 0.05 0.05 6" />
       <CustomParameter name="colorMat1" value="0.05 0.05 0.05 6" />
@@ -56,6 +55,7 @@
       <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1" />
       <CustomParameter name="colorMat6" value="0 0.1 1 1" />
       <CustomParameter name="colorMat7" value="1 1 1 1" />
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0 0 0" />
     </Material>
   </Materials>
   <Shapes externalShapesFile="tellefsdalPlate.i3d.shapes">

@@ -2,6 +2,8 @@ Tellefsdal brøyteplate – FS25 / GIANTS Editor 10
 
 Pakk ut hele ZIP-filen. Åpne tellefsdalPlate.i3d i GIANTS Editor 10, med Farming Simulator 25 valgt som spillinstallasjon. Behold textures-mappen og .i3d.shapes-filen sammen med i3D-filen.
 
-FS25s innebygde FS22-kompatibilitetsshader brukes for å bevare den gamle UV/materialstrukturen. Logo og sylinderteksturer er inkludert uendret. Standardmasken bruker FS25 default_vmask.dds. Den manglende FS19 UpperlinkCylinderPack_specular.dds er erstattet med standardmasken og nøytralt metall på gjengedelene. Original plassering og skala er beholdt.
+En lokal, rettet kopi av FS25s FS22-kompatibilitetsshader brukes for å bevare den gamle UV/materialstrukturen. Logo og sylinderteksturer er inkludert uendret. Standardmasken bruker FS25 default_vmask.dds. Den manglende FS19 UpperlinkCylinderPack_specular.dds er erstattet med standardmasken og nøytralt metall på gjengedelene. Original plassering og skala er beholdt.
 
 Dette er en modell for import i GIANTS Editor, ikke en ferdig kjøpbar spillmod. Geometrien er bevart i originalt shapes-format; den er ikke eksportert på nytt. XML, filreferanser, teksturer og ZIP er kontrollert. Åpning og utseende i GIANTS Editor 10 / FS25 er ikke testet her.
+
+Versjon 2: shaderen er inkludert i shaders/vehicleShader.xml. Den retter seks float4/float3-konverteringer med .xyz og bruker FS25s teksturarrayer. Gamle RDT-parametere er fjernet; scratches_dirt_snow_wetness er satt til 0. Dette adresserer shaderfeilen som kan gjøre plata og toppstagene usynlige. Logo og geometri er uendret. Rettelsen er ikke testet i GIANTS Editor her.
