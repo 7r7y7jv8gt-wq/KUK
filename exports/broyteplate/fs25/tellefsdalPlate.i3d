@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<i3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Tellefsdal_Broyteplate_FS25" version="1.6" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2" />
+  </Asset>
+  <Files>
+    <File fileId="4" filename="$data/fs22support/shaders/vehicleShader.xml" />
+    <File fileId="2" filename="$data/shared/default_normal.dds" />
+    <File fileId="3" filename="$data/shared/default_vmask.dds" />
+    <File fileId="9" filename="textures/Cylinder_normal.dds" />
+    <File fileId="10" filename="textures/Cylinder_specular.dds" />
+    <File fileId="8" filename="textures/tellefsdal.dds" />
+  </Files>
+  <Materials>
+    <Material name="adstrip" materialId="4" alphaBlending="true">
+      <Texture fileId="8" />
+    </Material>
+    <Material name="Base_Mat" materialId="5" diffuseColor="1 1 1 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2" />
+      <Glossmap fileId="3" />
+      <CustomParameter name="RDT" value="0 0 0 0" />
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
+      <CustomParameter name="colorMat0" value="0 0 1 1" />
+      <CustomParameter name="colorMat1" value="0 0 1 1" />
+      <CustomParameter name="colorMat2" value="0.0738 0.399 0.074 1" />
+      <CustomParameter name="colorMat3" value="0.074 0.399 0.074 1" />
+      <CustomParameter name="colorMat4" value="0 1 0.1 1" />
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1" />
+      <CustomParameter name="colorMat6" value="1 0.1 1 1" />
+      <CustomParameter name="colorMat7" value="0.1 1 1 1" />
+    </Material>
+    <Material name="UpperlinkCylinderPack" materialId="6" customShaderId="4" customShaderVariation="colorMask">
+      <Glossmap fileId="3" />
+      <CustomParameter name="RDT" value="1 1 0 0" />
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
+      <CustomParameter name="colorMat0" value="0.5 0.5 0.5 6" />
+      <CustomParameter name="colorMat1" value="0.5 0.5 0.5 6" />
+      <CustomParameter name="colorMat2" value="0.5 0.5 0.5 6" />
+      <CustomParameter name="colorMat3" value="0.5 0.5 0.5 6" />
+      <CustomParameter name="colorMat4" value="0.5 0.5 0.5 6" />
+      <CustomParameter name="colorMat5" value="0.5 0.5 0.5 6" />
+      <CustomParameter name="colorMat6" value="0.5 0.5 0.5 6" />
+      <CustomParameter name="colorMat7" value="0.5 0.5 0.5 6" />
+      <Normalmap fileId="2" />
+    </Material>
+    <Material name="UpperlinkCylinderPack2" materialId="7" diffuseColor="1 1 1 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="9" />
+      <Glossmap fileId="10" />
+      <CustomParameter name="RDT" value="0 0 0 0" />
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0" />
+      <CustomParameter name="colorMat0" value="0.05 0.05 0.05 6" />
+      <CustomParameter name="colorMat1" value="0.05 0.05 0.05 6" />
+      <CustomParameter name="colorMat2" value="0.05 0.05 0.05 6" />
+      <CustomParameter name="colorMat3" value="1 0 0 6" />
+      <CustomParameter name="colorMat4" value="1 1 0.1 1" />
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1" />
+      <CustomParameter name="colorMat6" value="0 0.1 1 1" />
+      <CustomParameter name="colorMat7" value="1 1 1 1" />
+    </Material>
+  </Materials>
+  <Shapes externalShapesFile="tellefsdalPlate.i3d.shapes">
+  </Shapes>
+  <Dynamics>
+  </Dynamics>
+  <Scene>
+    <Shape shapeId="1" name="Brackets" translation="-0.0523449 0.675998 1.81304" scale="0.304129 0.304129 0.304129" nodeId="20" materialIds="5" castsShadows="true" receiveShadows="true">
+      <Shape shapeId="2" name="Plate" translation="1.32455 0.383577 1.58498" nodeId="21" materialIds="5" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="3" name="LogoTellefsdal" translation="-1.15244 -2.60631 -7.5464" scale="3.28808 3.28808 3.28808" nodeId="22" materialIds="4" castsShadows="false" receiveShadows="false" decalLayer="1" />
+        <TransformGroup name="attacherJoint" translation="-1.15244 -0.518382 0.298957" scale="3.28808 3.28808 3.28808" nodeId="23" />
+      </Shape>
+      <Shape shapeId="4" name="Upperlink" translation="-0.863631 -0.969194 1.56749" rotation="21.9097 -0 0" scale="4.03132 4.03132 4.03132" clipDistance="300" nodeId="24" materialIds="7" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="5" name="Sruba" translation="0 0 -0.07471" clipDistance="300" nodeId="25" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="Raczka" translation="0 -0.0648198 -0.160906" clipDistance="300" nodeId="26" materialIds="7" castsShadows="true" receiveShadows="true" />
+        </Shape>
+        <Shape shapeId="7" name="Uniball" translation="0 0 0.215348" clipDistance="300" nodeId="27" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="8" name="Gwint" translation="0 0 -0.181245" scale="1 1 0.684363" clipDistance="300" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true" />
+          <Shape shapeId="9" name="Bolec" translation="0 0 -0.633823" clipDistance="300" nodeId="29" materialIds="7" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="10" name="Zabezpieczenie" translation="0.0584081 0 0" clipDistance="300" nodeId="30" materialIds="7" castsShadows="true" receiveShadows="true" />
+          </Shape>
+        </Shape>
+        <Shape shapeId="11" name="Gwint" translation="0 0 -0.0441703" scale="1 1 0.718087" clipDistance="300" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true" />
+        <Shape shapeId="9" name="Bolec" clipDistance="300" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="10" name="Zabezpieczenie" translation="0.0584081 0 0" clipDistance="300" nodeId="33" materialIds="7" castsShadows="true" receiveShadows="true" />
+        </Shape>
+      </Shape>
+      <Shape shapeId="4" name="Upperlink" translation="1.20786 -0.969194 1.56749" rotation="21.9097 -0 0" scale="4.03132 4.03132 4.03132" clipDistance="300" nodeId="34" materialIds="7" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="5" name="Sruba" translation="0 0 -0.07471" clipDistance="300" nodeId="35" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="Raczka" translation="0 -0.0648198 -0.160906" clipDistance="300" nodeId="36" materialIds="7" castsShadows="true" receiveShadows="true" />
+        </Shape>
+        <Shape shapeId="7" name="Uniball" translation="0 0 0.215348" clipDistance="300" nodeId="37" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="8" name="Gwint" translation="0 0 -0.181245" scale="1 1 0.684363" clipDistance="300" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true" />
+          <Shape shapeId="9" name="Bolec" translation="0 0 -0.633823" clipDistance="300" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="10" name="Zabezpieczenie" translation="0.0584081 0 0" clipDistance="300" nodeId="40" materialIds="7" castsShadows="true" receiveShadows="true" />
+          </Shape>
+        </Shape>
+        <Shape shapeId="11" name="Gwint" translation="0 0 -0.0441703" scale="1 1 0.718087" clipDistance="300" nodeId="41" materialIds="6" castsShadows="true" receiveShadows="true" />
+        <Shape shapeId="9" name="Bolec" clipDistance="300" nodeId="42" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="10" name="Zabezpieczenie" translation="0.0584081 0 0" clipDistance="300" nodeId="43" materialIds="7" castsShadows="true" receiveShadows="true" />
+        </Shape>
+      </Shape>
+    </Shape>
+  </Scene>
+</i3D>
