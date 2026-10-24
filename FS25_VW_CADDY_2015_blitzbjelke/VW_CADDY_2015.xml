@@ -417,10 +417,6 @@
 			<beaconLight realLight="0>0|1|0|12|3|1" realLightRange="1.5"/>
 			<beaconLight realLight="0>0|1|0|12|3|2" realLightRange="1.5"/>
 		
-            <beaconLight realLight="caddy_beaconFront" realLightRange="1.0"/>
-            <beaconLight realLight="caddy_beaconRear" realLightRange="1.0"/>
-            <beaconLight realLight="caddy_beaconLeft" realLightRange="1.0"/>
-            <beaconLight realLight="caddy_beaconRight" realLightRange="1.0"/>
 		            <beaconLight realLight="drc32_strobeFrontLeft" realLightRange="1.0"/>
             <beaconLight realLight="drc32_strobeFrontRight" realLightRange="1.0"/>
             <beaconLight realLight="drc32_strobeRearLeft" realLightRange="1.0"/>
@@ -892,10 +888,6 @@
        <i3dMapping id="ozz2_beam" node="0>0|1|0|10|5"/>
        <i3dMapping id="ozz3_beam" node="0>0|1|0|11|5"/>
 
-        <i3dMapping id="caddy_beaconFront" node="0>0|1|0|96"/>
-        <i3dMapping id="caddy_beaconRear" node="0>0|1|0|97"/>
-        <i3dMapping id="caddy_beaconLeft" node="0>0|1|0|98"/>
-        <i3dMapping id="caddy_beaconRight" node="0>0|1|0|99"/>
        <i3dMapping id="drc32_strobeFrontLeft" node="0>0|1|0|95|4"/>
        <i3dMapping id="drc32_strobeFrontRight" node="0>0|1|0|95|5"/>
        <i3dMapping id="drc32_strobeRearLeft" node="0>0|1|0|95|6"/>
