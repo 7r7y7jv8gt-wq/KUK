@@ -1,0 +1,884 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="VW_CADDY_2015">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>
+            <en>VW CADDY 2015</en></name>
+        <specs>
+            <power>150</power>
+            <maxSpeed>180</maxSpeed>
+        </specs>
+        <functions>
+            <function>$l10n_function_car</function>
+        </functions>
+        <image>Store/store_VW_CADDY_2015.dds</image>
+        <price>64250</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>VOLKSWAGEN</brand>
+        <category>cars</category>
+        <vertexBufferMemoryUsage>1803844</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>433242</indexBufferMemoryUsage>
+        <textureMemoryUsage>15379440</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_car</typeDesc>
+        <filename>VW_CADDY_2015.i3d</filename>
+        <sounds filename="$data/vehicles/skoda/kodiaq/sounds/kodiaq.xml"/>
+        <size width="3" length="6.5" height="1.75"/>
+        <components count="1">
+            <component centerOfMass="0 0.5 0" solverIterationCount="10" mass="1800" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="CAR" />
+        <mapHotspot type="CAR" />
+    </base>
+    <wheels>
+        <wheelConfigurations>
+			<wheelConfiguration name="Stock" price="0">
+                <wheels autoRotateBackSpeed="2.5">
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|2" driveNode="0>0|0|0|2|0" isSynchronized="true" radius="0.38" width="0.27" forcePointRatio="0.5" initialCompression="15" suspTravel="0.13" spring="1" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|3" driveNode="0>0|0|0|3|0" isSynchronized="true" radius="0.38" width="0.27" forcePointRatio="0.5" initialCompression="15" suspTravel="0.13" spring="1" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|2|0" isSynchronized="true" radius="0.38" width="0.27" forcePointRatio="0.5" initialCompression="15" suspTravel="0.13" spring="1" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|3|0" isSynchronized="true" radius="0.38" width="0.27" forcePointRatio="0.5" initialCompression="15" suspTravel="0.13" spring="1" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+                </wheels>
+				<objectChange node="0>0|0|0|2" visibilityActive="true" visibilityInactive="false"/>     
+                <objectChange node="0>0|0|0|3" visibilityActive="true" visibilityInactive="false"/>                
+                <objectChange node="0>0|0|1|2" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="0>0|0|1|3" visibilityActive="true" visibilityInactive="false"/>
+            </wheelConfiguration>
+			<wheelConfiguration name="Custom 1" price="0">
+                <wheels autoRotateBackSpeed="2.5">
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|0|0" driveNode="0>0|0|0|0|0|0" isSynchronized="true" radius="0.39" width="0.27" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|1|0" driveNode="0>0|0|0|1|0|0" isSynchronized="true" radius="0.39" width="0.27" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|0|0|0" isSynchronized="true" radius="0.39" width="0.27" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|1|0|0" isSynchronized="true" radius="0.39" width="0.27" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+                </wheels>
+				<objectChange node="0>0|0|0|0|0" visibilityActive="true" visibilityInactive="false"/>     
+                <objectChange node="0>0|0|0|1|0" visibilityActive="true" visibilityInactive="false"/>                
+                <objectChange node="0>0|0|1|0|0" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="0>0|0|1|1|0" visibilityActive="true" visibilityInactive="false"/>
+            </wheelConfiguration>
+			 <wheelConfiguration name="Custom 2" price="0">
+                <wheels autoRotateBackSpeed="2.5">
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|0|1" driveNode="0>0|0|0|0|1|0" isSynchronized="true" radius="0.39" width="0.27" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|1|1" driveNode="0>0|0|0|1|1|0" isSynchronized="true" radius="0.39" width="0.27" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|0|1|0" isSynchronized="true" radius="0.39" width="0.27" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|1|1|0" isSynchronized="true" radius="0.39" width="0.27" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+                </wheels>
+				<objectChange node="0>0|0|0|0|1" visibilityActive="true" visibilityInactive="false"/>     
+                <objectChange node="0>0|0|0|1|1" visibilityActive="true" visibilityInactive="false"/>                
+                <objectChange node="0>0|0|1|0|1" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="0>0|0|1|1|1" visibilityActive="true" visibilityInactive="false"/>
+            </wheelConfiguration>
+			 <wheelConfiguration name="Custom 3" price="0">
+                <wheels autoRotateBackSpeed="2.5">
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|0|2" driveNode="0>0|0|0|0|2|0" isSynchronized="true" radius="0.39" width="0.27" forcePointRatio="0.5" initialCompression="25" suspTravel="1.13" spring="13" damper="2" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|1|2" driveNode="0>0|0|0|1|2|0" isSynchronized="true" radius="0.39" width="0.57" forcePointRatio="0.5" initialCompression="25" suspTravel="1.13" spring="13" damper="2" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|0|2|0" isSynchronized="true" radius="0.39" width="0.47" forcePointRatio="0.5" initialCompression="25" suspTravel="1.13" spring="13" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|1|2|0" isSynchronized="true" radius="0.39" width="0.27" forcePointRatio="0.5" initialCompression="25" suspTravel="1.13" spring="13" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+                </wheels>
+				<objectChange node="0>0|0|0|0|2" visibilityActive="true" visibilityInactive="false"/>     
+                <objectChange node="0>0|0|0|1|2" visibilityActive="true" visibilityInactive="false"/>                
+                <objectChange node="0>0|0|1|0|2" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="0>0|0|1|1|2" visibilityActive="true" visibilityInactive="false"/>
+            </wheelConfiguration>
+			<wheelConfiguration name="Custom 4" price="0">
+                <wheels autoRotateBackSpeed="2.5">
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|0|3" driveNode="0>0|0|0|0|3|0" isSynchronized="true" radius="0.39" width="0.31" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="4" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|1|3" driveNode="0>0|0|0|1|3|0" isSynchronized="true" radius="0.39" width="0.31" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="4" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|0|3|0" isSynchronized="true" radius="0.39" width="0.31" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="2" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|1|3|0" isSynchronized="true" radius="0.39" width="0.31" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="2" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+                </wheels>
+				<objectChange node="0>0|0|0|0|3" visibilityActive="true" visibilityInactive="false"/>     
+                <objectChange node="0>0|0|0|1|3" visibilityActive="true" visibilityInactive="false"/>                
+                <objectChange node="0>0|0|1|0|3" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="0>0|0|1|1|3" visibilityActive="true" visibilityInactive="false"/>
+            </wheelConfiguration>
+			<wheelConfiguration name="Custom 5" price="0">
+                <wheels autoRotateBackSpeed="2.5">
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|0|4" driveNode="0>0|0|0|0|4|0" isSynchronized="true" radius="0.39" width="0.31" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|0|1|4" driveNode="0>0|0|0|1|4|0" isSynchronized="true" radius="0.39" width="0.31" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+				    <wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|0|4|0" isSynchronized="true" radius="0.39" width="0.31" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+					<wheel hasParticles="true" hasTireTracks="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="0>0|0|1|1|4|0" isSynchronized="true" radius="0.39" width="0.31" forcePointRatio="0.5" initialCompression="25" suspTravel="0.13" spring="20" damper="4" frictionScale="2.5" />
+                        <tire tireTrackAtlasIndex="1" />
+                    </wheel>
+                </wheels>
+				<objectChange node="0>0|0|0|0|4" visibilityActive="true" visibilityInactive="false"/>     
+                <objectChange node="0>0|0|0|1|4" visibilityActive="true" visibilityInactive="false"/>                
+                <objectChange node="0>0|0|1|0|4" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="0>0|0|1|1|4" visibilityActive="true" visibilityInactive="false"/>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="45" rotMax="40" rotCenterWheel1="3" rotCenterWheel2="4"/>
+        </ackermannSteeringConfigurations>
+    </wheels>
+	
+    <lights>
+        <states>
+            <state lightTypes="0 1"/>
+			<state lightTypes="0 1 2"/>
+			<state lightTypes="0 1 2 3"/>
+        </states>
+        <realLights>
+            <low>
+			<light node="drc32_drivingBeam"       lightTypes="3" hasShadows="false"/>
+            <light node="drc32_positionWashLeft"  lightTypes="0" hasShadows="false"/>
+            <light node="drc32_positionWashRight" lightTypes="0" hasShadows="false"/>
+                <light node="frontLightLow" lightTypes="1"/>
+                <light node="highBeamLow" lightTypes="2"/>
+            				<light node="for9t1_drl" lightTypes="1" hasShadows="false"/>
+				<light node="for9t1_full" lightTypes="2" hasShadows="false"/>
+				<light node="for9t2_drl" lightTypes="1" hasShadows="false"/>
+				<light node="for9t2_full" lightTypes="2" hasShadows="false"/>
+            				<light node="ozz1_beam" lightTypes="3" hasShadows="false"/>
+				<light node="ozz2_beam" lightTypes="3" hasShadows="false"/>
+            </low>
+            <high>
+                <light node="frontLightHigh" lightTypes="1"/>
+                <light node="highBeamHigh" lightTypes="2"/>
+                <light node="backLightsHigh1" lightTypes="1"/>
+                <brakeLight node="backLightsHigh1"/>
+                <turnLightLeft node="turnLightLeftFront"/>
+                <turnLightLeft node="turnLightLeftBack"/>
+                <turnLightRight node="turnLightRightFront"/>
+                <turnLightRight node="turnLightRightBack"/>
+                <reverseLight node="reverseLight"/>
+				<light node="0>0|8|4|0|0" lightTypes="0"/>
+				<light node="0>0|8|4|0|1" lightTypes="0"/>
+				<light node="0>0|8|4|0|2" lightTypes="0"/>
+				<light node="drc32_drivingBeam"       lightTypes="3" hasShadows="false"/>
+                <light node="drc32_drivingFill"       lightTypes="3" hasShadows="false"/>
+                <light node="drc32_positionWashLeft"  lightTypes="0" hasShadows="false"/>
+                <light node="drc32_positionWashRight" lightTypes="0" hasShadows="false"/>
+            				<light node="for9t0_drl" lightTypes="1" hasShadows="false"/>
+				<light node="for9t0_full" lightTypes="2" hasShadows="false"/>
+				<light node="for9t1_drl" lightTypes="1" hasShadows="false"/>
+				<light node="for9t1_full" lightTypes="2" hasShadows="false"/>
+				<light node="for9t2_drl" lightTypes="1" hasShadows="false"/>
+				<light node="for9t2_full" lightTypes="2" hasShadows="false"/>
+				<light node="for9t3_drl" lightTypes="1" hasShadows="false"/>
+				<light node="for9t3_full" lightTypes="2" hasShadows="false"/>
+            				<light node="ozz0_beam" lightTypes="3" hasShadows="false"/>
+				<light node="ozz1_beam" lightTypes="3" hasShadows="false"/>
+				<light node="ozz2_beam" lightTypes="3" hasShadows="false"/>
+				<light node="ozz3_beam" lightTypes="3" hasShadows="false"/>
+            </high>
+        </realLights>
+        <defaultLights>
+            <defaultLight shaderNode="frontlightStatic" lightTypes="1"/>
+			<defaultLight shaderNode="backlightStatic" lightTypes="1"/>
+            <defaultLight shaderNode="highBeamStatic" lightTypes="2"/>
+			
+			
+			<defaultLight shaderNode="0>0|1|0|8|0" lightTypes="0 3"/>
+            <defaultLight shaderNode="0>0|1|0|8|4" lightTypes="3"/>
+			<defaultLight shaderNode="0>0|1|0|9|0" lightTypes="0 3"/>
+            <defaultLight shaderNode="0>0|1|0|9|4" lightTypes="3"/>
+			<defaultLight shaderNode="0>0|1|0|10|0" lightTypes="0 3"/>
+            <defaultLight shaderNode="0>0|1|0|10|4" lightTypes="3"/>
+			<defaultLight shaderNode="0>0|1|0|11|0" lightTypes="0 3"/>
+            <defaultLight shaderNode="0>0|1|0|11|4" lightTypes="3"/>
+			
+			<defaultLight shaderNode="0>0|1|0|13|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|14|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|15|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|16|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|17|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|18|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|19|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|20|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|21|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|22|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|23|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|24|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|25|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|26|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|27|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|28|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|29|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|30|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|31|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|32|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|33|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|34|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|35|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|36|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|37|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|38|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|39|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|40|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|41|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|42|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|43|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|44|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|45|2" lightTypes="0" intensity="80"/>
+            <defaultLight shaderNode="0>0|1|0|50|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|51|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|52|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|53|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|54|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|55|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|56|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|57|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|58|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|59|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|60|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|61|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|62|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|63|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|64|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|65|0" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|66|0" lightTypes="0" intensity="80"/>
+			
+			<defaultLight shaderNode="0>0|1|0|72|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|73|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|74|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|75|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|81|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|82|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|83|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|84|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|85|2" lightTypes="0" intensity="80"/>
+			<defaultLight shaderNode="0>0|1|0|86|2" lightTypes="0" intensity="80"/>
+			
+			<defaultLight shaderNode="0>0|1|0|46|0|0|1" lightTypes="1" intensity="50"/>
+			<defaultLight shaderNode="0>0|1|0|46|0|0|0" lightTypes="2" intensity="20"/>
+			<defaultLight shaderNode="0>0|1|0|47|0|0|1" lightTypes="1" intensity="50"/>
+			<defaultLight shaderNode="0>0|1|0|47|0|0|0" lightTypes="2" intensity="20"/>
+			<defaultLight shaderNode="0>0|1|0|48|0|0|1" lightTypes="1" intensity="50"/>
+			<defaultLight shaderNode="0>0|1|0|48|0|0|0" lightTypes="2" intensity="20"/>	
+			<defaultLight shaderNode="0>0|1|0|49|0|0|1" lightTypes="1" intensity="50"/>
+			<defaultLight shaderNode="0>0|1|0|49|0|0|0" lightTypes="2" intensity="20"/>	
+
+            <defaultLight shaderNode="bar_cruiselights" lightTypes="0" intensity="8"/>
+            <defaultLight node="drc32_reflectors"      lightTypes="3" intensity="2.5" uvSlotIndex="1"/>
+            <defaultLight node="drc32_mainLEDs"        lightTypes="3" intensity="20"  uvSlotIndex="1"/>
+            <defaultLight node="drc32_position"        lightTypes="0" intensity="10"   uvSlotIndex="1"/>
+            <defaultLight node="drc32_reflectors_LOD1" lightTypes="3" intensity="2.5" uvSlotIndex="1"/>
+            <defaultLight node="drc32_mainLEDs_LOD1"   lightTypes="3" intensity="20"  uvSlotIndex="1"/>
+            <defaultLight node="drc32_position_LOD1"   lightTypes="0" intensity="10"   uvSlotIndex="1"/>            			
+        </defaultLights>
+		
+        <brakeLights>
+			<brakeLight shaderNode="brakelightStatic"/>
+			<brakeLight shaderNode="0>0|1|0|4|0"/>
+        </brakeLights>
+		
+        <reverseLights>
+            <reverseLight shaderNode="reverseLightStatic"/>
+        </reverseLights>
+		
+        <turnLights>
+			<turnLightLeft shaderNode="turnlightLeftStatic"/>
+			<turnLightLeft shaderNode="0>0|1|0|5|0"/>
+			<turnLightLeft shaderNode="0>0|1|0|5|1"/>
+            <turnLightRight shaderNode="turnlightRightStatic"/>
+			<turnLightRight shaderNode="0>0|1|0|6|0"/>
+			<turnLightRight shaderNode="0>0|1|0|6|1"/>
+        </turnLights>
+		<beaconLights>
+			<beaconLight realLight="0>0|1|0|67|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|67|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|68|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|68|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|69|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|69|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|70|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|70|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|71|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|71|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|76|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|76|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|77|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|77|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|78|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|78|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|79|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|79|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|80|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|80|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|87|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|87|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|88|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|88|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|89|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|89|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|90|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|90|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|91|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|91|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|92|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|92|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|93|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|93|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|94|0|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|94|0" intensity="600" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="drc32_strobeLeft"/>
+			<beaconLight realLight="drc32_strobeRight"/>
+			<beaconLight realLight="0>0|1|0|12|2|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|12|2" intensity="1500" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|12|2|1" realLightRange="1.5"/>
+			<beaconLight realLight="0>0|1|0|12|2|2" realLightRange="1.5"/>
+			<beaconLight realLight="0>0|1|0|12|3|0" realLightRange="1.5">
+				<staticLight node="0>0|1|0|12|3" intensity="1500" multiBlink="true"/>
+			</beaconLight>
+			<beaconLight realLight="0>0|1|0|12|3|1" realLightRange="1.5"/>
+			<beaconLight realLight="0>0|1|0|12|3|2" realLightRange="1.5"/>
+		</beaconLights>
+
+		
+        <dashboards>
+            <dashboard displayType="emitter" valueType="turnLightLeft"  node="0>0|8|4|1|0"      baseColor="GREY" emitColor="GREEN" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="emitter" valueType="turnLightRight" node="0>0|8|4|1|1"     baseColor="GREY" emitColor="GREEN" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="EMITTER" valueType="lightState" node="0>0|8|4|3|0"         baseColor="GREY" emitColor="BIGBUD_BLUE1" intensity="2" lightTypes="1" groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="EMITTER" valueType="lightState" node="0>0|8|4|4|0"  baseColor="GREY" emitColor="YELLOW" intensity="2" lightTypes="2" groups="MOTOR_ACTIVE"/>
+		    <dashboard displayType="emitter" valueType="turnLightHazard" node="0>0|8|4|7|0"              baseColor="GREY" emitColor="RED" intensity="4" groups="MOTOR_ACTIVE"/>
+		</dashboards>
+    </lights>
+	
+	<service>
+        <workshop playerTriggerNode="0>0|17|0|0|0" vehicleTriggerNode="0>0|17|0|0|1|0" >
+            <operation animationName="service" openSpeedScale="1" closeSpeedScale="-0.8" activateText="$l10n_action_activateService" deactivateText="$l10n_action_deactivateService"/>
+            <infoTexts visibilityNode="0>0|17|0|2|4|0|1|1|0">
+                <headers>
+                    <value node="0>0|17|0|2|4|0|1|0|0|1" textSize="0.012" />
+                    <age node="0>0|17|0|2|4|0|1|0|0|2" textSize="0.012" />
+                    <operatingHours node="0>0|17|0|2|4|0|1|0|0|3" textSize="0.012" />
+                    <condition node="0>0|17|0|2|4|0|1|0|0|4" textSize="0.012" />
+                    <paintCondition node="0>0|17|0|2|4|0|1|0|0|5" textSize="0.012" />
+                </headers>
+
+                <values>
+                    <name node="0>0|17|0|2|4|0|1|0|0|0" textSize="0.016" textColour="0.9301 0.2874 0.0130 1"/>
+                    <value node="0>0|17|0|2|4|0|1|0|1|0" textSize="0.01" />
+                    <age node="0>0|17|0|2|4|0|1|0|1|1" textSize="0.01" />
+                    <operatingHours node="0>0|17|0|2|4|0|1|0|1|2" textSize="0.01" />
+                    <condition node="0>0|17|0|2|4|0|1|0|1|3" textSize="0.01" />
+                    <paintCondition node="0>0|17|0|2|4|0|1|0|1|4" textSize="0.01" />
+                </values>
+            </infoTexts>
+
+            <triggerMarkers hideWhenMoving="true" activateText="$l10n_action_showMarkers" deactivateText="$l10n_action_hideMarkers">
+                <triggerMarker node="0>0|17|0|2|0|0" activeNode="0>0|17|0|1|1" inactiveNode="0>0|17|0|2|0" adjustToGround="true"/>
+                <triggerMarker node="0>0|17|0|2|1|0" activeNode="0>0|17|0|1|2" inactiveNode="0>0|17|0|2|1" adjustToGround="true" />
+                <triggerMarker node="0>0|17|0|2|2|0" activeNode="0>0|17|0|1|3" inactiveNode="0>0|17|0|2|2" adjustToGround="true"/>
+                <triggerMarker node="0>0|17|0|2|3|0" activeNode="0>0|17|0|1|4" inactiveNode="0>0|17|0|2|3" adjustToGround="true"/>
+				<triggerMarker node="0>0|17|0|2|4|0" activeNode="0>0|17|0|1|5" inactiveNode="0>0|17|0|2|4" adjustToGround="true"/>
+            </triggerMarkers>
+        </workshop>
+    </service>
+	
+	<attacherJoints comboDuration="2">
+		<attacherJointConfigurations>
+			<attacherJointConfiguration name="No" price="0">
+			    <attacherJoint node="0>0|13|8|2|2" jointType="trailer" lowerRotLimit="10 70 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1">
+					<schema position="1 0" rotation="0" invertX="false"/>
+				</attacherJoint>
+				<objectChange node="0>0|13|8" visibilityActive="false" />
+			</attacherJointConfiguration>
+			<attacherJointConfiguration name="Yes" price="250">
+			     <attacherJoint node="0>0|13|8|2|0" jointType="trailer" lowerRotLimit="20 70 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1">
+					<schema position="1 0" rotation="0" invertX="false"/>
+				</attacherJoint>			     
+				<attacherJoint node="0>0|13|8|2|0" jointType="trailerCar" lowerRotLimit="25 70 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1">
+					<schema position="1 0" rotation="0" invertX="false"/>
+				</attacherJoint>
+				<attacherJoint node="0>0|13|8|2|0" jointType="trailerLow" lowerRotLimit="20 70 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1">
+					<schema position="1 0" rotation="0" invertX="false"/>
+				</attacherJoint>
+				<objectChange node="0>0|13|8" visibilityActive="true" />
+			</attacherJointConfiguration>
+		</attacherJointConfigurations>
+    </attacherJoints>
+	
+	<connectionHoses>
+        <target attacherJointIndices="2" type="electric" node="0>0|13|8|3" socket="electric"/>
+    </connectionHoses>
+	
+    <enterable isTabbable="true">
+        <enterReferenceNode node="Caddy_main_component1"/>
+        <exitPoint node="exitPoint"/>
+		
+        <cameras count="2">
+            <camera node="outdoorCamera1" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="3.5" transMax="40" translation="0 0 5.75" rotation="-10 180 0">
+                <raycastNode node="cameraRaycastNode1"/>
+                <raycastNode node="cameraRaycastNode2"/>
+            </camera>
+            <camera node="indoorCamera1" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0" shadowFocusBox="shadowFocusBox"/>
+        </cameras>
+		
+        <mirrors>
+            <mirror node="0>0|12|99|0" prio="1"/>
+			<mirror node="0>0|12|100|0" prio="1"/>
+        </mirrors>
+		
+        <characterNode node="player_skin" cameraMinDistance="0.35" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="player_rightFoot"/>
+            <target ikChain="leftFoot" targetNode="player_leftFoot"/>
+            <target ikChain="rightArm" targetNode="0>0|5|0|0|2" />
+            <target ikChain="leftArm" targetNode="0>0|5|0|0|1" />
+        </characterNode>
+		
+        <characterTargetNodeModifier node="player_rightFoot" transitionTime="0.1">
+            <state node="0>0|7|0|0" referenceNode="gasPedal"/>
+            <state node="0>0|7|1|0" referenceNode="brakePedal"/>
+        </characterTargetNodeModifier>
+		
+		<passengerSeats>
+            <passengerSeat node="0>0|15|0" exitPoint="0>0|15|0|6" outdoorCameraIndex="1">
+                <camera node="0>0|15|0|0" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0" shadowFocusBox="shadowFocusBox"/>
+                <characterNode node="0>0|15|0|1" cameraMinDistance="0.35" spineRotation="-90 0 90">
+                    <target ikChain="leftArm"   targetNode="0>0|15|0|4" poseId="flatFingers"/>
+                    <target ikChain="rightArm"  targetNode="0>0|15|0|5" poseId="flatFingers"/>
+                    <target ikChain="leftFoot"  targetNode="0>0|15|0|2" />
+                    <target ikChain="rightFoot" targetNode="0>0|15|0|3" />
+                </characterNode>
+            </passengerSeat>
+        </passengerSeats>
+    </enterable>
+	
+    <drivable>
+        <steeringWheel node="0>0|5|0" indoorRotation="540" outdoorRotation="60"/>
+       <dashboards>
+		    <dashboard displayType="EMITTER" valueType="cruiseControlActive" node="0>0|8|4|6|0"   baseColor="GREY"       emitColor="YELLOW" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </drivable>
+	
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="120">
+					<dashboard displayType="EMITTER"   valueType="fillLevelWarning" node="0>0|8|4|5|0" baseColor="0.1 0.0 0.0 0.0" emitColor="RED" intensity="2" warningThresholdMax="20" groups="MOTOR_ACTIVE"/>
+					<exactFillRootNode node="0>0|16" />
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+	
+    <motorized>
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="1" usage="30" fillType="diesel"/>
+                <!-- usage is per hour at max load and max rpm -->
+            </consumerConfiguration>
+        </consumerConfigurations>
+		
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.8" wheelIndex1="1" wheelIndex2="2"/>
+                    <!-- front left-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.8" wheelIndex1="3" wheelIndex2="4"/>
+                    <!-- back left-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="1.8" differentialIndex1="1" differentialIndex2="2"/>
+                    <!-- front-back -->
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+		
+        <motorConfigurations>
+            <motorConfiguration name="Caddy" hp="150" price="0">
+                <motor torqueScale="0.465" minRpm="850" maxRpm="4500" maxForwardSpeed="180" maxBackwardSpeed="30" brakeForce="1.95" lowBrakeForceScale="0.1" dampingRateScale="0.1">
+                    <torque rpm="1000" torque="0.9"/>
+                    <torque rpm="2400" torque="1"/>
+                    <torque rpm="3480" torque="1"/>
+                    <torque rpm="4560" torque="0.8"/>
+                    <torque rpm="5280" torque="0.8"/>
+                    <torque rpm="6000" torque="0.8"/>
+                </motor>
+                <transmission autoGearChangeTime="0.3" gearChangeTime="0.3" name="$l10n_info_transmission_manual" axleRatio="15" startGearThreshold="0.15">
+                    <directionChange useGear="true"/>
+                    <backwardGear gearRatio="3.6" name="R"/>
+                    <forwardGear gearRatio="4"/>
+                    <forwardGear gearRatio="2.6"/>
+                    <forwardGear gearRatio="1.7"/>
+                    <forwardGear gearRatio="1.2"/>
+                    <forwardGear gearRatio="0.826"/>
+                    <forwardGear gearRatio="0.643"/>
+                    <forwardGear gearRatio="0.45"/>
+                </transmission>
+            </motorConfiguration>
+        </motorConfigurations>
+		
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticle" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.1" maxRpmColor="0.9 0.9 0.9 0.4" minRpmScale="0.02" maxRpmScale="0.25"/>
+        </exhaustEffects>
+		
+        <dashboards>
+            <dashboard displayType="ANIMATION" valueType="rpm" animName="rpmDisplay" minValueAnim="0" maxValueAnim="7000" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="speed" animName="speedDisplay" minValueAnim="0" maxValueAnim="220" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ANIMATION" valueType="motorTemperature" animName="loadingBarTemperature" minValueAnim="0" maxValueAnim="120" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+		
+        <motorStartDuration>3300</motorStartDuration>
+    </motorized>
+	
+	<licensePlates defaultPlacement="BOTH">
+        <licensePlate node="0>0|10" position="FRONT" preferedType="ELONGATED" placementArea="0.1 0.3 0.08 0.3"/>
+        <licensePlate node="0>0|11"  position="BACK"  preferedType="ELONGATED" placementArea="0.08 0.28 0.15 0.28"/>
+    </licensePlates>
+	
+    <animations>
+		<animation name="service">
+			<part node="0>0|17|0|2|4|0|1|0" startTime="2.0" endTime="3.0" startRot="0 0 100" endRot="0 0 -10"/>
+			<part node="0>0|17|0|2|4|0|1|1" startTime="0.0" endTime="3.1" visibility="false" />
+            <part node="0>0|17|0|2|4|0|1|1" startTime="3.1" endTime="3.2" visibility="true" />
+        </animation>
+        <animation name="rpmDisplay">
+            <part node="0>0|8|1|0" startTime="0" endTime="1" startRot="0 0 0" endRot="0 0 -225"/>
+        </animation>
+        <animation name="speedDisplay">
+            <part node="0>0|8|0|0" startTime="0" endTime="1" startRot="0 0 0" endRot="0 0 -225"/>
+        </animation>
+        <animation name="loadingBarTemperature">
+            <part node="0>0|8|3|0" startTime="0" endTime="1" startRot="0 0 0" endRot="0 0 -140"/>
+        </animation>
+        <animation name="loadingBarFuel">
+            <part node="0>0|8|2|0" startTime="0" endTime="1" startRot="0 0 0" endRot="0 0 283"/>
+        </animation>
+		<animation name="Front">
+            <part node="0>0|0|0" startTime="0" endTime="1" startTrans="0 0.284 1.588" endTrans="0 0.35 1.588"/>
+        </animation>
+		<animation name="Back">
+            <part node="0>0|0|1" startTime="0" endTime="1" startTrans="0 0.393 -1.623" endTrans="0 0.459 -1.623"/>
+        </animation>
+    </animations>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts requiresPower="false">
+                    <foldingPart animationName="Front" speedScale="1"/>
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>	
+	
+	<cover>
+        <coverConfigurations>
+            <coverConfiguration openCoverWhileTipping="false">
+                <cover openAnimation="Back" fillUnitIndices="1"/>
+            </coverConfiguration>
+        </coverConfigurations>
+    </cover>	
+	
+    <suspensions>
+        <suspension useCharacterTorso="true" weight="90" minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1"/>
+    </suspensions>
+	
+	<cylindered>
+        <movingTools>
+			<movingTool node="0>0|0|0" playSound="true" wheelIndices="1 2 3 4"></movingTool>
+			<movingTool node="0>0|0|1" playSound="true" wheelIndices="1 2 3 4"></movingTool>
+        </movingTools>
+    </cylindered>
+
+    <design2Configurations title="Front bar">
+		<design2Configuration name="No" price="0" vehicleType="VW_CADDY_2015">
+        </design2Configuration>
+		<design2Configuration name="Yes" price="250" vehicleType="VW_CADDY_2015">
+            <objectChange node="0>0|13|7" visibilityActive="true" visibilityInactive="false"/>			
+        </design2Configuration>
+	</design2Configurations>
+
+    <design3Configurations title="Roof Box">
+		<design3Configuration name="No" price="0" vehicleType="VW_CADDY_2015">
+        </design3Configuration>
+		<design3Configuration name="Yes" price="250" vehicleType="VW_CADDY_2015">
+            <objectChange node="0>0|13|1" visibilityActive="true" visibilityInactive="false"/>			
+        </design3Configuration>
+	</design3Configurations>	
+	
+	<design5Configurations title="Hood style">
+		<design5Configuration name="Normal" price="0" vehicleType="VW_CADDY_2015">
+			<objectChange node="0>0|13|9" visibilityActive="true" visibilityInactive="false"/>
+        </design5Configuration>
+		<design5Configuration name="Special" price="250" vehicleType="VW_CADDY_2015">
+            <objectChange node="0>0|13|10" visibilityActive="true" visibilityInactive="false"/>			
+        </design5Configuration>
+	</design5Configurations>
+
+    <design6Configurations title="Bumper style">
+		<design6Configuration name="Normal" price="0" vehicleType="VW_CADDY_2015">
+			<objectChange node="0>0|14|0" visibilityActive="true" visibilityInactive="false"/>
+        </design6Configuration>
+		<design6Configuration name="StickerBomb" price="250" vehicleType="VW_CADDY_2015">
+            <objectChange node="0>0|14|1" visibilityActive="true" visibilityInactive="false"/>			
+        </design6Configuration>
+	</design6Configurations>		
+
+    <design7Configurations title="Stickers">
+		<design7Configuration name="No" price="0" vehicleType="VW_CADDY_2015">
+        </design7Configuration>
+		<design7Configuration name="Case IH" price="250" vehicleType="VW_CADDY_2015">
+            <objectChange node="0>0|13|6|0" visibilityActive="true" visibilityInactive="false"/>			
+        </design7Configuration>
+		<design7Configuration name="Claas" price="250" vehicleType="VW_CADDY_2015">
+            <objectChange node="0>0|13|6|1" visibilityActive="true" visibilityInactive="false"/>			
+        </design7Configuration>
+		<design7Configuration name="Fendt" price="250" vehicleType="VW_CADDY_2015">
+            <objectChange node="0>0|13|6|2" visibilityActive="true" visibilityInactive="false"/>			
+        </design7Configuration>
+		<design7Configuration name="John Deere" price="250" vehicleType="VW_CADDY_2015">
+            <objectChange node="0>0|13|6|3" visibilityActive="true" visibilityInactive="false"/>			
+        </design7Configuration>
+		<design7Configuration name="Krone" price="250" vehicleType="VW_CADDY_2015">
+            <objectChange node="0>0|13|6|4" visibilityActive="true" visibilityInactive="false"/>			
+        </design7Configuration>
+	</design7Configurations>	
+	
+    <ai>
+	    <agent width="2.6" length="7.35" height="3.6" lengthOffset="2.9" frontOffset="5.61" />
+        <collisionTrigger node="aiCollisionTrigger"/>
+    </ai>
+	
+	<dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE"   isMotorStarting="true" isMotorRunning="true"/>
+        </groups>
+		<default>
+            <dashboard displayType="EMITTER" node="DayrunningLightStatic"                   idleValue="-1"  intensity="3" groups="MOTOR_ACTIVE"/>
+		</default>
+	</dashboard>
+	
+	<baseColorConfigurations title="$l10n_configuration_chassisColor" useDefaultColors="true">
+        <baseColorConfiguration materialTemplateName="SKODA_ENERGY_BLUE"/>
+        <baseColorConfiguration materialTemplateName="SKODA_STEEL_GREY"/>
+        <baseColorConfiguration materialTemplateName="SKODA_VELVET_RED_METALLIC"/>
+        <baseColorConfiguration materialTemplateName="SKODA_GRAPHITE_GREY_METALLIC"/>
+        <baseColorConfiguration materialTemplateName="SKODA_BRILLIANT_SILVER_METALLIC"/>
+        <baseColorConfiguration materialTemplateName="SKODA_RACE_BLUE_METALLIC"/>
+        <baseColorConfiguration materialTemplateName="SKODA_GOLD_BRONZE"/>
+        <baseColorConfiguration materialTemplateName="SKODA_BLACK_MAGIC"/>
+        <baseColorConfiguration materialTemplateName="SKODA_MOON_WHITE" isDefault="true"/>
+
+        <material materialSlotName="caddy_paint1"/>
+    </baseColorConfigurations>
+	
+	<designColor2Configurations title="Bumpers color" useDefaultColors="true">
+		<designColor2Configuration materialTemplateName="PLAST1" name="Dark plastik"  isDefault="true"/>
+		<designColor2Configuration materialTemplateName="PLAST2" name="Plastik"/>
+        <designColor2Configuration materialTemplateName="SKODA_ENERGY_BLUE" name="Energy blue"/>
+        <designColor2Configuration materialTemplateName="SKODA_STEEL_GREY" name="Steel gray"/>
+        <designColor2Configuration materialTemplateName="SKODA_VELVET_RED_METALLIC" name="Velvet red"/>
+        <designColor2Configuration materialTemplateName="SKODA_GRAPHITE_GREY_METALLIC" name="Graphite grey"/>
+        <designColor2Configuration materialTemplateName="SKODA_BRILLIANT_SILVER_METALLIC" name="Brilliant silver"/>
+        <designColor2Configuration materialTemplateName="SKODA_RACE_BLUE_METALLIC" name="Race blue"/>
+        <designColor2Configuration materialTemplateName="SKODA_GOLD_BRONZE" name="Gold bronze"/>
+        <designColor2Configuration materialTemplateName="SKODA_BLACK_MAGIC" name="Black magic"/>
+        <designColor2Configuration materialTemplateName="SKODA_MOON_WHITE" name="Moon white"/>
+		
+        <material materialSlotName="caddy_bumper1"/>
+    </designColor2Configurations>
+	
+	<designColor3Configurations title="Hood color" useDefaultColors="true">
+        <designColor3Configuration materialTemplateName="SKODA_ENERGY_BLUE" name="Energy blue"/>
+        <designColor3Configuration materialTemplateName="SKODA_STEEL_GREY" name="Steel gray"/>
+        <designColor3Configuration materialTemplateName="SKODA_VELVET_RED_METALLIC" name="Velvet red"/>
+        <designColor3Configuration materialTemplateName="SKODA_GRAPHITE_GREY_METALLIC" name="Graphite grey"/>
+        <designColor3Configuration materialTemplateName="SKODA_BRILLIANT_SILVER_METALLIC" name="Brilliant silver"/>
+        <designColor3Configuration materialTemplateName="SKODA_RACE_BLUE_METALLIC" name="Race blue"/>
+        <designColor3Configuration materialTemplateName="SKODA_GOLD_BRONZE" name="Gold bronze"/>
+        <designColor3Configuration materialTemplateName="SKODA_BLACK_MAGIC" name="Black magic"/>
+        <designColor3Configuration materialTemplateName="SKODA_MOON_WHITE" name="Moon white" isDefault="true"/>
+		
+        <material materialSlotName="caddy_hood"/>
+    </designColor3Configurations>
+	
+    <foliageBending>
+        <bendingNode minX="-1.15" maxX="1.15" minZ="-2.8" maxZ="2.8" yOffset="0.05"/>
+    </foliageBending>
+	
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+	
+    <i3dMappings>
+        <i3dMapping id="Caddy_main_component1" node="0>"/>
+        <i3dMapping id="Caddy_vis" node="0>0"/>
+        <i3dMapping id="wheels" node="0>0|0"/>
+        <i3dMapping id="axisFrontLeft" node="0>0|0|0|0"/>
+        <i3dMapping id="wheelFrontLeft" node="0>0|0|0|0|0|0"/>
+        <i3dMapping id="steeringBarFrontLeft" node="0>0|0|0|0|1"/>
+        <i3dMapping id="axisFrontRight" node="0>0|0|1|0"/>
+        <i3dMapping id="wheelFrontRight" node="0>0|0|1|0|0|0"/>
+        <i3dMapping id="steeringBarFrontRight" node="0>0|0|1|0|1"/>
+
+        <i3dMapping id="outdoorCameraTarget" node="0>0|2|0"/>
+        <i3dMapping id="outdoorCamera1" node="0>0|2|0|0"/>
+        <i3dMapping id="indoorCamera1" node="0>0|2|1"/>
+        <i3dMapping id="cameraRaycastNode1" node="0>0|2|2"/>
+        <i3dMapping id="cameraRaycastNode2" node="0>0|2|3"/>
+        <i3dMapping id="cameraRaycastNode3" node="0>0|2|4"/>
+        <i3dMapping id="shadowFocusBox" node="0>0|2|5"/>
+        <i3dMapping id="player_skin" node="0>0|3|0"/>
+        <i3dMapping id="player_rightFoot" node="0>0|3|1"/>
+        <i3dMapping id="player_leftFoot" node="0>0|3|2"/>
+        <i3dMapping id="exitPoint" node="0>0|4"/>
+        <i3dMapping id="steeringWheel" node="0>0|5|0"/>
+
+        <i3dMapping id="exhaustParticle" node="0>0|6|0"/>
+        <i3dMapping id="gasPedal" node="0>0|7|0"/>
+        <i3dMapping id="player_rightFootGas" node="0>0|7|0|0"/>
+        <i3dMapping id="brakePedal" node="0>0|7|1"/>
+        <i3dMapping id="player_rightFootBrake" node="0>0|7|1|0"/>
+        <i3dMapping id="needleSpeed" node="0>0|8|0|0"/>
+        <i3dMapping id="dashboardDecalEmmisive" node="0>0|8|1"/>
+        <i3dMapping id="dashboardDecalLightUp" node="0>0|8|2"/>
+        <i3dMapping id="aiCollisionTrigger" node="0>0|9"/>
+		
+		<i3dMapping id="staticLight" node="0>0|1|0"/>
+		<i3dMapping id="DayrunningLightStatic" node="0>0|1|0|0"/>
+        <i3dMapping id="frontlightStatic" node="0>0|1|0|1"/>
+		<i3dMapping id="highBeamStatic" node="0>0|1|0|2"/>
+		<i3dMapping id="backlightStatic" node="0>0|1|0|3"/>
+        <i3dMapping id="brakelightStatic" node="0>0|1|0|4"/>
+		<i3dMapping id="stoplightStatic" node="0>0|1|0|4|0"/>
+		<i3dMapping id="turnlightLeftStatic" node="0>0|1|0|5"/>
+        <i3dMapping id="turnlightRightStatic" node="0>0|1|0|6"/>
+		<i3dMapping id="reverseLightStatic" node="0>0|1|0|7"/>
+		<i3dMapping id="realLights" node="0>0|1|1"/>
+        <i3dMapping id="frontLightLow" node="0>0|1|1|0"/>
+		<i3dMapping id="highBeamLow" node="0>0|1|1|1"/>
+		<i3dMapping id="frontLightHigh" node="0>0|1|1|2"/>
+        <i3dMapping id="highBeamHigh" node="0>0|1|1|3"/>
+		<i3dMapping id="backLightsHigh1" node="0>0|1|1|4"/>
+        <i3dMapping id="turnLightLeftFront" node="0>0|1|1|5"/>
+		<i3dMapping id="turnLightLeftBack" node="0>0|1|1|6"/>
+		<i3dMapping id="turnLightRightFront" node="0>0|1|1|7"/>
+		<i3dMapping id="turnLightRightBack" node="0>0|1|1|8"/>
+		<i3dMapping id="reverseLight" node="0>0|1|1|9"/>
+		<i3dMapping id="VW_Caddy" node="0>0|12"/>  
+	   <i3dMapping id="Body_Farbwahl" node="0>0|13|2"/>
+       <i3dMapping id="Body_VW" node="0>0|13|0"/>
+       <i3dMapping id="Body_UV2" node="0>0|13|1"/>
+	   <i3dMapping id="drc32_strobeLeft"         node="0>0|1|0|95|2"/>
+       <i3dMapping id="drc32_strobeRight"        node="0>0|1|0|95|3"/>
+       <i3dMapping id="drc32_lampPivot"          node="0>0|1|0|95|0"/>
+       <i3dMapping id="drc32_drivingBeam"        node="0>0|1|0|95|0|0"/>
+       <i3dMapping id="drc32_drivingFill"        node="0>0|1|0|95|0|1"/>
+       <i3dMapping id="drc32_positionWashLeft"   node="0>0|1|0|95|0|3"/>
+       <i3dMapping id="drc32_positionWashRight"  node="0>0|1|0|95|0|4"/>
+       <i3dMapping id="drc32_reflectors"         node="0>0|1|0|95|0|2|0|8"/>
+       <i3dMapping id="drc32_mainLEDs"           node="0>0|1|0|95|0|2|0|4"/>
+       <i3dMapping id="drc32_position"           node="0>0|1|0|95|0|2|0|6"/>
+       <i3dMapping id="drc32_reflectors_LOD1"    node="0>0|1|0|95|0|2|1|8"/>
+       <i3dMapping id="drc32_mainLEDs_LOD1"      node="0>0|1|0|95|0|2|1|4"/>
+       <i3dMapping id="drc32_position_LOD1"      node="0>0|1|0|95|0|2|1|7"/>
+           <i3dMapping id="for9t0_drl" node="0>0|1|0|46|0|0|7"/>
+       <i3dMapping id="for9t0_full" node="0>0|1|0|46|0|0|8"/>
+       <i3dMapping id="for9t1_drl" node="0>0|1|0|47|0|0|7"/>
+       <i3dMapping id="for9t1_full" node="0>0|1|0|47|0|0|8"/>
+       <i3dMapping id="for9t2_drl" node="0>0|1|0|48|0|0|7"/>
+       <i3dMapping id="for9t2_full" node="0>0|1|0|48|0|0|8"/>
+       <i3dMapping id="for9t3_drl" node="0>0|1|0|49|0|0|7"/>
+       <i3dMapping id="for9t3_full" node="0>0|1|0|49|0|0|8"/>
+       <i3dMapping id="bar_cruiselights" node="0>0|1|0|12|4"/>
+       <i3dMapping id="bar_blitzer1" node="0>0|1|0|12|2"/>
+       <i3dMapping id="bar_blitzer2" node="0>0|1|0|12|3"/>
+       <i3dMapping id="bar_blitzer1_a" node="0>0|1|0|12|2|0"/>
+       <i3dMapping id="bar_blitzer1_b" node="0>0|1|0|12|2|1"/>
+       <i3dMapping id="bar_blitzer1_c" node="0>0|1|0|12|2|2"/>
+       <i3dMapping id="bar_blitzer2_a" node="0>0|1|0|12|3|0"/>
+       <i3dMapping id="bar_blitzer2_b" node="0>0|1|0|12|3|1"/>
+       <i3dMapping id="bar_blitzer2_c" node="0>0|1|0|12|3|2"/>
+           <i3dMapping id="ozz0_beam" node="0>0|1|0|8|5"/>
+       <i3dMapping id="ozz1_beam" node="0>0|1|0|9|5"/>
+       <i3dMapping id="ozz2_beam" node="0>0|1|0|10|5"/>
+       <i3dMapping id="ozz3_beam" node="0>0|1|0|11|5"/>
+    </i3dMappings>
+</vehicle>
