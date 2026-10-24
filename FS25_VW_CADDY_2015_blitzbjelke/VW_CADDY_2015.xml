@@ -360,10 +360,10 @@
 				<staticLight node="0>0|1|0|69|0" intensity="600" multiBlink="true"/>
 			</beaconLight>
 			<beaconLight realLight="0>0|1|0|70|0|0" realLightRange="1.5">
-				<staticLight node="0>0|1|0|70|0" intensity="600" multiBlink="true"/>
+				<staticLight node="0>0|1|0|70|0" intensity="600" multiBlink="false"/>
 			</beaconLight>
 			<beaconLight realLight="0>0|1|0|71|0|0" realLightRange="1.5">
-				<staticLight node="0>0|1|0|71|0" intensity="600" multiBlink="true"/>
+				<staticLight node="0>0|1|0|71|0" intensity="600" multiBlink="false"/>
 			</beaconLight>
 			<beaconLight realLight="0>0|1|0|76|0|0" realLightRange="1.5">
 				<staticLight node="0>0|1|0|76|0" intensity="600" multiBlink="true"/>
@@ -375,22 +375,22 @@
 				<staticLight node="0>0|1|0|78|0" intensity="600" multiBlink="true"/>
 			</beaconLight>
 			<beaconLight realLight="0>0|1|0|79|0|0" realLightRange="1.5">
-				<staticLight node="0>0|1|0|79|0" intensity="600" multiBlink="true"/>
+				<staticLight node="0>0|1|0|79|0" intensity="600" multiBlink="false"/>
 			</beaconLight>
 			<beaconLight realLight="0>0|1|0|80|0|0" realLightRange="1.5">
-				<staticLight node="0>0|1|0|80|0" intensity="600" multiBlink="true"/>
+				<staticLight node="0>0|1|0|80|0" intensity="600" multiBlink="false"/>
 			</beaconLight>
 			<beaconLight realLight="0>0|1|0|87|0|0" realLightRange="1.5">
-				<staticLight node="0>0|1|0|87|0" intensity="600" multiBlink="true"/>
+				<staticLight node="0>0|1|0|87|0" intensity="600" multiBlink="false"/>
 			</beaconLight>
 			<beaconLight realLight="0>0|1|0|88|0|0" realLightRange="1.5">
-				<staticLight node="0>0|1|0|88|0" intensity="600" multiBlink="true"/>
+				<staticLight node="0>0|1|0|88|0" intensity="600" multiBlink="false"/>
 			</beaconLight>
 			<beaconLight realLight="0>0|1|0|89|0|0" realLightRange="1.5">
-				<staticLight node="0>0|1|0|89|0" intensity="600" multiBlink="true"/>
+				<staticLight node="0>0|1|0|89|0" intensity="600" multiBlink="false"/>
 			</beaconLight>
 			<beaconLight realLight="0>0|1|0|90|0|0" realLightRange="1.5">
-				<staticLight node="0>0|1|0|90|0" intensity="600" multiBlink="true"/>
+				<staticLight node="0>0|1|0|90|0" intensity="600" multiBlink="false"/>
 			</beaconLight>
 			<beaconLight realLight="0>0|1|0|91|0|0" realLightRange="1.5">
 				<staticLight node="0>0|1|0|91|0" intensity="600" multiBlink="true"/>
@@ -416,6 +416,11 @@
 			</beaconLight>
 			<beaconLight realLight="0>0|1|0|12|3|1" realLightRange="1.5"/>
 			<beaconLight realLight="0>0|1|0|12|3|2" realLightRange="1.5"/>
+		
+            <beaconLight realLight="caddy_beaconFront" realLightRange="1.0"/>
+            <beaconLight realLight="caddy_beaconRear" realLightRange="1.0"/>
+            <beaconLight realLight="caddy_beaconLeft" realLightRange="1.0"/>
+            <beaconLight realLight="caddy_beaconRight" realLightRange="1.0"/>
 		</beaconLights>
 
 		
@@ -880,5 +885,10 @@
        <i3dMapping id="ozz1_beam" node="0>0|1|0|9|5"/>
        <i3dMapping id="ozz2_beam" node="0>0|1|0|10|5"/>
        <i3dMapping id="ozz3_beam" node="0>0|1|0|11|5"/>
+
+        <i3dMapping id="caddy_beaconFront" node="0>0|1|0|96"/>
+        <i3dMapping id="caddy_beaconRear" node="0>0|1|0|97"/>
+        <i3dMapping id="caddy_beaconLeft" node="0>0|1|0|98"/>
+        <i3dMapping id="caddy_beaconRight" node="0>0|1|0|99"/>
     </i3dMappings>
 </vehicle>

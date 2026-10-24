@@ -1,12 +1,9 @@
-# VW Caddy 2015 – blitzbjelke patch
+# VW Caddy 2015 – beacon lightbar patch
 
-These are replacement files for the original mod. They are **not a complete installable mod**.
+These are replacement files for the original mod, not a complete installable mod.
 
-To apply them:
+This revision alternates the beacon modules on the two sides of the roof bar and adds amber warning lights at the front, rear, left, and right sides of the vehicle. The four added lights use short range and horizontal aiming to limit ground spill.
 
-1. Make a backup of the original `FS25_VW_CADDY_2015.zip`.
-2. Open the original mod archive and replace its `VW_CADDY_2015.i3d` and `VW_CADDY_2015.xml` with the two files in this folder.
-3. Keep the original `modDesc.xml`, `.i3d.shapes` files, textures, and every other mod file unchanged.
-4. Repack the complete original mod with the same folder structure and put it back in the Farming Simulator mods folder.
+To apply: back up the original mod ZIP, replace `VW_CADDY_2015.i3d` and `VW_CADDY_2015.xml` inside it, preserve `modDesc.xml`, `.i3d.shapes`, textures, and all other original files, then repack the complete mod with the same folder structure.
 
-Do not install these two files as a separate zip: they need the rest of the original mod to load.
+Do not install these two files as a separate ZIP. They require the rest of the original mod.

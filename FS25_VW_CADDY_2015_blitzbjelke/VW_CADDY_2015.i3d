@@ -1668,7 +1668,12 @@
               <Light name="strobeLeft" translation="-0.3 0 0.08" rotation="-180 0 0" visibility="false" clipDistance="400" nodeId="1515" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="40" coneAngle="110" dropOff="2.25"/>
               <Light name="strobeRight" translation="0.3 0 0.08" rotation="-180 0 0" visibility="false" clipDistance="400" nodeId="1516" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="40" coneAngle="110" dropOff="2.25"/>
             </TransformGroup>
-          </TransformGroup>
+          
+              <Light name="beaconFront" translation="0 0.82 2.18" rotation="0 0 0" visibility="false" clipDistance="150" nodeId="1533" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
+              <Light name="beaconRear" translation="0 0.82 -2.18" rotation="0 180 0" visibility="false" clipDistance="150" nodeId="1534" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
+              <Light name="beaconLeft" translation="-0.78 0.82 0" rotation="0 -90 0" visibility="false" clipDistance="150" nodeId="1535" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
+              <Light name="beaconRight" translation="0.78 0.82 0" rotation="0 90 0" visibility="false" clipDistance="150" nodeId="1536" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
+</TransformGroup>
           <TransformGroup name="realLights" nodeId="896">
             <Light name="frontLightLow" translation="-1.75707e-08 -0.32 2.686" rotation="-15 180 0" clipDistance="75" nodeId="897" type="spot" color="0.9 0.9 1.2" emitDiffuse="true" emitSpecular="true" range="20" coneAngle="80" dropOff="3"/>
             <Light name="highBeamLow" translation="0 -0.32 2.686" rotation="169.307 -5.00896e-06 -180" clipDistance="75" nodeId="898" type="spot" color="0.9 0.9 1.2" emitDiffuse="true" emitSpecular="true" range="30" coneAngle="70" dropOff="2"/>
