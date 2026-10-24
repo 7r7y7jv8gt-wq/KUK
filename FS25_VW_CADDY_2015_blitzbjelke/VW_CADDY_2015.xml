@@ -421,6 +421,12 @@
             <beaconLight realLight="caddy_beaconRear" realLightRange="1.0"/>
             <beaconLight realLight="caddy_beaconLeft" realLightRange="1.0"/>
             <beaconLight realLight="caddy_beaconRight" realLightRange="1.0"/>
+		            <beaconLight realLight="drc32_strobeFrontLeft" realLightRange="1.0"/>
+            <beaconLight realLight="drc32_strobeFrontRight" realLightRange="1.0"/>
+            <beaconLight realLight="drc32_strobeRearLeft" realLightRange="1.0"/>
+            <beaconLight realLight="drc32_strobeRearRight" realLightRange="1.0"/>
+            <beaconLight realLight="drc32_strobeSideLeft" realLightRange="1.0"/>
+            <beaconLight realLight="drc32_strobeSideRight" realLightRange="1.0"/>
 		</beaconLights>
 
 		
@@ -890,5 +896,11 @@
         <i3dMapping id="caddy_beaconRear" node="0>0|1|0|97"/>
         <i3dMapping id="caddy_beaconLeft" node="0>0|1|0|98"/>
         <i3dMapping id="caddy_beaconRight" node="0>0|1|0|99"/>
+       <i3dMapping id="drc32_strobeFrontLeft" node="0>0|1|0|95|4"/>
+       <i3dMapping id="drc32_strobeFrontRight" node="0>0|1|0|95|5"/>
+       <i3dMapping id="drc32_strobeRearLeft" node="0>0|1|0|95|6"/>
+       <i3dMapping id="drc32_strobeRearRight" node="0>0|1|0|95|7"/>
+       <i3dMapping id="drc32_strobeSideLeft" node="0>0|1|0|95|8"/>
+       <i3dMapping id="drc32_strobeSideRight" node="0>0|1|0|95|9"/>
     </i3dMappings>
 </vehicle>

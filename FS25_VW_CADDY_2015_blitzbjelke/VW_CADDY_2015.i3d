@@ -1667,7 +1667,13 @@
               </TransformGroup>
               <Light name="strobeLeft" translation="-0.3 0 0.08" rotation="-180 0 0" visibility="false" clipDistance="400" nodeId="1515" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="40" coneAngle="110" dropOff="2.25"/>
               <Light name="strobeRight" translation="0.3 0 0.08" rotation="-180 0 0" visibility="false" clipDistance="400" nodeId="1516" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="40" coneAngle="110" dropOff="2.25"/>
-            </TransformGroup>
+                            <Light name="strobeFrontLeft" translation="-0.3 0 0.08" rotation="0 0 0" visibility="false" clipDistance="150" nodeId="1537" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
+                <Light name="strobeFrontRight" translation="0.3 0 0.08" rotation="0 0 0" visibility="false" clipDistance="150" nodeId="1538" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
+                <Light name="strobeRearLeft" translation="-0.3 0 -0.08" rotation="0 180 0" visibility="false" clipDistance="150" nodeId="1539" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
+                <Light name="strobeRearRight" translation="0.3 0 -0.08" rotation="0 180 0" visibility="false" clipDistance="150" nodeId="1540" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
+                <Light name="strobeSideLeft" translation="-0.36 0 0" rotation="0 -90 0" visibility="false" clipDistance="150" nodeId="1541" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
+                <Light name="strobeSideRight" translation="0.36 0 0" rotation="0 90 0" visibility="false" clipDistance="150" nodeId="1542" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
+</TransformGroup>
           
               <Light name="beaconFront" translation="0 0.82 2.18" rotation="0 0 0" visibility="false" clipDistance="150" nodeId="1533" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
               <Light name="beaconRear" translation="0 0.82 -2.18" rotation="0 180 0" visibility="false" clipDistance="150" nodeId="1534" type="spot" color="1 0.5 0" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="65" dropOff="4"/>
