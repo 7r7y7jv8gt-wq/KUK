@@ -315,16 +315,12 @@
 			<defaultLight shaderNode="0>0|1|0|86|2" lightTypes="0" intensity="80"/>
 			
 			<defaultLight shaderNode="0>0|1|0|46|0|0|1" lightTypes="1" intensity="40"/>
-			<defaultLight shaderNode="0>0|1|0|46|0|0|1" lightTypes="2" intensity="80"/>
 			<defaultLight shaderNode="0>0|1|0|46|0|0|0" lightTypes="2" intensity="20"/>
 			<defaultLight shaderNode="0>0|1|0|47|0|0|1" lightTypes="1" intensity="40"/>
-			<defaultLight shaderNode="0>0|1|0|47|0|0|1" lightTypes="2" intensity="80"/>
 			<defaultLight shaderNode="0>0|1|0|47|0|0|0" lightTypes="2" intensity="20"/>
 			<defaultLight shaderNode="0>0|1|0|48|0|0|1" lightTypes="1" intensity="40"/>
-			<defaultLight shaderNode="0>0|1|0|48|0|0|1" lightTypes="2" intensity="80"/>
 			<defaultLight shaderNode="0>0|1|0|48|0|0|0" lightTypes="2" intensity="20"/>	
 			<defaultLight shaderNode="0>0|1|0|49|0|0|1" lightTypes="1" intensity="40"/>
-			<defaultLight shaderNode="0>0|1|0|49|0|0|1" lightTypes="2" intensity="80"/>
 			<defaultLight shaderNode="0>0|1|0|49|0|0|0" lightTypes="2" intensity="20"/>	
 
             <defaultLight shaderNode="bar_cruiselights" lightTypes="0" intensity="8"/>
@@ -339,6 +335,10 @@
         <brakeLights>
 			<brakeLight shaderNode="brakelightStatic"/>
 			<brakeLight shaderNode="0>0|1|0|4|0"/>
+			<brakeLight shaderNode="0>0|1|0|46|0|0|1"/>
+			<brakeLight shaderNode="0>0|1|0|47|0|0|1"/>
+			<brakeLight shaderNode="0>0|1|0|48|0|0|1"/>
+			<brakeLight shaderNode="0>0|1|0|49|0|0|1"/>
         </brakeLights>
 		
         <reverseLights>
