@@ -1,0 +1,32 @@
+name: Publish complete Caddy mod
+on:
+  push:
+    branches:
+      - publish-caddy-ic-20261025
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Assemble the verified complete ZIP
+        shell: bash
+        run: |
+          mkdir -p dist
+          cat package/FS25_VW_CADDY_2015.zip.part1 package/FS25_VW_CADDY_2015.zip.part2 > dist/FS25_VW_CADDY_2015.zip
+          echo '3fbda7b8559d3e3b25f2c1b86d26b4bbffb105378fa3b4ee26204ea84ffc15d8  dist/FS25_VW_CADDY_2015.zip' | sha256sum -c -
+      - name: Publish the complete mod download
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_COMMIT: ${{ github.sha }}
+        shell: bash
+        run: |
+          if ! gh release view caddy-ic-komplett-20261025 > /dev/null 2>&1; then
+            gh release create caddy-ic-komplett-20261025 --target "$RELEASE_COMMIT" --title 'VW Caddy 2015 med IC - komplett mod 1.1.0.1' --notes-file release_notes.md
+          fi
+          gh release upload caddy-ic-komplett-20261025 dist/FS25_VW_CADDY_2015.zip --clobber
+          gh release edit caddy-ic-komplett-20261025 --draft=false
