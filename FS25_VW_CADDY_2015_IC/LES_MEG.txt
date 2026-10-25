@@ -1,22 +1,22 @@
-# Caddy IC – tillegg til eksisterende filer
+# Komplett Caddy med Interactive Control – 1.1.0.1
 
-[Last ned tilleggspakken](https://raw.githubusercontent.com/7r7y7jv8gt-wq/KUK/main/FS25_VW_CADDY_2015_IC/VW_CADDY_2015_IC_tillegg_behold_lys.zip)
+[Last ned FS25_VW_CADDY_2015.zip](https://github.com/7r7y7jv8gt-wq/KUK/releases/download/caddy-ic-komplett-20261025/FS25_VW_CADDY_2015.zip)
 
-Bruk Caddy-versjonen der blitzbjelka og blitzerne fungerer. Kopier mappen
-`Caddy_IC_tillegg` inn ved siden av `modDesc.xml` og kjør `Legg_til_IC.cmd`.
-Aktiver `FS25_interactiveControl` i lagringen.
+IC er ferdig lagt inn på begge fordører, begge skyvedører og bakluka.
+Alle medfølgende lysfiler, blitzbjelka, blitzerne, teksturer og servicescript
+fra de siste opplastede filene er bevart.
 
-Programmet leser dine eksisterende filer og fletter inn IC for begge fordører,
-begge skyvedører og bakluka. ZIP-en inneholder ingen komplette hovedfiler som
-skal kopieres over modden. Før innleggingen tas en sikkerhetskopi.
+1. Lukk spillet og flytt gammel FS25_VW_CADDY_2015-mappe og ZIP ut av mods.
+2. Legg den nye ZIP-en direkte i mods. Ikke pakk den ut.
+3. Aktiver Caddyen og FS25_interactiveControl i lagringen.
 
-Eksisterende lysnoder, blitzbjelker, lysinnstillinger, ekstra geometri, materialer,
-kjøretøyinnstillinger og scripts beholdes fra filene programmet leser.
-En samlet test med nye lysdeler, endrede verdier, flyttede ID-er og eget script er bestått.
-Patchen er ikke kjørt i FS25. Windows-dialogen er ikke prøvd på Windows;
-selve fletteprogrammet er kompilert og kjørt med C#5/Mono.
+Pakken inneholder alle 66 spillfiler og trenger ingen innleggingsskript.
+Tidligere opplastinger hadde tilleggsfilene kopiert inn, men IC var ikke
+installert i hovedfilene. Denne pakken er bygget ferdig og samlet fra
+begge ZIP-ene og alle seks RAR-delene.
 
-De eldre filpakkene i denne mappen erstatter hele hovedfiler. Bruk tilleggspakken
-ovenfor for å beholde egne endringer i din eksisterende mod.
-Hvis en eldre pakke allerede har fjernet lys, gjenopprett den fungerende originalen
-eller sikkerhetskopien før du legger inn dette tillegget.
+Kontrollert: ZIP-struktur, alle lokale ressurser, 110 nodereferanser, fem IC-kontroller,
+bevart lysgeometri og uendrede medfølgende asset-/scriptfiler.
+Ikke kjørt inne i FS25.
+
+SHA256: `3fbda7b8559d3e3b25f2c1b86d26b4bbffb105378fa3b4ee26204ea84ffc15d8`
