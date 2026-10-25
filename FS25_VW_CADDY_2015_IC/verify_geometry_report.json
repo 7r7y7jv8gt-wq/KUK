@@ -1,0 +1,179 @@
+{
+  "original_entities": 300,
+  "final_entities": 312,
+  "unmodified_entity_payloads_byte_identical": 292,
+  "modified_original_shapes": [
+    155,
+    156,
+    165,
+    166,
+    172,
+    174,
+    205,
+    257
+  ],
+  "appended_shapes": [
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312
+  ],
+  "original_triangle_total": 2004113,
+  "final_triangle_total": 2004113,
+  "all_modified_source_faces_partitioned_once": true,
+  "authored_positions_normals_tangents_vertex_colors_uvs_preserved_exactly": true,
+  "all_triangle_winding_and_source_correspondence_preserved": true,
+  "all_material_slots_and_uv_densities_preserved": true,
+  "all_modified_bounds_enclose_vertices": true,
+  "part_details": [
+    {
+      "shape_id": 257,
+      "source_shape_id": 257,
+      "group": "static",
+      "faces": 96565,
+      "vertices": 54504
+    },
+    {
+      "shape_id": 301,
+      "source_shape_id": 257,
+      "group": "frontLeft",
+      "faces": 17446,
+      "vertices": 9866
+    },
+    {
+      "shape_id": 302,
+      "source_shape_id": 257,
+      "group": "frontRight",
+      "faces": 17446,
+      "vertices": 9865
+    },
+    {
+      "shape_id": 303,
+      "source_shape_id": 257,
+      "group": "slidingLeft",
+      "faces": 20599,
+      "vertices": 11650
+    },
+    {
+      "shape_id": 304,
+      "source_shape_id": 257,
+      "group": "slidingRight",
+      "faces": 20602,
+      "vertices": 11650
+    },
+    {
+      "shape_id": 305,
+      "source_shape_id": 257,
+      "group": "tailgate",
+      "faces": 26864,
+      "vertices": 15374
+    },
+    {
+      "shape_id": 156,
+      "source_shape_id": 156,
+      "group": "frontRight",
+      "faces": 8224,
+      "vertices": 5163
+    },
+    {
+      "shape_id": 306,
+      "source_shape_id": 156,
+      "group": "frontLeft",
+      "faces": 8224,
+      "vertices": 5163
+    },
+    {
+      "shape_id": 174,
+      "source_shape_id": 174,
+      "group": "frontRight",
+      "faces": 1728,
+      "vertices": 1260
+    },
+    {
+      "shape_id": 307,
+      "source_shape_id": 174,
+      "group": "frontLeft",
+      "faces": 1728,
+      "vertices": 1260
+    },
+    {
+      "shape_id": 205,
+      "source_shape_id": 205,
+      "group": "frontRight",
+      "faces": 1248,
+      "vertices": 933
+    },
+    {
+      "shape_id": 308,
+      "source_shape_id": 205,
+      "group": "frontLeft",
+      "faces": 1248,
+      "vertices": 933
+    },
+    {
+      "shape_id": 172,
+      "source_shape_id": 172,
+      "group": "frontRight",
+      "faces": 1248,
+      "vertices": 912
+    },
+    {
+      "shape_id": 309,
+      "source_shape_id": 172,
+      "group": "frontLeft",
+      "faces": 1248,
+      "vertices": 912
+    },
+    {
+      "shape_id": 166,
+      "source_shape_id": 166,
+      "group": "frontRight",
+      "faces": 3440,
+      "vertices": 1722
+    },
+    {
+      "shape_id": 310,
+      "source_shape_id": 166,
+      "group": "frontLeft",
+      "faces": 3440,
+      "vertices": 1722
+    },
+    {
+      "shape_id": 155,
+      "source_shape_id": 155,
+      "group": "frontRight",
+      "faces": 928,
+      "vertices": 573
+    },
+    {
+      "shape_id": 311,
+      "source_shape_id": 155,
+      "group": "frontLeft",
+      "faces": 928,
+      "vertices": 573
+    },
+    {
+      "shape_id": 165,
+      "source_shape_id": 165,
+      "group": "frontRight",
+      "faces": 4704,
+      "vertices": 2700
+    },
+    {
+      "shape_id": 312,
+      "source_shape_id": 165,
+      "group": "frontLeft",
+      "faces": 4704,
+      "vertices": 2700
+    }
+  ],
+  "final_shapes_sha256": "0a4343da9037c0bb77da759b9fc2d7bbd0baa7527b8249f101afe03dc4e4aa26"
+}

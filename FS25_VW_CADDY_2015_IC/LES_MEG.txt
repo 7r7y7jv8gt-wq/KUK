@@ -1,0 +1,21 @@
+CADDY – INTERACTIVE CONTROL PÅ DØRER OG BAKLUKE
+
+Dette er en filpatch til din komplette FS25_VW_CADDY_2015-mod, ikke en egen komplett mod.
+
+1. Lukk spillet og ta vare på originalmodden.
+2. Pakk ut denne ZIP-en. Erstatt VW_CADDY_2015.i3d, VW_CADDY_2015.i3d.shapes,
+   VW_CADDY_2015.xml og modDesc.xml i den komplette Caddy-modden med filene her.
+3. Behold alle øvrige filer, teksturer, prefabs og scripts fra originalmodden.
+4. Aktiver Interactive Control (FS25_interactiveControl) i lagringen sammen med bilen.
+5. Bruk IC-kryssene ved håndtakene for å åpne/lukke hver dør og bakluka.
+   IC-modden styrer aktiveringen og tastene; se tastaturinnstillingene for Interactive Control.
+
+Innhold: Venstre/høyre fordør, venstre/høyre skyvedør og bakluke med separate kontroller.
+Fordørene åpner 70 grader. Skyvedørene går ut og bakover. Bakluka åpner oppover.
+Speil, glass, håndtak, baklukas høye bremselys og bakskilt følger delene de er festet på.
+
+Bare modelloppdeling, hengsler, døranimasjoner, IC og nødvendige nodereferanser er endret.
+Eksisterende lysverdier, blinkmønstre, motor, butikkvalg og servicescript er bevart.
+Geometri, nodereferanser og XML er kontrollert. Patchen er ikke kjørt i Farming Simulator 25.
+
+Interactive Control: https://github.com/TobiasF92/FS25_interactiveControl

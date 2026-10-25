@@ -1,0 +1,9 @@
+{
+  "csharp_language_version": 5,
+  "actual_target_sha256": "0a4343da9037c0bb77da759b9fc2d7bbd0baa7527b8249f101afe03dc4e4aa26",
+  "actual_delta_reconstructed_target_byte_identical": true,
+  "wrong_original_rejected_before_destination_created": true,
+  "wrong_output_hash_rejected_and_temporary_output_deleted": true,
+  "original_shapes_unchanged": true,
+  "limitation": "Folder dialog and Windows PowerShell host not exercised on Linux."
+}
