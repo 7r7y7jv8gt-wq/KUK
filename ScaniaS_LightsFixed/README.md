@@ -1,19 +1,22 @@
-# Scania S Tridem — wider Briod beams
+# Scania S Tridem — added lamps wired
 
-[Download FS25_ScaniaS_Tridem.zip](../FS25_ScaniaS_Tridem.zip?raw=true) · [View lighting code](LightingCode.xml)
+[Download FS25_ScaniaS_Tridem.zip](../FS25_ScaniaS_Tridem.zip?raw=true) · [New lighting code](LightingCode.xml) · [File validation](validation.json)
 
-Replace the old ZIP in your mods folder, keep the filename unchanged, and restart FS25 completely. Keep the installed mod zipped.
+Built from the latest three-part archive supplied by the owner. Replace the old ZIP in your mods folder, keep its filename unchanged, and restart FS25 completely. Keep the installed mod zipped.
 
-The Briod lights now cover approximately 120 degrees across the front, compared with the previous 20-degree beam. In the high graphics profile, each lamp has a 60-degree cone and the beams fan outward by 0, ±10, ±20, and ±30 degrees. The low graphics profile uses one 120-degree beam. Drop-off is reduced from 2 to 1 for softer coverage. The projectors still face forward.
+| Added lamps | DRL / marker control | Main-light control |
+|---|---|---|
+| Four rear FOR9Ts from pictures 1–2 | Red, stage 1, intensity 20 | White reverse lights, intensity 50, reverse gear; 40 m projectors |
+| Four front-bumper Briods | White engine-on DRL, intensity 80 | Native high beam, intensity 800; 1000 m / 120° beam coverage |
+| Four FOR9T work pods from picture 3 | Red, stage 1, intensity 20 | White work lights on the third normal F-key light stage; intensity 50, 60 m projectors |
+| Eight Geovikings | Red guides, stage 1, intensity 20, both LODs | No additional work-light function requested |
 
-| Setting | Value |
-|---|---|
-| Briod projected-light range | 1000 metres |
-| Briod main glow | 800, controlled by native high beam (normally Ctrl+F) |
-| Engine-on white DRLs | 80 |
-| Blitzbar projected-light range | 100 metres |
-| Cruise lights | 8, steady engine-on |
+The third normal light stage is the final F-key step (types 0 1 2). Native high beam remains separate (type 3, normally Ctrl+F). Red DRLs remain on when the third stage is selected. All added projected lights start hidden and have distinct nodes for low/high graphics profiles.
 
-The blitzbar retains its alternating double flash and starts with all six projected lights off, so the uncontrolled orange ground light stays fixed. All prior texture repairs and 66 orange side diodes are preserved.
+Removed four stock work-lamp attachments behind the newly fitted FOR9T work pods. Corrected moved front-work and rear brake/indicator paths and removed references to stock reverse fixtures that were deleted in the new model. Other round rear lamps keep their normal brake, indicator and running-light functions.
 
-Validation confirmed that only cone angle, yaw, and drop-off changed on the eight Briod projector nodes. Vehicle XML, controls, materials, texture images, shape binaries, all node IDs, and all index paths remain unchanged. Archive CRC passed. Live appearance has not been tested in FS25/GIANTS Editor.
+The roof Briods retain the 1000 m / 120° setup, white DRL 80 and high-beam glow 800. The blitzbar retains 100 m alternating flash, independent steady cruise lights and no uncontrolled orange ground illumination. All 66 orange side diodes remain.
+
+The new GeoViking imports referenced original dirt/gloss masks and emissive textures outside the mod. Those originals were not included. Red/white emission now uses bundled textures; missing dirt/gloss masks use the game's neutral default mask, so the original dirt appearance may differ. No image or shape binary was edited.
+
+Validation preserved all 1317 original scene paths/IDs. The result has 1338 unique scene nodes, 474 valid mappings and 944 checked XML node references. Only the main i3D and vehicle XML changed; the other assets are byte-identical to the uploaded version. Archive CRC passed. Live lighting and gameplay have not been tested in FS25/GIANTS Editor.

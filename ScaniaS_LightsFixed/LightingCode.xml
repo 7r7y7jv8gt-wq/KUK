@@ -1,101 +1,180 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <lightingReference>
-    <!-- Already installed in vehicle XML. This file is a code reference only. -->
-    <realLights>
-        <low>
-            <light node="briodBeamLow" lightTypes="3" hasShadows="false"/>
-        </low>
-        <high>
-            <light node="briodBeamHigh1" lightTypes="3" hasShadows="false"/>
-            <light node="briodBeamHigh2" lightTypes="3" hasShadows="false"/>
-            <light node="briodBeamHigh3" lightTypes="3" hasShadows="false"/>
-            <light node="briodBeamHigh4" lightTypes="3" hasShadows="false"/>
-            <light node="briodBeamHigh5" lightTypes="3" hasShadows="false"/>
-            <light node="briodBeamHigh6" lightTypes="3" hasShadows="false"/>
-            <light node="briodBeamHigh7" lightTypes="3" hasShadows="false"/>
-        </high>
-    </realLights>
+    <!-- These blocks are already installed in the vehicle XML. Reference only. -->
     <defaultLights>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|0|4" lightTypes="3" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|1|4" lightTypes="3" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|2|4" lightTypes="3" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|3|4" lightTypes="3" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|4|4" lightTypes="3" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|5|4" lightTypes="3" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|6|4" lightTypes="3" intensity="800"/>
+        <defaultLight node="for9tReverseDrl1" intensity="20" lightTypes="0"/>
+        <defaultLight node="for9tReverseDrl2" intensity="20" lightTypes="0"/>
+        <defaultLight node="for9tReverseDrl3" intensity="20" lightTypes="0"/>
+        <defaultLight node="for9tReverseDrl4" intensity="20" lightTypes="0"/>
+        <defaultLight node="for9tWorkMain1" intensity="50" lightTypes="2"/>
+        <defaultLight node="for9tWorkDrl1" intensity="20" lightTypes="0"/>
+        <defaultLight node="for9tWorkMain2" intensity="50" lightTypes="2"/>
+        <defaultLight node="for9tWorkDrl2" intensity="20" lightTypes="0"/>
+        <defaultLight node="for9tWorkMain3" intensity="50" lightTypes="2"/>
+        <defaultLight node="for9tWorkDrl3" intensity="20" lightTypes="0"/>
+        <defaultLight node="for9tWorkMain4" intensity="50" lightTypes="2"/>
+        <defaultLight node="for9tWorkDrl4" intensity="20" lightTypes="0"/>
+        <defaultLight node="bumperBriodMain1" intensity="800" lightTypes="3"/>
+        <defaultLight node="bumperBriodMain2" intensity="800" lightTypes="3"/>
+        <defaultLight node="bumperBriodMain3" intensity="800" lightTypes="3"/>
+        <defaultLight node="bumperBriodMain4" intensity="800" lightTypes="3"/>
+        <defaultLight node="geoRedDrl1_1" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl1_2" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl1_3" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl1_4" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl2_1" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl2_2" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl2_3" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl2_4" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl3_1" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl3_2" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl3_3" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl3_4" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl4_1" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl4_2" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl4_3" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl4_4" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl5_1" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl5_2" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl5_3" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl5_4" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl6_1" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl6_2" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl6_3" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl6_4" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl7_1" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl7_2" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl7_3" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl7_4" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl8_1" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl8_2" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl8_3" intensity="20" lightTypes="0"/>
+        <defaultLight node="geoRedDrl8_4" intensity="20" lightTypes="0"/>
     </defaultLights>
     <dayTimeLights>
-        <!-- Briod white DRLs: engine on = 80; engine off = 0. -->
-        <dayTimeLight node="briodDrl1" intensity="80"/>
-        <dayTimeLight node="briodDrl2" intensity="80"/>
-        <dayTimeLight node="briodDrl3" intensity="80"/>
-        <dayTimeLight node="briodDrl4" intensity="80"/>
-        <dayTimeLight node="briodDrl5" intensity="80"/>
-        <dayTimeLight node="briodDrl6" intensity="80"/>
-        <dayTimeLight node="briodDrl7" intensity="80"/>
-        <!-- Optibeam cruise lights: original amber cruise setup, separate from strobes. -->
-        <dayTimeLight node="optibeamCruiseLights" intensity="8"/>
+        <dayTimeLight node="bumperBriodDrl1" intensity="80"/>
+        <dayTimeLight node="bumperBriodDrl2" intensity="80"/>
+        <dayTimeLight node="bumperBriodDrl3" intensity="80"/>
+        <dayTimeLight node="bumperBriodDrl4" intensity="80"/>
     </dayTimeLights>
-    <beaconLights>
-        <beaconLight realLight="optibeamBeamLeft1">
-            <staticLight node="optibeamFlashLeft" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 0"/>
-        </beaconLight>
-        <beaconLight realLight="optibeamBeamLeft2">
-            <staticLight node="optibeamFlashLeft" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 0"/>
-        </beaconLight>
-        <beaconLight realLight="optibeamBeamLeft3">
-            <staticLight node="optibeamFlashLeft" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 0"/>
-        </beaconLight>
-        <beaconLight realLight="optibeamBeamRight1">
-            <staticLight node="optibeamFlashRight" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/>
-        </beaconLight>
-        <beaconLight realLight="optibeamBeamRight2">
-            <staticLight node="optibeamFlashRight" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/>
-        </beaconLight>
-        <beaconLight realLight="optibeamBeamRight3">
-            <staticLight node="optibeamFlashRight" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/>
-        </beaconLight>
-    </beaconLights>
+    <reverseLights>
+        <reverseLight node="for9tReverseMain1_1" intensity="50"/>
+        <reverseLight node="for9tReverseMain1_2" intensity="50"/>
+        <reverseLight node="for9tReverseMain2_1" intensity="50"/>
+        <reverseLight node="for9tReverseMain2_2" intensity="50"/>
+        <reverseLight node="for9tReverseMain3_1" intensity="50"/>
+        <reverseLight node="for9tReverseMain3_2" intensity="50"/>
+        <reverseLight node="for9tReverseMain4_1" intensity="50"/>
+        <reverseLight node="for9tReverseMain4_2" intensity="50"/>
+    </reverseLights>
+    <realLights>
+        <low>
+            <reverseLight node="for9tReverseBeam1_low" hasShadows="false"/>
+            <reverseLight node="for9tReverseBeam2_low" hasShadows="false"/>
+            <reverseLight node="for9tReverseBeam3_low" hasShadows="false"/>
+            <reverseLight node="for9tReverseBeam4_low" hasShadows="false"/>
+            <light node="for9tWorkBeam1_low" hasShadows="false" lightTypes="2"/>
+            <light node="for9tWorkBeam2_low" hasShadows="false" lightTypes="2"/>
+            <light node="for9tWorkBeam3_low" hasShadows="false" lightTypes="2"/>
+            <light node="for9tWorkBeam4_low" hasShadows="false" lightTypes="2"/>
+            <light node="bumperBriodBeamLow" hasShadows="false" lightTypes="3"/>
+        </low>
+        <high>
+            <reverseLight node="for9tReverseBeam1_high" hasShadows="false"/>
+            <reverseLight node="for9tReverseBeam2_high" hasShadows="false"/>
+            <reverseLight node="for9tReverseBeam3_high" hasShadows="false"/>
+            <reverseLight node="for9tReverseBeam4_high" hasShadows="false"/>
+            <light node="for9tWorkBeam1_high" hasShadows="false" lightTypes="2"/>
+            <light node="for9tWorkBeam2_high" hasShadows="false" lightTypes="2"/>
+            <light node="for9tWorkBeam3_high" hasShadows="false" lightTypes="2"/>
+            <light node="for9tWorkBeam4_high" hasShadows="false" lightTypes="2"/>
+            <light node="bumperBriodBeamHigh1" hasShadows="false" lightTypes="3"/>
+            <light node="bumperBriodBeamHigh2" hasShadows="false" lightTypes="3"/>
+            <light node="bumperBriodBeamHigh3" hasShadows="false" lightTypes="3"/>
+            <light node="bumperBriodBeamHigh4" hasShadows="false" lightTypes="3"/>
+        </high>
+    </realLights>
     <i3dMappings>
-        <i3dMapping id="briodDrl1" node="0&gt;0|6|0|8|0|0|3|1|0|1"/>
-        <i3dMapping id="briodDrl2" node="0&gt;0|6|0|8|0|0|3|1|1|1"/>
-        <i3dMapping id="briodDrl3" node="0&gt;0|6|0|8|0|0|3|1|2|1"/>
-        <i3dMapping id="briodDrl4" node="0&gt;0|6|0|8|0|0|3|1|3|1"/>
-        <i3dMapping id="briodDrl5" node="0&gt;0|6|0|8|0|0|3|1|4|1"/>
-        <i3dMapping id="briodDrl6" node="0&gt;0|6|0|8|0|0|3|1|5|1"/>
-        <i3dMapping id="briodDrl7" node="0&gt;0|6|0|8|0|0|3|1|6|1"/>
-        <i3dMapping id="optibeamCruiseLights" node="0&gt;0|6|0|8|0|0|3|1|7|4"/>
-        <i3dMapping id="optibeamFlashLeft" node="0&gt;0|6|0|8|0|0|3|1|7|2"/>
-        <i3dMapping id="optibeamBeamLeft1" node="0&gt;0|6|0|8|0|0|3|1|7|2|0"/>
-        <i3dMapping id="optibeamBeamLeft2" node="0&gt;0|6|0|8|0|0|3|1|7|2|1"/>
-        <i3dMapping id="optibeamBeamLeft3" node="0&gt;0|6|0|8|0|0|3|1|7|2|2"/>
-        <i3dMapping id="optibeamFlashRight" node="0&gt;0|6|0|8|0|0|3|1|7|3"/>
-        <i3dMapping id="optibeamBeamRight1" node="0&gt;0|6|0|8|0|0|3|1|7|3|0"/>
-        <i3dMapping id="optibeamBeamRight2" node="0&gt;0|6|0|8|0|0|3|1|7|3|1"/>
-        <i3dMapping id="optibeamBeamRight3" node="0&gt;0|6|0|8|0|0|3|1|7|3|2"/>
-        <i3dMapping id="briodBeamLow" node="0&gt;0|6|0|8|0|0|3|1|0|5"/>
-        <i3dMapping id="briodBeamHigh1" node="0&gt;0|6|0|8|0|0|3|1|0|6"/>
-        <i3dMapping id="briodBeamHigh2" node="0&gt;0|6|0|8|0|0|3|1|1|5"/>
-        <i3dMapping id="briodBeamHigh3" node="0&gt;0|6|0|8|0|0|3|1|2|5"/>
-        <i3dMapping id="briodBeamHigh4" node="0&gt;0|6|0|8|0|0|3|1|3|5"/>
-        <i3dMapping id="briodBeamHigh5" node="0&gt;0|6|0|8|0|0|3|1|4|5"/>
-        <i3dMapping id="briodBeamHigh6" node="0&gt;0|6|0|8|0|0|3|1|5|5"/>
-        <i3dMapping id="briodBeamHigh7" node="0&gt;0|6|0|8|0|0|3|1|6|5"/>
+        <i3dMapping id="for9tReverseDrl1" node="0&gt;0|6|0|3|0|4|0|0"/>
+        <i3dMapping id="for9tReverseMain1_1" node="0&gt;0|6|0|3|0|4|0|1"/>
+        <i3dMapping id="for9tReverseMain1_2" node="0&gt;0|6|0|3|0|4|0|2"/>
+        <i3dMapping id="for9tReverseBeam1_low" node="0&gt;0|6|0|3|0|4|4"/>
+        <i3dMapping id="for9tReverseBeam1_high" node="0&gt;0|6|0|3|0|4|5"/>
+        <i3dMapping id="for9tReverseDrl2" node="0&gt;0|6|0|3|0|5|0|0"/>
+        <i3dMapping id="for9tReverseMain2_1" node="0&gt;0|6|0|3|0|5|0|1"/>
+        <i3dMapping id="for9tReverseMain2_2" node="0&gt;0|6|0|3|0|5|0|2"/>
+        <i3dMapping id="for9tReverseBeam2_low" node="0&gt;0|6|0|3|0|5|4"/>
+        <i3dMapping id="for9tReverseBeam2_high" node="0&gt;0|6|0|3|0|5|5"/>
+        <i3dMapping id="for9tReverseDrl3" node="0&gt;0|6|0|3|0|6|0|0"/>
+        <i3dMapping id="for9tReverseMain3_1" node="0&gt;0|6|0|3|0|6|0|1"/>
+        <i3dMapping id="for9tReverseMain3_2" node="0&gt;0|6|0|3|0|6|0|2"/>
+        <i3dMapping id="for9tReverseBeam3_low" node="0&gt;0|6|0|3|0|6|4"/>
+        <i3dMapping id="for9tReverseBeam3_high" node="0&gt;0|6|0|3|0|6|5"/>
+        <i3dMapping id="for9tReverseDrl4" node="0&gt;0|6|0|3|0|7|0|0"/>
+        <i3dMapping id="for9tReverseMain4_1" node="0&gt;0|6|0|3|0|7|0|1"/>
+        <i3dMapping id="for9tReverseMain4_2" node="0&gt;0|6|0|3|0|7|0|2"/>
+        <i3dMapping id="for9tReverseBeam4_low" node="0&gt;0|6|0|3|0|7|4"/>
+        <i3dMapping id="for9tReverseBeam4_high" node="0&gt;0|6|0|3|0|7|5"/>
+        <i3dMapping id="for9tWorkMain1" node="0&gt;0|6|0|8|21|1|0|0|0"/>
+        <i3dMapping id="for9tWorkDrl1" node="0&gt;0|6|0|8|21|1|0|0|1"/>
+        <i3dMapping id="for9tWorkBeam1_low" node="0&gt;0|6|0|8|21|1|1"/>
+        <i3dMapping id="for9tWorkBeam1_high" node="0&gt;0|6|0|8|21|1|2"/>
+        <i3dMapping id="for9tWorkMain2" node="0&gt;0|6|0|8|21|2|0|0|0"/>
+        <i3dMapping id="for9tWorkDrl2" node="0&gt;0|6|0|8|21|2|0|0|1"/>
+        <i3dMapping id="for9tWorkBeam2_low" node="0&gt;0|6|0|8|21|2|1"/>
+        <i3dMapping id="for9tWorkBeam2_high" node="0&gt;0|6|0|8|21|2|2"/>
+        <i3dMapping id="for9tWorkMain3" node="0&gt;0|6|0|8|21|3|0|0|0"/>
+        <i3dMapping id="for9tWorkDrl3" node="0&gt;0|6|0|8|21|3|0|0|1"/>
+        <i3dMapping id="for9tWorkBeam3_low" node="0&gt;0|6|0|8|21|3|1"/>
+        <i3dMapping id="for9tWorkBeam3_high" node="0&gt;0|6|0|8|21|3|2"/>
+        <i3dMapping id="for9tWorkMain4" node="0&gt;0|6|0|8|21|4|0|0|0"/>
+        <i3dMapping id="for9tWorkDrl4" node="0&gt;0|6|0|8|21|4|0|0|1"/>
+        <i3dMapping id="for9tWorkBeam4_low" node="0&gt;0|6|0|8|21|4|1"/>
+        <i3dMapping id="for9tWorkBeam4_high" node="0&gt;0|6|0|8|21|4|2"/>
+        <i3dMapping id="bumperBriodDrl1" node="0&gt;0|8|7|3|1"/>
+        <i3dMapping id="bumperBriodMain1" node="0&gt;0|8|7|3|4"/>
+        <i3dMapping id="bumperBriodDrl2" node="0&gt;0|8|7|4|1"/>
+        <i3dMapping id="bumperBriodMain2" node="0&gt;0|8|7|4|4"/>
+        <i3dMapping id="bumperBriodDrl3" node="0&gt;0|8|7|5|1"/>
+        <i3dMapping id="bumperBriodMain3" node="0&gt;0|8|7|5|4"/>
+        <i3dMapping id="bumperBriodDrl4" node="0&gt;0|8|7|6|1"/>
+        <i3dMapping id="bumperBriodMain4" node="0&gt;0|8|7|6|4"/>
+        <i3dMapping id="bumperBriodBeamLow" node="0&gt;0|8|7|7"/>
+        <i3dMapping id="bumperBriodBeamHigh1" node="0&gt;0|8|7|8"/>
+        <i3dMapping id="bumperBriodBeamHigh2" node="0&gt;0|8|7|9"/>
+        <i3dMapping id="bumperBriodBeamHigh3" node="0&gt;0|8|7|10"/>
+        <i3dMapping id="bumperBriodBeamHigh4" node="0&gt;0|8|7|11"/>
+        <i3dMapping id="geoRedDrl1_1" node="0&gt;0|8|5|2|66|0|0|2"/>
+        <i3dMapping id="geoRedDrl1_2" node="0&gt;0|8|5|2|66|0|0|8"/>
+        <i3dMapping id="geoRedDrl1_3" node="0&gt;0|8|5|2|66|0|1|1"/>
+        <i3dMapping id="geoRedDrl1_4" node="0&gt;0|8|5|2|66|0|1|5"/>
+        <i3dMapping id="geoRedDrl2_1" node="0&gt;0|8|5|2|67|0|0|2"/>
+        <i3dMapping id="geoRedDrl2_2" node="0&gt;0|8|5|2|67|0|0|8"/>
+        <i3dMapping id="geoRedDrl2_3" node="0&gt;0|8|5|2|67|0|1|1"/>
+        <i3dMapping id="geoRedDrl2_4" node="0&gt;0|8|5|2|67|0|1|5"/>
+        <i3dMapping id="geoRedDrl3_1" node="0&gt;0|8|5|2|68|0|0|2"/>
+        <i3dMapping id="geoRedDrl3_2" node="0&gt;0|8|5|2|68|0|0|8"/>
+        <i3dMapping id="geoRedDrl3_3" node="0&gt;0|8|5|2|68|0|1|1"/>
+        <i3dMapping id="geoRedDrl3_4" node="0&gt;0|8|5|2|68|0|1|5"/>
+        <i3dMapping id="geoRedDrl4_1" node="0&gt;0|8|5|2|69|0|0|2"/>
+        <i3dMapping id="geoRedDrl4_2" node="0&gt;0|8|5|2|69|0|0|8"/>
+        <i3dMapping id="geoRedDrl4_3" node="0&gt;0|8|5|2|69|0|1|1"/>
+        <i3dMapping id="geoRedDrl4_4" node="0&gt;0|8|5|2|69|0|1|5"/>
+        <i3dMapping id="geoRedDrl5_1" node="0&gt;0|8|5|2|70|0|0|2"/>
+        <i3dMapping id="geoRedDrl5_2" node="0&gt;0|8|5|2|70|0|0|8"/>
+        <i3dMapping id="geoRedDrl5_3" node="0&gt;0|8|5|2|70|0|1|1"/>
+        <i3dMapping id="geoRedDrl5_4" node="0&gt;0|8|5|2|70|0|1|5"/>
+        <i3dMapping id="geoRedDrl6_1" node="0&gt;0|8|5|2|71|0|0|2"/>
+        <i3dMapping id="geoRedDrl6_2" node="0&gt;0|8|5|2|71|0|0|8"/>
+        <i3dMapping id="geoRedDrl6_3" node="0&gt;0|8|5|2|71|0|1|1"/>
+        <i3dMapping id="geoRedDrl6_4" node="0&gt;0|8|5|2|71|0|1|5"/>
+        <i3dMapping id="geoRedDrl7_1" node="0&gt;0|8|5|2|72|0|0|2"/>
+        <i3dMapping id="geoRedDrl7_2" node="0&gt;0|8|5|2|72|0|0|8"/>
+        <i3dMapping id="geoRedDrl7_3" node="0&gt;0|8|5|2|72|0|1|1"/>
+        <i3dMapping id="geoRedDrl7_4" node="0&gt;0|8|5|2|72|0|1|5"/>
+        <i3dMapping id="geoRedDrl8_1" node="0&gt;0|8|5|2|73|0|0|2"/>
+        <i3dMapping id="geoRedDrl8_2" node="0&gt;0|8|5|2|73|0|0|8"/>
+        <i3dMapping id="geoRedDrl8_3" node="0&gt;0|8|5|2|73|0|1|1"/>
+        <i3dMapping id="geoRedDrl8_4" node="0&gt;0|8|5|2|73|0|1|5"/>
     </i3dMappings>
-    <i3dLightBeamReference>
-        <Light name="briodBeamLow" nodeId="1876" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 0 0" coneAngle="120" dropOff="1"/>
-        <Light name="briodBeamHigh1" nodeId="1877" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 0 0" coneAngle="60" dropOff="1"/>
-        <Light name="briodBeamHigh2" nodeId="1878" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 -10 0" coneAngle="60" dropOff="1"/>
-        <Light name="briodBeamHigh3" nodeId="1879" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 -20 0" coneAngle="60" dropOff="1"/>
-        <Light name="briodBeamHigh4" nodeId="1880" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 -30 0" coneAngle="60" dropOff="1"/>
-        <Light name="briodBeamHigh5" nodeId="1881" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 10 0" coneAngle="60" dropOff="1"/>
-        <Light name="briodBeamHigh6" nodeId="1882" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 20 0" coneAngle="60" dropOff="1"/>
-        <Light name="briodBeamHigh7" nodeId="1883" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 30 0" coneAngle="60" dropOff="1"/>
-        <Light name="blitzer1" nodeId="1215" range="100" clipDistance="200" visibility="false" rotation="-180 85.3731 -180" coneAngle="60" dropOff="5"/>
-        <Light name="blitzer1" nodeId="1216" range="100" clipDistance="200" visibility="false" rotation="1.00465e-15 15 1.12201e-08" coneAngle="60" dropOff="5"/>
-        <Light name="blitzer1" nodeId="1217" range="100" clipDistance="200" visibility="false" rotation="-180 15 -180" coneAngle="60" dropOff="5"/>
-        <Light name="blitzer2" nodeId="1219" range="100" clipDistance="200" visibility="false" rotation="-180 15 -180" coneAngle="60" dropOff="5"/>
-        <Light name="blitzer2" nodeId="1220" range="100" clipDistance="200" visibility="false" rotation="1.79574e-12 15 2.2716e-10" coneAngle="60" dropOff="5"/>
-        <Light name="blitzer2" nodeId="1221" range="100" clipDistance="200" visibility="false" rotation="-180 90 -180" coneAngle="60" dropOff="5"/>
-    </i3dLightBeamReference>
 </lightingReference>

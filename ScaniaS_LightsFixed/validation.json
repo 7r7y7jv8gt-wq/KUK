@@ -1,0 +1,13 @@
+{
+  "source_scene_nodes_preserved": 1317,
+  "output_scene_nodes": 1338,
+  "unique_mappings": 474,
+  "valid_xml_node_references": 944,
+  "changed_files": [
+    "i3d/Scania_S_HKL.i3d",
+    "xml/Scania_S_HKL.xml"
+  ],
+  "profile_specific_new_projectors": 21,
+  "source_other_assets_byte_identical": true,
+  "light_stages_preserved": true
+}
