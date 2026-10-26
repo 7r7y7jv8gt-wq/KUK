@@ -1,21 +1,15 @@
-# Scania S Tridem — lighting update
+# Scania S Tridem — fjernlys og blitz rettet
 
-[Download FS25_ScaniaS_Tridem.zip](../FS25_ScaniaS_Tridem.zip?raw=true) · [Lighting code reference](LightingCode.xml)
+[Last ned FS25_ScaniaS_Tridem.zip](../FS25_ScaniaS_Tridem.zip?raw=true) · [Se lyskoden](LightingCode.xml)
 
-Replace the original ZIP in your mods folder and keep its filename unchanged. Do not unpack the installed mod. Restart FS25 after replacing it.
+Erstatt den gamle ZIP-filen i mods-mappen, behold filnavnet og start FS25 helt på nytt. ZIP-filen skal ikke pakkes ut i mods-mappen.
 
-| Briod state | White DRL intensity | Main-lamp intensity |
-|---|---:|---:|
-| Engine off, lights off | 0 | 0 |
-| Engine running, normal lights | 80 | 0 |
-| Engine running, full-light stage | 80 | 800 |
+Briodenes hovedlys følger nå bilens egen fjernlysbryter (`lightTypes="3"`, normalt Ctrl+F), med intensitet 800. De følger ikke arbeidslystrinnene 1/2. Motorstyrte hvite DRL forblir på 80. Bilens vanlige fjernlys og begge grafikkprofilene bruker samme fjernlysgruppe.
 
-The seven Briod DRLs now use native daytime-light control: engine start enables them, engine stop disables them, and selecting full lights keeps their intensity at 80. The seven main lamps use the truck's existing full-light stage (`lightTypes="2"`) at 800.
+Bjelkas blitz er koblet til varsellysbryteren. Tre lyskastere på hver side og de to blitzmeshene bruker den opprinnelige bjelkas shader og oransje lys. Venstre og høyre side dobbeltblinker vekselvis. Alle seks lyskasterne har visibility=false som grunninnstilling og blir styrt av beacon-koden, slik at bjelka ikke legger konstant oransje lys på bakken når blitzene er av. Cruiselysene er separat motorstyrt på intensitet 8 og lyser fast i selve bjelka; de har ingen lyskaster som belyser bakken.
 
-The Optibeam/blitzbar has its own cruise-light entry and mapping at intensity 8, matching its existing setup. It uses its original amber material 1202, original additive_colorScale glow shader, colorScale 1 0.5 0, and lightControl parameter. Its cruise lights stay steady with the engine and are separate from the bar's strobe meshes. The reference XML is for reading/copying; it is already installed in the vehicle XML.
+Alle tidligere teksturreparasjoner og 66 oransje sidedioder er beholdt. Mesh- og teksturbinariene er uendret. Referansefilen med lyskoden er allerede installert i bilens XML.
 
-All earlier repairs remain: stock lamps behind the Briods removed, texture paths corrected, all 66 side diodes orange, and stale light/beacon references corrected.
+Kontrollert: 385 nodemappinger, 776 XML-nodereferanser, fjernlysgrupper, DRL-styring, alle seks blitzlyskastere, blinkfaser og ZIP-kontrollsum. Ikke testet i FS25/GIANTS Editor.
 
-Checked XML, node mappings, controllers, material preservation, and archive CRC. Live appearance/gameplay still needs testing in FS25 or GIANTS Editor.
-
-Implementation references: [GIANTS Lights](https://gdn.giants-software.com/documentation_scripting_fs25.php?version=script&category=78&class=691), [GIANTS StaticLight](https://gdn.giants-software.com/documentation_scripting_fs25.php?version=engine&category=14&class=168), [FS25 glowShader source copy](https://github.com/hipsterjazzbo/fs25_animals_tmp/blob/main/FS25_AnimalPackage/placeables/productionPoints/eggIncubator/glowShader.xml).
+Kilder for native styring: [GIANTS Lights](https://gdn.giants-software.com/documentation_scripting_fs25.php?version=engine&category=78&class=691), [GIANTS BeaconLight](https://gdn.giants-software.com/documentation_scripting_fs25.php?version=engine&category=14&class=165).

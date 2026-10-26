@@ -1,16 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <lightingReference>
-    <!-- Reference only. These blocks are already installed in the truck XML. -->
+    <!-- Already installed in vehicle XML. This file is a code reference only. -->
     <defaultLights>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|0|4" lightTypes="2" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|1|4" lightTypes="2" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|2|4" lightTypes="2" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|3|4" lightTypes="2" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|4|4" lightTypes="2" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|5|4" lightTypes="2" intensity="800"/>
-        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|6|4" lightTypes="2" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|0|4" lightTypes="3" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|1|4" lightTypes="3" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|2|4" lightTypes="3" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|3|4" lightTypes="3" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|4|4" lightTypes="3" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|5|4" lightTypes="3" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|6|4" lightTypes="3" intensity="800"/>
     </defaultLights>
     <dayTimeLights>
+        <!-- Briod white DRLs: engine on = 80; engine off = 0. -->
         <dayTimeLight node="briodDrl1" intensity="80"/>
         <dayTimeLight node="briodDrl2" intensity="80"/>
         <dayTimeLight node="briodDrl3" intensity="80"/>
@@ -18,8 +19,29 @@
         <dayTimeLight node="briodDrl5" intensity="80"/>
         <dayTimeLight node="briodDrl6" intensity="80"/>
         <dayTimeLight node="briodDrl7" intensity="80"/>
+        <!-- Optibeam cruise lights: original amber cruise setup, separate from strobes. -->
         <dayTimeLight node="optibeamCruiseLights" intensity="8"/>
     </dayTimeLights>
+    <beaconLights>
+        <beaconLight realLight="optibeamBeamLeft1">
+            <staticLight node="optibeamFlashLeft" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 0"/>
+        </beaconLight>
+        <beaconLight realLight="optibeamBeamLeft2">
+            <staticLight node="optibeamFlashLeft" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 0"/>
+        </beaconLight>
+        <beaconLight realLight="optibeamBeamLeft3">
+            <staticLight node="optibeamFlashLeft" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 0"/>
+        </beaconLight>
+        <beaconLight realLight="optibeamBeamRight1">
+            <staticLight node="optibeamFlashRight" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/>
+        </beaconLight>
+        <beaconLight realLight="optibeamBeamRight2">
+            <staticLight node="optibeamFlashRight" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/>
+        </beaconLight>
+        <beaconLight realLight="optibeamBeamRight3">
+            <staticLight node="optibeamFlashRight" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/>
+        </beaconLight>
+    </beaconLights>
     <i3dMappings>
         <i3dMapping id="briodDrl1" node="0&gt;0|6|0|8|0|0|3|1|0|1"/>
         <i3dMapping id="briodDrl2" node="0&gt;0|6|0|8|0|0|3|1|1|1"/>
@@ -29,5 +51,13 @@
         <i3dMapping id="briodDrl6" node="0&gt;0|6|0|8|0|0|3|1|5|1"/>
         <i3dMapping id="briodDrl7" node="0&gt;0|6|0|8|0|0|3|1|6|1"/>
         <i3dMapping id="optibeamCruiseLights" node="0&gt;0|6|0|8|0|0|3|1|7|4"/>
+        <i3dMapping id="optibeamFlashLeft" node="0&gt;0|6|0|8|0|0|3|1|7|2"/>
+        <i3dMapping id="optibeamBeamLeft1" node="0&gt;0|6|0|8|0|0|3|1|7|2|0"/>
+        <i3dMapping id="optibeamBeamLeft2" node="0&gt;0|6|0|8|0|0|3|1|7|2|1"/>
+        <i3dMapping id="optibeamBeamLeft3" node="0&gt;0|6|0|8|0|0|3|1|7|2|2"/>
+        <i3dMapping id="optibeamFlashRight" node="0&gt;0|6|0|8|0|0|3|1|7|3"/>
+        <i3dMapping id="optibeamBeamRight1" node="0&gt;0|6|0|8|0|0|3|1|7|3|0"/>
+        <i3dMapping id="optibeamBeamRight2" node="0&gt;0|6|0|8|0|0|3|1|7|3|1"/>
+        <i3dMapping id="optibeamBeamRight3" node="0&gt;0|6|0|8|0|0|3|1|7|3|2"/>
     </i3dMappings>
 </lightingReference>
