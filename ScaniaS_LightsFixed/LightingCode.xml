@@ -56,6 +56,21 @@
         <dayTimeLight node="bumperBriodDrl2" intensity="80"/>
         <dayTimeLight node="bumperBriodDrl3" intensity="80"/>
         <dayTimeLight node="bumperBriodDrl4" intensity="80"/>
+        <dayTimeLight node="lowerBarOrangeDrl1" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl2" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl3" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl4" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl5" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl6" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl7" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl8" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl9" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl10" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl11" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl12" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl13" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl14" intensity="50"/>
+        <dayTimeLight node="lowerBarOrangeDrl15" intensity="50"/>
     </dayTimeLights>
     <reverseLights>
         <reverseLight node="for9tReverseMain1_1" intensity="50"/>
@@ -176,5 +191,33 @@
         <i3dMapping id="geoRedDrl8_2" node="0&gt;0|8|5|2|73|0|0|8"/>
         <i3dMapping id="geoRedDrl8_3" node="0&gt;0|8|5|2|73|0|1|1"/>
         <i3dMapping id="geoRedDrl8_4" node="0&gt;0|8|5|2|73|0|1|5"/>
+        <i3dMapping id="lowerBarOrangeDrl1" node="0&gt;0|8|6|2|0|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl2" node="0&gt;0|8|6|2|1|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl3" node="0&gt;0|8|6|2|2|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl4" node="0&gt;0|8|6|2|3|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl5" node="0&gt;0|8|6|2|4|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl6" node="0&gt;0|8|6|2|5|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl7" node="0&gt;0|8|6|2|6|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl8" node="0&gt;0|8|6|2|7|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl9" node="0&gt;0|8|6|2|8|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl10" node="0&gt;0|8|6|2|9|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl11" node="0&gt;0|8|6|2|10|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl12" node="0&gt;0|8|6|2|11|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl13" node="0&gt;0|8|6|2|12|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl14" node="0&gt;0|8|6|2|13|4|0"/>
+        <i3dMapping id="lowerBarOrangeDrl15" node="0&gt;0|8|6|2|14|4|0"/>
     </i3dMappings>
+    <signMaterials>
+        <!-- Replaces materials 121 and 122 in the main i3D; source DDS files are unchanged. -->
+        <Material name="Scania_sign_red_glow" materialId="121" alphaBlending="true" customShaderId="54" customShaderVariation="baseMap_colorScale_blink" diffuseColor="1 0 0 1">
+            <Texture fileId="117"/>
+            <Glossmap fileId="119"/>
+            <CustomParameter name="lightControl" value="1"/>
+            <CustomParameter name="colorScale" value="1 0 0"/>
+            <CustomParameter name="blinkSimple" value="0 0"/>
+        </Material>
+        <Material name="Scania_sign_red_base" materialId="122" specularColor="0.494118 1 0" diffuseColor="1 0 0 1">
+            <Texture fileId="117"/>
+        </Material>
+    </signMaterials>
 </lightingReference>
