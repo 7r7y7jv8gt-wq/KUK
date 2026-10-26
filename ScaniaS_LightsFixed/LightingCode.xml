@@ -82,20 +82,20 @@
         <i3dMapping id="briodBeamHigh6" node="0&gt;0|6|0|8|0|0|3|1|5|5"/>
         <i3dMapping id="briodBeamHigh7" node="0&gt;0|6|0|8|0|0|3|1|6|5"/>
     </i3dMappings>
-    <i3dLightRangeReference>
-        <Light name="briodBeamLow" nodeId="1876" range="1000" clipDistance="1200" visibility="false"/>
-        <Light name="briodBeamHigh1" nodeId="1877" range="1000" clipDistance="1200" visibility="false"/>
-        <Light name="briodBeamHigh2" nodeId="1878" range="1000" clipDistance="1200" visibility="false"/>
-        <Light name="briodBeamHigh3" nodeId="1879" range="1000" clipDistance="1200" visibility="false"/>
-        <Light name="briodBeamHigh4" nodeId="1880" range="1000" clipDistance="1200" visibility="false"/>
-        <Light name="briodBeamHigh5" nodeId="1881" range="1000" clipDistance="1200" visibility="false"/>
-        <Light name="briodBeamHigh6" nodeId="1882" range="1000" clipDistance="1200" visibility="false"/>
-        <Light name="briodBeamHigh7" nodeId="1883" range="1000" clipDistance="1200" visibility="false"/>
-        <Light name="blitzer1" nodeId="1215" range="100" clipDistance="200" visibility="false"/>
-        <Light name="blitzer1" nodeId="1216" range="100" clipDistance="200" visibility="false"/>
-        <Light name="blitzer1" nodeId="1217" range="100" clipDistance="200" visibility="false"/>
-        <Light name="blitzer2" nodeId="1219" range="100" clipDistance="200" visibility="false"/>
-        <Light name="blitzer2" nodeId="1220" range="100" clipDistance="200" visibility="false"/>
-        <Light name="blitzer2" nodeId="1221" range="100" clipDistance="200" visibility="false"/>
-    </i3dLightRangeReference>
+    <i3dLightBeamReference>
+        <Light name="briodBeamLow" nodeId="1876" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 0 0" coneAngle="120" dropOff="1"/>
+        <Light name="briodBeamHigh1" nodeId="1877" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 0 0" coneAngle="60" dropOff="1"/>
+        <Light name="briodBeamHigh2" nodeId="1878" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 -10 0" coneAngle="60" dropOff="1"/>
+        <Light name="briodBeamHigh3" nodeId="1879" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 -20 0" coneAngle="60" dropOff="1"/>
+        <Light name="briodBeamHigh4" nodeId="1880" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 -30 0" coneAngle="60" dropOff="1"/>
+        <Light name="briodBeamHigh5" nodeId="1881" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 10 0" coneAngle="60" dropOff="1"/>
+        <Light name="briodBeamHigh6" nodeId="1882" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 20 0" coneAngle="60" dropOff="1"/>
+        <Light name="briodBeamHigh7" nodeId="1883" range="1000" clipDistance="1200" visibility="false" rotation="-0.2 30 0" coneAngle="60" dropOff="1"/>
+        <Light name="blitzer1" nodeId="1215" range="100" clipDistance="200" visibility="false" rotation="-180 85.3731 -180" coneAngle="60" dropOff="5"/>
+        <Light name="blitzer1" nodeId="1216" range="100" clipDistance="200" visibility="false" rotation="1.00465e-15 15 1.12201e-08" coneAngle="60" dropOff="5"/>
+        <Light name="blitzer1" nodeId="1217" range="100" clipDistance="200" visibility="false" rotation="-180 15 -180" coneAngle="60" dropOff="5"/>
+        <Light name="blitzer2" nodeId="1219" range="100" clipDistance="200" visibility="false" rotation="-180 15 -180" coneAngle="60" dropOff="5"/>
+        <Light name="blitzer2" nodeId="1220" range="100" clipDistance="200" visibility="false" rotation="1.79574e-12 15 2.2716e-10" coneAngle="60" dropOff="5"/>
+        <Light name="blitzer2" nodeId="1221" range="100" clipDistance="200" visibility="false" rotation="-180 90 -180" coneAngle="60" dropOff="5"/>
+    </i3dLightBeamReference>
 </lightingReference>
