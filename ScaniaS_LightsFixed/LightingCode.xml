@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<lightingReference>
+    <!-- Reference only. These blocks are already installed in the truck XML. -->
+    <defaultLights>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|0|4" lightTypes="2" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|1|4" lightTypes="2" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|2|4" lightTypes="2" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|3|4" lightTypes="2" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|4|4" lightTypes="2" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|5|4" lightTypes="2" intensity="800"/>
+        <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|6|4" lightTypes="2" intensity="800"/>
+    </defaultLights>
+    <dayTimeLights>
+        <dayTimeLight node="briodDrl1" intensity="80"/>
+        <dayTimeLight node="briodDrl2" intensity="80"/>
+        <dayTimeLight node="briodDrl3" intensity="80"/>
+        <dayTimeLight node="briodDrl4" intensity="80"/>
+        <dayTimeLight node="briodDrl5" intensity="80"/>
+        <dayTimeLight node="briodDrl6" intensity="80"/>
+        <dayTimeLight node="briodDrl7" intensity="80"/>
+        <dayTimeLight node="optibeamCruiseLights" intensity="8"/>
+    </dayTimeLights>
+    <i3dMappings>
+        <i3dMapping id="briodDrl1" node="0&gt;0|6|0|8|0|0|3|1|0|1"/>
+        <i3dMapping id="briodDrl2" node="0&gt;0|6|0|8|0|0|3|1|1|1"/>
+        <i3dMapping id="briodDrl3" node="0&gt;0|6|0|8|0|0|3|1|2|1"/>
+        <i3dMapping id="briodDrl4" node="0&gt;0|6|0|8|0|0|3|1|3|1"/>
+        <i3dMapping id="briodDrl5" node="0&gt;0|6|0|8|0|0|3|1|4|1"/>
+        <i3dMapping id="briodDrl6" node="0&gt;0|6|0|8|0|0|3|1|5|1"/>
+        <i3dMapping id="briodDrl7" node="0&gt;0|6|0|8|0|0|3|1|6|1"/>
+        <i3dMapping id="optibeamCruiseLights" node="0&gt;0|6|0|8|0|0|3|1|7|4"/>
+    </i3dMappings>
+</lightingReference>
