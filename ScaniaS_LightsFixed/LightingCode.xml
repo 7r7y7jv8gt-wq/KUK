@@ -1,6 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <lightingReference>
     <!-- Already installed in vehicle XML. This file is a code reference only. -->
+    <realLights>
+        <low>
+            <light node="briodBeamLow" lightTypes="3" hasShadows="false"/>
+        </low>
+        <high>
+            <light node="briodBeamHigh1" lightTypes="3" hasShadows="false"/>
+            <light node="briodBeamHigh2" lightTypes="3" hasShadows="false"/>
+            <light node="briodBeamHigh3" lightTypes="3" hasShadows="false"/>
+            <light node="briodBeamHigh4" lightTypes="3" hasShadows="false"/>
+            <light node="briodBeamHigh5" lightTypes="3" hasShadows="false"/>
+            <light node="briodBeamHigh6" lightTypes="3" hasShadows="false"/>
+            <light node="briodBeamHigh7" lightTypes="3" hasShadows="false"/>
+        </high>
+    </realLights>
     <defaultLights>
         <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|0|4" lightTypes="3" intensity="800"/>
         <defaultLight shaderNode="0&gt;0|6|0|8|0|0|3|1|1|4" lightTypes="3" intensity="800"/>
@@ -59,5 +73,29 @@
         <i3dMapping id="optibeamBeamRight1" node="0&gt;0|6|0|8|0|0|3|1|7|3|0"/>
         <i3dMapping id="optibeamBeamRight2" node="0&gt;0|6|0|8|0|0|3|1|7|3|1"/>
         <i3dMapping id="optibeamBeamRight3" node="0&gt;0|6|0|8|0|0|3|1|7|3|2"/>
+        <i3dMapping id="briodBeamLow" node="0&gt;0|6|0|8|0|0|3|1|0|5"/>
+        <i3dMapping id="briodBeamHigh1" node="0&gt;0|6|0|8|0|0|3|1|0|6"/>
+        <i3dMapping id="briodBeamHigh2" node="0&gt;0|6|0|8|0|0|3|1|1|5"/>
+        <i3dMapping id="briodBeamHigh3" node="0&gt;0|6|0|8|0|0|3|1|2|5"/>
+        <i3dMapping id="briodBeamHigh4" node="0&gt;0|6|0|8|0|0|3|1|3|5"/>
+        <i3dMapping id="briodBeamHigh5" node="0&gt;0|6|0|8|0|0|3|1|4|5"/>
+        <i3dMapping id="briodBeamHigh6" node="0&gt;0|6|0|8|0|0|3|1|5|5"/>
+        <i3dMapping id="briodBeamHigh7" node="0&gt;0|6|0|8|0|0|3|1|6|5"/>
     </i3dMappings>
+    <i3dLightRangeReference>
+        <Light name="briodBeamLow" nodeId="1876" range="1000" clipDistance="1200" visibility="false"/>
+        <Light name="briodBeamHigh1" nodeId="1877" range="1000" clipDistance="1200" visibility="false"/>
+        <Light name="briodBeamHigh2" nodeId="1878" range="1000" clipDistance="1200" visibility="false"/>
+        <Light name="briodBeamHigh3" nodeId="1879" range="1000" clipDistance="1200" visibility="false"/>
+        <Light name="briodBeamHigh4" nodeId="1880" range="1000" clipDistance="1200" visibility="false"/>
+        <Light name="briodBeamHigh5" nodeId="1881" range="1000" clipDistance="1200" visibility="false"/>
+        <Light name="briodBeamHigh6" nodeId="1882" range="1000" clipDistance="1200" visibility="false"/>
+        <Light name="briodBeamHigh7" nodeId="1883" range="1000" clipDistance="1200" visibility="false"/>
+        <Light name="blitzer1" nodeId="1215" range="100" clipDistance="200" visibility="false"/>
+        <Light name="blitzer1" nodeId="1216" range="100" clipDistance="200" visibility="false"/>
+        <Light name="blitzer1" nodeId="1217" range="100" clipDistance="200" visibility="false"/>
+        <Light name="blitzer2" nodeId="1219" range="100" clipDistance="200" visibility="false"/>
+        <Light name="blitzer2" nodeId="1220" range="100" clipDistance="200" visibility="false"/>
+        <Light name="blitzer2" nodeId="1221" range="100" clipDistance="200" visibility="false"/>
+    </i3dLightRangeReference>
 </lightingReference>
