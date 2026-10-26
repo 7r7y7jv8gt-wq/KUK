@@ -1,0 +1,41 @@
+name: Publish Bailey trailer without original side lamps
+on:
+  push:
+    branches:
+      - codex/bailey-no-stock-side-lights
+    paths:
+      - .github/workflows/bailey-no-stock-side-lights.yml
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Assemble and verify edited mod
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output
+          zipfile=output/KK25_Bailey_Transport_Henger_KRISTENSEN_EDIT.zip
+          : > "$zipfile"
+          for blob in 18d8f86d258fe396957ff1dddcc1bbbe8a242c98 853378e8350bed1a59159cae95b099ee4a59b896; do
+            gh api "repos/$GH_REPO/git/blobs/$blob" --jq '.content' | base64 --decode >> "$zipfile"
+          done
+          echo "69fbc6e31630ad0616f8a98edaab0f15e2532b8bd10becb84dbc5b84a0372991  $zipfile" | sha256sum --check
+          python -c 'import zipfile; z=zipfile.ZipFile("output/KK25_Bailey_Transport_Henger_KRISTENSEN_EDIT.zip"); assert z.testzip() is None'
+      - name: Publish downloadable ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create bailey-no-stock-side-lights-20261026 \
+            output/KK25_Bailey_Transport_Henger_KRISTENSEN_EDIT.zip \
+            --target "$GITHUB_SHA" \
+            --title "Bailey trailer — original side lamps removed" \
+            --notes "Corrected eight rear/plate/beacon mappings that attached original lamps to the custom side-light nodes, and removed eight obsolete side-marker mappings. Custom light meshes and definitions are preserved. XML and ZIP integrity validated; not tested in-game."
