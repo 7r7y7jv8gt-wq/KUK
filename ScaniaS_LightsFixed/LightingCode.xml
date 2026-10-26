@@ -50,6 +50,8 @@
         <defaultLight node="geoRedDrl8_2" intensity="20" lightTypes="0"/>
         <defaultLight node="geoRedDrl8_3" intensity="20" lightTypes="0"/>
         <defaultLight node="geoRedDrl8_4" intensity="20" lightTypes="0"/>
+        <defaultLight shaderNode="0&gt;0|8|5|2|74|2" lightTypes="0" intensity="80"/>
+        <defaultLight shaderNode="0&gt;0|8|5|2|75|2" lightTypes="0" intensity="80"/>
     </defaultLights>
     <dayTimeLights>
         <dayTimeLight node="bumperBriodDrl1" intensity="80"/>
@@ -208,15 +210,14 @@
         <i3dMapping id="lowerBarOrangeDrl15" node="0&gt;0|8|6|2|14|4|0"/>
     </i3dMappings>
     <signMaterials>
-        <!-- Replaces materials 121 and 122 in the main i3D; source DDS files are unchanged. -->
-        <Material name="Scania_sign_red_glow" materialId="121" alphaBlending="true" customShaderId="54" customShaderVariation="baseMap_colorScale_blink" diffuseColor="1 0 0 1">
+        <!-- Current sign materials from the uploaded model; original DDS artwork retained. -->
+        <Material name="Scania_sign_red_glow" materialId="141" alphaBlending="true" customShaderId="54" customShaderVariation="baseMap_colorScale_blink">
             <Texture fileId="117"/>
-            <Glossmap fileId="119"/>
-            <CustomParameter name="lightControl" value="1"/>
+            <Glossmap fileId="118"/>
             <CustomParameter name="colorScale" value="1 0 0"/>
             <CustomParameter name="blinkSimple" value="0 0"/>
         </Material>
-        <Material name="Scania_sign_red_base" materialId="122" specularColor="0.494118 1 0" diffuseColor="1 0 0 1">
+        <Material name="Scania_sign_red_base" materialId="142" specularColor="0.494118 1 0">
             <Texture fileId="117"/>
         </Material>
     </signMaterials>

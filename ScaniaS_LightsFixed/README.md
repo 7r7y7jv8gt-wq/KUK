@@ -2,10 +2,11 @@
 
 [Download FS25_ScaniaS_Tridem.zip](../FS25_ScaniaS_Tridem.zip?raw=true) · [Lighting code](LightingCode.xml) · [File validation](validation.json)
 
-Built from the latest three-part archive supplied by the owner. Replace the old ZIP in your mods folder, keep its filename unchanged, and restart FS25 completely. Keep the installed mod zipped.
+Built from the latest three-part archive supplied by the owner, including the two newly fitted exterior diodes. Replace the old ZIP in your mods folder, keep its filename unchanged, and restart FS25 completely. Keep the installed mod zipped.
 
 | Lamps | DRL / marker control | Main-light control |
 |---|---|---|
+| 68 exterior side diodes | Orange, stage 1, intensity 80 | Includes the two new diodes; all use identical controls |
 | 15 elongated lower-bar markers | Orange engine-on DRL, intensity 50 | Steady; uses the existing “Schoch with lights” shop option |
 | Scania griffin sign | Red illuminated artwork | Steady glow; retains its existing shop visibility option |
 | Four rear FOR9Ts from pictures 1–2 | Red, stage 1, intensity 20 | White reverse lights, intensity 50, reverse gear; 40 m projectors |
@@ -19,8 +20,8 @@ The third normal light stage is the final F-key step (types 0 1 2). Native high 
 
 Removed four stock work-lamp attachments behind the newly fitted FOR9T work pods. Corrected moved front-work and rear brake/indicator paths and removed references to stock reverse fixtures that were deleted in the new model. Other round rear lamps keep their normal brake, indicator and running-light functions.
 
-The roof Briods retain the 1000 m / 120° setup, white DRL 80 and high-beam glow 800. The blitzbar retains 100 m alternating flash, independent steady cruise lights and no uncontrolled orange ground illumination. All 66 orange side diodes remain.
+The roof Briods retain the 1000 m / 120° setup, white DRL 80 and high-beam glow 800. The blitzbar retains 100 m alternating flash, independent steady cruise lights and no uncontrolled orange ground illumination. All 68 orange side diodes use the same stage-1 control at intensity 80.
 
 The new GeoViking imports referenced original dirt/gloss masks and emissive textures outside the mod. Those originals were not included. Red/white emission now uses bundled textures; missing dirt/gloss masks use the game's neutral default mask, so the original dirt appearance may differ. No image or shape binary was edited.
 
-Validation preserved all 1317 original scene paths/IDs. The result has 1338 unique scene nodes, 489 valid mappings and 963 checked XML node references. Only the main i3D and vehicle XML changed; the other assets are byte-identical to the uploaded version. Archive CRC passed. Live lighting and gameplay have not been tested in FS25/GIANTS Editor.
+Validation preserved all 1346 scene paths/IDs in the latest upload, including the two new diode fixtures. There are 489 valid mappings and 965 checked XML node references. This update changes only the vehicle XML: the other 138 files, including the supplied i3D, shape binaries and textures, are byte-identical to the uploaded version. Exactly two light controls were added; all existing controls remain. Archive CRC passed. Live lighting and gameplay have not been tested in FS25/GIANTS Editor.

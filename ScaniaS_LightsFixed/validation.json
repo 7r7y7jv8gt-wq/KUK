@@ -1,21 +1,21 @@
 {
-  "source_scene_nodes_preserved": 1317,
-  "output_scene_nodes": 1338,
+  "source_scene_nodes_preserved": 1346,
+  "output_scene_nodes": 1346,
   "unique_mappings": 489,
-  "valid_xml_node_references": 963,
+  "valid_xml_node_references": 965,
+  "all_local_i3d_file_references_resolve": 55,
   "changed_files": [
-    "i3d/Scania_S_HKL.i3d",
     "xml/Scania_S_HKL.xml"
   ],
-  "profile_specific_new_projectors": 21,
-  "source_other_assets_byte_identical": true,
-  "light_stages_preserved": true,
-  "scene_nodes_unchanged_from_previous_release": 1338,
-  "all_local_i3d_file_references_resolve": 63,
-  "all_geometry_and_texture_binaries_unchanged": true,
-  "all_other_vehicle_controls_identical": true,
-  "lower_bar_orange_engine_drl_count": 15,
-  "lower_bar_drl_intensity": 50,
-  "red_sign_steady_glow": true,
+  "other_138_files_byte_identical_to_uploaded_version": true,
+  "uploaded_geometry_and_textures_preserved": true,
+  "existing_vehicle_controls_preserved": true,
+  "total_orange_side_diodes": 68,
+  "side_diode_lightTypes": "0",
+  "side_diode_intensity": 80,
+  "new_diode_paths": [
+    "0>0|8|5|2|74|2",
+    "0>0|8|5|2|75|2"
+  ],
   "live_fs25_test_performed": false
 }
