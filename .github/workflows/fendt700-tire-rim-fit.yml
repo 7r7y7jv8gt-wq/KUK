@@ -1,0 +1,41 @@
+name: Publish Fendt 700 tire rim fit fix
+on:
+  push:
+    branches:
+      - codex/fendt700-tire-rim-fit
+    paths:
+      - .github/workflows/fendt700-tire-rim-fit.yml
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Assemble and verify edited mod
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output
+          zipfile=output/FS25_Fendt_700_Vario_Gen7_KRISTENSEN_EDIT.zip
+          : > "$zipfile"
+          for blob in b6b47b5f246f34599cd5d29c399a8aeec0ce276b 89697d15c3a3d8c1da12dd9180a2e7e6eab28735 19121f50f7096bc55146f52de51d988a85cf202b 08819c434e6774cfda85401113ee4ef232a9d666 da00b08f8bb2c1bbb0b8ae6124db1f1122281741 16c8969d6629ef578b3544bd365bc225bbd05c4b; do
+            gh api "repos/$GH_REPO/git/blobs/$blob" --jq '.content' | base64 --decode >> "$zipfile"
+          done
+          echo "4c0e59321c8334e698d36464bbab193f120f1b1f0f4b157407d1d0269556b9ec  $zipfile" | sha256sum --check
+          python -c 'import zipfile; z=zipfile.ZipFile("output/FS25_Fendt_700_Vario_Gen7_KRISTENSEN_EDIT.zip"); assert z.testzip() is None; assert len(z.namelist()) == 99'
+      - name: Publish downloadable mod ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create fendt700-tire-rim-fit-20261027 \
+            output/FS25_Fendt_700_Vario_Gen7_KRISTENSEN_EDIT.zip \
+            --target "$GITHUB_SHA" \
+            --title "Fendt 700 — custom BKT tires fitted to rims" \
+            --notes "Corrects custom white-letter BKT tire scaling retained by the FS25 wheel loader. Front tires now retain their intended 5% enlargement and rear tires 15%, matching the existing rim and wheel-physics sizing. Only BKTHVIT/600_60R28.i3d and BKTHVIT/710_60R38.i3d changed. The other 97 files, including all geometry, textures and XML, are byte-identical to the supplied mod. XML, transforms, ZIP integrity and SHA-256 validated. Not tested in-game. Replace the existing mod ZIP, keep its filename, and restart FS25."

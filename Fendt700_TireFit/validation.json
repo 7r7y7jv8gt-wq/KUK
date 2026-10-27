@@ -1,0 +1,29 @@
+{
+  "changes": [
+    {
+      "file": "BKTHVIT/600_60R28.i3d",
+      "discarded_parent_scale": "1.0500",
+      "old_loaded_lod_scale": "1.11903 1 1",
+      "new_loaded_lod_scale": "1.1749815 1.05 1.05"
+    },
+    {
+      "file": "BKTHVIT/710_60R38.i3d",
+      "discarded_parent_scale": "1.1500",
+      "old_loaded_lod_scale": "1.119 1 1",
+      "new_loaded_lod_scale": "1.28685 1.15 1.15"
+    }
+  ],
+  "changed_files": [
+    "BKTHVIT/600_60R28.i3d",
+    "BKTHVIT/710_60R38.i3d"
+  ],
+  "all_other_files_byte_identical": true,
+  "file_count": 99,
+  "geometry_and_textures_unchanged": true,
+  "vehicle_and_wheel_xml_unchanged": true,
+  "all_complete_asset_world_transforms_preserved": true,
+  "selected_tire_node": "0|0",
+  "FS25_runtime_tested": false,
+  "source_evidence": "https://gdn.giants-software.com/documentation_scripting_fs25.php?version=script&category=93&class=912",
+  "archive_sha256": "4c0e59321c8334e698d36464bbab193f120f1b1f0f4b157407d1d0269556b9ec"
+}
