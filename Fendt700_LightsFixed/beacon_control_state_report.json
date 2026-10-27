@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "actual_official_lua_methods": [
+    "BeaconLight:setIsActive",
+    "BeaconLight:onLightsRealBeaconLightChanged",
+    "BeaconLight:update"
+  ],
+  "projectors": 6,
+  "checks": [
+    "OFF: six hidden and cruise=0",
+    "ON: six visible and cruise=80",
+    "eight sampled blink times: all three projectors in each bank synchronized",
+    "banks retain differing blink phases",
+    "cruise remains80 through all blink samples",
+    "OFF again: six hidden and cruise=0",
+    "Real Beacon Lights setting disables/re-enables all six while cruise remains steady"
+  ],
+  "limits": "Minimal engine API stubs; no GIANTS rendering, shader compilation, or in-game test."
+}

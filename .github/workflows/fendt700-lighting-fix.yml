@@ -1,0 +1,41 @@
+name: Publish Fendt 700 lighting fixes
+on:
+  push:
+    branches:
+      - codex/fendt700-lighting-fix
+    paths:
+      - .github/workflows/fendt700-lighting-fix.yml
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Assemble and verify complete mod
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output
+          zipfile=output/FS25_Fendt_700_Vario_Gen7_KRISTENSEN_EDIT.zip
+          : > "$zipfile"
+          for blob in b6b47b5f246f34599cd5d29c399a8aeec0ce276b 559a2b6a663081debdd4f8f01ad7a0b5cf0d5102 e794f4809b0de42d3ca3f63265be3c996055d142 ae894cae8762d4f4aadf1239cf4c27e42a28c09c 0bf008b2e70f4a5b0aa9d4217d4e7e96452b342c c84eece11cbf53860dd93e753c0ce88e185b3781; do
+            gh api "repos/$GH_REPO/git/blobs/$blob" --jq '.content' | base64 --decode >> "$zipfile"
+          done
+          echo "b21e78b5d1e9e97cd35004134c084d9ea503b1679ac08ea19deff06e8b542b15  $zipfile" | sha256sum --check
+          python -c 'import zipfile; z=zipfile.ZipFile("output/FS25_Fendt_700_Vario_Gen7_KRISTENSEN_EDIT.zip"); assert z.testzip() is None; assert len(z.namelist()) == 99'
+      - name: Publish updated mod ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create fendt700-lights-v2-20261027 \
+            output/FS25_Fendt_700_Vario_Gen7_KRISTENSEN_EDIT.zip \
+            --target "$GITHUB_SHA" \
+            --title "Fendt 700 — red rear diodes, white mirror diodes, switched blitzbar" \
+            --notes "Codes all 13 rear diodes red and all eight mirror diodes white. All six orange blitzbar projectors and its steady cruise strip switch off with beacons; bank flash timing is preserved. Includes the previous BKT tire/rim fit fix. Only vario700.xml and six initial projector visibility flags in vario700.i3d changed against the tire-fixed version. XML, references, archive SHA-256 and CRC validated. Actual official beacon Lua methods passed on/off and phase checks with stubbed engine APIs; no live FS25 rendering test. Replace the old ZIP, preserve its filename, and restart FS25."

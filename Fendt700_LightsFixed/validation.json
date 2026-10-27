@@ -1,0 +1,26 @@
+{
+  "rear_red_diode_count": 13,
+  "mirror_white_diode_count": 8,
+  "mirror_diodes_each_side": 4,
+  "diode_lightTypes": "0",
+  "diode_intensity": 80,
+  "blitz_projector_count": 6,
+  "blitz_projectors_beacon_controlled": true,
+  "blitz_projectors_initial_visibility": false,
+  "bank_phase_parameters": {
+    "left": "4 12 65 2",
+    "right": "4 12 65 0"
+  },
+  "orange_cruise_steady_while_beacons_on": true,
+  "orange_cruise_off_while_beacons_off": true,
+  "all_custom_defaultLight_paths_valid": true,
+  "tire_fix_preserved": true,
+  "changed_files_from_tire_fixed_mod": [
+    "vario700.i3d",
+    "vario700.xml"
+  ],
+  "geometry_materials_textures_unchanged": true,
+  "all_scene_node_paths_and_ids_preserved": true,
+  "file_count": 99,
+  "FS25_runtime_tested": false
+}
