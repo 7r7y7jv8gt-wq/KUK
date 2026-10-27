@@ -1,48 +1,77 @@
 {
-  "code_checks_passed": true,
-  "complete_mod_ready": false,
-  "completion_blocker": "Six original artwork DDS files were not included in the upload.",
-  "pending_original_textures": [
-    "J_KRISTENSEN_diffuse.dds",
-    "M_KOLBRAEK_diffuse.dds",
-    "BRED_LAST.dds",
-    "GVFlexiAdvertisment.dds",
-    "LANG_LAST.dds",
-    "TUNG_LAST.dds"
+  "asset_and_code_checks_passed": true,
+  "missing_local_artwork_files": [],
+  "new_artwork_textures": 6,
+  "artwork_provenance": "Newly authored replacement lettering, not recovered originals",
+  "all_local_i3d_resources_resolve": true,
+  "checked_local_i3d_resource_references": 147,
+  "unchanged_native_png_to_dds_fallbacks": [
+    {
+      "scene": "i3d/ScaniaS4x2.i3d",
+      "reference": "../textures/interior/common_c.png",
+      "existing_dds": "i3d/../textures/interior/common_c.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS4x2.i3d",
+      "reference": "../textures/shared/connectors_normal.png",
+      "existing_dds": "i3d/../textures/shared/connectors_normal.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS4x2.i3d",
+      "reference": "../textures/shared/connectors_vmask.png",
+      "existing_dds": "i3d/../textures/shared/connectors_vmask.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS4x2.i3d",
+      "reference": "../textures/truck/scania_logo.png",
+      "existing_dds": "i3d/../textures/truck/scania_logo.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS8x4.i3d",
+      "reference": "../textures/interior/common_c.png",
+      "existing_dds": "i3d/../textures/interior/common_c.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS8x4.i3d",
+      "reference": "../textures/shared/connectors_normal.png",
+      "existing_dds": "i3d/../textures/shared/connectors_normal.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS8x4.i3d",
+      "reference": "../textures/shared/connectors_vmask.png",
+      "existing_dds": "i3d/../textures/shared/connectors_vmask.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS8x4.i3d",
+      "reference": "../textures/truck/scania_logo.png",
+      "existing_dds": "i3d/../textures/truck/scania_logo.dds"
+    }
   ],
-  "scene_nodes": 1092,
-  "unique_valid_mappings": 599,
-  "checked_node_references": 999,
-  "existing_lighting_and_gameplay_preserved": true,
-  "original_shape_binary_unchanged": true,
-  "name_layouts": 2,
-  "ic_controls": {
-    "fold": 1,
-    "saved_mode": 2,
-    "cycle": 3
-  },
-  "native_ic_addon_required_for_interaction": "FS25_interactiveControl",
-  "lua_bridge_execution_checks_passed": true,
+  "changed_existing_files": [
+    "README_NAMES_IC.txt",
+    "i3d/ScaniaS6x4.i3d"
+  ],
+  "added_files": [
+    "textures/gv604/BRED_LAST.dds",
+    "textures/gv604/GVFlexiAdvertisment.dds",
+    "textures/gv604/LANG_LAST.dds",
+    "textures/gv604/TUNG_LAST.dds",
+    "textures/names/J_KRISTENSEN_diffuse.dds",
+    "textures/names/M_KOLBRAEK_diffuse.dds"
+  ],
+  "all_other_files_byte_identical": true,
+  "scene_geometry_binary_and_transforms_unchanged": true,
+  "two_name_configs_and_ic_code_preserved": true,
+  "briod_high_beam_intensity": 200,
+  "briod_white_drl_intensity": 40,
   "live_fs25_test_performed": false,
-  "fold_geometry_needs_visual_test": true,
-  "publication_requested_with_missing_textures": true,
-  "missing_local_texture_paths": [
-    "../textures/names/J_KRISTENSEN_diffuse.dds",
-    "../textures/names/M_KOLBRAEK_diffuse.dds",
-    "../textures/gv604/BRED_LAST.dds",
-    "../textures/gv604/GVFlexiAdvertisment.dds",
-    "../textures/gv604/LANG_LAST.dds",
-    "../textures/gv604/TUNG_LAST.dds"
-  ],
-  "readme_in_archive": "README_NAMES_IC.txt",
-  "status": "Code included; six artwork textures missing; not tested in-game.",
+  "uv_fit_and_folding_motion_need_in_game_visual_check": true,
   "package": {
     "filename": "FS25_ScaniaS.zip",
-    "size_bytes": 61484103,
-    "sha256": "cac5241ed3a26b90b03b703d3afe27c0e8b24c2047d26b17865dedd097974cab",
-    "files": 111,
+    "size_bytes": 61969046,
+    "sha256": "3da41ec9eb0146746fa0044ce85a3148c00662f60533272847855d0365dae79b",
+    "files": 117,
     "archive_crc_passed": true,
-    "artwork_complete": false,
-    "missing_original_textures": 6
+    "artwork_complete": true
   }
 }

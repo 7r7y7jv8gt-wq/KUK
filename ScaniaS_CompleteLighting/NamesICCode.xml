@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <namesICReference>
-    <!-- Installed in the ZIP. Six original artwork textures are still missing. -->
+    <!-- Installed in the ZIP. Six newly authored replacement artwork textures are included. -->
     <design15Configurations title="Name layout">
         <design15Configuration name="J. Kristensen left / M. Kolbræk right" price="0" isDefault="true">
             <objectChange node="nameLayoutJKLeft" visibilityActive="true" visibilityInactive="false"/>

@@ -1,0 +1,846 @@
+{
+  "changed_existing": [
+    "README_NAMES_IC.txt",
+    "i3d/ScaniaS6x4.i3d"
+  ],
+  "added_files": [
+    "textures/gv604/LANG_LAST.dds",
+    "textures/gv604/GVFlexiAdvertisment.dds",
+    "textures/gv604/TUNG_LAST.dds",
+    "textures/gv604/BRED_LAST.dds",
+    "textures/names/J_KRISTENSEN_diffuse.dds",
+    "textures/names/M_KOLBRAEK_diffuse.dds"
+  ],
+  "removed_files": [],
+  "only_i3d_changes": [
+    {
+      "material": "1500",
+      "diffuse_and_emissive_file": "132"
+    },
+    {
+      "material": "1501",
+      "diffuse_and_emissive_file": "133"
+    },
+    {
+      "material": "1502",
+      "diffuse_and_emissive_file": "134"
+    },
+    {
+      "material": "1503",
+      "diffuse_and_emissive_file": "135"
+    }
+  ],
+  "texture_checks": [
+    {
+      "path": "textures/gv604/LANG_LAST.dds",
+      "decode_all_mips": true,
+      "mip_levels": [
+        {
+          "size": [
+            2048,
+            512
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            1024,
+            256
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            512,
+            128
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            256,
+            64
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            128,
+            32
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            64,
+            16
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            32,
+            8
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            16,
+            4
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            8,
+            2
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            4,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            2,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            1,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        }
+      ],
+      "bytes": 1398288
+    },
+    {
+      "path": "textures/gv604/GVFlexiAdvertisment.dds",
+      "decode_all_mips": true,
+      "mip_levels": [
+        {
+          "size": [
+            2048,
+            512
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            1024,
+            256
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            512,
+            128
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            256,
+            64
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            128,
+            32
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            64,
+            16
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            32,
+            8
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            16,
+            4
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            8,
+            2
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            4,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            2,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            1,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        }
+      ],
+      "bytes": 1398288
+    },
+    {
+      "path": "textures/gv604/TUNG_LAST.dds",
+      "decode_all_mips": true,
+      "mip_levels": [
+        {
+          "size": [
+            2048,
+            512
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            1024,
+            256
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            512,
+            128
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            256,
+            64
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            128,
+            32
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            64,
+            16
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            32,
+            8
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            16,
+            4
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            8,
+            2
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            4,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            2,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            1,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        }
+      ],
+      "bytes": 1398288
+    },
+    {
+      "path": "textures/gv604/BRED_LAST.dds",
+      "decode_all_mips": true,
+      "mip_levels": [
+        {
+          "size": [
+            2048,
+            512
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            1024,
+            256
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            512,
+            128
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            256,
+            64
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            128,
+            32
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            64,
+            16
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            32,
+            8
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            16,
+            4
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            8,
+            2
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            4,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            2,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        },
+        {
+          "size": [
+            1,
+            1
+          ],
+          "alpha_range": [
+            255,
+            255
+          ]
+        }
+      ],
+      "bytes": 1398288
+    },
+    {
+      "path": "textures/names/J_KRISTENSEN_diffuse.dds",
+      "decode_all_mips": true,
+      "mip_levels": [
+        {
+          "size": [
+            2048,
+            512
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            1024,
+            256
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            512,
+            128
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            256,
+            64
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            128,
+            32
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            64,
+            16
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            32,
+            8
+          ],
+          "alpha_range": [
+            0,
+            211
+          ]
+        },
+        {
+          "size": [
+            16,
+            4
+          ],
+          "alpha_range": [
+            0,
+            150
+          ]
+        },
+        {
+          "size": [
+            8,
+            2
+          ],
+          "alpha_range": [
+            30,
+            85
+          ]
+        },
+        {
+          "size": [
+            4,
+            1
+          ],
+          "alpha_range": [
+            43,
+            72
+          ]
+        },
+        {
+          "size": [
+            2,
+            1
+          ],
+          "alpha_range": [
+            58,
+            69
+          ]
+        },
+        {
+          "size": [
+            1,
+            1
+          ],
+          "alpha_range": [
+            63,
+            63
+          ]
+        }
+      ],
+      "bytes": 1398288
+    },
+    {
+      "path": "textures/names/M_KOLBRAEK_diffuse.dds",
+      "decode_all_mips": true,
+      "mip_levels": [
+        {
+          "size": [
+            2048,
+            512
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            1024,
+            256
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            512,
+            128
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            256,
+            64
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            128,
+            32
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            64,
+            16
+          ],
+          "alpha_range": [
+            0,
+            255
+          ]
+        },
+        {
+          "size": [
+            32,
+            8
+          ],
+          "alpha_range": [
+            0,
+            232
+          ]
+        },
+        {
+          "size": [
+            16,
+            4
+          ],
+          "alpha_range": [
+            0,
+            154
+          ]
+        },
+        {
+          "size": [
+            8,
+            2
+          ],
+          "alpha_range": [
+            40,
+            83
+          ]
+        },
+        {
+          "size": [
+            4,
+            1
+          ],
+          "alpha_range": [
+            55,
+            80
+          ]
+        },
+        {
+          "size": [
+            2,
+            1
+          ],
+          "alpha_range": [
+            63,
+            75
+          ]
+        },
+        {
+          "size": [
+            1,
+            1
+          ],
+          "alpha_range": [
+            69,
+            69
+          ]
+        }
+      ],
+      "bytes": 1398288
+    }
+  ],
+  "checked_local_i3d_file_refs": 147,
+  "pre_existing_png_refs_resolved_via_dds_fallback": [
+    {
+      "scene": "i3d/ScaniaS4x2.i3d",
+      "ref": "../textures/interior/common_c.png",
+      "dds_fallback": "textures/interior/common_c.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS4x2.i3d",
+      "ref": "../textures/shared/connectors_normal.png",
+      "dds_fallback": "textures/shared/connectors_normal.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS4x2.i3d",
+      "ref": "../textures/shared/connectors_vmask.png",
+      "dds_fallback": "textures/shared/connectors_vmask.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS4x2.i3d",
+      "ref": "../textures/truck/scania_logo.png",
+      "dds_fallback": "textures/truck/scania_logo.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS8x4.i3d",
+      "ref": "../textures/interior/common_c.png",
+      "dds_fallback": "textures/interior/common_c.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS8x4.i3d",
+      "ref": "../textures/shared/connectors_normal.png",
+      "dds_fallback": "textures/shared/connectors_normal.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS8x4.i3d",
+      "ref": "../textures/shared/connectors_vmask.png",
+      "dds_fallback": "textures/shared/connectors_vmask.dds"
+    },
+    {
+      "scene": "i3d/ScaniaS8x4.i3d",
+      "ref": "../textures/truck/scania_logo.png",
+      "dds_fallback": "textures/truck/scania_logo.dds"
+    }
+  ],
+  "missing_local_i3d_file_refs": [],
+  "vehicle_xml_and_lua_byte_identical": true,
+  "all_binary_geometry_byte_identical": true,
+  "briod_200_40_and_name_configs_and_IC_preserved": true,
+  "no_in_game_visual_test": true,
+  "passed": true
+}

@@ -1,0 +1,108 @@
+{
+  "provenance": "Newly authored replacement lettering, not recovered originals",
+  "textures": [
+    {
+      "path": "textures/names/J_KRISTENSEN_diffuse.dds",
+      "size": [
+        2048,
+        512
+      ],
+      "format": "BC3 / DXT5 RGBA",
+      "mip_levels": 12,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bytes": 1398288,
+      "sha256": "bcbcbed044f3addf7593e667b38a903422d6077c4233bbb5a2133eb7880f8b7b",
+      "text": "J. KRISTENSEN",
+      "style": "White bold italic lettering, dark outline, transparent surround"
+    },
+    {
+      "path": "textures/names/M_KOLBRAEK_diffuse.dds",
+      "size": [
+        2048,
+        512
+      ],
+      "format": "BC3 / DXT5 RGBA",
+      "mip_levels": 12,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bytes": 1398288,
+      "sha256": "56fe3c171226cede81f5a5d39d748965e83f189775a89d647d7ef9406a30b4e1",
+      "text": "M. KOLBRÆK",
+      "style": "White bold italic lettering, dark outline, transparent surround"
+    },
+    {
+      "path": "textures/gv604/TUNG_LAST.dds",
+      "size": [
+        2048,
+        512
+      ],
+      "format": "BC3 / DXT5 RGBA",
+      "mip_levels": 12,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "bytes": 1398288,
+      "sha256": "4e1383c72a01013079762593b48e3bef3569508dc3d6242c66fb9c51f663ac54",
+      "text": "TUNG LAST",
+      "style": "Black load lettering on yellow panel"
+    },
+    {
+      "path": "textures/gv604/LANG_LAST.dds",
+      "size": [
+        2048,
+        512
+      ],
+      "format": "BC3 / DXT5 RGBA",
+      "mip_levels": 12,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "bytes": 1398288,
+      "sha256": "7232b59b0ded7fbb498e6f44a41d385dc50aef7b934711cbd19f0536d949948e",
+      "text": "LANG LAST",
+      "style": "Black load lettering on yellow panel"
+    },
+    {
+      "path": "textures/gv604/BRED_LAST.dds",
+      "size": [
+        2048,
+        512
+      ],
+      "format": "BC3 / DXT5 RGBA",
+      "mip_levels": 12,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "bytes": 1398288,
+      "sha256": "15661b355a8338de84e1e987a5336b068d9e7abb38f9beaaa27915e8e02b6728",
+      "text": "BRED LAST",
+      "style": "Black load lettering on yellow panel"
+    },
+    {
+      "path": "textures/gv604/GVFlexiAdvertisment.dds",
+      "size": [
+        2048,
+        512
+      ],
+      "format": "BC3 / DXT5 RGBA",
+      "mip_levels": 12,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "bytes": 1398288,
+      "sha256": "55350f3518d0648bef38c5200c1280f44f31432200b842db6365da58a9cd5ac6",
+      "text": "SCANIA",
+      "style": "White lettering on dark panel; original hidden panel retained"
+    }
+  ],
+  "live_fs25_test_performed": false
+}
