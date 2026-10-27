@@ -1,28 +1,23 @@
-# Scania S — complete Tridem lighting setup
+# Scania S — owner's fitted 6x4 lights
 
-[Download FS25_ScaniaS.zip](../FS25_ScaniaS.zip?raw=true) · [Validation](validation.json)
+[Download FS25_ScaniaS.zip](../FS25_ScaniaS.zip?raw=true) · [Lighting code](LightingCode.xml) · [Validation](validation.json)
 
-Adds the completed Tridem's lamp models, mounts, textures and lighting behaviour to all three supplied trucks: **4x2, 6x4 and 8x4**. Each keeps its original chassis, wheels, engine, coupling and animations.
+Wires every lamp fitted in the owner's latest upload, using the completed Tridem's colours, brightness and controls. The modified **6x4** keeps its supplied lamp positions and shape binary. The supplied 4x2 and 8x4 are preserved unchanged.
 
-| Fitted models, per truck | Lighting behaviour |
+| Fitted lamps | Behaviour |
 |---|---|
-| 7 roof Briods + 4 bumper Briods | White engine-on DRL 80; native high beam 800; 1000 m range and 120° combined coverage |
-| Optibeam blitzbar | Alternating amber flashes, 6 projectors at 100 m; independent steady engine-on cruise lights at 8 |
-| 68 exterior diodes | Orange, first normal light stage, intensity 80 |
-| 15 elongated lower-bar markers | Orange engine-on DRL, intensity 50 |
-| 8 GeoVikings | Red guide lights, first normal light stage, intensity 20, both LODs |
-| 4 rear FOR9T fixtures | Red DRL 20 at the first stage; white reverse light 50, 40 m projectors |
-| 4 FOR9T work pods | Red DRL 20 at the first stage; white work light 50 on the third normal light stage, 60 m projectors |
-| Scania griffin sign | Original artwork with steady red illumination |
+| 6 roof + 8 bumper Briods | White engine-on DRL 80; native high beam 800; 1000 m range and 120° coverage at roof and bumper |
+| 19 front/lower + 24 side elongated markers | Orange engine-on DRL 50 |
+| 4 FOR9T work lamps | Red DRL 20 at the first light stage; white work light 50 on the third normal stage; 60 m projectors |
+| Optibeam blitzbar | Original alternating amber flash code; six 100 m projectors, hidden while off; separate engine-on cruise lights at 8 |
+| Scania sign | Original artwork with steady red illumination |
 
-The third normal F-key stage uses light types 0 1 2. Native high beam is separate, type 3, normally Ctrl+F. The blitzbar uses the native beacon switch and does not cast uncontrolled amber ground light while off.
+The third normal F-key light stage uses types 0 1 2. Native high beam uses type 3, normally Ctrl+F. The bar uses the native beacon switch.
 
-The shorter chassis have adapted side-lamp spacing and their reverse lamps mounted at their own rear bumpers. The 8x4 uses two LED rows in the skirt gap between its steering axles. Fixture geometry is retained at its original size. The 8x4 also receives the rear work-lamp support bar that was absent from its source model.
+New purchases select **Lamps Schoch**, **Goliath with lights**, **Mirage + side DRLs**, and backboard **Design 1**. The new combined bottom-bar option shows the owner's Mirage front bar and Schoch side markers together. Existing saved trucks retain their old choices: select these options in the shop to show every fitted lamp.
 
-New purchases select **Lamps Short**, **Goliath with lights**, **Schoch with lights** and backboard **Design 1** by default. Existing saved trucks retain their saved accessory choices: select these options in the shop to display the complete setup.
+Replace `FS25_ScaniaS.zip` in the mods folder, keep it zipped, and restart FS25 completely.
 
-Replace the existing `FS25_ScaniaS.zip` in your mods folder with this ZIP, keep it zipped, and restart FS25. This is a separate package from `FS25_ScaniaS_Tridem.zip`.
+The Briod white DRLs previously used an unlit chrome material; they now use the completed reference's white glow material. Missing external Briod/marker textures are bundled from that reference, and the bar uses its matching glass texture. Removed 13 old shared-lamp attachments that overlapped the new fittings or referenced deleted mounts, plus 21 stale dashboard emitters. Original engines, wheels, attachers, animations, all supplied texture files and shape binaries are preserved.
 
-The models load through native shared-light and beacon components. Original vehicle shape binaries and texture files are unchanged; the original Tridem lamp geometry and its required textures are bundled separately. Four incorrect PNG references per vehicle now point to the DDS files already supplied with the new trucks. GeoVikings retain the neutral dirt/gloss mask fallback used in the completed Tridem.
-
-Checks passed for archive CRC, node mappings, native XML loading formats, material/texture/shape references, beam directions, quality-profile separation and configuration visibility. Each variant has 29 added main projectors and 6 beacon projectors. Original physics, engines, wheels, attachers and animations were preserved. **Not tested in FS25/GIANTS Editor; exact surface clearance and rendered appearance need an in-game check.**
+Archive CRC, all 588 mappings and 976 checked node references passed. All edited-model material and local texture references resolve. Separate low/high-quality projectors, beam directions, native beacon controls and accessory visibility were checked. **Not tested in FS25/GIANTS Editor.**
