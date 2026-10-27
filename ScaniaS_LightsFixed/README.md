@@ -1,8 +1,10 @@
-# Scania S Tridem — lighting update
+# Scania S Tridem — lights and red curtain
 
 [Download FS25_ScaniaS_Tridem.zip](../FS25_ScaniaS_Tridem.zip?raw=true) · [Lighting code](LightingCode.xml) · [File validation](validation.json)
 
-Built from the latest three-part archive supplied by the owner, including the two newly fitted exterior diodes. Replace the old ZIP in your mods folder, keep its filename unchanged, and restart FS25 completely. Keep the installed mod zipped.
+Built from the owner’s Tridem archive, including the two newly fitted exterior diodes, with the curtain copied from the latest Scania S 6x4. Replace the old ZIP in your mods folder, keep its filename unchanged, and restart FS25 completely. Keep the installed mod zipped.
+
+The original Scania S curtain is fitted with **Red curtain** as the first/default choice. The **Curtain** shop menu also offers brown, green, blue and no curtain. Existing trucks can select **Curtain → Red curtain** in the shop. The curtain model and all four textures are bundled with this ZIP. [Curtain configuration](CurtainCode.xml).
 
 | Lamps | DRL / marker control | Main-light control |
 |---|---|---|
@@ -24,4 +26,4 @@ The roof Briods retain the 1000 m / 120° setup, white DRL 80 and high-beam glow
 
 The new GeoViking imports referenced original dirt/gloss masks and emissive textures outside the mod. Those originals were not included. Red/white emission now uses bundled textures; missing dirt/gloss masks use the game's neutral default mask, so the original dirt appearance may differ. No image or shape binary was edited.
 
-Validation preserved all 1346 scene paths/IDs in the latest upload, including the two new diode fixtures. There are 489 valid mappings and 965 checked XML node references. This update changes only the vehicle XML: the other 138 files, including the supplied i3D, shape binaries and textures, are byte-identical to the uploaded version. Exactly two light controls were added; all existing controls remain. Archive CRC passed. Live lighting and gameplay have not been tested in FS25/GIANTS Editor.
+Validation preserved all 1346 existing Tridem scene paths/IDs. The result has 1351 unique scene nodes, 493 valid mappings and 977 checked XML node references. The curtain uses its original donor geometry in a separate model; the Tridem shape binary, all existing lighting controls and gameplay data are preserved. Only the main i3D and vehicle XML changed, with ten curtain files added. Archive CRC passed. Live appearance has not been tested in FS25/GIANTS Editor.

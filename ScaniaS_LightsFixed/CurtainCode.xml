@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<curtainReference>
+    <!-- Already installed in the supplied Tridem ZIP; reference only. -->
+    <sharedLights>
+        <sharedLight linkNode="curtainBrownMount" filename="interior/curtains/Brown.xml"/>
+        <sharedLight linkNode="curtainBlueMount" filename="interior/curtains/Blue.xml"/>
+        <sharedLight linkNode="curtainGreenMount" filename="interior/curtains/Green.xml"/>
+        <sharedLight linkNode="curtainRedMount" filename="interior/curtains/Red.xml"/>
+    </sharedLights>
+    <design14Configurations title="Curtain">
+        <design14Configuration name="Red curtain" price="200" isDefault="true">
+            <objectChange node="curtainRedMount" visibilityActive="true" visibilityInactive="false"/>
+        </design14Configuration>
+        <design14Configuration name="No" price="0" isDefault="false"/>
+        <design14Configuration name="Brown curtain" price="200" isDefault="false">
+            <objectChange node="curtainBrownMount" visibilityActive="true" visibilityInactive="false"/>
+        </design14Configuration>
+        <design14Configuration name="Green curtain" price="200" isDefault="false">
+            <objectChange node="curtainGreenMount" visibilityActive="true" visibilityInactive="false"/>
+        </design14Configuration>
+        <design14Configuration name="Blue curtain" price="200" isDefault="false">
+            <objectChange node="curtainBlueMount" visibilityActive="true" visibilityInactive="false"/>
+        </design14Configuration>
+    </design14Configurations>
+    <i3dMappings>
+        <i3dMapping id="curtainBrownMount" node="0&gt;0|6|0|8|16|61|0"/>
+        <i3dMapping id="curtainBlueMount" node="0&gt;0|6|0|8|16|61|1"/>
+        <i3dMapping id="curtainGreenMount" node="0&gt;0|6|0|8|16|61|2"/>
+        <i3dMapping id="curtainRedMount" node="0&gt;0|6|0|8|16|61|3"/>
+    </i3dMappings>
+</curtainReference>

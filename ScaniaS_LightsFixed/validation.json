@@ -1,21 +1,48 @@
 {
-  "source_scene_nodes_preserved": 1346,
-  "output_scene_nodes": 1346,
-  "unique_mappings": 489,
-  "valid_xml_node_references": 965,
-  "all_local_i3d_file_references_resolve": 55,
-  "changed_files": [
+  "source_vehicle": "FS25_ScaniaS 6x4",
+  "target_vehicle": "FS25_ScaniaS_Tridem",
+  "default_curtain": "Red curtain",
+  "default_index": 1,
+  "colour_options": [
+    "Red",
+    "Brown",
+    "Green",
+    "Blue",
+    "No"
+  ],
+  "existing_scene_nodes_preserved": 1346,
+  "output_scene_nodes": 1351,
+  "unique_valid_mappings": 493,
+  "valid_node_references": 977,
+  "changed_existing_files": [
+    "i3d/Scania_S_HKL.i3d",
     "xml/Scania_S_HKL.xml"
   ],
-  "other_138_files_byte_identical_to_uploaded_version": true,
-  "uploaded_geometry_and_textures_preserved": true,
-  "existing_vehicle_controls_preserved": true,
-  "total_orange_side_diodes": 68,
-  "side_diode_lightTypes": "0",
-  "side_diode_intensity": 80,
-  "new_diode_paths": [
-    "0>0|8|5|2|74|2",
-    "0>0|8|5|2|75|2"
+  "added_files": [
+    "interior/curtains/Curtains.i3d.shapes",
+    "interior/curtains/Green.xml",
+    "interior/curtains/Curtains.i3d",
+    "interior/curtains/Blue.xml",
+    "interior/curtains/Red.xml",
+    "interior/curtains/Brown.xml",
+    "interior/curtains/textures/blueCurtain.dds",
+    "interior/curtains/textures/brownCurtain.dds",
+    "interior/curtains/textures/greenCurtain.dds",
+    "interior/curtains/textures/redCurtain.dds"
   ],
-  "live_fs25_test_performed": false
+  "original_tridem_lighting_and_gameplay_identical": true,
+  "original_tridem_shape_binary_unchanged": true,
+  "curtain_geometry_and_four_textures_match_donor": true,
+  "native_shared_light_decoration_loader": true,
+  "configuration_visibility_checks_passed": true,
+  "live_fs25_test_performed": false,
+  "package": {
+    "filename": "FS25_ScaniaS_Tridem.zip",
+    "size_bytes": 67893126,
+    "sha256": "b02bd8f38d274ea95a563751dd012ec36d957ee56d63435f388528b20278d7a8",
+    "files": 149,
+    "archive_crc_passed": true,
+    "packaged_files_match_validated_output": true
+  },
+  "independent_curtain_native_loading_audit_passed": true
 }
