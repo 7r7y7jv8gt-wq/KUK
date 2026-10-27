@@ -1,75 +1,65 @@
 {
   "asset_and_code_checks_passed": true,
-  "missing_local_artwork_files": [],
-  "new_artwork_textures": 6,
-  "artwork_provenance": "Newly authored replacement lettering, not recovered originals",
-  "all_local_i3d_resources_resolve": true,
-  "checked_local_i3d_resource_references": 147,
-  "unchanged_native_png_to_dds_fallbacks": [
+  "original_name_artwork_restored": true,
+  "original_name_textures": [
     {
-      "scene": "i3d/ScaniaS4x2.i3d",
-      "reference": "../textures/interior/common_c.png",
-      "existing_dds": "i3d/../textures/interior/common_c.dds"
+      "path": "textures/names/J_KRISTENSEN_diffuse.dds",
+      "size": [
+        2048,
+        256
+      ],
+      "format": "BC3 / DXT5 RGBA",
+      "mip_levels": 12,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bytes": 699280,
+      "sha256": "2a7ac03c4dbc235b7f1d18e2bce17aef91e3d9234c29b78ce08357df77693c81",
+      "text": "J.KRISTENSEN",
+      "style": "Original name lettering with Norwegian flag and transparent background",
+      "source": "FS25_Norske_Navnelogoer.zip / FS25_Norske_Navnelogoer/textures/J_KRISTENSEN_diffuse.dds",
+      "byte_identical_to_original": true
     },
     {
-      "scene": "i3d/ScaniaS4x2.i3d",
-      "reference": "../textures/shared/connectors_normal.png",
-      "existing_dds": "i3d/../textures/shared/connectors_normal.dds"
-    },
-    {
-      "scene": "i3d/ScaniaS4x2.i3d",
-      "reference": "../textures/shared/connectors_vmask.png",
-      "existing_dds": "i3d/../textures/shared/connectors_vmask.dds"
-    },
-    {
-      "scene": "i3d/ScaniaS4x2.i3d",
-      "reference": "../textures/truck/scania_logo.png",
-      "existing_dds": "i3d/../textures/truck/scania_logo.dds"
-    },
-    {
-      "scene": "i3d/ScaniaS8x4.i3d",
-      "reference": "../textures/interior/common_c.png",
-      "existing_dds": "i3d/../textures/interior/common_c.dds"
-    },
-    {
-      "scene": "i3d/ScaniaS8x4.i3d",
-      "reference": "../textures/shared/connectors_normal.png",
-      "existing_dds": "i3d/../textures/shared/connectors_normal.dds"
-    },
-    {
-      "scene": "i3d/ScaniaS8x4.i3d",
-      "reference": "../textures/shared/connectors_vmask.png",
-      "existing_dds": "i3d/../textures/shared/connectors_vmask.dds"
-    },
-    {
-      "scene": "i3d/ScaniaS8x4.i3d",
-      "reference": "../textures/truck/scania_logo.png",
-      "existing_dds": "i3d/../textures/truck/scania_logo.dds"
+      "path": "textures/names/M_KOLBRAEK_diffuse.dds",
+      "size": [
+        2048,
+        256
+      ],
+      "format": "BC3 / DXT5 RGBA",
+      "mip_levels": 12,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "bytes": 699280,
+      "sha256": "eff74c9961cf2147aa63c50629923debaa12cdf0f83a1232cc21525adfbb1fa2",
+      "text": "M.KOLBRÆK",
+      "style": "Original name lettering with Norwegian flag and transparent background",
+      "source": "FS25_Norske_Navnelogoer.zip / FS25_Norske_Navnelogoer/textures/M_KOLBRAEK_diffuse.dds",
+      "byte_identical_to_original": true
     }
   ],
+  "original_name_textures_copied_byte_for_byte": true,
+  "source_archive": "User-uploaded FS25_Norske_Navnelogoer.zip",
   "changed_existing_files": [
     "README_NAMES_IC.txt",
-    "i3d/ScaniaS6x4.i3d"
-  ],
-  "added_files": [
-    "textures/gv604/BRED_LAST.dds",
-    "textures/gv604/GVFlexiAdvertisment.dds",
-    "textures/gv604/LANG_LAST.dds",
-    "textures/gv604/TUNG_LAST.dds",
     "textures/names/J_KRISTENSEN_diffuse.dds",
     "textures/names/M_KOLBRAEK_diffuse.dds"
   ],
   "all_other_files_byte_identical": true,
-  "scene_geometry_binary_and_transforms_unchanged": true,
-  "two_name_configs_and_ic_code_preserved": true,
+  "scene_and_binary_geometry_unchanged": true,
+  "two_name_configurations_preserved": true,
+  "ic_code_unchanged": true,
   "briod_high_beam_intensity": 200,
   "briod_white_drl_intensity": 40,
+  "four_replacement_sign_textures_retained": true,
   "live_fs25_test_performed": false,
-  "uv_fit_and_folding_motion_need_in_game_visual_check": true,
   "package": {
     "filename": "FS25_ScaniaS.zip",
-    "size_bytes": 61969046,
-    "sha256": "3da41ec9eb0146746fa0044ce85a3148c00662f60533272847855d0365dae79b",
+    "size_bytes": 62219114,
+    "sha256": "93329f043a542d6d67820fb4666e4da632031e0a8242eb287129b4dfbe039954",
     "files": 117,
     "archive_crc_passed": true,
     "artwork_complete": true

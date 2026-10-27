@@ -1,11 +1,14 @@
 {
-  "provenance": "Newly authored replacement lettering, not recovered originals",
+  "provenance": {
+    "name_decals": "Exact original DDS files from the user-uploaded FS25_Norske_Navnelogoer.zip; copied byte for byte",
+    "gv604_signs": "Newly authored replacement sign artwork retained from previous version"
+  },
   "textures": [
     {
       "path": "textures/names/J_KRISTENSEN_diffuse.dds",
       "size": [
         2048,
-        512
+        256
       ],
       "format": "BC3 / DXT5 RGBA",
       "mip_levels": 12,
@@ -13,16 +16,18 @@
         0,
         255
       ],
-      "bytes": 1398288,
-      "sha256": "bcbcbed044f3addf7593e667b38a903422d6077c4233bbb5a2133eb7880f8b7b",
-      "text": "J. KRISTENSEN",
-      "style": "White bold italic lettering, dark outline, transparent surround"
+      "bytes": 699280,
+      "sha256": "2a7ac03c4dbc235b7f1d18e2bce17aef91e3d9234c29b78ce08357df77693c81",
+      "text": "J.KRISTENSEN",
+      "style": "Original name lettering with Norwegian flag and transparent background",
+      "source": "FS25_Norske_Navnelogoer.zip / FS25_Norske_Navnelogoer/textures/J_KRISTENSEN_diffuse.dds",
+      "byte_identical_to_original": true
     },
     {
       "path": "textures/names/M_KOLBRAEK_diffuse.dds",
       "size": [
         2048,
-        512
+        256
       ],
       "format": "BC3 / DXT5 RGBA",
       "mip_levels": 12,
@@ -30,10 +35,12 @@
         0,
         255
       ],
-      "bytes": 1398288,
-      "sha256": "56fe3c171226cede81f5a5d39d748965e83f189775a89d647d7ef9406a30b4e1",
-      "text": "M. KOLBRÆK",
-      "style": "White bold italic lettering, dark outline, transparent surround"
+      "bytes": 699280,
+      "sha256": "eff74c9961cf2147aa63c50629923debaa12cdf0f83a1232cc21525adfbb1fa2",
+      "text": "M.KOLBRÆK",
+      "style": "Original name lettering with Norwegian flag and transparent background",
+      "source": "FS25_Norske_Navnelogoer.zip / FS25_Norske_Navnelogoer/textures/M_KOLBRAEK_diffuse.dds",
+      "byte_identical_to_original": true
     },
     {
       "path": "textures/gv604/TUNG_LAST.dds",
