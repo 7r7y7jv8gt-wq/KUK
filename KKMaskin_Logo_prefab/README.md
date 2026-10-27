@@ -1,15 +1,23 @@
-# K&K MASKIN AS — rett, liggende logo
+# K&K MASKIN AS — hvite logoer til FS25
 
-[Last ned I3D-prefab](https://github.com/7r7y7jv8gt-wq/KUK/raw/refs/heads/codex/kk-maskin-logo-prefab/FS25_KKMaskin_Logo_RettUt.zip) · [Logo som PNG](https://github.com/7r7y7jv8gt-wq/KUK/blob/codex/kk-maskin-logo-prefab/KKMaskin_Logo_RettUt.png)
+[Last ned alle hvite logoer som I3D-prefaber og PNG](https://github.com/7r7y7jv8gt-wq/KUK/raw/refs/heads/codex/kk-maskin-logo-prefab/FS25_KKMaskin_Logo_Hvit.zip)
 
-**Symbolet står til venstre, og hele K&K MASKIN AS står rett bortover på én linje.** Pakken inneholder én logovariant og én I3D-fil: `KKMaskin_logo.i3d`.
+Både gravemaskinsymbolet og hele K&K MASKIN AS-teksten er hvite. Bakgrunnen er transparent.
 
-Pakk ut ZIP-filen og kopier hele `FS25_KKMaskin_Logo_RettUt`-mappen inn i moddmappen. Velg **File > Import** i GIANTS Editor 10 og importer `KKMaskin_logo.i3d`. Behold `textures/` sammen med filen. Norsk importveiledning følger med.
+| Variant | Importfil | Standardstørrelse |
+| --- | --- | --- |
+| Siste rette, liggende logo — standard | `KKMaskin_logo.i3d` | 1 × 0,25 m |
+| Tidligere liggende variant | `KKMaskin_logo_horizontal.i3d` | 1 × 0,25 m |
+| Opprinnelig kompakt oppsett | `KKMaskin_logo_original.i3d` | 1 × 0,5 m |
 
-Flatt, transparent merke uten kollisjon eller skyggekasting. Standardflaten er 1 × 0,25 meter; framsiden peker i lokal +Z-retning. Plasser merket omtrent 1–3 mm utenfor kjøretøyets overflate, og skaler alle akser likt.
+Den siste rette logoen står først i prefab-listen. Pakk ut ZIP-filen og kopier hele `FS25_KKMaskin_Logo_Hvit`-mappen inn i modmappen. Importer ønsket fil med **File > Import** i GIANTS Editor 10. Behold `textures/` sammen med I3D-filene. PNG-versjonene ligger i `sources/`.
 
-Inkluderer DDS med alpha og full mipmap-kjede, prefabDesc.xml, liggende ikon, PNG-kilde, kontrollsummer og valideringsrapport. Geometrien ligger i I3D-filen.
+Alle er flate logomerker uten kollisjon. Framsiden peker i lokal +Z-retning. Plasser merket 1–3 mm utenfor overflaten og skaler alle akser likt.
 
-Dette er en redigeringsprefab som importeres i modellen. Filstruktur, geometri, teksturer og ZIP-integritet er kontrollert; live import i GIANTS Editor 10 og FS25 er ikke testet her.
+Pakken inneholder tre hvite DDS-teksturer med alpha og full mipmap-kjede, hvitt ikon, prefabDesc.xml og norsk bruksanvisning. Ingen endringer er gjort i navnelogoene J.KRISTENSEN og M.KOLBRÆK.
 
-ZIP SHA-256: `269ae7a61008a5e29fb47e652edd522f067860c5d4f046f41cd2d456f381161a`
+Geometri, teksturreferanser, hvit farge, transparens, DDS-mipmaps, kontrollsummer og ZIP-integritet er kontrollert. Live import og rendering i GIANTS Editor/FS25 er ikke testet her.
+
+[PNG: rett standardlogo](https://github.com/7r7y7jv8gt-wq/KUK/blob/codex/kk-maskin-logo-prefab/KKMaskin_Logo_RettUt_Hvit.png) · [PNG: tidligere liggende](https://github.com/7r7y7jv8gt-wq/KUK/blob/codex/kk-maskin-logo-prefab/KKMaskin_Logo_Horizontal_Hvit.png) · [PNG: original](https://github.com/7r7y7jv8gt-wq/KUK/blob/codex/kk-maskin-logo-prefab/KKMaskin_Logo_Original_Hvit.png)
+
+ZIP SHA-256: `02acbe7b041b91a0ddc80796b1fa0a19d2d978ea9c45b6e09079c1647c3aabeb`

@@ -1,38 +1,119 @@
 {
   "validation": "passed",
-  "variant_count": 1,
-  "i3d": "KKMaskin_logo.i3d",
-  "i3d_version": "1.6",
-  "width_metres": 1.0,
-  "height_metres": 0.25,
-  "vertices": 4,
-  "triangles": 2,
-  "front_direction": "+Z",
-  "collision": false,
-  "casts_shadows": false,
-  "self_contained_references": true,
-  "source_png_unchanged": true,
-  "source_visible_bounds": [
-    35,
-    180,
-    2137,
-    486
+  "primary": "KKMaskin_logo.i3d",
+  "variants": [
+    {
+      "file": "KKMaskin_logo.i3d",
+      "label": "Rett – standard",
+      "width_metres": 1,
+      "height_metres": 0.25,
+      "front_direction": "+Z",
+      "collision": false,
+      "source_png_unchanged": true
+    },
+    {
+      "file": "KKMaskin_logo_horizontal.i3d",
+      "label": "Tidligere liggende",
+      "width_metres": 1,
+      "height_metres": 0.25,
+      "front_direction": "+Z",
+      "collision": false,
+      "source_png_unchanged": true
+    },
+    {
+      "file": "KKMaskin_logo_original.i3d",
+      "label": "Original stablet",
+      "width_metres": 1,
+      "height_metres": 0.5,
+      "front_direction": "+Z",
+      "collision": false,
+      "source_png_unchanged": true
+    }
   ],
-  "only_horizontal_variant": true,
   "textures": [
     {
-      "file": "textures/KKMaskin_logo_diffuse.dds",
+      "file": "KKMaskin_logo_diffuse.dds",
       "size": [
         2048,
         512
       ],
       "format": "DXT5/BC3",
       "mipmap_levels": 12,
-      "bytes": 1398288,
-      "alpha_min_max": [
-        0,
-        255
-      ]
+      "white_statistics": {
+        "opaque_pixels": 89370,
+        "white_fraction": 1.0,
+        "mean_rgb": [
+          254.912,
+          252.041,
+          254.914
+        ],
+        "minimum_rgb": [
+          247,
+          245,
+          247
+        ],
+        "maximum_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "file": "KKMaskin_logo_horizontal_diffuse.dds",
+      "size": [
+        2048,
+        512
+      ],
+      "format": "DXT5/BC3",
+      "mipmap_levels": 12,
+      "white_statistics": {
+        "opaque_pixels": 95511,
+        "white_fraction": 1.0,
+        "mean_rgb": [
+          254.901,
+          252.061,
+          254.899
+        ],
+        "minimum_rgb": [
+          247,
+          247,
+          247
+        ],
+        "maximum_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
+    },
+    {
+      "file": "KKMaskin_logo_original_diffuse.dds",
+      "size": [
+        2048,
+        1024
+      ],
+      "format": "DXT5/BC3",
+      "mipmap_levels": 12,
+      "white_statistics": {
+        "opaque_pixels": 439929,
+        "white_fraction": 1.0,
+        "mean_rgb": [
+          254.959,
+          252.193,
+          254.957
+        ],
+        "minimum_rgb": [
+          247,
+          245,
+          247
+        ],
+        "maximum_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     },
     {
       "file": "icon_KKMaskin.dds",
@@ -42,13 +123,28 @@
       ],
       "format": "DXT5/BC3",
       "mipmap_levels": 10,
-      "bytes": 349680,
-      "alpha_min_max": [
-        0,
-        255
-      ]
+      "white_statistics": {
+        "opaque_pixels": 4850,
+        "white_fraction": 1.0,
+        "mean_rgb": [
+          254.945,
+          252.294,
+          254.938
+        ],
+        "minimum_rgb": [
+          249,
+          249,
+          249
+        ],
+        "maximum_rgb": [
+          255,
+          255,
+          255
+        ]
+      }
     }
   ],
+  "self_contained_references": true,
   "GIANTS_Editor_10_runtime_tested": false,
   "FS25_runtime_tested": false
 }
