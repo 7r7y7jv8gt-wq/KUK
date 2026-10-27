@@ -27,11 +27,27 @@
   "live_fs25_test_performed": false,
   "package": {
     "filename": "FS25_ScaniaS.zip",
-    "size_bytes": 61083736,
-    "sha256": "c1e470f39d07a33d46e0960890a1a46d481c15fbea8be916abc15660b05e535d",
+    "size_bytes": 61083742,
+    "sha256": "e0980a026f7b993090b1fa42bb85a27175b6a4496a600e2c504d6082b2741d1f",
     "files": 109,
     "archive_crc_passed": true,
     "packaged_files_match_validated_output": true
   },
-  "independent_briod_marker_beacon_audits_passed": true
+  "independent_briod_marker_beacon_audits_passed": true,
+  "brightness_update": {
+    "briod_high_beam_surface_intensity": 200,
+    "briod_white_drl_intensity": 40,
+    "changed_high_beam_emitters": 14,
+    "changed_drl_emitters": 14,
+    "dimmed_projected_high_beam_nodes": 16,
+    "projected_light_rgb": "0.25 0.25 0.25",
+    "briod_range_m": 1000,
+    "briod_fan_degrees": 120,
+    "all_other_settings_unchanged": true,
+    "changed_files": [
+      "i3d/ScaniaS6x4.i3d",
+      "xml/ScaniaS6x4.xml"
+    ],
+    "live_fs25_test_performed": false
+  }
 }

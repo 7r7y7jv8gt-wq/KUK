@@ -6,11 +6,13 @@ Wires every lamp fitted in the owner's latest upload, using the completed Tridem
 
 | Fitted lamps | Behaviour |
 |---|---|
-| 6 roof + 8 bumper Briods | White engine-on DRL 80; native high beam 800; 1000 m range and 120° coverage at roof and bumper |
+| 6 roof + 8 bumper Briods | White engine-on DRL 40; native high beam 200; 1000 m range and 120° coverage at roof and bumper |
 | 19 front/lower + 24 side elongated markers | Orange engine-on DRL 50 |
 | 4 FOR9T work lamps | Red DRL 20 at the first light stage; white work light 50 on the third normal stage; 60 m projectors |
 | Optibeam blitzbar | Original alternating amber flash code; six 100 m projectors, hidden while off; separate engine-on cruise lights at 8 |
 | Scania sign | Original artwork with steady red illumination |
+
+The Briod high-beam glow is now 200, with projected illumination reduced to one quarter of the previous brightness. White Briod DRLs are now 40. The 1000 m range and 120° beam coverage remain.
 
 The third normal F-key light stage uses types 0 1 2. Native high beam uses type 3, normally Ctrl+F. The bar uses the native beacon switch.
 

@@ -2,20 +2,20 @@
 <lightingReference>
     <!-- Already installed in the supplied ZIP. These blocks are for reference. -->
     <dayTimeLights>
-        <dayTimeLight node="fittedBriodDrl1" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl2" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl3" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl4" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl5" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl6" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl7" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl8" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl9" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl10" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl11" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl12" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl13" intensity="80"/>
-        <dayTimeLight node="fittedBriodDrl14" intensity="80"/>
+        <dayTimeLight node="fittedBriodDrl1" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl2" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl3" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl4" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl5" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl6" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl7" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl8" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl9" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl10" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl11" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl12" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl13" intensity="40"/>
+        <dayTimeLight node="fittedBriodDrl14" intensity="40"/>
         <dayTimeLight node="fittedOrangeMarker1" intensity="50"/>
         <dayTimeLight node="fittedOrangeMarker2" intensity="50"/>
         <dayTimeLight node="fittedOrangeMarker3" intensity="50"/>
@@ -62,20 +62,20 @@
         <dayTimeLight node="fittedBarCruise" intensity="8"/>
     </dayTimeLights>
     <defaultLights>
-        <defaultLight node="fittedBriodMain1" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain2" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain3" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain4" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain5" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain6" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain7" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain8" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain9" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain10" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain11" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain12" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain13" intensity="800" lightTypes="3"/>
-        <defaultLight node="fittedBriodMain14" intensity="800" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain1" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain2" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain3" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain4" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain5" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain6" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain7" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain8" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain9" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain10" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain11" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain12" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain13" intensity="200" lightTypes="3"/>
+        <defaultLight node="fittedBriodMain14" intensity="200" lightTypes="3"/>
         <defaultLight node="fittedWorkDrl1" intensity="20" lightTypes="0"/>
         <defaultLight node="fittedWorkMain1" intensity="50" lightTypes="2"/>
         <defaultLight node="fittedWorkDrl2" intensity="20" lightTypes="0"/>
