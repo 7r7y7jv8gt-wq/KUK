@@ -1,65 +1,67 @@
 {
   "asset_and_code_checks_passed": true,
-  "original_name_artwork_restored": true,
-  "original_name_textures": [
-    {
-      "path": "textures/names/J_KRISTENSEN_diffuse.dds",
-      "size": [
-        2048,
-        256
-      ],
-      "format": "BC3 / DXT5 RGBA",
-      "mip_levels": 12,
-      "alpha_range": [
-        0,
-        255
-      ],
-      "bytes": 699280,
-      "sha256": "2a7ac03c4dbc235b7f1d18e2bce17aef91e3d9234c29b78ce08357df77693c81",
-      "text": "J.KRISTENSEN",
-      "style": "Original name lettering with Norwegian flag and transparent background",
-      "source": "FS25_Norske_Navnelogoer.zip / FS25_Norske_Navnelogoer/textures/J_KRISTENSEN_diffuse.dds",
-      "byte_identical_to_original": true
-    },
-    {
-      "path": "textures/names/M_KOLBRAEK_diffuse.dds",
-      "size": [
-        2048,
-        256
-      ],
-      "format": "BC3 / DXT5 RGBA",
-      "mip_levels": 12,
-      "alpha_range": [
-        0,
-        255
-      ],
-      "bytes": 699280,
-      "sha256": "eff74c9961cf2147aa63c50629923debaa12cdf0f83a1232cc21525adfbb1fa2",
-      "text": "M.KOLBRÆK",
-      "style": "Original name lettering with Norwegian flag and transparent background",
-      "source": "FS25_Norske_Navnelogoer.zip / FS25_Norske_Navnelogoer/textures/M_KOLBRAEK_diffuse.dds",
-      "byte_identical_to_original": true
-    }
-  ],
-  "original_name_textures_copied_byte_for_byte": true,
-  "source_archive": "User-uploaded FS25_Norske_Navnelogoer.zip",
   "changed_existing_files": [
     "README_NAMES_IC.txt",
-    "textures/names/J_KRISTENSEN_diffuse.dds",
-    "textures/names/M_KOLBRAEK_diffuse.dds"
+    "i3d/ScaniaS6x4.i3d",
+    "xml/ScaniaS6x4.xml"
   ],
   "all_other_files_byte_identical": true,
-  "scene_and_binary_geometry_unchanged": true,
-  "two_name_configurations_preserved": true,
-  "ic_code_unchanged": true,
+  "binary_geometry_and_original_name_flag_textures_unchanged": true,
+  "name_configurations": [
+    {
+      "index": 1,
+      "label": "J. Kristensen left / M. Kolbræk right",
+      "default": true,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": "M_KOLBRAEK"
+      }
+    },
+    {
+      "index": 2,
+      "label": "M. Kolbræk left / J. Kristensen right",
+      "default": false,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": "J_KRISTENSEN"
+      }
+    },
+    {
+      "index": 3,
+      "label": "J. Kristensen — driver door only",
+      "default": false,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": null
+      }
+    },
+    {
+      "index": 4,
+      "label": "M. Kolbræk — driver door only",
+      "default": false,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": null
+      }
+    }
+  ],
+  "all_16_name_configuration_transitions_passed": true,
+  "sign_root_rotation_corrected_for_forward_facing_artwork": true,
+  "click_point_world_positions_preserved": true,
+  "native_ic_animations_lua_and_saved_state_logic_unchanged": true,
+  "scene_nodes": 1092,
+  "valid_unique_mappings": 603,
+  "checked_node_references": 1025,
+  "checked_local_i3d_resource_references": 147,
+  "unchanged_native_dds_fallbacks": 8,
   "briod_high_beam_intensity": 200,
   "briod_white_drl_intensity": 40,
-  "four_replacement_sign_textures_retained": true,
   "live_fs25_test_performed": false,
+  "rendered_sign_and_fold_need_in_game_visual_check": true,
   "package": {
     "filename": "FS25_ScaniaS.zip",
-    "size_bytes": 62219114,
-    "sha256": "93329f043a542d6d67820fb4666e4da632031e0a8242eb287129b4dfbe039954",
+    "size_bytes": 62219351,
+    "sha256": "e1f22441646e07f9babfb2f65467acbb5492532cc3d43f090838feaed8608f3e",
     "files": 117,
     "archive_crc_passed": true,
     "artwork_complete": true

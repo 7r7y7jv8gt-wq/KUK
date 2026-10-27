@@ -1,0 +1,182 @@
+{
+  "name_configurations": [
+    {
+      "index": 1,
+      "label": "J. Kristensen left / M. Kolbræk right",
+      "default": true,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": "M_KOLBRAEK"
+      }
+    },
+    {
+      "index": 2,
+      "label": "M. Kolbræk left / J. Kristensen right",
+      "default": false,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": "J_KRISTENSEN"
+      }
+    },
+    {
+      "index": 3,
+      "label": "J. Kristensen — driver door only",
+      "default": false,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": null
+      }
+    },
+    {
+      "index": 4,
+      "label": "M. Kolbræk — driver door only",
+      "default": false,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": null
+      }
+    }
+  ],
+  "driver_side": "Vehicle left / world X positive, same original left name positions",
+  "new_mappings": {
+    "nameJKDriver": "0>0|8|15|1",
+    "nameMKPassenger": "0>0|8|15|0",
+    "nameMKDriver": "0>0|8|14|1",
+    "nameJKPassenger": "0>0|8|14|0"
+  },
+  "all_16_visibility_transitions_passed": true,
+  "transitions": [
+    {
+      "from": 1,
+      "to": 1,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": "M_KOLBRAEK"
+      }
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": "J_KRISTENSEN"
+      }
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": null
+      }
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": null
+      }
+    },
+    {
+      "from": 2,
+      "to": 1,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": "M_KOLBRAEK"
+      }
+    },
+    {
+      "from": 2,
+      "to": 2,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": "J_KRISTENSEN"
+      }
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": null
+      }
+    },
+    {
+      "from": 2,
+      "to": 4,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": null
+      }
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": "M_KOLBRAEK"
+      }
+    },
+    {
+      "from": 3,
+      "to": 2,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": "J_KRISTENSEN"
+      }
+    },
+    {
+      "from": 3,
+      "to": 3,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": null
+      }
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": null
+      }
+    },
+    {
+      "from": 4,
+      "to": 1,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": "M_KOLBRAEK"
+      }
+    },
+    {
+      "from": 4,
+      "to": 2,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": "J_KRISTENSEN"
+      }
+    },
+    {
+      "from": 4,
+      "to": 3,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": null
+      }
+    },
+    {
+      "from": 4,
+      "to": 4,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": null
+      }
+    }
+  ],
+  "original_scene_and_geometry_unchanged": true,
+  "only_design15_and_four_mappings_changed_in_vehicle_xml": true,
+  "original_artwork_preserved": true,
+  "live_fs25_test_performed": false
+}
