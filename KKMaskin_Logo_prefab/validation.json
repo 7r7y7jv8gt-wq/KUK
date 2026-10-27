@@ -1,25 +1,39 @@
 {
-  "variants": [
-    {
-      "file": "KKMaskin_logo.i3d",
-      "width_metres": 1.0,
-      "height_metres": 0.5,
-      "triangles": 2,
-      "vertices": 4,
-      "front_direction": "+Z",
-      "collision": false
-    },
-    {
-      "file": "KKMaskin_logo_horizontal.i3d",
-      "width_metres": 1.0,
-      "height_metres": 0.25,
-      "triangles": 2,
-      "vertices": 4,
-      "front_direction": "+Z",
-      "collision": false
-    }
+  "validation": "passed",
+  "variant_count": 1,
+  "i3d": "KKMaskin_logo.i3d",
+  "i3d_version": "1.6",
+  "width_metres": 1.0,
+  "height_metres": 0.25,
+  "vertices": 4,
+  "triangles": 2,
+  "front_direction": "+Z",
+  "collision": false,
+  "casts_shadows": false,
+  "self_contained_references": true,
+  "source_png_unchanged": true,
+  "source_visible_bounds": [
+    35,
+    180,
+    2137,
+    486
   ],
+  "only_horizontal_variant": true,
   "textures": [
+    {
+      "file": "textures/KKMaskin_logo_diffuse.dds",
+      "size": [
+        2048,
+        512
+      ],
+      "format": "DXT5/BC3",
+      "mipmap_levels": 12,
+      "bytes": 1398288,
+      "alpha_min_max": [
+        0,
+        255
+      ]
+    },
     {
       "file": "icon_KKMaskin.dds",
       "size": [
@@ -27,29 +41,14 @@
         512
       ],
       "format": "DXT5/BC3",
-      "mipmaps": 10
-    },
-    {
-      "file": "textures/KKMaskin_logo_diffuse.dds",
-      "size": [
-        2048,
-        1024
-      ],
-      "format": "DXT5/BC3",
-      "mipmaps": 12
-    },
-    {
-      "file": "textures/KKMaskin_logo_horizontal_diffuse.dds",
-      "size": [
-        2048,
-        512
-      ],
-      "format": "DXT5/BC3",
-      "mipmaps": 12
+      "mipmap_levels": 10,
+      "bytes": 349680,
+      "alpha_min_max": [
+        0,
+        255
+      ]
     }
   ],
-  "self_contained_references": true,
-  "original_variant_preserved": true,
   "GIANTS_Editor_10_runtime_tested": false,
   "FS25_runtime_tested": false
 }
