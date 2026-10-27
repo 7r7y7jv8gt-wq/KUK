@@ -1,0 +1,60 @@
+{
+  "reference_tridem_commit": "5947633acce5ebc7962cdf50384cf125bf9eb2bb",
+  "variants": {
+    "ScaniaS4x2": {
+      "low_added_projectors": 10,
+      "high_added_projectors": 19,
+      "original_scene_nodes_preserved": 587,
+      "scene_nodes": 644,
+      "mappings": 502,
+      "valid_node_references": 806,
+      "native_loaded_lamp_rigs": 8,
+      "native_optibeam_sides": 2
+    },
+    "ScaniaS6x4": {
+      "low_added_projectors": 10,
+      "high_added_projectors": 19,
+      "original_scene_nodes_preserved": 590,
+      "scene_nodes": 647,
+      "mappings": 517,
+      "valid_node_references": 845,
+      "native_loaded_lamp_rigs": 8,
+      "native_optibeam_sides": 2
+    },
+    "ScaniaS8x4": {
+      "low_added_projectors": 10,
+      "high_added_projectors": 19,
+      "original_scene_nodes_preserved": 498,
+      "scene_nodes": 556,
+      "mappings": 500,
+      "valid_node_references": 779,
+      "native_loaded_lamp_rigs": 8,
+      "native_optibeam_sides": 2
+    }
+  },
+  "fixture_counts_per_variant": {
+    "roof_briods": 7,
+    "bumper_briods": 4,
+    "orange_side_diodes": 68,
+    "lower_bar_markers": 15,
+    "geovikings": 8,
+    "reverse_for9t": 4,
+    "work_for9t": 4,
+    "optibeam_bars": 1,
+    "red_scania_signs": 1
+  },
+  "native_loading_audit_passed": true,
+  "transform_and_direction_audit_passed": true,
+  "all_local_material_texture_and_shape_refs_resolve": true,
+  "original_gameplay_data_and_shape_binaries_preserved": true,
+  "package": {
+    "zip_filename": "FS25_ScaniaS.zip",
+    "zip_size": 86812316,
+    "sha256": "f6ce5d7fe280fc488aea11a33d3a6bcc5e9bd69d285c840c9a78a3da332d618b",
+    "file_count": 134,
+    "archive_crc_passed": true,
+    "all_packaged_files_match_validated_output": true
+  },
+  "live_fs25_test_performed": false,
+  "rendered_surface_clearance_verified": false
+}
