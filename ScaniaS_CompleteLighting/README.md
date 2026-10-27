@@ -1,25 +1,25 @@
-# Scania S — owner's fitted 6x4 lights
+# Scania S 6x4 — name layouts and front-sign IC
 
-[Download FS25_ScaniaS.zip](../FS25_ScaniaS.zip?raw=true) · [Lighting code](LightingCode.xml) · [Validation](validation.json)
+[Download FS25_ScaniaS.zip](../FS25_ScaniaS.zip?raw=true) · [Name/IC code](NamesICCode.xml) · [Validation](validation.json)
 
-Wires every lamp fitted in the owner's latest upload, using the completed Tridem's colours, brightness and controls. The modified **6x4** keeps its supplied lamp positions and shape binary. The supplied 4x2 and 8x4 are preserved unchanged.
+**Six original DDS textures are missing from the owner's upload. This download includes the full vehicle and the new code, but the name lettering and sign artwork will not display correctly until those images are added.** A notice and the required file paths are included in `README_NAMES_IC.txt` inside the ZIP.
 
-| Fitted lamps | Behaviour |
+The **Name layout** shop option has two choices:
+
+- J. Kristensen left / M. Kolbræk right (default).
+- M. Kolbræk left / J. Kristensen right.
+
+The supplied name geometry and positions are preserved; the shop selection shows one complete layout at a time.
+
+The new grille part is a GV604 folding transport sign. Enable **FS25_interactiveControl** to use its interactions. One click point opens/closes the sign; the other cycles **heavy → long → wide load** while it is open. A saved native analog IC controller stores the selected panel; a small server-authoritative helper cycles it. Only one load panel is visible at a time.
+
+Add the owner's original images at these locations inside the mod to restore the artwork:
+
+| Folder | Required files |
 |---|---|
-| 6 roof + 8 bumper Briods | White engine-on DRL 40; native high beam 200; 1000 m range and 120° coverage at roof and bumper |
-| 19 front/lower + 24 side elongated markers | Orange engine-on DRL 50 |
-| 4 FOR9T work lamps | Red DRL 20 at the first light stage; white work light 50 on the third normal stage; 60 m projectors |
-| Optibeam blitzbar | Original alternating amber flash code; six 100 m projectors, hidden while off; separate engine-on cruise lights at 8 |
-| Scania sign | Original artwork with steady red illumination |
+| `textures/names/` | `J_KRISTENSEN_diffuse.dds`, `M_KOLBRAEK_diffuse.dds` |
+| `textures/gv604/` | `TUNG_LAST.dds`, `LANG_LAST.dds`, `BRED_LAST.dds`, `GVFlexiAdvertisment.dds` |
 
-The Briod high-beam glow is now 200, with projected illumination reduced to one quarter of the previous brightness. White Briod DRLs are now 40. The 1000 m range and 120° beam coverage remain.
+Replace `FS25_ScaniaS.zip` and restart FS25. Existing Briod high beams stay at 200, white Briod DRLs at 40, with the 1000 m / 120° setup. The other fitted lights and driving data are preserved. The supplied 4x2 and 8x4 remain unchanged.
 
-The third normal F-key light stage uses types 0 1 2. Native high beam uses type 3, normally Ctrl+F. The bar uses the native beacon switch.
-
-New purchases select **Lamps Schoch**, **Goliath with lights**, **Mirage + side DRLs**, and backboard **Design 1**. The new combined bottom-bar option shows the owner's Mirage front bar and Schoch side markers together. Existing saved trucks retain their old choices: select these options in the shop to show every fitted lamp.
-
-Replace `FS25_ScaniaS.zip` in the mods folder, keep it zipped, and restart FS25 completely.
-
-The Briod white DRLs previously used an unlit chrome material; they now use the completed reference's white glow material. Missing external Briod/marker textures are bundled from that reference, and the bar uses its matching glass texture. Removed 13 old shared-lamp attachments that overlapped the new fittings or referenced deleted mounts, plus 21 stale dashboard emitters. Original engines, wheels, attachers, animations, all supplied texture files and shape binaries are preserved.
-
-Archive CRC, all 588 mappings and 976 checked node references passed. All edited-model material and local texture references resolve. Separate low/high-quality projectors, beam directions, native beacon controls and accessory visibility were checked. **Not tested in FS25/GIANTS Editor.**
+Code checks passed for both name layouts, all 599 mappings and 999 checked node references. The Lua bridge was execution-tested for cycling, missing IC, initialization and client replay. Archive CRC passed. The six missing artwork files are explicitly recorded in validation.json. **Not tested in FS25/GIANTS Editor; the folding appearance needs an in-game check.**

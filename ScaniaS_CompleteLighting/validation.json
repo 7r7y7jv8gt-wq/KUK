@@ -1,53 +1,48 @@
 {
-  "edited_variant": "ScaniaS6x4",
-  "original_scene_nodes_preserved": 1042,
-  "output_scene_nodes": 1066,
-  "unique_valid_mappings": 588,
-  "valid_node_references": 976,
-  "changed_supplied_files": [
-    "i3d/ScaniaS6x4.i3d",
-    "xml/ScaniaS6x4.xml"
+  "code_checks_passed": true,
+  "complete_mod_ready": false,
+  "completion_blocker": "Six original artwork DDS files were not included in the upload.",
+  "pending_original_textures": [
+    "J_KRISTENSEN_diffuse.dds",
+    "M_KOLBRAEK_diffuse.dds",
+    "BRED_LAST.dds",
+    "GVFlexiAdvertisment.dds",
+    "LANG_LAST.dds",
+    "TUNG_LAST.dds"
   ],
-  "original_shape_binaries_and_fixture_transforms_preserved": true,
-  "all_supplied_texture_files_unchanged": true,
-  "unmodified_4x2_and_8x4_preserved": true,
-  "physics_engines_wheels_attachers_animations_preserved": true,
-  "all_edited_model_material_and_resource_refs_resolve": true,
-  "low_profile_added_projectors": 6,
-  "high_profile_added_projectors": 18,
-  "separate_quality_profile_nodes": true,
-  "lamp_counts": {
-    "roof_briods": 6,
-    "bumper_briods": 8,
-    "orange_elongated_markers": 43,
-    "red_drl_for9t_work_pods": 4,
-    "optibeam_bars": 1,
-    "optibeam_projectors": 6
+  "scene_nodes": 1092,
+  "unique_valid_mappings": 599,
+  "checked_node_references": 999,
+  "existing_lighting_and_gameplay_preserved": true,
+  "original_shape_binary_unchanged": true,
+  "name_layouts": 2,
+  "ic_controls": {
+    "fold": 1,
+    "saved_mode": 2,
+    "cycle": 3
   },
+  "native_ic_addon_required_for_interaction": "FS25_interactiveControl",
+  "lua_bridge_execution_checks_passed": true,
   "live_fs25_test_performed": false,
+  "fold_geometry_needs_visual_test": true,
+  "publication_requested_with_missing_textures": true,
+  "missing_local_texture_paths": [
+    "../textures/names/J_KRISTENSEN_diffuse.dds",
+    "../textures/names/M_KOLBRAEK_diffuse.dds",
+    "../textures/gv604/BRED_LAST.dds",
+    "../textures/gv604/GVFlexiAdvertisment.dds",
+    "../textures/gv604/LANG_LAST.dds",
+    "../textures/gv604/TUNG_LAST.dds"
+  ],
+  "readme_in_archive": "README_NAMES_IC.txt",
+  "status": "Code included; six artwork textures missing; not tested in-game.",
   "package": {
     "filename": "FS25_ScaniaS.zip",
-    "size_bytes": 61083742,
-    "sha256": "e0980a026f7b993090b1fa42bb85a27175b6a4496a600e2c504d6082b2741d1f",
-    "files": 109,
+    "size_bytes": 61484103,
+    "sha256": "cac5241ed3a26b90b03b703d3afe27c0e8b24c2047d26b17865dedd097974cab",
+    "files": 111,
     "archive_crc_passed": true,
-    "packaged_files_match_validated_output": true
-  },
-  "independent_briod_marker_beacon_audits_passed": true,
-  "brightness_update": {
-    "briod_high_beam_surface_intensity": 200,
-    "briod_white_drl_intensity": 40,
-    "changed_high_beam_emitters": 14,
-    "changed_drl_emitters": 14,
-    "dimmed_projected_high_beam_nodes": 16,
-    "projected_light_rgb": "0.25 0.25 0.25",
-    "briod_range_m": 1000,
-    "briod_fan_degrees": 120,
-    "all_other_settings_unchanged": true,
-    "changed_files": [
-      "i3d/ScaniaS6x4.i3d",
-      "xml/ScaniaS6x4.xml"
-    ],
-    "live_fs25_test_performed": false
+    "artwork_complete": false,
+    "missing_original_textures": 6
   }
 }
