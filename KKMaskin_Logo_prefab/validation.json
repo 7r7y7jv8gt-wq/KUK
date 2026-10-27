@@ -1,0 +1,37 @@
+{
+  "i3d_version": "1.6",
+  "width_metres": 1,
+  "height_metres": 0.5,
+  "vertices": 4,
+  "triangles": 2,
+  "front_direction": "+Z",
+  "collision": false,
+  "casts_shadows": false,
+  "self_contained_references": true,
+  "textures": [
+    {
+      "file": "icon_KKMaskin.dds",
+      "width": 512,
+      "height": 512,
+      "format": "BC3/DXT5",
+      "mipmap_levels": 10,
+      "alpha_min_max": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "textures/KKMaskin_logo_diffuse.dds",
+      "width": 2048,
+      "height": 1024,
+      "format": "BC3/DXT5",
+      "mipmap_levels": 12,
+      "alpha_min_max": [
+        0,
+        255
+      ]
+    }
+  ],
+  "GIANTS_Editor_10_runtime_tested": false,
+  "FS25_runtime_tested": false
+}
