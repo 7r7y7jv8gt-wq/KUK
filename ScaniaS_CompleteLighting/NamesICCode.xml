@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <namesICReference>
-    <!--Installed in the ZIP. Four name layouts; original name/flag DDS. GV604_ROOT at 0>0|8|13|0 now has rotation 0 0 0.-->
+    <!--Version 1.0.2.1. Actual-mesh verified printed front, top cap hinge and front-facing outdoor IC points.-->
     <design15Configurations title="Name layout">
         <design15Configuration name="J. Kristensen left / M. Kolbræk right" price="0" isDefault="true">
             <objectChange node="nameLayoutJKLeft" visibilityActive="true"/>
@@ -40,7 +40,7 @@
             <outdoorTrigger linkNode="gv604Root" filename="SHARED_INTERACTIVE_TRIGGER" translation="0 0.3 0" width="3" height="2.5" length="3"/>
             <!-- 1: Native open/close control, saved and synchronized by IC. -->
             <interactiveControl posText="Close front sign" negText="Open front sign" allowsSaving="true">
-                <clickPoint linkNode="gv604Root" translation="0.38 0.10 -0.08" type="OUTDOOR" iconType="CROSS" alignToCamera="true" size="0.04"/>
+                <clickPoint linkNode="gv604Root" translation="-0.40 -0.10 0.05" type="OUTDOOR" iconType="CROSS" alignToCamera="true" size="0.035"/>
                 <animation name="gv604Fold" speedScale="1" initTime="0"/>
             </interactiveControl>
             <!-- 2: State owner; no click action. Exactly 0 = heavy, 0.5 = long,
@@ -50,7 +50,7 @@
             </interactiveControl>
             <!-- 3: Momentary button; this function does not own persistent state. -->
             <interactiveControl posText="Next transport sign" negText="Next transport sign" allowsSaving="false">
-                <clickPoint linkNode="gv604Root" translation="-0.38 0.10 -0.08" type="OUTDOOR" iconType="CROSS" alignToCamera="true" size="0.04"/>
+                <clickPoint linkNode="gv604Root" translation="0.40 -0.10 0.05" type="OUTDOOR" iconType="CROSS" alignToCamera="true" size="0.035"/>
                 <dependingInteractiveControl index="1" minLimit="0.999" maxLimit="1"/>
                 <function name="SCANIA_GV604_CYCLE_MODE"/>
             </interactiveControl>
@@ -58,9 +58,10 @@
     </interactiveControl>
     <animations>
         <animation name="gv604Fold">
-            <part node="gv604LidHinge" startTime="0" endTime="0.65" startRot="180 0 0" endRot="0 0 0"/>
-            <part node="gv604Locks" startTime="0" endTime="0.65" startRot="180 0 0" endRot="0 0 0"/>
+            <part node="gv604LidHinge" startTime="0" endTime="0.65" startRot="0 0 0" endRot="-100 0 0"/>
+            <part node="gv604Locks" startTime="0" endTime="0.65" startRot="0 0 0" endRot="-100 0 0"/>
             <part node="gv604Signs" startTime="0.55" endTime="0.65" startVisibility="false" endVisibility="true"/>
+            <part node="gv604Diffuser" startTime="0.50" endTime="0.60" startVisibility="true" endVisibility="false"/>
         </animation>
         <animation name="gv604Mode" resetOnStart="false">
             <part node="gv604Heavy" startTime="0" endTime="1" startVisibility="true" endVisibility="false"/>
@@ -85,5 +86,6 @@
         <i3dMapping id="nameMKPassenger" node="0&gt;0|8|15|0"/>
         <i3dMapping id="nameMKDriver" node="0&gt;0|8|14|1"/>
         <i3dMapping id="nameJKPassenger" node="0&gt;0|8|14|0"/>
+        <i3dMapping id="gv604Diffuser" node="0&gt;0|8|13|0|6"/>
     </i3dMappings>
 </namesICReference>

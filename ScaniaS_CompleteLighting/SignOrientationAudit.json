@@ -1,67 +1,68 @@
 {
-  "independent_orientation_audit_passed": true,
-  "mount_center_unchanged": true,
-  "old_root_world_z_direction": [
-    5.6e-07,
-    -0.0,
-    1.0
-  ],
-  "new_root_world_z_direction": [
-    -5.6e-07,
-    0.0,
-    -1.0
-  ],
-  "opaque_diffuser_world_z_before": 3.1975108967114414,
-  "opaque_diffuser_world_z_after": 3.2075108967114394,
-  "printed_plane_origins_now_ahead_of_opaque_diffuser": [
+  "independent_candidate_audit_passed": true,
+  "native_fold_initialization_stop_time_execution_passed": true,
+  "root_local_positive_z_faces_truck_front": true,
+  "clickpoints_are_on_front_lower_corners": [
     {
-      "name": "GV604_sign_heavy",
-      "old_world_z": 3.1895108967114423,
-      "new_world_z": 3.2155108967114385,
-      "old_ahead_of_diffuser_m": -0.007999999999999119,
-      "new_ahead_of_diffuser_m": 0.007999999999999119
+      "control": "left/open-close",
+      "local": [
+        -0.4,
+        -0.1,
+        0.05
+      ],
+      "world": [
+        -0.39999804723127397,
+        0.4942029552965997,
+        3.252511122414619
+      ],
+      "world_front_clearance_beyond_frame_m": 0.04500022570317874
     },
     {
-      "name": "GV604_sign_long",
-      "old_world_z": 3.1895108967114423,
-      "new_world_z": 3.2155108967114385,
-      "old_ahead_of_diffuser_m": -0.007999999999999119,
-      "new_ahead_of_diffuser_m": 0.007999999999999119
-    },
-    {
-      "name": "GV604_sign_wide",
-      "old_world_z": 3.192510896711442,
-      "new_world_z": 3.212510896711439,
-      "old_ahead_of_diffuser_m": -0.004999999999999449,
-      "new_ahead_of_diffuser_m": 0.004999999999999449
+      "control": "right/next-sign",
+      "local": [
+        0.4,
+        -0.1,
+        0.05
+      ],
+      "world": [
+        0.40000195276859873,
+        0.4942029552965996,
+        3.252510671008246
+      ],
+      "world_front_clearance_beyond_frame_m": 0.04499977429680557
     }
   ],
-  "clickpoints": [
+  "closed_cap_and_spring_transforms_match_original_upload": true,
+  "real_cap_and_locks_rotate_about_top_rear_hinge": true,
+  "cap_open_min_local_y": 0.15017364833299213,
+  "cap_open_clears_card_top_y_013": true,
+  "closed_state": {
+    "cap_rotation_x": 0,
+    "signs_visible": false,
+    "grey_diffuser_visible": true
+  },
+  "open_state": {
+    "cap_rotation_x": -100,
+    "signs_visible": true,
+    "grey_diffuser_visible": false
+  },
+  "grey_cover_hides_before_artwork_appears": true,
+  "three_settled_mode_states": [
     {
-      "old": "-0.38 0.10 0.08",
-      "new": "0.38 0.10 -0.08",
-      "world": [
-        -0.37999803,
-        0.69420296,
-        3.28251111
-      ],
-      "world_position_unchanged": true
+      "normalized_mode": 0.0,
+      "visible": "gv604Heavy"
     },
     {
-      "old": "0.38 0.10 0.08",
-      "new": "-0.38 0.10 -0.08",
-      "world": [
-        0.38000197,
-        0.69420296,
-        3.28251068
-      ],
-      "world_position_unchanged": true
+      "normalized_mode": 0.5,
+      "visible": "gv604Long"
+    },
+    {
+      "normalized_mode": 1.0,
+      "visible": "gv604Wide"
     }
   ],
-  "only_scene_change_is_root_rotation": true,
-  "native_animations_and_lua_unchanged": true,
-  "native_ic_api_conformance_passed": true,
-  "original_shape_binary_byte_identical": true,
-  "live_fs25_test_performed": false,
-  "limitation": "Mesh normals and exact surface bounds are encoded; final appearance and animation clearance require an in-game/GIANTS Editor test."
+  "original_four_name_configurations_unchanged": true,
+  "lua_cycle_save_and_multiplayer_logic_unchanged": true,
+  "binary_geometry_unchanged": true,
+  "fs25_runtime_executed": false
 }

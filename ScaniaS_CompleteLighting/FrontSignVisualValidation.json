@@ -1,0 +1,77 @@
+{
+  "renderer": "Blender4.3.2 CyclesCPU",
+  "source_geometry": "Decoded exactoriginalFS25v10meshes, original binary unchanged",
+  "candidate": "/workspace/work/scania/s6x4_sign_final/fixed",
+  "actual_candidate_transforms_used": true,
+  "actual_bundled_dds_used": true,
+  "rendered_cases": [
+    "bad_open.png",
+    "new_closed_ic_positions.png",
+    "new_open_heavy.png",
+    "new_open_long.png",
+    "new_open_wide.png"
+  ],
+  "visual_inspection": {
+    "previous_open_sees_blank_rear_plate": true,
+    "new_closed_blank_cover_intended": true,
+    "new_open_heavy_upright_readable": true,
+    "new_open_long_upright_readable": true,
+    "new_open_wide_upright_readable": true,
+    "new_cap_raises_above_art_without_occlusion": true,
+    "ic_points_front_and_below_text": true
+  },
+  "ic_projection": [
+    {
+      "label": "Open / close",
+      "controller_index": 1,
+      "root_local": [
+        -0.4,
+        -0.1,
+        0.05
+      ],
+      "world_relative": [
+        -0.3999999761581421,
+        -0.10000003129243851,
+        0.05000020191073418
+      ],
+      "image_px": [
+        177,
+        378
+      ],
+      "front_of_case_by_m": 0.04500020191073418
+    },
+    {
+      "label": "Heavy / long / wide",
+      "controller_index": 3,
+      "root_local": [
+        0.4,
+        -0.1,
+        0.05
+      ],
+      "world_relative": [
+        0.40000003576278687,
+        -0.09999996423721313,
+        0.049999818205833435
+      ],
+      "image_px": [
+        923,
+        378
+      ],
+      "front_of_case_by_m": 0.04499981820583344
+    }
+  ],
+  "contact_sheet": "preview/sign_visual_check.jpg",
+  "limitations": [
+    "Debug rendering checksgeometryandreadability; notGIANTSengine shading or nativeICexecution.",
+    "No FS25runtimeplaytestperformed."
+  ],
+  "camera_coordinate_convention": "Raw GIANTS +Y up; explicit look matrix with world up (0,1,0). Final frames are *_YUP.png.",
+  "rendered_cases_unique_final": [
+    "bad_open_YUP.png",
+    "new_closed_YUP.png",
+    "new_open_heavy_YUP.png",
+    "new_open_long_YUP.png",
+    "new_open_wide_YUP.png"
+  ],
+  "debug_ic_marker_image": "preview/new_closed_ic_positions.png"
+}
