@@ -1,0 +1,52 @@
+{
+  "execution_runtime": "system liblua5.4",
+  "native_code_executed_unchanged": [
+    "Vehicle.init",
+    "ConfigurationUtil.getConfigurationsFromXML",
+    "ConfigurationUtil.getDefaultConfigIdFromItems",
+    "VehicleConfigurationItem.new",
+    "VehicleConfigurationItem.loadFromXML",
+    "VehicleConfigurationItem.setIndex",
+    "VehicleConfigurationItem.postLoad"
+  ],
+  "mocked_engine_services": [
+    "XMLFile getValue/hasProperty from actual XML attributes",
+    "registration manager data storage",
+    "unrelated XML schema and store spec registration",
+    "i18n/brand lookups; optional configuration GLOBAL_DATA callbacks omitted"
+  ],
+  "prior_release": {
+    "config_type": "design15",
+    "native_reader_loaded_four_selectable_options": true,
+    "title": "Name layout",
+    "options": [
+      "J. Kristensen left / M. Kolbræk right",
+      "M. Kolbræk left / J. Kristensen right",
+      "J. Kristensen — driver door only",
+      "M. Kolbræk — driver door only"
+    ],
+    "default_index": 1,
+    "native_registration_order_design2_vs_design15": [
+      6,
+      32
+    ]
+  },
+  "candidate": {
+    "config_type": "design2",
+    "native_reader_loaded_four_selectable_options": true,
+    "title": "Name layout",
+    "options": [
+      "J. Kristensen left / M. Kolbræk right",
+      "M. Kolbræk left / J. Kristensen right",
+      "J. Kristensen — driver door only",
+      "M. Kolbræk — driver door only"
+    ],
+    "default_index": 1,
+    "native_registration_order_design2_vs_design15": [
+      6,
+      32
+    ]
+  },
+  "conclusion": "Both native design15 and design2 parse correctly. Moving names to design2 changes their built-in registration position; design15 was not unsupported.",
+  "fs25_runtime_or_shop_gui_test_performed": false
+}

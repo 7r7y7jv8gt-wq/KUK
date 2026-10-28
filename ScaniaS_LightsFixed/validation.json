@@ -28,18 +28,11 @@
   "checked_local_i3d_resource_references": 80,
   "unchanged_native_dds_fallbacks": 0,
   "changed_existing_files": [
-    "i3d/Scania_S_HKL.i3d",
+    "README_NAMELAYOUTS.txt",
+    "modDesc.xml",
     "xml/Scania_S_HKL.xml"
   ],
-  "added_files": [
-    "README_NAMELAYOUTS.txt",
-    "decor/names/J_KRISTENSEN.i3d",
-    "decor/names/J_KRISTENSEN.xml",
-    "decor/names/M_KOLBRAEK.i3d",
-    "decor/names/M_KOLBRAEK.xml",
-    "decor/names/textures/J_KRISTENSEN_diffuse.dds",
-    "decor/names/textures/M_KOLBRAEK_diffuse.dds"
-  ],
+  "added_files": [],
   "all_other_files_byte_identical": true,
   "all_existing_lighting_and_red_curtain_settings_preserved": true,
   "all_existing_binary_geometry_preserved": true,
@@ -48,9 +41,22 @@
   "live_fs25_test_performed": false,
   "package": {
     "filename": "FS25_ScaniaS_Tridem.zip",
-    "size_bytes": 68644755,
-    "sha256": "d8c89da0e05909788add281e35315254662ecaa7f3faf297be0b293eb2155ec4",
+    "size_bytes": 68644970,
+    "sha256": "2ee41d503cbdbb17c51a7d481709c919842fefa3e0e2fcd97e25338fa739abc9",
     "files": 156,
     "archive_crc_passed": true
-  }
+  },
+  "shop_group": "design2Configurations",
+  "shop_title": "Name layout",
+  "same_four_options_as_other_scania": true,
+  "one_dropdown_on_existing_truck": true,
+  "original_store_and_mod_names_preserved": true,
+  "mod_version": "1.3.0.1",
+  "shop_position": "Native design2, near Roof design",
+  "previous_design15_was_supported_by_fs25": true,
+  "exact_cause_of_missing_selector_on_user_client_not_confirmed": true,
+  "full_game_restart_and_replacement_of_old_zip_required": true,
+  "all_original_meshes_textures_positions_lighting_and_curtains_unchanged": true,
+  "native_configuration_reader_execution_passed": true,
+  "native_reader_report": "ScaniaS_LightsFixed/ShopConfigValidation.json"
 }

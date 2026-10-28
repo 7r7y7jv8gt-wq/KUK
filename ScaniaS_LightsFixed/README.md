@@ -4,6 +4,8 @@
 
 Built from the owner’s Tridem archive, including the two newly fitted exterior diodes, with the curtain copied from the latest Scania S 6x4. Replace the old ZIP in your mods folder, keep its filename unchanged, and restart FS25 completely. Keep the installed mod zipped.
 
+**Current version: 1.3.0.1.** Fully exit FS25 before replacing `FS25_ScaniaS_Tridem.zip`, then restart and enable the updated Tridem mod. Check version 1.3.0.1 in the mod list. The existing truck and its store name are unchanged.
+
 The **Name layout** shop option now has the same four choices as the other Scania:
 
 - J. Kristensen on the driver door / M. Kolbræk on the passenger door (default).
@@ -12,6 +14,8 @@ The **Name layout** shop option now has the same four choices as the other Scani
 - M. Kolbræk on the driver door only; passenger door blank.
 
 Both original name logos and Norwegian flags are copied unchanged from the supplied prefab. They occupy the same door positions as on the other Scania. Name selection uses native shop configuration and needs no Interactive Control add-on. All 16 configuration transitions were checked; the original inline name geometry and both DDS files match the uploaded originals. [Independent name audit](NameAudit.json).
+
+The selector is now assigned to the free native `design2` type, near the roof design choice, while retaining the exact **Name layout** title and four labels from the other Scania. There is one dropdown on the existing truck. The former `design15` definition is also supported by FS25; the exact reason the selector was absent on the user's client has not been established. [Native reader validation](ShopConfigValidation.json) executes GIANTS' registration and configuration-reader code against both versions and confirms four selectable options with default 1. The game GUI was not available for a live test.
 
 The original Scania S curtain is fitted with **Red curtain** as the first/default choice. The **Curtain** shop menu also offers brown, green, blue and no curtain. Existing trucks can select **Curtain → Red curtain** in the shop. The curtain model and all four textures are bundled with this ZIP. [Curtain configuration](CurtainCode.xml).
 
@@ -35,4 +39,4 @@ The roof Briods retain the 1000 m / 120° setup, white DRL 80 and high-beam glow
 
 The new GeoViking imports referenced original dirt/gloss masks and emissive textures outside the mod. Those originals were not included. Red/white emission now uses bundled textures; missing dirt/gloss masks use the game's neutral default mask, so the original dirt appearance may differ. No image or shape binary was edited.
 
-The name update preserves all 1351 existing Tridem scene paths/IDs. The result has 1362 unique scene nodes, 503 valid mappings and 1015 checked XML node references. Only the main i3D and vehicle XML changed, with six name asset/configuration files and one text guide added. All existing lighting, curtain settings, shape binaries and gameplay data are preserved. Archive CRC passed. Live appearance has not been tested in FS25/GIANTS Editor.
+The name models retain 1362 unique scene nodes, 503 valid mappings and 1015 checked XML node references. This shop revision changes only the name configuration metadata, mod version and text guide. All name models, original flag textures, lighting, curtain settings, shape binaries and gameplay data are unchanged from the previous name release. Archive CRC passed. Live appearance has not been tested in FS25/GIANTS Editor.
