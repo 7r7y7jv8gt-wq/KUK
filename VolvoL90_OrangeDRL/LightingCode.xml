@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<volvoLightingReference version="1.0.0.4">
+    <!--Installed native light controls; exact user-fitted fixture geometry and original binary preserved.-->
+    <lights>
+        <states>
+            <state lightTypes="0"/>
+            <state lightTypes="0 1"/>
+            <state lightTypes="0 1 2"/>
+        </states>
+        <sharedLight linkNode="plateNumberLight02_01" filename="$data/shared/assets/lights/lizard/plateNumberLight02.xml"/>
+        <sharedLight linkNode="plateNumberLight02_02" filename="$data/shared/assets/lights/lizard/plateNumberLight02.xml"/>
+        <sharedLight linkNode="rearLight70_left" filename="$data/shared/assets/lights/lizard/rearLight70_left.xml"/>
+        <sharedLight linkNode="rearLight70_right" filename="$data/shared/assets/lights/lizard/rearLight70_right.xml"/>
+        <sharedLight linkNode="hellaRearLight02_left" filename="$data/shared/assets/lights/hella/hellaRearLight02_left.xml"/>
+        <sharedLight linkNode="hellaRearLight02_right" filename="$data/shared/assets/lights/hella/hellaRearLight02_right.xml"/>
+        <sharedLight linkNode="sideMarker16Orange_01" filename="$data/shared/assets/lights/lizard/sideMarker16Orange.xml"/>
+        <sharedLight linkNode="sideMarker16Orange_02" filename="$data/shared/assets/lights/lizard/sideMarker16Orange.xml"/>
+        <sharedLight linkNode="workLight40_15" filename="$data/shared/assets/lights/lizard/workingLight40.xml">
+            <rotationNode name="rotationNode1" rotation="-15 0 0"/>
+            <function name="WORK_LIGHT_BACK" uvSlotIndex="1"/>
+            <function name="REVERSE_LIGHT" uvSlotIndex="1"/>
+        </sharedLight>
+        <sharedLight linkNode="workLight40_16" filename="$data/shared/assets/lights/lizard/workingLight40.xml">
+            <rotationNode name="rotationNode1" rotation="-15 0 0"/>
+            <function name="WORK_LIGHT_BACK" uvSlotIndex="1"/>
+            <function name="REVERSE_LIGHT" uvSlotIndex="1"/>
+        </sharedLight>
+        <realLights>
+            <low>
+                <light node="workLightBackLow" lightTypes="1"/>
+                <light node="workLightFrontLow" lightTypes="2"/>
+                <light node="volvoFor9tBeamLow1" lightTypes="2"/>
+                <light node="volvoFor9tBeamLow2" lightTypes="2"/>
+                <light node="volvoFor9tBeamLow3" lightTypes="2"/>
+                <light node="volvoFor9tBeamLow4" lightTypes="2"/>
+                <light node="volvoFor9tBeamLow5" lightTypes="2"/>
+                <light node="volvoFor9tBeamLow6" lightTypes="2"/>
+                <light node="volvoFor9tBeamLow7" lightTypes="1"/>
+                <light node="volvoFor9tBeamLow8" lightTypes="1"/>
+                <light node="volvoFor9tBeamLow9" lightTypes="1"/>
+                <light node="volvoFor9tBeamLow10" lightTypes="1"/>
+                <light node="volvoFor9tBeamLow11" lightTypes="1"/>
+                <light node="volvoFor9tBeamLow12" lightTypes="1"/>
+                <light node="volvoFor9tBeamLow13" lightTypes="2"/>
+                <light node="volvoFor9tBeamLow14" lightTypes="2"/>
+                <light node="volvoFor9tBeamLow15" lightTypes="2"/>
+                <light node="volvoOzzLowBeamLowRight" lightTypes="0" excludedLightTypes="3"/>
+                <light node="volvoOzzHighBeamLowRight" lightTypes="3"/>
+                <light node="volvoOzzLowBeamLowLeft" lightTypes="0" excludedLightTypes="3"/>
+                <light node="volvoOzzHighBeamLowLeft" lightTypes="3"/>
+            </low>
+            <high>
+                <light node="workLightBackHigh" lightTypes="1"/>
+                <light node="workLightFrontHigh" lightTypes="2"/>
+                <turnLightLeft node="turnLightLeftFront"/>
+                <turnLightRight node="turnLightRightFront"/>
+                <!-- l90H -->
+                <light node="licensePlateLightHighL90H" lightTypes="0"/>
+                <light node="backLightsHighL90H" lightTypes="0"/>
+                <brakeLight node="backLightsHighL90H"/>
+                <turnLightLeft node="turnLightLeftBackL90H"/>
+                <turnLightRight node="turnLightRightBackL90H"/>
+                <reverseLight node="reverseLightHighL90H"/>
+                <interiorLight node="interiorScreenLightL90H"/>
+                <!-- l90 electric -->
+                <light node="licensePlateLightHighL90Electric" lightTypes="0"/>
+                <light node="backLightsHighL90Electric" lightTypes="0"/>
+                <brakeLight node="backLightsHighL90Electric"/>
+                <turnLightLeft node="turnLightLeftBackL90Electric"/>
+                <turnLightRight node="turnLightRightBackL90Electric"/>
+                <reverseLight node="reverseLightHighL90Electric"/>
+                <interiorLight node="interiorScreenLightElectric01"/>
+                <interiorLight node="interiorScreenLightElectric02"/>
+                <light node="volvoFor9tBeamHigh1" lightTypes="2"/>
+                <light node="volvoFor9tBeamHigh2" lightTypes="2"/>
+                <light node="volvoFor9tBeamHigh3" lightTypes="2"/>
+                <light node="volvoFor9tBeamHigh4" lightTypes="2"/>
+                <light node="volvoFor9tBeamHigh5" lightTypes="2"/>
+                <light node="volvoFor9tBeamHigh6" lightTypes="2"/>
+                <light node="volvoFor9tBeamHigh7" lightTypes="1"/>
+                <light node="volvoFor9tBeamHigh8" lightTypes="1"/>
+                <light node="volvoFor9tBeamHigh9" lightTypes="1"/>
+                <light node="volvoFor9tBeamHigh10" lightTypes="1"/>
+                <light node="volvoFor9tBeamHigh11" lightTypes="1"/>
+                <light node="volvoFor9tBeamHigh12" lightTypes="1"/>
+                <light node="volvoFor9tBeamHigh13" lightTypes="2"/>
+                <light node="volvoFor9tBeamHigh14" lightTypes="2"/>
+                <light node="volvoFor9tBeamHigh15" lightTypes="2"/>
+                <light node="volvoOzzLowBeamHighRight" lightTypes="0" excludedLightTypes="3"/>
+                <light node="volvoOzzHighBeamHighRight" lightTypes="3"/>
+                <light node="volvoOzzLowBeamHighLeft" lightTypes="0" excludedLightTypes="3"/>
+                <light node="volvoOzzHighBeamHighLeft" lightTypes="3"/>
+            </high>
+        </realLights>
+        <staticLightCompounds>
+            <staticLightCompound>
+                <node node="l90ElectricLight_static" intensity="5"/>
+                <node node="l90ElectricLightGlass_static" intensity="5"/>
+                <function name="WORK_LIGHT_BACK" uvSlotIndex="1"/>
+                <function name="REVERSE_LIGHT" uvSlotIndex="1"/>
+            </staticLightCompound>
+        </staticLightCompounds>
+        <beaconLights>
+            <beaconLight node="beaconLight09_01" filename="$data/shared/assets/beaconLights/lizard/beaconLight09.xml"/>
+            <beaconLight node="beaconLight09_02" filename="$data/shared/assets/beaconLights/lizard/beaconLight09.xml" variationName="SAFETY" alwaysActive="true"/>
+            <beaconLight realLight="volvoBarBeamLeft1">
+                <staticLight node="volvoBarFlashLeft" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 0"/>
+            </beaconLight>
+            <beaconLight realLight="volvoBarBeamLeft2">
+                <staticLight node="volvoBarFlashLeft" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 0"/>
+            </beaconLight>
+            <beaconLight realLight="volvoBarBeamLeft3">
+                <staticLight node="volvoBarFlashLeft" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 0"/>
+            </beaconLight>
+            <beaconLight realLight="volvoBarBeamRight1">
+                <staticLight node="volvoBarFlashRight" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/>
+            </beaconLight>
+            <beaconLight realLight="volvoBarBeamRight2">
+                <staticLight node="volvoBarFlashRight" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/>
+            </beaconLight>
+            <beaconLight realLight="volvoBarBeamRight3">
+                <staticLight node="volvoBarFlashRight" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/>
+            </beaconLight>
+            <beaconLight realLight="volvoOzzStrobeBeamRight">
+                <staticLight node="volvoOzzStrobeRight" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 0"/>
+            </beaconLight>
+            <beaconLight realLight="volvoOzzStrobeBeamLeft">
+                <staticLight node="volvoOzzStrobeLeft" intensity="12" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/>
+            </beaconLight>
+        </beaconLights>
+        <dashboards>
+            <!-- default -->
+            <dashboard displayType="ROT" valueType="lightState" node="switchWorkLightBack" lightTypes="1" minRot="0 0 0" maxRot="-10 0 0"/>
+            <dashboard displayType="ROT" valueType="lightState" node="switchWorkLightFront" lightTypes="2" minRot="0 0 0" maxRot="-10 0 0"/>
+            <dashboard displayType="ROT" valueType="lightState" node="leverHighbeam" lightTypes="3" minRot="0 0 0" maxRot="0 0 15" doInterpolation="true"/>
+            <dashboard displayType="ROT" valueType="beaconLight" node="switchBeaconLight" minRot="0 0 0" maxRot="-10 0 0"/>
+            <dashboard displayType="ROT" valueType="turnLight" node="leverTurnLight" minRot="0 15 0" maxRot="0 -15 0" doInterpolation="true"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="barWorkLightFrontGlow_decal" lightTypes="2" baseColor="SHARED_GREY4" emitColor="ORANGE" intensity="0.5" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="barWorkLightBackGlow_decal" lightTypes="1" baseColor="SHARED_GREY4" emitColor="ORANGE" intensity="0.5" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="beaconLight" node="barBeaconLightGlow_decal" baseColor="SHARED_GREY4" emitColor="ORANGE" intensity="0.5" groups="MOTOR_ACTIVE"/>
+            <!-- l90H -->
+            <dashboard displayType="ROT" valueType="turnLightHazard" node="switchHazardLightL90H" minRot="0 0 0" maxRot="14 0 0"/>
+            <dashboard displayType="EMITTER" valueType="turnLightHazard" node="barHazardLightGlowL90H_decal" baseColor="SHARED_GREY4" emitColor="ORANGE" intensity="0.5" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightLeft" node="iconTurnLightLeftL90H_decal" baseColor="SHARED_GREY4" emitColor="GREEN" intensity="0.5" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="turnLightRight" node="iconTurnLightRightL90H_decal" baseColor="SHARED_GREY4" emitColor="GREEN" intensity="0.5" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="beaconLight" node="iconBeaconLightL90H_decal" baseColor="SHARED_GREY4" emitColor="ORANGE" intensity="0.5" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="iconHighBeamL90H_decal" lightTypes="3" baseColor="SHARED_GREY4" emitColor="BLUE" intensity="0.5" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="EMITTER" valueType="lightState" node="iconWorkLightL90H_decal" lightTypes="1 2" baseColor="SHARED_GREY4" emitColor="GREEN" intensity="0.5" groups="MOTOR_ACTIVE"/>
+            <!-- l90 electric -->
+            <dashboard displayType="ROT" valueType="turnLightHazard" node="switchHazardLightElectric" minRot="0 0 0" maxRot="8 0 0"/>
+            <dashboard displayType="EMITTER" valueType="turnLightHazard" node="iconHazardLightGlowElectric_decal" emitColor="RED" intensity="0.5" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+        <dayTimeLights>
+            <dayTimeLight node="volvoBarCruise" intensity="8"/>
+            <dayTimeLight node="volvoFor9tDrl1" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl2" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl3" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl4" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl5" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl6" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl7" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl8" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl9" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl10" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl11" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl12" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl13" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl14" intensity="20"/>
+            <dayTimeLight node="volvoFor9tDrl15" intensity="20"/>
+            <dayTimeLight node="volvoOzzDrlRight" intensity="40"/>
+            <dayTimeLight node="volvoOzzDrlLeft" intensity="40"/>
+        </dayTimeLights>
+        <defaultLights>
+            <defaultLight node="volvoFor9tMain1" intensity="50" lightTypes="2"/>
+            <defaultLight node="volvoFor9tMain2" intensity="50" lightTypes="2"/>
+            <defaultLight node="volvoFor9tMain3" intensity="50" lightTypes="2"/>
+            <defaultLight node="volvoFor9tMain4" intensity="50" lightTypes="2"/>
+            <defaultLight node="volvoFor9tMain5" intensity="50" lightTypes="2"/>
+            <defaultLight node="volvoFor9tMain6" intensity="50" lightTypes="2"/>
+            <defaultLight node="volvoFor9tMain7" intensity="50" lightTypes="1"/>
+            <defaultLight node="volvoFor9tMain8" intensity="50" lightTypes="1"/>
+            <defaultLight node="volvoFor9tMain9" intensity="50" lightTypes="1"/>
+            <defaultLight node="volvoFor9tMain10" intensity="50" lightTypes="1"/>
+            <defaultLight node="volvoFor9tMain11" intensity="50" lightTypes="1"/>
+            <defaultLight node="volvoFor9tMain12" intensity="50" lightTypes="1"/>
+            <defaultLight node="volvoFor9tMain13" intensity="50" lightTypes="2"/>
+            <defaultLight node="volvoFor9tMain14" intensity="50" lightTypes="2"/>
+            <defaultLight node="volvoFor9tMain15" intensity="50" lightTypes="2"/>
+            <defaultLight node="volvoOzzLowRight" intensity="50" lightTypes="0" excludedLightTypes="3"/>
+            <defaultLight node="volvoOzzLowReflectorRight" intensity="50" lightTypes="0" excludedLightTypes="3"/>
+            <defaultLight node="volvoOzzHighRight" intensity="200" lightTypes="3"/>
+            <defaultLight node="volvoOzzHighReflectorRight" intensity="200" lightTypes="3"/>
+            <defaultLight node="volvoOzzLowLeft" intensity="50" lightTypes="0" excludedLightTypes="3"/>
+            <defaultLight node="volvoOzzLowReflectorLeft" intensity="50" lightTypes="0" excludedLightTypes="3"/>
+            <defaultLight node="volvoOzzHighLeft" intensity="200" lightTypes="3"/>
+            <defaultLight node="volvoOzzHighReflectorLeft" intensity="200" lightTypes="3"/>
+        </defaultLights>
+        <turnLights>
+            <turnLightRight node="volvoOzzTurnRight" intensity="20"/>
+            <turnLightLeft node="volvoOzzTurnLeft" intensity="20"/>
+        </turnLights>
+    </lights>
+    <i3dMappings>
+        <i3dMapping id="sideMarker16Orange_01" node="1&gt;0|1|0|0"/>
+        <i3dMapping id="sideMarker16Orange_02" node="1&gt;0|1|0|1"/>
+        <i3dMapping id="volvoBarFlashLeft" node="1&gt;0|1|0|2|2"/>
+        <i3dMapping id="volvoBarBeamLeft1" node="1&gt;0|1|0|2|2|0"/>
+        <i3dMapping id="volvoBarBeamLeft2" node="1&gt;0|1|0|2|2|1"/>
+        <i3dMapping id="volvoBarBeamLeft3" node="1&gt;0|1|0|2|2|2"/>
+        <i3dMapping id="volvoBarFlashRight" node="1&gt;0|1|0|2|3"/>
+        <i3dMapping id="volvoBarBeamRight1" node="1&gt;0|1|0|2|3|0"/>
+        <i3dMapping id="volvoBarBeamRight2" node="1&gt;0|1|0|2|3|1"/>
+        <i3dMapping id="volvoBarBeamRight3" node="1&gt;0|1|0|2|3|2"/>
+        <i3dMapping id="volvoBarCruise" node="1&gt;0|1|0|2|4"/>
+        <i3dMapping id="volvoFor9tMain1" node="0&gt;0|3|0|0|2|0|0|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl1" node="0&gt;0|3|0|0|2|0|0|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow1" node="0&gt;0|3|0|0|2|0|0|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh1" node="0&gt;0|3|0|0|2|0|0|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain2" node="0&gt;0|3|0|0|2|0|1|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl2" node="0&gt;0|3|0|0|2|0|1|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow2" node="0&gt;0|3|0|0|2|0|1|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh2" node="0&gt;0|3|0|0|2|0|1|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain3" node="0&gt;0|3|0|0|2|0|2|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl3" node="0&gt;0|3|0|0|2|0|2|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow3" node="0&gt;0|3|0|0|2|0|2|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh3" node="0&gt;0|3|0|0|2|0|2|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain4" node="0&gt;0|3|0|0|2|0|3|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl4" node="0&gt;0|3|0|0|2|0|3|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow4" node="0&gt;0|3|0|0|2|0|3|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh4" node="0&gt;0|3|0|0|2|0|3|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain5" node="0&gt;0|3|0|0|2|0|4|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl5" node="0&gt;0|3|0|0|2|0|4|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow5" node="0&gt;0|3|0|0|2|0|4|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh5" node="0&gt;0|3|0|0|2|0|4|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain6" node="0&gt;0|3|0|0|2|0|5|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl6" node="0&gt;0|3|0|0|2|0|5|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow6" node="0&gt;0|3|0|0|2|0|5|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh6" node="0&gt;0|3|0|0|2|0|5|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain7" node="0&gt;0|3|0|0|2|0|6|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl7" node="0&gt;0|3|0|0|2|0|6|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow7" node="0&gt;0|3|0|0|2|0|6|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh7" node="0&gt;0|3|0|0|2|0|6|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain8" node="0&gt;0|3|0|0|2|0|7|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl8" node="0&gt;0|3|0|0|2|0|7|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow8" node="0&gt;0|3|0|0|2|0|7|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh8" node="0&gt;0|3|0|0|2|0|7|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain9" node="0&gt;0|3|0|0|2|0|8|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl9" node="0&gt;0|3|0|0|2|0|8|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow9" node="0&gt;0|3|0|0|2|0|8|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh9" node="0&gt;0|3|0|0|2|0|8|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain10" node="0&gt;0|3|0|0|2|0|9|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl10" node="0&gt;0|3|0|0|2|0|9|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow10" node="0&gt;0|3|0|0|2|0|9|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh10" node="0&gt;0|3|0|0|2|0|9|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain11" node="0&gt;0|3|0|0|2|0|10|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl11" node="0&gt;0|3|0|0|2|0|10|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow11" node="0&gt;0|3|0|0|2|0|10|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh11" node="0&gt;0|3|0|0|2|0|10|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain12" node="0&gt;0|3|0|0|2|0|11|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl12" node="0&gt;0|3|0|0|2|0|11|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow12" node="0&gt;0|3|0|0|2|0|11|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh12" node="0&gt;0|3|0|0|2|0|11|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain13" node="1&gt;0|1|0|5|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl13" node="1&gt;0|1|0|5|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow13" node="1&gt;0|1|0|5|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh13" node="1&gt;0|1|0|5|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain14" node="1&gt;0|1|0|6|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl14" node="1&gt;0|1|0|6|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow14" node="1&gt;0|1|0|6|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh14" node="1&gt;0|1|0|6|0|0|8"/>
+        <i3dMapping id="volvoFor9tMain15" node="1&gt;0|1|0|7|0|0|0"/>
+        <i3dMapping id="volvoFor9tDrl15" node="1&gt;0|1|0|7|0|0|2"/>
+        <i3dMapping id="volvoFor9tBeamLow15" node="1&gt;0|1|0|7|0|0|7"/>
+        <i3dMapping id="volvoFor9tBeamHigh15" node="1&gt;0|1|0|7|0|0|8"/>
+        <i3dMapping id="volvoOzzDrlRight" node="1&gt;0|1|0|3|0|12"/>
+        <i3dMapping id="volvoOzzLowRight" node="1&gt;0|1|0|3|0|8"/>
+        <i3dMapping id="volvoOzzLowReflectorRight" node="1&gt;0|1|0|3|0|9"/>
+        <i3dMapping id="volvoOzzLowBeamHighRight" node="1&gt;0|1|0|3|0|8|0"/>
+        <i3dMapping id="volvoOzzLowBeamLowRight" node="1&gt;0|1|0|3|0|8|1"/>
+        <i3dMapping id="volvoOzzHighRight" node="1&gt;0|1|0|3|0|4"/>
+        <i3dMapping id="volvoOzzHighReflectorRight" node="1&gt;0|1|0|3|0|5"/>
+        <i3dMapping id="volvoOzzHighBeamHighRight" node="1&gt;0|1|0|3|0|4|0"/>
+        <i3dMapping id="volvoOzzHighBeamLowRight" node="1&gt;0|1|0|3|0|4|1"/>
+        <i3dMapping id="volvoOzzTurnRight" node="1&gt;0|1|0|3|0|7|9"/>
+        <i3dMapping id="volvoOzzStrobeRight" node="1&gt;0|1|0|3|0|7|10|1"/>
+        <i3dMapping id="volvoOzzStrobeBeamRight" node="1&gt;0|1|0|3|0|7|10|2"/>
+        <i3dMapping id="volvoOzzDrlLeft" node="1&gt;0|1|0|4|0|12"/>
+        <i3dMapping id="volvoOzzLowLeft" node="1&gt;0|1|0|4|0|8"/>
+        <i3dMapping id="volvoOzzLowReflectorLeft" node="1&gt;0|1|0|4|0|9"/>
+        <i3dMapping id="volvoOzzLowBeamHighLeft" node="1&gt;0|1|0|4|0|8|0"/>
+        <i3dMapping id="volvoOzzLowBeamLowLeft" node="1&gt;0|1|0|4|0|8|1"/>
+        <i3dMapping id="volvoOzzHighLeft" node="1&gt;0|1|0|4|0|4"/>
+        <i3dMapping id="volvoOzzHighReflectorLeft" node="1&gt;0|1|0|4|0|5"/>
+        <i3dMapping id="volvoOzzHighBeamHighLeft" node="1&gt;0|1|0|4|0|4|0"/>
+        <i3dMapping id="volvoOzzHighBeamLowLeft" node="1&gt;0|1|0|4|0|4|1"/>
+        <i3dMapping id="volvoOzzTurnLeft" node="1&gt;0|1|0|4|0|7|9"/>
+        <i3dMapping id="volvoOzzStrobeLeft" node="1&gt;0|1|0|4|0|7|10|1"/>
+        <i3dMapping id="volvoOzzStrobeBeamLeft" node="1&gt;0|1|0|4|0|7|10|2"/>
+    </i3dMappings>
+</volvoLightingReference>

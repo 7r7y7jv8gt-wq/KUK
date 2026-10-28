@@ -1,0 +1,58 @@
+{
+  "independent_combined_audit_passed": true,
+  "source": "New user multipart RAR",
+  "bar": {
+    "flash_meshes": 2,
+    "projectors": 6,
+    "range": 100,
+    "intensity": 12,
+    "left_pattern": "2 2 50 0",
+    "right_pattern": "2 2 50 12.56637061435917",
+    "separate_orange_engine_drl_cruise_intensity": 8,
+    "unsupported_native_vehicle_shader_lightControl_removed": true
+  },
+  "for9t": {
+    "count": 15,
+    "original_orange_mesh_selected": true,
+    "engine_drl_intensity": 20,
+    "white_work_intensity": 50,
+    "front_type": 2,
+    "rear_type": 1
+  },
+  "ozz": {
+    "count": 2,
+    "orange_engine_drl_intensity": 40,
+    "white_low": 50,
+    "white_high": 200,
+    "native_indicators_retained": true,
+    "beacon_projector_range": 12,
+    "strobe_intensity": 12,
+    "strobe_phases_match_corresponding_bar_world_sides": true,
+    "decoded_strobe_uv1": [
+      1.5,
+      0.5
+    ],
+    "native_beacon_channel2_supported": true
+  },
+  "low_high_projector_profiles_disjoint": true,
+  "all_81_light_nodes_controlled_or_explicitly_hidden": true,
+  "no_projected_lights_on_drl_nodes": true,
+  "all_original_728_nodes_and_poses_preserved": true,
+  "final_scene_nodes": 762,
+  "valid_aliases": 348,
+  "ten_missing_external_resources_resolved": true,
+  "all_local_i3d_resources_resolve": true,
+  "vehicle_physics_and_powertrain_unchanged": true,
+  "electric_variant_and_bucket_unchanged": true,
+  "all_original_binary_geometry_and_textures_byte_identical": true,
+  "changed_original_files": [
+    "modDesc.xml",
+    "vehicles/volvo/l90/l90.i3d",
+    "vehicles/volvo/l90/l90.xml"
+  ],
+  "native_fs25_runtime_test_performed": false,
+  "limitations": [
+    "Missing original surface masks/normals/glass use documented neutral game assets.",
+    "No FS25 visual playtest was available."
+  ]
+}
