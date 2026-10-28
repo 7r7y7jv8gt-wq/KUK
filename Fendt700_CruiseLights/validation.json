@@ -1,0 +1,18 @@
+{
+  "changed_files_from_lights_v2": [
+    "vario700.xml"
+  ],
+  "cruise_shader_node": "0>0|5|2|1|5|4",
+  "cruise_normal_light_types": "0",
+  "cruise_intensity": 80,
+  "cruise_beacon_controller_removed": true,
+  "cruise_registered_once": true,
+  "six_orange_projectors_still_beacon_controlled": true,
+  "rear_13_red_preserved": true,
+  "mirrors_8_white_preserved": true,
+  "tire_fix_preserved": true,
+  "all_other_98_files_byte_identical": true,
+  "all_custom_light_paths_resolve": true,
+  "file_count": 99,
+  "FS25_runtime_tested": false
+}

@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "xml_cruise_defaultLight_owners": 1,
+  "xml_cruise_beacon_owners": 0,
+  "actual_official_lua_methods": [
+    "BeaconLight:setIsActive",
+    "BeaconLight:onLightsRealBeaconLightChanged",
+    "BeaconLight:update",
+    "StaticLight:setLightTypesMask",
+    "StaticLight:setState"
+  ],
+  "projectors": 6,
+  "cross_product": [
+    {
+      "normal_headlights": false,
+      "beacons": false,
+      "cruise_intensity": 0.0,
+      "visible_orange_projectors": 0
+    },
+    {
+      "normal_headlights": false,
+      "beacons": true,
+      "cruise_intensity": 0.0,
+      "visible_orange_projectors": 6
+    },
+    {
+      "normal_headlights": true,
+      "beacons": false,
+      "cruise_intensity": 80.0,
+      "visible_orange_projectors": 0
+    },
+    {
+      "normal_headlights": true,
+      "beacons": true,
+      "cruise_intensity": 80.0,
+      "visible_orange_projectors": 6
+    }
+  ],
+  "checks": [
+    "all four normal-headlight/beacon state combinations",
+    "beacon toggles never change cruise intensity",
+    "normal-light toggles never change beacon projectors",
+    "eight blink samples retain synchronized bank projectors and phase difference; cruise remains steady",
+    "real-beacon setting gates projectors without changing cruise",
+    "mask2 without normal-light bit0 leaves cruise off"
+  ],
+  "limits": "Actual official Lua method bodies with minimal engine/API and active-vehicle stubs. No GIANTS rendering, shader compilation, or in-game test."
+}

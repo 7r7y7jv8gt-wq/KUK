@@ -1,0 +1,41 @@
+name: Publish Fendt 700 cruise light switch fix
+on:
+  push:
+    branches:
+      - codex/fendt700-cruise-lights
+    paths:
+      - .github/workflows/fendt700-cruise-lights.yml
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Assemble and verify complete mod
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output
+          zipfile=output/FS25_Fendt_700_Vario_Gen7_KRISTENSEN_EDIT.zip
+          : > "$zipfile"
+          for blob in b6b47b5f246f34599cd5d29c399a8aeec0ce276b 559a2b6a663081debdd4f8f01ad7a0b5cf0d5102 e794f4809b0de42d3ca3f63265be3c996055d142 8d564ec86c1ea6e9bdcc4223dcceec4d1a993c49 eacaff89d780672972bc5aca37115567d1350ca0 9215a93e1644eb0ef5fd70d965aec892df5a6f96; do
+            gh api "repos/$GH_REPO/git/blobs/$blob" --jq '.content' | base64 --decode >> "$zipfile"
+          done
+          echo "2a746d9c2335587dd1672e82c5296b096d00d21a7dbe710a11c3d756015569c4  $zipfile" | sha256sum --check
+          python -c 'import zipfile; z=zipfile.ZipFile("output/FS25_Fendt_700_Vario_Gen7_KRISTENSEN_EDIT.zip"); assert z.testzip() is None; assert len(z.namelist()) == 99'
+      - name: Publish updated mod ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create fendt700-cruise-v3-20261028 \
+            output/FS25_Fendt_700_Vario_Gen7_KRISTENSEN_EDIT.zip \
+            --target "$GITHUB_SHA" \
+            --title "Fendt 700 — cruise lights on normal light switch" \
+            --notes "The steady cruise strip now follows the normal light switch independently of beacons. All six orange blitzbar projectors remain controlled by the beacon switch. Includes the red rear diodes, white mirror diodes and BKT tire/rim fit fixes. Only vario700.xml changed from the previous lighting version; all 98 other files are byte-identical. Normal-light/beacon on-off combinations passed using native Lua method bodies with stubbed engine APIs. XML and archive integrity validated; not tested in-game. Replace the old ZIP, keep its filename, and restart FS25."
