@@ -1,0 +1,102 @@
+{
+  "recommended_target_parent": "0>0|8",
+  "recommended_append_container": "0>0|8|11",
+  "donor_parent": "0>0|8",
+  "cab_alignment_compatible": true,
+  "root_transform_compensation_required": false,
+  "driver_side_world_x_positive": true,
+  "native_prefab_shape_full_uv_8_to_1": true,
+  "copy_donor_root_transforms_verbatim": true,
+  "maximum_vertex_world_difference_m": 2.1631382793269e-06,
+  "placements": [
+    {
+      "source_path": "0>0|8|15|1",
+      "name": "J_KRISTENSEN_root",
+      "side": "driver",
+      "attributes_to_copy": {
+        "name": "J_KRISTENSEN_root",
+        "translation": "-1.148 2.346 -2.107",
+        "rotation": "-112.263 -80.384 112.549",
+        "scale": "0.573 0.39 1"
+      },
+      "source_world_translation": [
+        1.1480013064053374,
+        2.3459999552965995,
+        2.1070002489434705
+      ],
+      "target_world_translation": [
+        1.1480000000000001,
+        2.3459999999999996,
+        2.1070000000000007
+      ],
+      "maximum_vertex_world_difference_m": 1.4913160451145306e-06
+    },
+    {
+      "source_path": "0>0|8|15|0",
+      "name": "M_KOLBRAEK_root",
+      "side": "passenger",
+      "attributes_to_copy": {
+        "name": "M_KOLBRAEK_root",
+        "translation": "1.148 2.346 -2.207",
+        "rotation": "-112.263 80.384 -112.549",
+        "scale": "0.573 0.39 1"
+      },
+      "source_world_translation": [
+        -1.1479986371685005,
+        2.3459999552965995,
+        2.2070015444797435
+      ],
+      "target_world_translation": [
+        -1.1479999999999997,
+        2.3459999999999996,
+        2.2070000000000003
+      ],
+      "maximum_vertex_world_difference_m": 2.1631382793269e-06
+    },
+    {
+      "source_path": "0>0|8|14|1",
+      "name": "M_KOLBRAEK_root",
+      "side": "driver",
+      "attributes_to_copy": {
+        "name": "M_KOLBRAEK_root",
+        "translation": "-1.14782 2.34565 -2.1074",
+        "rotation": "-112.263 -80.384 112.549",
+        "scale": "0.573 0.389933 1"
+      },
+      "source_world_translation": [
+        1.1478213066310408,
+        2.3456499552965995,
+        2.1074002490450368
+      ],
+      "target_world_translation": [
+        1.1478200000000003,
+        2.3456499999999996,
+        2.1074000000000006
+      ],
+      "maximum_vertex_world_difference_m": 1.4915555087910905e-06
+    },
+    {
+      "source_path": "0>0|8|14|0",
+      "name": "J_KRISTENSEN_root",
+      "side": "passenger",
+      "attributes_to_copy": {
+        "name": "J_KRISTENSEN_root",
+        "translation": "1.148 2.346 -2.207",
+        "rotation": "-112.263 80.384 -112.549",
+        "scale": "0.573 0.39 1"
+      },
+      "source_world_translation": [
+        -1.1479986371685005,
+        2.3459999552965995,
+        2.2070015444797435
+      ],
+      "target_world_translation": [
+        -1.1479999999999997,
+        2.3459999999999996,
+        2.2070000000000003
+      ],
+      "maximum_vertex_world_difference_m": 2.1631382793269e-06
+    }
+  ],
+  "rendered_visual_check_in_game_performed": false
+}

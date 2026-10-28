@@ -1,0 +1,232 @@
+{
+  "audit_passed": true,
+  "config_count": 4,
+  "default_index": 1,
+  "all_16_visibility_transitions_passed": true,
+  "transitions": [
+    {
+      "from": 1,
+      "to": 1,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": "M_KOLBRAEK"
+      }
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": "J_KRISTENSEN"
+      }
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": null
+      }
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": null
+      }
+    },
+    {
+      "from": 2,
+      "to": 1,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": "M_KOLBRAEK"
+      }
+    },
+    {
+      "from": 2,
+      "to": 2,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": "J_KRISTENSEN"
+      }
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": null
+      }
+    },
+    {
+      "from": 2,
+      "to": 4,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": null
+      }
+    },
+    {
+      "from": 3,
+      "to": 1,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": "M_KOLBRAEK"
+      }
+    },
+    {
+      "from": 3,
+      "to": 2,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": "J_KRISTENSEN"
+      }
+    },
+    {
+      "from": 3,
+      "to": 3,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": null
+      }
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": null
+      }
+    },
+    {
+      "from": 4,
+      "to": 1,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": "M_KOLBRAEK"
+      }
+    },
+    {
+      "from": 4,
+      "to": 2,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": "J_KRISTENSEN"
+      }
+    },
+    {
+      "from": 4,
+      "to": 3,
+      "visible": {
+        "driver": "J_KRISTENSEN",
+        "passenger": null
+      }
+    },
+    {
+      "from": 4,
+      "to": 4,
+      "visible": {
+        "driver": "M_KOLBRAEK",
+        "passenger": null
+      }
+    }
+  ],
+  "initial_visibility_matches_default": true,
+  "loader_anchors_all_local_visible_and_not_configured": true,
+  "native_sharedLight_zero_light_decor_supported": true,
+  "root_node_paths_select_original_identity_quad": true,
+  "native_loader_evidence": "SharedLight.loadFromVehicleXML direct linkNode visibility guard; onI3DLoaded lines203,259,267 accepts selected root and zero static light controls.",
+  "native_effective_ancestor_visibility_semantics_not_runtime_tested": true,
+  "complete_original_scene_preserved": true,
+  "original_light_xml_and_curtain_config_unchanged": true,
+  "original_gameplay_and_other_configs_unchanged": true,
+  "original_prefab_and_dds_assets_byte_identical": [
+    {
+      "path": "decor/names/J_KRISTENSEN.i3d",
+      "byte_identical_to_original": true,
+      "sha256": "7fad43edd2028290d6121c77daacd5e91c1ea9233ad31ed90301d9ac340a3345"
+    },
+    {
+      "path": "decor/names/textures/J_KRISTENSEN_diffuse.dds",
+      "byte_identical_to_original": true,
+      "sha256": "2a7ac03c4dbc235b7f1d18e2bce17aef91e3d9234c29b78ce08357df77693c81"
+    },
+    {
+      "path": "decor/names/M_KOLBRAEK.i3d",
+      "byte_identical_to_original": true,
+      "sha256": "bcd741d1c3bcbb520871c9ae37034c93416cdbb9b3729bff837f8aa6593c7221"
+    },
+    {
+      "path": "decor/names/textures/M_KOLBRAEK_diffuse.dds",
+      "byte_identical_to_original": true,
+      "sha256": "eff74c9961cf2147aa63c50629923debaa12cdf0f83a1232cc21525adfbb1fa2"
+    }
+  ],
+  "changed_existing_files": [
+    "i3d/Scania_S_HKL.i3d",
+    "xml/Scania_S_HKL.xml"
+  ],
+  "added_shared_loaders": [
+    {
+      "linkNode": "nameJKPassengerMeshMount",
+      "filename": "decor/names/J_KRISTENSEN.xml"
+    },
+    {
+      "linkNode": "nameMKDriverMeshMount",
+      "filename": "decor/names/M_KOLBRAEK.xml"
+    },
+    {
+      "linkNode": "nameMKPassengerMeshMount",
+      "filename": "decor/names/M_KOLBRAEK.xml"
+    },
+    {
+      "linkNode": "nameJKDriverMeshMount",
+      "filename": "decor/names/J_KRISTENSEN.xml"
+    }
+  ],
+  "name_mappings": {
+    "nameLayoutMKLeft": {
+      "path": "0>0|8|11|0",
+      "name": "nameLayoutMKLeft"
+    },
+    "nameJKPassenger": {
+      "path": "0>0|8|11|0|0",
+      "name": "J_KRISTENSEN_root"
+    },
+    "nameJKPassengerMeshMount": {
+      "path": "0>0|8|11|0|0|0",
+      "name": "nameJKPassengerMeshMount"
+    },
+    "nameMKDriver": {
+      "path": "0>0|8|11|0|1",
+      "name": "M_KOLBRAEK_root"
+    },
+    "nameMKDriverMeshMount": {
+      "path": "0>0|8|11|0|1|0",
+      "name": "nameMKDriverMeshMount"
+    },
+    "nameLayoutJKLeft": {
+      "path": "0>0|8|11|1",
+      "name": "nameLayoutJKLeft"
+    },
+    "nameMKPassenger": {
+      "path": "0>0|8|11|1|0",
+      "name": "M_KOLBRAEK_root"
+    },
+    "nameMKPassengerMeshMount": {
+      "path": "0>0|8|11|1|0|0",
+      "name": "nameMKPassengerMeshMount"
+    },
+    "nameJKDriver": {
+      "path": "0>0|8|11|1|1",
+      "name": "J_KRISTENSEN_root"
+    },
+    "nameJKDriverMeshMount": {
+      "path": "0>0|8|11|1|1|0",
+      "name": "nameJKDriverMeshMount"
+    }
+  },
+  "live_fs25_test_performed": false
+}

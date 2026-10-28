@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tridemNameReference>
+    <!--Reference for the installed four-name shop configuration. Original meshes and flag DDS are loaded as decorative sharedLight assets.-->
+    <design15Configurations title="Name layout">
+        <design15Configuration name="J. Kristensen left / M. Kolbræk right" price="0" isDefault="true">
+            <objectChange node="nameLayoutJKLeft" visibilityActive="true"/>
+            <objectChange node="nameLayoutMKLeft" visibilityActive="false"/>
+            <objectChange node="nameJKDriver" visibilityActive="true"/>
+            <objectChange node="nameMKPassenger" visibilityActive="true"/>
+            <objectChange node="nameMKDriver" visibilityActive="false"/>
+            <objectChange node="nameJKPassenger" visibilityActive="false"/>
+        </design15Configuration>
+        <design15Configuration name="M. Kolbræk left / J. Kristensen right" price="0" isDefault="false">
+            <objectChange node="nameLayoutJKLeft" visibilityActive="false"/>
+            <objectChange node="nameLayoutMKLeft" visibilityActive="true"/>
+            <objectChange node="nameJKDriver" visibilityActive="false"/>
+            <objectChange node="nameMKPassenger" visibilityActive="false"/>
+            <objectChange node="nameMKDriver" visibilityActive="true"/>
+            <objectChange node="nameJKPassenger" visibilityActive="true"/>
+        </design15Configuration>
+        <design15Configuration name="J. Kristensen — driver door only" price="0" isDefault="false">
+            <objectChange node="nameLayoutJKLeft" visibilityActive="true"/>
+            <objectChange node="nameLayoutMKLeft" visibilityActive="false"/>
+            <objectChange node="nameJKDriver" visibilityActive="true"/>
+            <objectChange node="nameMKPassenger" visibilityActive="false"/>
+            <objectChange node="nameMKDriver" visibilityActive="false"/>
+            <objectChange node="nameJKPassenger" visibilityActive="false"/>
+        </design15Configuration>
+        <design15Configuration name="M. Kolbræk — driver door only" price="0" isDefault="false">
+            <objectChange node="nameLayoutJKLeft" visibilityActive="false"/>
+            <objectChange node="nameLayoutMKLeft" visibilityActive="true"/>
+            <objectChange node="nameJKDriver" visibilityActive="false"/>
+            <objectChange node="nameMKPassenger" visibilityActive="false"/>
+            <objectChange node="nameMKDriver" visibilityActive="true"/>
+            <objectChange node="nameJKPassenger" visibilityActive="false"/>
+        </design15Configuration>
+    </design15Configurations>
+    <i3dMappings>
+        <i3dMapping id="nameLayoutMKLeft" node="0&gt;0|8|11|0"/>
+        <i3dMapping id="nameJKPassenger" node="0&gt;0|8|11|0|0"/>
+        <i3dMapping id="nameJKPassengerMeshMount" node="0&gt;0|8|11|0|0|0"/>
+        <i3dMapping id="nameMKDriver" node="0&gt;0|8|11|0|1"/>
+        <i3dMapping id="nameMKDriverMeshMount" node="0&gt;0|8|11|0|1|0"/>
+        <i3dMapping id="nameLayoutJKLeft" node="0&gt;0|8|11|1"/>
+        <i3dMapping id="nameMKPassenger" node="0&gt;0|8|11|1|0"/>
+        <i3dMapping id="nameMKPassengerMeshMount" node="0&gt;0|8|11|1|0|0"/>
+        <i3dMapping id="nameJKDriver" node="0&gt;0|8|11|1|1"/>
+        <i3dMapping id="nameJKDriverMeshMount" node="0&gt;0|8|11|1|1|0"/>
+    </i3dMappings>
+    <lights>
+        <sharedLight linkNode="nameJKPassengerMeshMount" filename="decor/names/J_KRISTENSEN.xml"/>
+        <sharedLight linkNode="nameMKDriverMeshMount" filename="decor/names/M_KOLBRAEK.xml"/>
+        <sharedLight linkNode="nameMKPassengerMeshMount" filename="decor/names/M_KOLBRAEK.xml"/>
+        <sharedLight linkNode="nameJKDriverMeshMount" filename="decor/names/J_KRISTENSEN.xml"/>
+    </lights>
+</tridemNameReference>
