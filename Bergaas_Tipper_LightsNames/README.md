@@ -1,0 +1,17 @@
+# Bergaas Scania Tipper Pack — OZZ lights, Optibeam and window names
+
+Full mod: [`FS25_BergaasDesign_Scania_Tipper_Pack.zip`](../FS25_BergaasDesign_Scania_Tipper_Pack.zip), version **1.0.0.1**, built from the owner's four-part split ZIP. Both tipper trailers are included.
+
+All **10 fitted OZZ/Briod lamps** have white engine-on DRL at **20** and main high-beam glow at **50**, reduced from the source's coded 100/30. The actual main emitter and white guide are now controlled, replacing the source's incorrect plain-overlay/parking assignments. Main beams use native high-beam type 3. Projected range is **100 m**, with reduced 0.125 RGB brightness, a wide 120-degree fan and distinct low/high quality projectors. Eight obsolete auxiliary projectors are disabled; standard road lights retain their controls.
+
+The **Optibeam** has alternating native double flashes at **12**, six **100 m** projected beacons and separate orange engine cruise lights at **8**, like the owner's other Scanias. The uploaded bar was a separate top-level scene object; it is now attached to the truck with its world placement preserved. Stale controllers for a deleted old bar are removed and the four remaining factory beacon anchors are corrected.
+
+The source flash mesh used native UV light channels beyond those BeaconLight updates. A native external copy preserves its exact positions, normals, UV0 and triangle indices, and shifts UV1 U by -1. This keeps continuous emission-atlas mapping while moving every vertex into supported channels 0–1. The main shape binary is unchanged. Two native external flash controllers plus four pulse-only controllers operate the six original projectors. No custom runtime lighting script or custom game shader is added.
+
+The shop has one **Vindu navn** dropdown: **J. Kristensen** (default) or **M. Kolbræk**. The original lettering, Norwegian flags, alpha and mipmaps are copied byte for byte. Names are fitted to the actual driver-side glass of this cab, 2.5 mm outside its surface. [Placement preview](WindowNamesPreview.jpg) is a Blender geometry preview, not an in-game screenshot.
+
+Five missing OZZ/Optibeam texture references now use existing matching images from the owner's other assets. The original 66-file pack has only its truck I3D, truck XML and modDesc edited; all other 63 files, all shape binaries and both trailers remain byte-identical. All local resources and mappings resolve. Existing vehicle settings and TerraFarm/specialization integrations are retained.
+
+Exit FS25 fully, replace **FS25_BergaasDesign_Scania_Tipper_Pack.zip**, keep the filename, and restart. Select **Vindu navn** in the truck's shop/customization screen. White OZZ DRLs and orange cruise lights follow the engine; OZZ mains follow high beam; flashing uses the native beacon switch.
+
+Independent checks cover all scene changes, source-file identity, 117 truck mappings, 718 node references across the pack, all 53 scene lights being controlled or explicitly hidden, the name configuration and ZIP CRC. Native GIANTS configuration readers and BeaconLight loading/update methods were executed in Lua 5.4 with mocked engine services. Eleven native beacon methods verified six surviving projectors, two external mesh roots, on/off behavior and two pulses per cycle on each side across 1,001 time samples. One GIANTS `continue` was mechanically translated to `goto` for Lua 5.4; this audit does not replace game execution. **No live FS25 game, GUI or shader-compilation test was performed.**

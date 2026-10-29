@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<vehicle><lights><defaultLights><defaultLight node="bergaasOzzMain1" lightTypes="3" intensity="50"/>
+            <defaultLight node="bergaasOzzMain2" lightTypes="3" intensity="50"/>
+            <defaultLight node="bergaasOzzMain3" lightTypes="3" intensity="50"/>
+            <defaultLight node="bergaasOzzMain4" lightTypes="3" intensity="50"/>
+            <defaultLight node="bergaasOzzMain5" lightTypes="3" intensity="50"/>
+            <defaultLight node="bergaasOzzMain6" lightTypes="3" intensity="50"/>
+            <defaultLight node="bergaasOzzMain7" lightTypes="3" intensity="50"/>
+            <defaultLight node="bergaasOzzMain8" lightTypes="3" intensity="50"/>
+            <defaultLight node="bergaasOzzMain9" lightTypes="3" intensity="50"/>
+            <defaultLight node="bergaasOzzMain10" lightTypes="3" intensity="50"/>
+            </defaultLights><dayTimeLights><dayTimeLight node="bergaasBarCruise" intensity="8"/><dayTimeLight node="bergaasOzzDrl1" intensity="20"/>
+            <dayTimeLight node="bergaasOzzDrl2" intensity="20"/>
+            <dayTimeLight node="bergaasOzzDrl3" intensity="20"/>
+            <dayTimeLight node="bergaasOzzDrl4" intensity="20"/>
+            <dayTimeLight node="bergaasOzzDrl5" intensity="20"/>
+            <dayTimeLight node="bergaasOzzDrl6" intensity="20"/>
+            <dayTimeLight node="bergaasOzzDrl7" intensity="20"/>
+            <dayTimeLight node="bergaasOzzDrl8" intensity="20"/>
+            <dayTimeLight node="bergaasOzzDrl9" intensity="20"/>
+            <dayTimeLight node="bergaasOzzDrl10" intensity="20"/>
+            </dayTimeLights><beaconLights><beaconLight node="bergaasBarFlashMountLeft" filename="lighting/BergaasOptibeamFlashLeft.xml" realLight="bergaasBarBeamLeft1" useRealLights="true"/><beaconLight realLight="bergaasBarBeamLeft2"><staticLight node="bergaasBarFlashMountLeft" intensity="0" multiBlink="true" multiBlinkParameters="2 2 50 0"/></beaconLight><beaconLight realLight="bergaasBarBeamLeft3"><staticLight node="bergaasBarFlashMountLeft" intensity="0" multiBlink="true" multiBlinkParameters="2 2 50 0"/></beaconLight><beaconLight node="bergaasBarFlashMountRight" filename="lighting/BergaasOptibeamFlashRight.xml" realLight="bergaasBarBeamRight1" useRealLights="true"/><beaconLight realLight="bergaasBarBeamRight2"><staticLight node="bergaasBarFlashMountRight" intensity="0" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/></beaconLight><beaconLight realLight="bergaasBarBeamRight3"><staticLight node="bergaasBarFlashMountRight" intensity="0" multiBlink="true" multiBlinkParameters="2 2 50 12.56637061435917"/></beaconLight></beaconLights></lights><design2Configurations title="Vindu navn">
+        <design2Configuration name="J. Kristensen" price="0" saveId="J_KRISTENSEN" isDefault="true">
+            <objectChange node="bergaasWindowNamesGroup" visibilityActive="true"/>
+            <objectChange node="bergaasWindowNameJK" visibilityActive="true"/>
+            <objectChange node="bergaasWindowNameMK" visibilityActive="false"/>
+        </design2Configuration>
+        <design2Configuration name="M. Kolbræk" price="0" saveId="M_KOLBRAEK" isDefault="false">
+            <objectChange node="bergaasWindowNamesGroup" visibilityActive="true"/>
+            <objectChange node="bergaasWindowNameJK" visibilityActive="false"/>
+            <objectChange node="bergaasWindowNameMK" visibilityActive="true"/>
+        </design2Configuration>
+    </design2Configurations>
+
+    <i3dMappings><i3dMapping id="bergaasBarFlashMountLeft" node="0&gt;17|2"/>
+        <i3dMapping id="bergaasBarBeamLeft1" node="0&gt;17|2|0"/>
+        <i3dMapping id="bergaasBarBeamLeft2" node="0&gt;17|2|1"/>
+        <i3dMapping id="bergaasBarBeamLeft3" node="0&gt;17|2|2"/>
+        <i3dMapping id="bergaasBarFlashMountRight" node="0&gt;17|3"/>
+        <i3dMapping id="bergaasBarBeamRight1" node="0&gt;17|3|0"/>
+        <i3dMapping id="bergaasBarBeamRight2" node="0&gt;17|3|1"/>
+        <i3dMapping id="bergaasBarBeamRight3" node="0&gt;17|3|2"/>
+        <i3dMapping id="bergaasBarCruise" node="0&gt;17|4"/>
+        <i3dMapping id="bergaasOzzMain1" node="0&gt;9|7|0|2|0|4"/>
+        <i3dMapping id="bergaasOzzDrl1" node="0&gt;9|7|0|2|0|1"/>
+        <i3dMapping id="bergaasOzzBeamHigh1" node="0&gt;9|7|0|2|0|5"/>
+        <i3dMapping id="bergaasOzzMain2" node="0&gt;9|7|0|2|1|4"/>
+        <i3dMapping id="bergaasOzzDrl2" node="0&gt;9|7|0|2|1|1"/>
+        <i3dMapping id="bergaasOzzBeamHigh2" node="0&gt;9|7|0|2|1|5"/>
+        <i3dMapping id="bergaasOzzMain3" node="0&gt;9|7|0|2|2|4"/>
+        <i3dMapping id="bergaasOzzDrl3" node="0&gt;9|7|0|2|2|1"/>
+        <i3dMapping id="bergaasOzzBeamHigh3" node="0&gt;9|7|0|2|2|5"/>
+        <i3dMapping id="bergaasOzzMain4" node="0&gt;9|7|0|2|3|4"/>
+        <i3dMapping id="bergaasOzzDrl4" node="0&gt;9|7|0|2|3|1"/>
+        <i3dMapping id="bergaasOzzBeamHigh4" node="0&gt;9|7|0|2|3|5"/>
+        <i3dMapping id="bergaasOzzMain5" node="0&gt;9|7|0|2|4|4"/>
+        <i3dMapping id="bergaasOzzDrl5" node="0&gt;9|7|0|2|4|1"/>
+        <i3dMapping id="bergaasOzzBeamHigh5" node="0&gt;9|7|0|2|4|5"/>
+        <i3dMapping id="bergaasOzzMain6" node="0&gt;9|7|0|2|5|4"/>
+        <i3dMapping id="bergaasOzzDrl6" node="0&gt;9|7|0|2|5|1"/>
+        <i3dMapping id="bergaasOzzBeamHigh6" node="0&gt;9|7|0|2|5|5"/>
+        <i3dMapping id="bergaasOzzMain7" node="0&gt;9|7|0|2|6|4"/>
+        <i3dMapping id="bergaasOzzDrl7" node="0&gt;9|7|0|2|6|1"/>
+        <i3dMapping id="bergaasOzzBeamHigh7" node="0&gt;9|7|0|2|6|5"/>
+        <i3dMapping id="bergaasOzzMain8" node="0&gt;9|7|0|2|7|4"/>
+        <i3dMapping id="bergaasOzzDrl8" node="0&gt;9|7|0|2|7|1"/>
+        <i3dMapping id="bergaasOzzBeamHigh8" node="0&gt;9|7|0|2|7|5"/>
+        <i3dMapping id="bergaasOzzMain9" node="0&gt;9|7|0|2|8|4"/>
+        <i3dMapping id="bergaasOzzDrl9" node="0&gt;9|7|0|2|8|1"/>
+        <i3dMapping id="bergaasOzzBeamHigh9" node="0&gt;9|7|0|2|8|5"/>
+        <i3dMapping id="bergaasOzzMain10" node="0&gt;9|7|0|2|9|4"/>
+        <i3dMapping id="bergaasOzzDrl10" node="0&gt;9|7|0|2|9|1"/>
+        <i3dMapping id="bergaasOzzBeamHigh10" node="0&gt;9|7|0|2|9|5"/>
+        <i3dMapping id="bergaasOzzBeamLow1" node="0&gt;9|7|0|2|10"/>
+        <i3dMapping id="bergaasOzzBeamLow2" node="0&gt;9|7|0|2|11"/>
+        <i3dMapping id="bergaasWindowNamesGroup" node="0&gt;9|3|5|0|3"/>
+        <i3dMapping id="bergaasWindowNameJK" node="0&gt;9|3|5|0|3|0"/>
+        <i3dMapping id="bergaasWindowJKMeshMount" node="0&gt;9|3|5|0|3|0|0"/>
+        <i3dMapping id="bergaasWindowNameMK" node="0&gt;9|3|5|0|3|1"/>
+        <i3dMapping id="bergaasWindowMKMeshMount" node="0&gt;9|3|5|0|3|1|0"/>
+        </i3dMappings></vehicle>
