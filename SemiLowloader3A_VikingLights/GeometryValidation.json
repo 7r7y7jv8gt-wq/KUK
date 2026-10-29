@@ -1,0 +1,845 @@
+{
+  "all_checks_passed": true,
+  "fixture_count": 6,
+  "lods_per_fixture": 2,
+  "static_controls": 36,
+  "color_mesh_counts": {
+    "white": 12,
+    "red": 12,
+    "amber": 12
+  },
+  "light_stage": "native type0 inherited from towing vehicle",
+  "intensity_all": 20,
+  "existing_scene_node_transforms_and_mesh_assignments_identical": true,
+  "existing_guide_visibility_explicitly_enabled": 24,
+  "source_scene_nodes": 346,
+  "candidate_scene_nodes": 358,
+  "added_amber_meshes": 12,
+  "original_binary_identical": true,
+  "controlled_aliases": [
+    {
+      "alias": "viking1Lod0WhiteFront",
+      "node": "0>0|1|3|0|0|2",
+      "material": "401",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking1Lod0RedRear",
+      "node": "0>0|1|3|0|0|8",
+      "material": "399",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking1Lod0AmberSide",
+      "node": "0>0|1|3|0|0|10",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    },
+    {
+      "alias": "viking1Lod1WhiteFront",
+      "node": "0>0|1|3|0|1|1",
+      "material": "401",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking1Lod1RedRear",
+      "node": "0>0|1|3|0|1|5",
+      "material": "399",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking1Lod1AmberSide",
+      "node": "0>0|1|3|0|1|6",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    },
+    {
+      "alias": "viking2Lod0WhiteFront",
+      "node": "0>0|1|4|0|0|2",
+      "material": "401",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking2Lod0RedRear",
+      "node": "0>0|1|4|0|0|8",
+      "material": "399",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking2Lod0AmberSide",
+      "node": "0>0|1|4|0|0|10",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    },
+    {
+      "alias": "viking2Lod1WhiteFront",
+      "node": "0>0|1|4|0|1|1",
+      "material": "401",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking2Lod1RedRear",
+      "node": "0>0|1|4|0|1|5",
+      "material": "399",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking2Lod1AmberSide",
+      "node": "0>0|1|4|0|1|6",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    },
+    {
+      "alias": "viking3Lod0WhiteFront",
+      "node": "0>0|1|5|0|0|2",
+      "material": "401",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking3Lod0RedRear",
+      "node": "0>0|1|5|0|0|8",
+      "material": "399",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking3Lod0AmberSide",
+      "node": "0>0|1|5|0|0|10",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    },
+    {
+      "alias": "viking3Lod1WhiteFront",
+      "node": "0>0|1|5|0|1|1",
+      "material": "401",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking3Lod1RedRear",
+      "node": "0>0|1|5|0|1|5",
+      "material": "399",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking3Lod1AmberSide",
+      "node": "0>0|1|5|0|1|6",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    },
+    {
+      "alias": "viking4Lod0WhiteFront",
+      "node": "0>0|1|6|0|0|2",
+      "material": "486",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking4Lod0RedRear",
+      "node": "0>0|1|6|0|0|8",
+      "material": "484",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking4Lod0AmberSide",
+      "node": "0>0|1|6|0|0|10",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    },
+    {
+      "alias": "viking4Lod1WhiteFront",
+      "node": "0>0|1|6|0|1|1",
+      "material": "486",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking4Lod1RedRear",
+      "node": "0>0|1|6|0|1|5",
+      "material": "484",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking4Lod1AmberSide",
+      "node": "0>0|1|6|0|1|6",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    },
+    {
+      "alias": "viking5Lod0WhiteFront",
+      "node": "0>0|1|7|0|0|2",
+      "material": "486",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking5Lod0RedRear",
+      "node": "0>0|1|7|0|0|8",
+      "material": "484",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking5Lod0AmberSide",
+      "node": "0>0|1|7|0|0|10",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    },
+    {
+      "alias": "viking5Lod1WhiteFront",
+      "node": "0>0|1|7|0|1|1",
+      "material": "486",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking5Lod1RedRear",
+      "node": "0>0|1|7|0|1|5",
+      "material": "484",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking5Lod1AmberSide",
+      "node": "0>0|1|7|0|1|6",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    },
+    {
+      "alias": "viking6Lod0WhiteFront",
+      "node": "0>0|1|8|0|0|2",
+      "material": "486",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking6Lod0RedRear",
+      "node": "0>0|1|8|0|0|8",
+      "material": "484",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking6Lod0AmberSide",
+      "node": "0>0|1|8|0|0|10",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    },
+    {
+      "alias": "viking6Lod1WhiteFront",
+      "node": "0>0|1|8|0|1|1",
+      "material": "486",
+      "emission_texture": "lighting/white_emissive.dds",
+      "color": [
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "alias": "viking6Lod1RedRear",
+      "node": "0>0|1|8|0|1|5",
+      "material": "484",
+      "emission_texture": "lighting/red_emissive.dds",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "alias": "viking6Lod1AmberSide",
+      "node": "0>0|1|8|0|1|6",
+      "material": "487",
+      "emission_texture": "lighting/amber_emissive.dds",
+      "color": [
+        255,
+        128,
+        0
+      ]
+    }
+  ],
+  "amber_geometry": [
+    {
+      "nodeId": "574",
+      "side": "left",
+      "outward_x_range": [
+        0.14725052003264427,
+        0.1514104794383049
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017494839012622831,
+      "outward_face_clearance_m": 0.0024104755043983517,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          0.14725052003264427,
+          0.1514104794383049
+        ],
+        [
+          0.06290428012609482,
+          0.08709559857845306
+        ],
+        [
+          -0.012118398904800418,
+          0.01211828017234802
+        ]
+      ],
+      "outer_surface_normal": [
+        0.870523989200592,
+        0.27361398935317993,
+        -0.4090510010719299
+      ]
+    },
+    {
+      "nodeId": "569",
+      "side": "right",
+      "outward_x_range": [
+        0.1472302402973175,
+        0.15141112018823624
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017697636365890668,
+      "outward_face_clearance_m": 0.002411116254329687,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          -0.15141112018823624,
+          -0.1472302402973175
+        ],
+        [
+          0.06288620054721833,
+          0.08702879965305328
+        ],
+        [
+          -0.012150001287460334,
+          0.012148198723793024
+        ]
+      ],
+      "outer_surface_normal": [
+        -0.7616689801216125,
+        0.37408098578453064,
+        -0.5290780067443848
+      ]
+    },
+    {
+      "nodeId": "565",
+      "side": "right",
+      "outward_x_range": [
+        0.1472302402973175,
+        0.15141112018823624
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017697636365890668,
+      "outward_face_clearance_m": 0.002411116254329687,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          -0.15141112018823624,
+          -0.1472302402973175
+        ],
+        [
+          0.06288620054721833,
+          0.08702879965305328
+        ],
+        [
+          -0.012150001287460334,
+          0.012148198723793024
+        ]
+      ],
+      "outer_surface_normal": [
+        -0.7616689801216125,
+        0.37408098578453064,
+        -0.5290780067443848
+      ]
+    },
+    {
+      "nodeId": "573",
+      "side": "left",
+      "outward_x_range": [
+        0.1472301203429699,
+        0.15141112018823624
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017698835909366606,
+      "outward_face_clearance_m": 0.002411116254329687,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          0.1472301203429699,
+          0.15141112018823624
+        ],
+        [
+          0.06292500019073487,
+          0.0870608013868332
+        ],
+        [
+          -0.012136798858642585,
+          0.012148198723793024
+        ]
+      ],
+      "outer_surface_normal": [
+        0.6289899945259094,
+        0.41893601417541504,
+        -0.6548770070075989
+      ]
+    },
+    {
+      "nodeId": "575",
+      "side": "left",
+      "outward_x_range": [
+        0.1472301203429699,
+        0.15141112018823624
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017698835909366606,
+      "outward_face_clearance_m": 0.002411116254329687,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          0.1472301203429699,
+          0.15141112018823624
+        ],
+        [
+          0.06292500019073487,
+          0.0870608013868332
+        ],
+        [
+          -0.012136798858642585,
+          0.012148198723793024
+        ]
+      ],
+      "outer_surface_normal": [
+        0.6289899945259094,
+        0.41893601417541504,
+        -0.6548770070075989
+      ]
+    },
+    {
+      "nodeId": "564",
+      "side": "right",
+      "outward_x_range": [
+        0.14725052003264427,
+        0.1514104794383049
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017494839012622831,
+      "outward_face_clearance_m": 0.0024104755043983517,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          -0.1514104794383049,
+          -0.14725052003264427
+        ],
+        [
+          0.06290428012609482,
+          0.08709559857845306
+        ],
+        [
+          -0.012118398904800418,
+          0.01211828017234802
+        ]
+      ],
+      "outer_surface_normal": [
+        -0.870523989200592,
+        0.27361398935317993,
+        -0.4090510010719299
+      ]
+    },
+    {
+      "nodeId": "566",
+      "side": "right",
+      "outward_x_range": [
+        0.14725052003264427,
+        0.1514104794383049
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017494839012622831,
+      "outward_face_clearance_m": 0.0024104755043983517,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          -0.1514104794383049,
+          -0.14725052003264427
+        ],
+        [
+          0.06290428012609482,
+          0.08709559857845306
+        ],
+        [
+          -0.012118398904800418,
+          0.01211828017234802
+        ]
+      ],
+      "outer_surface_normal": [
+        -0.870523989200592,
+        0.27361398935317993,
+        -0.4090510010719299
+      ]
+    },
+    {
+      "nodeId": "570",
+      "side": "left",
+      "outward_x_range": [
+        0.14725052003264427,
+        0.1514104794383049
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017494839012622831,
+      "outward_face_clearance_m": 0.0024104755043983517,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          0.14725052003264427,
+          0.1514104794383049
+        ],
+        [
+          0.06290428012609482,
+          0.08709559857845306
+        ],
+        [
+          -0.012118398904800418,
+          0.01211828017234802
+        ]
+      ],
+      "outer_surface_normal": [
+        0.870523989200592,
+        0.27361398935317993,
+        -0.4090510010719299
+      ]
+    },
+    {
+      "nodeId": "571",
+      "side": "left",
+      "outward_x_range": [
+        0.1472301203429699,
+        0.15141112018823624
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017698835909366606,
+      "outward_face_clearance_m": 0.002411116254329687,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          0.1472301203429699,
+          0.15141112018823624
+        ],
+        [
+          0.06292500019073487,
+          0.0870608013868332
+        ],
+        [
+          -0.012136798858642585,
+          0.012148198723793024
+        ]
+      ],
+      "outer_surface_normal": [
+        0.6289899945259094,
+        0.41893601417541504,
+        -0.6548770070075989
+      ]
+    },
+    {
+      "nodeId": "572",
+      "side": "left",
+      "outward_x_range": [
+        0.14725052003264427,
+        0.1514104794383049
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017494839012622831,
+      "outward_face_clearance_m": 0.0024104755043983517,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          0.14725052003264427,
+          0.1514104794383049
+        ],
+        [
+          0.06290428012609482,
+          0.08709559857845306
+        ],
+        [
+          -0.012118398904800418,
+          0.01211828017234802
+        ]
+      ],
+      "outer_surface_normal": [
+        0.870523989200592,
+        0.27361398935317993,
+        -0.4090510010719299
+      ]
+    },
+    {
+      "nodeId": "567",
+      "side": "right",
+      "outward_x_range": [
+        0.1472302402973175,
+        0.15141112018823624
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017697636365890668,
+      "outward_face_clearance_m": 0.002411116254329687,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          -0.15141112018823624,
+          -0.1472302402973175
+        ],
+        [
+          0.06288620054721833,
+          0.08702879965305328
+        ],
+        [
+          -0.012150001287460334,
+          0.012148198723793024
+        ]
+      ],
+      "outer_surface_normal": [
+        -0.7616689801216125,
+        0.37408098578453064,
+        -0.5290780067443848
+      ]
+    },
+    {
+      "nodeId": "568",
+      "side": "right",
+      "outward_x_range": [
+        0.14725052003264427,
+        0.1514104794383049
+      ],
+      "body_max_outer_x": 0.14900000393390656,
+      "rear_ring_seating_depth_m": 0.0017494839012622831,
+      "outward_face_clearance_m": 0.0024104755043983517,
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "bounds_xyz": [
+        [
+          -0.1514104794383049,
+          -0.14725052003264427
+        ],
+        [
+          0.06290428012609482,
+          0.08709559857845306
+        ],
+        [
+          -0.012118398904800418,
+          0.01211828017234802
+        ]
+      ],
+      "outer_surface_normal": [
+        -0.870523989200592,
+        0.27361398935317993,
+        -0.4090510010719299
+      ]
+    }
+  ],
+  "visual_fit_accepted": true,
+  "side_marker_diameter_m": 0.02424,
+  "side_marker_mount": "rear portion seated into existing rounded rubber; outward emitting face clear",
+  "preview_note": "Blender geometry simulation using decoded original vertices, candidate transforms, simple surface materials and simulated emission. Not GIANTS/FS25 runtime.",
+  "preview_image": "audit_inventory/preview/viking_three_views.jpg",
+  "native_game_test_performed": false
+}

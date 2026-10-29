@@ -1,0 +1,59 @@
+{
+  "checks_passed": true,
+  "mod_version": "1.0.0.3",
+  "fixture_count": 6,
+  "white_forward_amber_side_red_rear": true,
+  "lods_per_fixture": 2,
+  "native_controlled_guide_shapes": 36,
+  "marker_intensity": 20,
+  "control": "towing vehicle default/running lights, lightTypes=0",
+  "original_fixture_transforms_and_binary_preserved": true,
+  "existing_road_brake_reverse_indicator_beacon_controls_unchanged": true,
+  "changed_existing_files": [
+    "modDesc.xml",
+    "semiLowloader3A.i3d",
+    "semiLowloader3A.xml"
+  ],
+  "added_files": [
+    "README_LIGHTS.txt",
+    "lighting/amber_emissive.dds",
+    "lighting/red_emissive.dds",
+    "lighting/white_emissive.dds"
+  ],
+  "all_other_source_files_byte_identical": true,
+  "scene_nodes": 358,
+  "mappings": 170,
+  "validated_node_references": 354,
+  "bundled_resources": [
+    "lighting/red_emissive.dds",
+    "lighting/white_emissive.dds",
+    "lighting/red_emissive.dds",
+    "lighting/white_emissive.dds",
+    "lighting/amber_emissive.dds"
+  ],
+  "native_png_to_dds_fallbacks": [
+    "semiLowloader3ADecals_diffuse.png",
+    "semiLowloader3ADecals_normal.png",
+    "semiLowloader3AHoses_vmask.png",
+    "semiLowloader3ALight_emissive.png",
+    "semiLowloader3ALight_normal.png",
+    "semiLowloader3ALight_vmask.png",
+    "semiLowloader3ATransparentPlastic_normal.png",
+    "semiLowloader3ATransparentPlastic_vmask.png",
+    "semiLowloader3AWood_diffuse.png",
+    "semiLowloader3AWood_normal.png",
+    "semiLowloader3AWood_vmask.png",
+    "semiLowloader3A_normal.png",
+    "semiLowloader3A_vmask.png"
+  ],
+  "unrelated_logo_texture_missing_in_original_preserved": [
+    "../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/FS25_KKMaskin_Logo_Hvit/FS25_KKMaskin_Logo_Hvit/textures/KKMaskin_logo_original_diffuse.dds"
+  ],
+  "missing_original_dirt_maps_use_neutral_vmask": true,
+  "archive": "FS25_semiLowloader3A.zip",
+  "archive_files": 23,
+  "zip_crc_passed": true,
+  "archive_bytes": 22010863,
+  "archive_sha256": "b748a0691b614bb0672a106afb531dbda52e3bd1bea2b2d4133369c255c1d010",
+  "live_fs25_test_performed": false
+}

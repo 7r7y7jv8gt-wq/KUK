@@ -1,0 +1,371 @@
+{
+  "version": "1.0.0.3",
+  "fixture_count": 6,
+  "controlled_shapes": 36,
+  "colors": {
+    "front": "white",
+    "side": "amber",
+    "rear": "red"
+  },
+  "control": "defaultLight lightTypes=0 intensity=20; follows towing vehicle normal lights",
+  "engine_only_drl_not_used_on_unmotorized_trailer": true,
+  "fixtures": [
+    {
+      "index": 1,
+      "side": "Right",
+      "path": "0>0|1|3",
+      "translation": "-1.26705 1.22295 7.33351",
+      "lods": [
+        {
+          "lod": 0,
+          "white_forward": {
+            "alias": "viking1Lod0WhiteFront",
+            "path": "0>0|1|3|0|0|2",
+            "shape_id": "10",
+            "material_id": "401"
+          },
+          "amber_outward": {
+            "alias": "viking1Lod0AmberSide",
+            "path": "0>0|1|3|0|0|10",
+            "shape_id": "10",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking1Lod0RedRear",
+            "path": "0>0|1|3|0|0|8",
+            "shape_id": "16",
+            "material_id": "399"
+          }
+        },
+        {
+          "lod": 1,
+          "white_forward": {
+            "alias": "viking1Lod1WhiteFront",
+            "path": "0>0|1|3|0|1|1",
+            "shape_id": "19",
+            "material_id": "401"
+          },
+          "amber_outward": {
+            "alias": "viking1Lod1AmberSide",
+            "path": "0>0|1|3|0|1|6",
+            "shape_id": "19",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking1Lod1RedRear",
+            "path": "0>0|1|3|0|1|5",
+            "shape_id": "23",
+            "material_id": "399"
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "side": "Right",
+      "path": "0>0|1|4",
+      "translation": "-1.26705 0.751808 3.54002",
+      "lods": [
+        {
+          "lod": 0,
+          "white_forward": {
+            "alias": "viking2Lod0WhiteFront",
+            "path": "0>0|1|4|0|0|2",
+            "shape_id": "10",
+            "material_id": "401"
+          },
+          "amber_outward": {
+            "alias": "viking2Lod0AmberSide",
+            "path": "0>0|1|4|0|0|10",
+            "shape_id": "10",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking2Lod0RedRear",
+            "path": "0>0|1|4|0|0|8",
+            "shape_id": "16",
+            "material_id": "399"
+          }
+        },
+        {
+          "lod": 1,
+          "white_forward": {
+            "alias": "viking2Lod1WhiteFront",
+            "path": "0>0|1|4|0|1|1",
+            "shape_id": "19",
+            "material_id": "401"
+          },
+          "amber_outward": {
+            "alias": "viking2Lod1AmberSide",
+            "path": "0>0|1|4|0|1|6",
+            "shape_id": "19",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking2Lod1RedRear",
+            "path": "0>0|1|4|0|1|5",
+            "shape_id": "23",
+            "material_id": "399"
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "side": "Right",
+      "path": "0>0|1|5",
+      "translation": "-1.26705 0.751808 -5.63875",
+      "lods": [
+        {
+          "lod": 0,
+          "white_forward": {
+            "alias": "viking3Lod0WhiteFront",
+            "path": "0>0|1|5|0|0|2",
+            "shape_id": "10",
+            "material_id": "401"
+          },
+          "amber_outward": {
+            "alias": "viking3Lod0AmberSide",
+            "path": "0>0|1|5|0|0|10",
+            "shape_id": "10",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking3Lod0RedRear",
+            "path": "0>0|1|5|0|0|8",
+            "shape_id": "16",
+            "material_id": "399"
+          }
+        },
+        {
+          "lod": 1,
+          "white_forward": {
+            "alias": "viking3Lod1WhiteFront",
+            "path": "0>0|1|5|0|1|1",
+            "shape_id": "19",
+            "material_id": "401"
+          },
+          "amber_outward": {
+            "alias": "viking3Lod1AmberSide",
+            "path": "0>0|1|5|0|1|6",
+            "shape_id": "19",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking3Lod1RedRear",
+            "path": "0>0|1|5|0|1|5",
+            "shape_id": "23",
+            "material_id": "399"
+          }
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "side": "Left",
+      "path": "0>0|1|6",
+      "translation": "1.267 0.752 -5.639",
+      "lods": [
+        {
+          "lod": 0,
+          "white_forward": {
+            "alias": "viking4Lod0WhiteFront",
+            "path": "0>0|1|6|0|0|2",
+            "shape_id": "26",
+            "material_id": "486"
+          },
+          "amber_outward": {
+            "alias": "viking4Lod0AmberSide",
+            "path": "0>0|1|6|0|0|10",
+            "shape_id": "26",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking4Lod0RedRear",
+            "path": "0>0|1|6|0|0|8",
+            "shape_id": "32",
+            "material_id": "484"
+          }
+        },
+        {
+          "lod": 1,
+          "white_forward": {
+            "alias": "viking4Lod1WhiteFront",
+            "path": "0>0|1|6|0|1|1",
+            "shape_id": "35",
+            "material_id": "486"
+          },
+          "amber_outward": {
+            "alias": "viking4Lod1AmberSide",
+            "path": "0>0|1|6|0|1|6",
+            "shape_id": "35",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking4Lod1RedRear",
+            "path": "0>0|1|6|0|1|5",
+            "shape_id": "39",
+            "material_id": "484"
+          }
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "side": "Left",
+      "path": "0>0|1|7",
+      "translation": "1.267 0.752 3.54",
+      "lods": [
+        {
+          "lod": 0,
+          "white_forward": {
+            "alias": "viking5Lod0WhiteFront",
+            "path": "0>0|1|7|0|0|2",
+            "shape_id": "26",
+            "material_id": "486"
+          },
+          "amber_outward": {
+            "alias": "viking5Lod0AmberSide",
+            "path": "0>0|1|7|0|0|10",
+            "shape_id": "26",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking5Lod0RedRear",
+            "path": "0>0|1|7|0|0|8",
+            "shape_id": "32",
+            "material_id": "484"
+          }
+        },
+        {
+          "lod": 1,
+          "white_forward": {
+            "alias": "viking5Lod1WhiteFront",
+            "path": "0>0|1|7|0|1|1",
+            "shape_id": "35",
+            "material_id": "486"
+          },
+          "amber_outward": {
+            "alias": "viking5Lod1AmberSide",
+            "path": "0>0|1|7|0|1|6",
+            "shape_id": "35",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking5Lod1RedRear",
+            "path": "0>0|1|7|0|1|5",
+            "shape_id": "39",
+            "material_id": "484"
+          }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "side": "Left",
+      "path": "0>0|1|8",
+      "translation": "1.267 1.223 7.334",
+      "lods": [
+        {
+          "lod": 0,
+          "white_forward": {
+            "alias": "viking6Lod0WhiteFront",
+            "path": "0>0|1|8|0|0|2",
+            "shape_id": "26",
+            "material_id": "486"
+          },
+          "amber_outward": {
+            "alias": "viking6Lod0AmberSide",
+            "path": "0>0|1|8|0|0|10",
+            "shape_id": "26",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking6Lod0RedRear",
+            "path": "0>0|1|8|0|0|8",
+            "shape_id": "32",
+            "material_id": "484"
+          }
+        },
+        {
+          "lod": 1,
+          "white_forward": {
+            "alias": "viking6Lod1WhiteFront",
+            "path": "0>0|1|8|0|1|1",
+            "shape_id": "35",
+            "material_id": "486"
+          },
+          "amber_outward": {
+            "alias": "viking6Lod1AmberSide",
+            "path": "0>0|1|8|0|1|6",
+            "shape_id": "35",
+            "material_id": "487"
+          },
+          "red_rearward": {
+            "alias": "viking6Lod1RedRear",
+            "path": "0>0|1|8|0|1|5",
+            "shape_id": "39",
+            "material_id": "484"
+          }
+        }
+      ]
+    }
+  ],
+  "resolved_lighting_files": [
+    {
+      "file_id": "23",
+      "original": "../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingRight_Public/prefab/models/textures/nlmGiantsDirt_body_81765ff0a1803f35.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "24",
+      "original": "../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingRight_Public/prefab/models/textures/nlmGiantsDirt_protected_75252e53dc434c5a.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "26",
+      "original": "../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingRight_Public/prefab/models/textures/nlmGiantsDirt_lens_5d858e5f771860be.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "30",
+      "original": "../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingLeft_Public/prefab/models/textures/nlmGiantsDirt_body_81765ff0a1803f35.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "31",
+      "original": "../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingLeft_Public/prefab/models/textures/nlmGiantsDirt_protected_75252e53dc434c5a.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "33",
+      "original": "../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingLeft_Public/prefab/models/textures/nlmGiantsDirt_lens_5d858e5f771860be.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "29",
+      "original": "../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingRight_Public/prefab/textures/red_emissive.dds",
+      "replacement": "lighting/red_emissive.dds"
+    },
+    {
+      "file_id": "34",
+      "original": "../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingLeft_Public/prefab/textures/red_emissive.dds",
+      "replacement": "lighting/red_emissive.dds"
+    },
+    {
+      "file_id": "25",
+      "original": "../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingRight_Public/prefab/textures/white_emissive.dds",
+      "replacement": "lighting/white_emissive.dds"
+    },
+    {
+      "file_id": "32",
+      "original": "../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingLeft_Public/prefab/textures/white_emissive.dds",
+      "replacement": "lighting/white_emissive.dds"
+    }
+  ],
+  "added_side_guides": 12,
+  "original_shape_binary_preserved": true,
+  "unrelated_missing_source_logo_reference_preserved": "fileId 62",
+  "live_game_test_performed": false,
+  "source_zip_sha256": "7cb09eae5e5c1f4c7b49c68b4e5a7495a8aec7d49511e3a2fc5f805f09dd0f14"
+}
