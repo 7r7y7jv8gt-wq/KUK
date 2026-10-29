@@ -1,9 +1,0 @@
-{
-  "version": "0.4.0.0",
-  "game_test": "not run",
-  "textures": "original procedural diffuse, normal and gloss; 1024px full mip chains",
-  "local_tests_run": 21,
-  "local_test_failures": 0,
-  "local_test_errors": 0,
-  "native_engine_input_and_physics": "not run"
-}

@@ -1,6 +1,0 @@
-V15: disable older versions, install unopened ZIP, buy fresh machine.
-Rear winch sits close against rear body with lower backing plate.
-Walk to front blade or rear winch, R takes nearby hook; R attaches, Z pulls, X pays out.
-F first lights negative-Z bank (front in reported game orientation), then both banks.
-White emitting inserts light the worklight centers; red DRLs remain engine-controlled.
-40-tonne mass retained. Geometry fit, beam aim and FS25 operation untested here.

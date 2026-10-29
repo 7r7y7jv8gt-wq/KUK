@@ -1,7 +1,0 @@
-V13: disable earlier versions, install unopened ZIP and buy fresh v13.
-Page Up raises; Page Down lowers. Left mouse plus vertical drag moves blade.
-Independent versioned keyboard actions, refreshed active registration and frame update fallback.
-Both hydraulic cylinders follow blade endpoints. Mass remains 40,000kg including support wheels.
-Dark track shader tint, dark carrier material and restrained cast steel wheel texture.
-Volvo crawler geometry retained; main Volvo drivetrain geometry still not supplied.
-FS25 unavailable: verify motion, visuals and handling in game.

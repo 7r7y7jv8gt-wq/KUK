@@ -1,0 +1,11 @@
+{
+  "I3D_schema": "passed",
+  "geometry_indices_normals_subsets": "passed",
+  "local_I3D_textures": 16,
+  "glTF_references": "passed",
+  "Blender_images": "all local //textures paths exist",
+  "I3D_unique_triangles": 145600,
+  "I3D_drawn_triangles": 325120,
+  "source_triangles": 325256,
+  "in_game_tested": false
+}

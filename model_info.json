@@ -1,0 +1,9 @@
+{
+  "name": "Tume HKL3000 – detailed weathered model",
+  "working_width_m": 3,
+  "mesh_objects": 103,
+  "triangles_instanced_total": 325256,
+  "source": "Klaravik auction 1088608; proportions and wear interpretation from photos",
+  "functional_FS25_mod": false,
+  "materials": "1024px PBR albedo, normal and ORM; 8 material sets"
+}

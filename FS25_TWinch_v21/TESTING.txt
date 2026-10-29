@@ -1,7 +1,0 @@
-V21: user light placements preserved.
-Start engine: amber lightbar cruise lights and amber LED-bar DRLs.
-Native beacon toggle (default Home): alternating amber multi-flash lightbar.
-F cycle: front worklights, all worklights, then white LED-bar flood high beams.
-Disable previous T-Winch versions; install unopened ZIP.
-800hp, 12km/h, 40 tonnes, winches and guarded TerraFarm registration retained.
-FS25 visual/function test pending.

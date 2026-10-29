@@ -1,5 +1,0 @@
-V20: fixes purchase crash caused by runtime g_currentModDirectory=nil.
-Uses vehicle.baseDirectory/captured mod directory; registration failures cannot abort load.
-Disable earlier T-Winch versions, restart FS25 and install unopened v20 ZIP.
-800hp, 12km/h, 40 tonnes, winches, lights and TerraFarm profile retained.
-Game purchase confirmation still requires FS25 testing.
