@@ -1,0 +1,13 @@
+{
+  "checks_passed": true,
+  "same_native_beacon_function_bodies_for_before_and_after": true,
+  "actual_native_i3d_component_loader_used": true,
+  "original_giants_i3d_indexToObject_used": true,
+  "indexToObject_reference_version": "FS22 (FS25 engine-bound function not in published API)",
+  "old_incorrect_mock_resolver_removed": true,
+  "original_delivered_assets_fail_native_lifecycle": true,
+  "original_failure_stderr": "Traceback (most recent call last):\n  File \"/workspace/work/bergaas_followup/bar_audit/native_before_test.py\", line 538, in <module>\n    raise AssertionError(error.decode() if error else f'Lua status {status}')\nAssertionError: [string \"native_beacon_test.lua\"]:695: assertion failed!\n",
+  "corrected_assets_pass_native_lifecycle": true,
+  "after_report": "/workspace/work/bergaas_followup/bar_audit/native_after/final_native_beacon_validation.json",
+  "gpu_compilation_and_live_fs25_render_test_performed": false
+}

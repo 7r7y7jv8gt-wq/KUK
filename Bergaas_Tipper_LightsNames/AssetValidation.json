@@ -1,232 +1,44 @@
 {
-  "independent_checks_passed": true,
-  "version": "1.0.0.1",
-  "source_files": 66,
-  "candidate_files": 81,
-  "changed_existing_files": [
-    "ScaniaTipper.i3d",
-    "ScaniaTipper.xml",
-    "modDesc.xml"
-  ],
-  "added_files": [
+  "passed": true,
+  "version": "1.0.0.2",
+  "files": 81,
+  "changed_from_previous_release": [
     "README_LIGHTS_NAMES.txt",
-    "decor/windowNames/J_KRISTENSEN.i3d",
-    "decor/windowNames/J_KRISTENSEN.xml",
-    "decor/windowNames/M_KOLBRAEK.i3d",
-    "decor/windowNames/M_KOLBRAEK.xml",
-    "decor/windowNames/textures/J_KRISTENSEN_diffuse.dds",
-    "decor/windowNames/textures/M_KOLBRAEK_diffuse.dds",
+    "ScaniaTipper.xml",
     "lighting/BergaasOptibeamFlash.i3d",
     "lighting/BergaasOptibeamFlashLeft.xml",
     "lighting/BergaasOptibeamFlashRight.xml",
-    "lighting/optibeam_glass.png",
-    "lighting/ozz/chrome.dds",
-    "lighting/ozz/lightmask.dds",
-    "lighting/ozz/orange.png",
-    "lighting/ozz/reflekt.dds"
+    "modDesc.xml"
   ],
-  "all_other_original_files_byte_identical": true,
-  "all_original_shape_binaries_and_source_textures_byte_identical": true,
-  "both_included_trailers_byte_identical": true,
-  "main_i3d_canonical_regression_passed": true,
-  "vehicle_xml_canonical_regression_passed": true,
-  "original_scene_nodes": 631,
-  "candidate_scene_nodes": 648,
-  "original_node_world_transforms_preserved": true,
-  "bar_reparented_under_the_single_component": true,
-  "changed_original_scene_nodes": [
-    {
-      "node_id": "388",
-      "name": "highBeamHigh"
-    },
-    {
-      "node_id": "389",
-      "name": "highBeamHigh"
-    },
-    {
-      "node_id": "390",
-      "name": "highBeamHigh"
-    },
-    {
-      "node_id": "391",
-      "name": "highBeamHigh"
-    },
-    {
-      "node_id": "392",
-      "name": "highBeamHigh"
-    },
-    {
-      "node_id": "393",
-      "name": "highBeamHigh"
-    },
-    {
-      "node_id": "394",
-      "name": "highBeamHigh"
-    },
-    {
-      "node_id": "395",
-      "name": "highBeamHigh"
-    },
-    {
-      "node_id": "923",
-      "name": "piece_1_white"
-    },
-    {
-      "node_id": "926",
-      "name": "piece_2"
-    },
-    {
-      "node_id": "933",
-      "name": "piece_1_white"
-    },
-    {
-      "node_id": "936",
-      "name": "piece_2"
-    },
-    {
-      "node_id": "939",
-      "name": "piece_1_white"
-    },
-    {
-      "node_id": "942",
-      "name": "piece_2"
-    },
-    {
-      "node_id": "945",
-      "name": "piece_1_white"
-    },
-    {
-      "node_id": "948",
-      "name": "piece_2"
-    },
-    {
-      "node_id": "951",
-      "name": "piece_1_white"
-    },
-    {
-      "node_id": "954",
-      "name": "piece_2"
-    },
-    {
-      "node_id": "957",
-      "name": "piece_1_white"
-    },
-    {
-      "node_id": "960",
-      "name": "piece_2"
-    },
-    {
-      "node_id": "963",
-      "name": "piece_1_white"
-    },
-    {
-      "node_id": "966",
-      "name": "piece_2"
-    },
-    {
-      "node_id": "969",
-      "name": "piece_1_white"
-    },
-    {
-      "node_id": "972",
-      "name": "piece_2"
-    },
-    {
-      "node_id": "975",
-      "name": "piece_1_white"
-    },
-    {
-      "node_id": "978",
-      "name": "piece_2"
-    },
-    {
-      "node_id": "981",
-      "name": "piece_1_white"
-    },
-    {
-      "node_id": "984",
-      "name": "piece_2"
-    },
-    {
-      "node_id": "999",
-      "name": "blitzer1"
-    },
-    {
-      "node_id": "1000",
-      "name": "blitzer1"
-    },
-    {
-      "node_id": "1001",
-      "name": "blitzer1"
-    },
-    {
-      "node_id": "1002",
-      "name": "blitzer1"
-    },
-    {
-      "node_id": "1003",
-      "name": "blitzer2"
-    },
-    {
-      "node_id": "1004",
-      "name": "blitzer2"
-    },
-    {
-      "node_id": "1005",
-      "name": "blitzer2"
-    },
-    {
-      "node_id": "1006",
-      "name": "blitzer2"
-    }
-  ],
-  "new_scene_nodes": 17,
-  "new_ozz_projectors": 12,
-  "new_name_nodes": 5,
-  "ozz_lamps": 10,
-  "ozz_high_beam_emission": 50,
-  "ozz_white_engine_drl": 20,
-  "ozz_projector_range_m": 100,
-  "ozz_projector_color": [
-    0.125,
-    0.125,
-    0.125
-  ],
-  "graphics_profiles_use_distinct_projectors": true,
-  "stale_source_bar_controllers_and_invalid_aliases_removed": true,
-  "factory_beacon_anchor_paths_corrected": 4,
-  "native_optibeam_projectors": 6,
-  "optibeam_range_m": 100,
-  "separate_bar_engine_cruise_intensity": 8,
-  "only_name_dropdown": "Vindu navn",
-  "window_choices": [
-    "J. Kristensen",
-    "M. Kolbræk"
-  ],
-  "default_window_name": "J. Kristensen",
-  "original_name_fonts_flags_alpha_mipmaps_preserved": true,
-  "all_local_i3d_resources_resolve": true,
-  "local_resources": 50,
-  "native_png_to_dds_fallbacks": 1,
-  "all_vehicle_node_references": 718,
+  "all_other_files_byte_identical": true,
+  "all_original_models_binaries_textures_and_flags_preserved": true,
+  "both_trailers_preserved": true,
+  "all_original_vehicle_controls_and_configs_preserved": true,
+  "only_vehicle_xml_change_is_seventh_roof_marker_controller": true,
+  "seventh_roof_marker_matches_other_six": true,
+  "native_component_paths_fixed_in_both_beacon_wrappers": true,
+  "external_flash_geometry_uvs_materials_unchanged": true,
+  "external_flash_tangent_generation_declared": true,
+  "local_i3d_resources_resolved": 50,
+  "legitimate_png_dds_fallbacks": 1,
+  "node_references_checked": 719,
   "vehicles": {
     "ScaniaTipper": {
-      "scene_nodes": 648,
-      "valid_mappings": 117,
-      "node_references": 433
+      "nodes": 648,
+      "mappings": 117,
+      "node_references": 434
     },
     "3AkselTipper": {
-      "scene_nodes": 234,
-      "valid_mappings": 40,
+      "nodes": 234,
+      "mappings": 40,
       "node_references": 136
     },
     "3AkselSlepTipp": {
-      "scene_nodes": 236,
-      "valid_mappings": 45,
+      "nodes": 236,
+      "mappings": 45,
       "node_references": 149
     }
   },
-  "source_gameplay_specializations_and_integrations_preserved": true,
-  "external_beacon_runtime_audited_separately": true,
-  "live_fs25_game_or_gui_test_performed": false
+  "native_load_and_pulse_regression": "bar_audit/native_integrated/final_native_beacon_validation.json",
+  "live_fs25_or_gpu_test_performed": false
 }

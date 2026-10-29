@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "candidate": "/workspace/work/bergaas_followup/fixed",
+  "files": 81,
+  "changed_files": [
+    "README_LIGHTS_NAMES.txt",
+    "ScaniaTipper.xml",
+    "lighting/BergaasOptibeamFlash.i3d",
+    "lighting/BergaasOptibeamFlashLeft.xml",
+    "lighting/BergaasOptibeamFlashRight.xml",
+    "modDesc.xml"
+  ],
+  "unchanged_files": 75,
+  "main_scene_and_all_shape_binaries_byte_identical": true,
+  "external_geometry_uvs_normals_triangles_materials_and_transforms_unchanged": true,
+  "only_external_mesh_change": "tangent=true declaration",
+  "actual_wrapper_before_failure_after_success_reproduced_using_unchanged_native_resolution": true,
+  "wrapper_other_attributes_and_timing_preserved": true,
+  "vehicle_xml_only_change": "added missing center roof marker defaultLight with lightTypes=0,intensity=30",
+  "wrappers": [
+    {
+      "name": "lighting/BergaasOptibeamFlashLeft.xml",
+      "oldRoot": "0",
+      "oldStatic": "0|0",
+      "newRoot": "0>",
+      "newStatic": "0>0"
+    },
+    {
+      "name": "lighting/BergaasOptibeamFlashRight.xml",
+      "oldRoot": "0",
+      "oldStatic": "0|0",
+      "newRoot": "0>",
+      "newStatic": "0>0"
+    }
+  ],
+  "native_utility_source_version": "FS22; corroborated by FS25 beacon component-table API and existing FS25 beacon indices",
+  "live_fs25_render_test_performed": false
+}

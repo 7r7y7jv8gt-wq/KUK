@@ -70,5 +70,15 @@
     "original_vehicle_shape_binary_byte_identical": true
   },
   "native_gpu_shader_compilation_or_render_test": false,
-  "live_fs25_test_performed": false
+  "live_fs25_test_performed": false,
+  "node_resolution_audit": {
+    "prior_mock_replaced": true,
+    "native_resolver_reference": "GIANTS FS22 I3DUtil.indexToObject and loadI3DComponents; same contract in supplied FS25 beacon assets and native FS25 BeaconLight",
+    "before_after_regression": "BeaconNodePathRegression.json",
+    "actual_final_wrapper_paths": [
+      "0>",
+      "0>0"
+    ],
+    "old_wrapper_static_path_fails": true
+  }
 }

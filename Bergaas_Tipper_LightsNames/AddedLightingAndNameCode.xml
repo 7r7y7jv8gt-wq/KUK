@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<vehicle><lights><defaultLights><defaultLight node="bergaasOzzMain1" lightTypes="3" intensity="50"/>
+<vehicle><lights><defaultLights><defaultLight shaderNode="0&gt;9|7|1|34|0|0" lightTypes="0" intensity="30"/><defaultLight node="bergaasOzzMain1" lightTypes="3" intensity="50"/>
             <defaultLight node="bergaasOzzMain2" lightTypes="3" intensity="50"/>
             <defaultLight node="bergaasOzzMain3" lightTypes="3" intensity="50"/>
             <defaultLight node="bergaasOzzMain4" lightTypes="3" intensity="50"/>
