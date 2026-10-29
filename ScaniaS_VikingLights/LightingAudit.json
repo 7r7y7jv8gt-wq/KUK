@@ -1,0 +1,431 @@
+{
+  "version": "1.0.2.2",
+  "source": "Newest user-uploaded three-part RAR",
+  "fixture_count": 6,
+  "controlled_shapes": 36,
+  "added_side_guides": 12,
+  "colors": {
+    "physical_front": "white",
+    "physical_side": "amber",
+    "physical_rear": "red"
+  },
+  "controller": "native defaultLight lightTypes=0 intensity=20",
+  "parent_rotation_reverses_local_front_rear": true,
+  "local_frontGuides_are_red_local_rearGuides_are_white": true,
+  "fixture_transforms_and_original_binaries_preserved": true,
+  "other_variants_and_features_preserved": true,
+  "resolved_viking_files": [
+    {
+      "file_id": "5",
+      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingLeft_Public/prefab/models/textures/nlmGiantsDirt_body_81765ff0a1803f35.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "15",
+      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingLeft_Public/prefab/models/textures/nlmGiantsDirt_lens_5d858e5f771860be.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "13",
+      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingLeft_Public/prefab/models/textures/nlmGiantsDirt_protected_75252e53dc434c5a.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "18",
+      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingLeft_Public/prefab/textures/red_emissive.dds",
+      "replacement": "../lighting/red_emissive.dds"
+    },
+    {
+      "file_id": "14",
+      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingLeft_Public/prefab/textures/white_emissive.dds",
+      "replacement": "../lighting/white_emissive.dds"
+    },
+    {
+      "file_id": "19",
+      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingRight_Public/prefab/models/textures/nlmGiantsDirt_body_81765ff0a1803f35.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "22",
+      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingRight_Public/prefab/models/textures/nlmGiantsDirt_lens_5d858e5f771860be.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "20",
+      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingRight_Public/prefab/models/textures/nlmGiantsDirt_protected_75252e53dc434c5a.dds",
+      "replacement": "$data/shared/default_vmask.png"
+    },
+    {
+      "file_id": "23",
+      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingRight_Public/prefab/textures/red_emissive.dds",
+      "replacement": "../lighting/red_emissive.dds"
+    },
+    {
+      "file_id": "21",
+      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/NLM_Strands_FOR9T_geoVikingRight_Public/prefab/textures/white_emissive.dds",
+      "replacement": "../lighting/white_emissive.dds"
+    }
+  ],
+  "fixtures": [
+    {
+      "index": 1,
+      "source_side_name": "Left",
+      "physical_side": "Right",
+      "path": "0>0|2|0|2",
+      "translation": "1.24 0.378 -2.27",
+      "lods": [
+        {
+          "lod": 0,
+          "white_vehicle_front": {
+            "alias": "viking1Lod0WhiteFront",
+            "path": "0>0|2|0|2|0|0|8",
+            "mesh_name": "rearGuides",
+            "shape_id": "11",
+            "material_id": "1545"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking1Lod0RedRear",
+            "path": "0>0|2|0|2|0|0|2",
+            "mesh_name": "frontGuides",
+            "shape_id": "5",
+            "material_id": "1543"
+          },
+          "amber_outward": {
+            "alias": "viking1Lod0AmberSide",
+            "path": "0>0|2|0|2|0|0|10",
+            "mesh_name": "amberSideGuides",
+            "shape_id": "5",
+            "material_id": "1631"
+          }
+        },
+        {
+          "lod": 1,
+          "white_vehicle_front": {
+            "alias": "viking1Lod1WhiteFront",
+            "path": "0>0|2|0|2|0|1|5",
+            "mesh_name": "rearGuidesLOD1",
+            "shape_id": "18",
+            "material_id": "1545"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking1Lod1RedRear",
+            "path": "0>0|2|0|2|0|1|1",
+            "mesh_name": "frontGuidesLOD1",
+            "shape_id": "14",
+            "material_id": "1543"
+          },
+          "amber_outward": {
+            "alias": "viking1Lod1AmberSide",
+            "path": "0>0|2|0|2|0|1|6",
+            "mesh_name": "amberSideGuidesLOD1",
+            "shape_id": "14",
+            "material_id": "1631"
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "source_side_name": "Left",
+      "physical_side": "Right",
+      "path": "0>0|2|0|3",
+      "translation": "1.24597 0.377535 0.771813",
+      "lods": [
+        {
+          "lod": 0,
+          "white_vehicle_front": {
+            "alias": "viking2Lod0WhiteFront",
+            "path": "0>0|2|0|3|0|0|8",
+            "mesh_name": "rearGuides",
+            "shape_id": "11",
+            "material_id": "1545"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking2Lod0RedRear",
+            "path": "0>0|2|0|3|0|0|2",
+            "mesh_name": "frontGuides",
+            "shape_id": "5",
+            "material_id": "1543"
+          },
+          "amber_outward": {
+            "alias": "viking2Lod0AmberSide",
+            "path": "0>0|2|0|3|0|0|10",
+            "mesh_name": "amberSideGuides",
+            "shape_id": "5",
+            "material_id": "1631"
+          }
+        },
+        {
+          "lod": 1,
+          "white_vehicle_front": {
+            "alias": "viking2Lod1WhiteFront",
+            "path": "0>0|2|0|3|0|1|5",
+            "mesh_name": "rearGuidesLOD1",
+            "shape_id": "18",
+            "material_id": "1545"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking2Lod1RedRear",
+            "path": "0>0|2|0|3|0|1|1",
+            "mesh_name": "frontGuidesLOD1",
+            "shape_id": "14",
+            "material_id": "1543"
+          },
+          "amber_outward": {
+            "alias": "viking2Lod1AmberSide",
+            "path": "0>0|2|0|3|0|1|6",
+            "mesh_name": "amberSideGuidesLOD1",
+            "shape_id": "14",
+            "material_id": "1631"
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "source_side_name": "Left",
+      "physical_side": "Right",
+      "path": "0>0|2|0|4",
+      "translation": "1.25602 0.378 3.562",
+      "lods": [
+        {
+          "lod": 0,
+          "white_vehicle_front": {
+            "alias": "viking3Lod0WhiteFront",
+            "path": "0>0|2|0|4|0|0|8",
+            "mesh_name": "rearGuides",
+            "shape_id": "11",
+            "material_id": "1545"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking3Lod0RedRear",
+            "path": "0>0|2|0|4|0|0|2",
+            "mesh_name": "frontGuides",
+            "shape_id": "5",
+            "material_id": "1543"
+          },
+          "amber_outward": {
+            "alias": "viking3Lod0AmberSide",
+            "path": "0>0|2|0|4|0|0|10",
+            "mesh_name": "amberSideGuides",
+            "shape_id": "5",
+            "material_id": "1631"
+          }
+        },
+        {
+          "lod": 1,
+          "white_vehicle_front": {
+            "alias": "viking3Lod1WhiteFront",
+            "path": "0>0|2|0|4|0|1|5",
+            "mesh_name": "rearGuidesLOD1",
+            "shape_id": "18",
+            "material_id": "1545"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking3Lod1RedRear",
+            "path": "0>0|2|0|4|0|1|1",
+            "mesh_name": "frontGuidesLOD1",
+            "shape_id": "14",
+            "material_id": "1543"
+          },
+          "amber_outward": {
+            "alias": "viking3Lod1AmberSide",
+            "path": "0>0|2|0|4|0|1|6",
+            "mesh_name": "amberSideGuidesLOD1",
+            "shape_id": "14",
+            "material_id": "1631"
+          }
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "source_side_name": "Right",
+      "physical_side": "Left",
+      "path": "0>0|2|0|5",
+      "translation": "-1.24 0.378 -2.27",
+      "lods": [
+        {
+          "lod": 0,
+          "white_vehicle_front": {
+            "alias": "viking4Lod0WhiteFront",
+            "path": "0>0|2|0|5|0|0|8",
+            "mesh_name": "rearGuides",
+            "shape_id": "27",
+            "material_id": "1630"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking4Lod0RedRear",
+            "path": "0>0|2|0|5|0|0|2",
+            "mesh_name": "frontGuides",
+            "shape_id": "21",
+            "material_id": "1628"
+          },
+          "amber_outward": {
+            "alias": "viking4Lod0AmberSide",
+            "path": "0>0|2|0|5|0|0|10",
+            "mesh_name": "amberSideGuides",
+            "shape_id": "21",
+            "material_id": "1631"
+          }
+        },
+        {
+          "lod": 1,
+          "white_vehicle_front": {
+            "alias": "viking4Lod1WhiteFront",
+            "path": "0>0|2|0|5|0|1|5",
+            "mesh_name": "rearGuidesLOD1",
+            "shape_id": "34",
+            "material_id": "1630"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking4Lod1RedRear",
+            "path": "0>0|2|0|5|0|1|1",
+            "mesh_name": "frontGuidesLOD1",
+            "shape_id": "30",
+            "material_id": "1628"
+          },
+          "amber_outward": {
+            "alias": "viking4Lod1AmberSide",
+            "path": "0>0|2|0|5|0|1|6",
+            "mesh_name": "amberSideGuidesLOD1",
+            "shape_id": "30",
+            "material_id": "1631"
+          }
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "source_side_name": "Right",
+      "physical_side": "Left",
+      "path": "0>0|2|0|6",
+      "translation": "-1.246 0.378 0.772",
+      "lods": [
+        {
+          "lod": 0,
+          "white_vehicle_front": {
+            "alias": "viking5Lod0WhiteFront",
+            "path": "0>0|2|0|6|0|0|8",
+            "mesh_name": "rearGuides",
+            "shape_id": "27",
+            "material_id": "1630"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking5Lod0RedRear",
+            "path": "0>0|2|0|6|0|0|2",
+            "mesh_name": "frontGuides",
+            "shape_id": "21",
+            "material_id": "1628"
+          },
+          "amber_outward": {
+            "alias": "viking5Lod0AmberSide",
+            "path": "0>0|2|0|6|0|0|10",
+            "mesh_name": "amberSideGuides",
+            "shape_id": "21",
+            "material_id": "1631"
+          }
+        },
+        {
+          "lod": 1,
+          "white_vehicle_front": {
+            "alias": "viking5Lod1WhiteFront",
+            "path": "0>0|2|0|6|0|1|5",
+            "mesh_name": "rearGuidesLOD1",
+            "shape_id": "34",
+            "material_id": "1630"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking5Lod1RedRear",
+            "path": "0>0|2|0|6|0|1|1",
+            "mesh_name": "frontGuidesLOD1",
+            "shape_id": "30",
+            "material_id": "1628"
+          },
+          "amber_outward": {
+            "alias": "viking5Lod1AmberSide",
+            "path": "0>0|2|0|6|0|1|6",
+            "mesh_name": "amberSideGuidesLOD1",
+            "shape_id": "30",
+            "material_id": "1631"
+          }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "source_side_name": "Right",
+      "physical_side": "Left",
+      "path": "0>0|2|0|7",
+      "translation": "-1.256 0.378 3.562",
+      "lods": [
+        {
+          "lod": 0,
+          "white_vehicle_front": {
+            "alias": "viking6Lod0WhiteFront",
+            "path": "0>0|2|0|7|0|0|8",
+            "mesh_name": "rearGuides",
+            "shape_id": "27",
+            "material_id": "1630"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking6Lod0RedRear",
+            "path": "0>0|2|0|7|0|0|2",
+            "mesh_name": "frontGuides",
+            "shape_id": "21",
+            "material_id": "1628"
+          },
+          "amber_outward": {
+            "alias": "viking6Lod0AmberSide",
+            "path": "0>0|2|0|7|0|0|10",
+            "mesh_name": "amberSideGuides",
+            "shape_id": "21",
+            "material_id": "1631"
+          }
+        },
+        {
+          "lod": 1,
+          "white_vehicle_front": {
+            "alias": "viking6Lod1WhiteFront",
+            "path": "0>0|2|0|7|0|1|5",
+            "mesh_name": "rearGuidesLOD1",
+            "shape_id": "34",
+            "material_id": "1630"
+          },
+          "red_vehicle_rear": {
+            "alias": "viking6Lod1RedRear",
+            "path": "0>0|2|0|7|0|1|1",
+            "mesh_name": "frontGuidesLOD1",
+            "shape_id": "30",
+            "material_id": "1628"
+          },
+          "amber_outward": {
+            "alias": "viking6Lod1AmberSide",
+            "path": "0>0|2|0|7|0|1|6",
+            "mesh_name": "amberSideGuidesLOD1",
+            "shape_id": "30",
+            "material_id": "1631"
+          }
+        }
+      ]
+    }
+  ],
+  "live_fs25_test_performed": false,
+  "source_archives": [
+    {
+      "filename": "FS25_ScaniaS.part1.rar",
+      "bytes": 25165824,
+      "sha256": "2829a46b74f4b7f775e43f9fa895d68877d6ea89ec92dc73bd4b717df838eeda"
+    },
+    {
+      "filename": "FS25_ScaniaS.part2.rar",
+      "bytes": 25165824,
+      "sha256": "c898718453ffad637cfec240f6b8b057db2c1eb30fcef7441b039523f0e88672"
+    },
+    {
+      "filename": "FS25_ScaniaS.part3.rar",
+      "bytes": 16280763,
+      "sha256": "5dc972888266bcc7b105c21d5ea630e2cb6e7fd36b1523853f8439e9c0b2d45d"
+    }
+  ]
+}

@@ -1,0 +1,836 @@
+{
+  "all_checks_passed": true,
+  "fixture_count": 6,
+  "lods_per_fixture": 2,
+  "native_static_controls": 36,
+  "color_mesh_counts": {
+    "white": 12,
+    "red": 12,
+    "amber": 12
+  },
+  "intensity": 20,
+  "light_stage": "native running lights type0",
+  "world_front_axis": "+Z",
+  "critical_parent_transform": "lights rotation 180,-.0000323296,180 reverses localX/localZ",
+  "source_localfront_guides_reassigned_red_for_actual_world_rear": 12,
+  "source_localrear_guides_reassigned_white_for_actual_world_front": 12,
+  "amber_outward_direction_verified_all6_bothLODs": true,
+  "original_transforms_and_shape_ids_preserved": true,
+  "source_binary_byte_identical": true,
+  "new_amber_shapes": 12,
+  "controlled_meshes": [
+    {
+      "alias": "viking1Lod0WhiteFront",
+      "path": "0>0|2|0|2|0|0|8",
+      "shape": "11",
+      "mesh": "rearGuides",
+      "material": "1545",
+      "color": "white",
+      "relative_world_centroid": [
+        -0.10999998184184712,
+        0.07499999345399883,
+        0.03037593253854487
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking1Lod0RedRear",
+      "path": "0>0|2|0|2|0|0|2",
+      "shape": "5",
+      "mesh": "frontGuides",
+      "material": "1543",
+      "color": "red",
+      "relative_world_centroid": [
+        -0.11000001612150068,
+        0.07499999345399883,
+        -0.03037580840179288
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking1Lod0AmberSide",
+      "path": "0>0|2|0|2|0|0|10",
+      "shape": "5",
+      "mesh": "amberSideGuides",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        -0.14985034818804577,
+        0.07499999738159957,
+        8.414692942437796e-08
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    },
+    {
+      "alias": "viking1Lod1WhiteFront",
+      "path": "0>0|2|0|2|0|1|5",
+      "shape": "18",
+      "mesh": "rearGuidesLOD1",
+      "material": "1545",
+      "color": "white",
+      "relative_world_centroid": [
+        -0.10999312411905349,
+        0.07494222352006397,
+        0.030526772803809443
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking1Lod1RedRear",
+      "path": "0>0|2|0|2|0|1|1",
+      "shape": "14",
+      "mesh": "frontGuidesLOD1",
+      "material": "1543",
+      "color": "red",
+      "relative_world_centroid": [
+        -0.11015795387994087,
+        0.07495801595125828,
+        -0.030496635383057136
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking1Lod1AmberSide",
+      "path": "0>0|2|0|2|0|1|6",
+      "shape": "14",
+      "mesh": "amberSideGuidesLOD1",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        -0.14989867898055143,
+        0.07498320638050332,
+        6.325925030559176e-05
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    },
+    {
+      "alias": "viking2Lod0WhiteFront",
+      "path": "0>0|2|0|3|0|0|8",
+      "shape": "11",
+      "mesh": "rearGuides",
+      "material": "1545",
+      "color": "white",
+      "relative_world_centroid": [
+        -0.1099999818418469,
+        0.07499999345399849,
+        0.030375932538544315
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking2Lod0RedRear",
+      "path": "0>0|2|0|3|0|0|2",
+      "shape": "5",
+      "mesh": "frontGuides",
+      "material": "1543",
+      "color": "red",
+      "relative_world_centroid": [
+        -0.11000001612150068,
+        0.07499999345399849,
+        -0.03037580840179288
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking2Lod0AmberSide",
+      "path": "0>0|2|0|3|0|0|10",
+      "shape": "5",
+      "mesh": "amberSideGuides",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        -0.14985034818804577,
+        0.07499999738159946,
+        8.414692931335566e-08
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    },
+    {
+      "alias": "viking2Lod1WhiteFront",
+      "path": "0>0|2|0|3|0|1|5",
+      "shape": "18",
+      "mesh": "rearGuidesLOD1",
+      "material": "1545",
+      "color": "white",
+      "relative_world_centroid": [
+        -0.10999312411905326,
+        0.0749422235200638,
+        0.030526772803809665
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking2Lod1RedRear",
+      "path": "0>0|2|0|3|0|1|1",
+      "shape": "14",
+      "mesh": "frontGuidesLOD1",
+      "material": "1543",
+      "color": "red",
+      "relative_world_centroid": [
+        -0.11015795387994087,
+        0.07495801595125806,
+        -0.03049663538305669
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking2Lod1AmberSide",
+      "path": "0>0|2|0|3|0|1|6",
+      "shape": "14",
+      "mesh": "amberSideGuidesLOD1",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        -0.1498986789805512,
+        0.07498320638050338,
+        6.32592503052587e-05
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    },
+    {
+      "alias": "viking3Lod0WhiteFront",
+      "path": "0>0|2|0|4|0|0|8",
+      "shape": "11",
+      "mesh": "rearGuides",
+      "material": "1545",
+      "color": "white",
+      "relative_world_centroid": [
+        -0.10999998184184712,
+        0.07499999345399883,
+        0.030375932538544426
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking3Lod0RedRear",
+      "path": "0>0|2|0|4|0|0|2",
+      "shape": "5",
+      "mesh": "frontGuides",
+      "material": "1543",
+      "color": "red",
+      "relative_world_centroid": [
+        -0.1100000161215009,
+        0.07499999345399883,
+        -0.03037580840179288
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking3Lod0AmberSide",
+      "path": "0>0|2|0|4|0|0|10",
+      "shape": "5",
+      "mesh": "amberSideGuides",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        -0.14985034818804577,
+        0.07499999738159951,
+        8.414692942437796e-08
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    },
+    {
+      "alias": "viking3Lod1WhiteFront",
+      "path": "0>0|2|0|4|0|1|5",
+      "shape": "18",
+      "mesh": "rearGuidesLOD1",
+      "material": "1545",
+      "color": "white",
+      "relative_world_centroid": [
+        -0.10999312411905326,
+        0.07494222352006402,
+        0.030526772803809443
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking3Lod1RedRear",
+      "path": "0>0|2|0|4|0|1|1",
+      "shape": "14",
+      "mesh": "frontGuidesLOD1",
+      "material": "1543",
+      "color": "red",
+      "relative_world_centroid": [
+        -0.11015795387994087,
+        0.07495801595125828,
+        -0.030496635383057136
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking3Lod1AmberSide",
+      "path": "0>0|2|0|4|0|1|6",
+      "shape": "14",
+      "mesh": "amberSideGuidesLOD1",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        -0.1498986789805512,
+        0.07498320638050338,
+        6.325925030559176e-05
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    },
+    {
+      "alias": "viking4Lod0WhiteFront",
+      "path": "0>0|2|0|5|0|0|8",
+      "shape": "27",
+      "mesh": "rearGuides",
+      "material": "1630",
+      "color": "white",
+      "relative_world_centroid": [
+        0.11000001612150068,
+        0.07499999345399883,
+        0.030375808401793325
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking4Lod0RedRear",
+      "path": "0>0|2|0|5|0|0|2",
+      "shape": "21",
+      "mesh": "frontGuides",
+      "material": "1628",
+      "color": "red",
+      "relative_world_centroid": [
+        0.10999998184184712,
+        0.07499999345399883,
+        -0.030375932538544426
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking4Lod0AmberSide",
+      "path": "0>0|2|0|5|0|0|10",
+      "shape": "21",
+      "mesh": "amberSideGuides",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        0.14985034818804532,
+        0.07499999738159946,
+        -8.496157599680032e-08
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    },
+    {
+      "alias": "viking4Lod1WhiteFront",
+      "path": "0>0|2|0|5|0|1|5",
+      "shape": "34",
+      "mesh": "rearGuidesLOD1",
+      "material": "1630",
+      "color": "white",
+      "relative_world_centroid": [
+        0.11015795387994087,
+        0.07495801595125845,
+        0.03049663538305669
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking4Lod1RedRear",
+      "path": "0>0|2|0|5|0|1|1",
+      "shape": "30",
+      "mesh": "frontGuidesLOD1",
+      "material": "1628",
+      "color": "red",
+      "relative_world_centroid": [
+        0.10999312411905326,
+        0.07494222352006419,
+        -0.030526772803809443
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking4Lod1AmberSide",
+      "path": "0>0|2|0|5|0|1|6",
+      "shape": "30",
+      "mesh": "amberSideGuidesLOD1",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        0.14991068429415155,
+        0.0749768894080256,
+        -2.8280506936262384e-06
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    },
+    {
+      "alias": "viking5Lod0WhiteFront",
+      "path": "0>0|2|0|6|0|0|8",
+      "shape": "27",
+      "mesh": "rearGuides",
+      "material": "1630",
+      "color": "white",
+      "relative_world_centroid": [
+        0.11000001612150068,
+        0.07499999345399877,
+        0.03037580840179288
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking5Lod0RedRear",
+      "path": "0>0|2|0|6|0|0|2",
+      "shape": "21",
+      "mesh": "frontGuides",
+      "material": "1628",
+      "color": "red",
+      "relative_world_centroid": [
+        0.10999998184184712,
+        0.07499999345399877,
+        -0.030375932538544315
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking5Lod0AmberSide",
+      "path": "0>0|2|0|6|0|0|10",
+      "shape": "21",
+      "mesh": "amberSideGuides",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        0.1498503481880451,
+        0.07499999738159951,
+        -8.496157610782262e-08
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    },
+    {
+      "alias": "viking5Lod1WhiteFront",
+      "path": "0>0|2|0|6|0|1|5",
+      "shape": "34",
+      "mesh": "rearGuidesLOD1",
+      "material": "1630",
+      "color": "white",
+      "relative_world_centroid": [
+        0.11015795387994087,
+        0.07495801595125823,
+        0.030496635383056914
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking5Lod1RedRear",
+      "path": "0>0|2|0|6|0|1|1",
+      "shape": "30",
+      "mesh": "frontGuidesLOD1",
+      "material": "1628",
+      "color": "red",
+      "relative_world_centroid": [
+        0.10999312411905326,
+        0.07494222352006391,
+        -0.030526772803809665
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking5Lod1AmberSide",
+      "path": "0>0|2|0|6|0|1|6",
+      "shape": "30",
+      "mesh": "amberSideGuidesLOD1",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        0.14991068429415133,
+        0.0749768894080255,
+        -2.8280506936262384e-06
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    },
+    {
+      "alias": "viking6Lod0WhiteFront",
+      "path": "0>0|2|0|7|0|0|8",
+      "shape": "27",
+      "mesh": "rearGuides",
+      "material": "1630",
+      "color": "white",
+      "relative_world_centroid": [
+        0.1100000161215009,
+        0.07499999345399866,
+        0.03037580840179288
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking6Lod0RedRear",
+      "path": "0>0|2|0|7|0|0|2",
+      "shape": "21",
+      "mesh": "frontGuides",
+      "material": "1628",
+      "color": "red",
+      "relative_world_centroid": [
+        0.1099999818418469,
+        0.07499999345399866,
+        -0.03037593253854398
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking6Lod0AmberSide",
+      "path": "0>0|2|0|7|0|0|10",
+      "shape": "21",
+      "mesh": "amberSideGuides",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        0.1498503481880451,
+        0.07499999738159946,
+        -8.496157644088953e-08
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    },
+    {
+      "alias": "viking6Lod1WhiteFront",
+      "path": "0>0|2|0|7|0|1|5",
+      "shape": "34",
+      "mesh": "rearGuidesLOD1",
+      "material": "1630",
+      "color": "white",
+      "relative_world_centroid": [
+        0.11015795387994087,
+        0.07495801595125817,
+        0.03049663538305669
+      ],
+      "emission_texture": "../lighting/white_emissive.dds"
+    },
+    {
+      "alias": "viking6Lod1RedRear",
+      "path": "0>0|2|0|7|0|1|1",
+      "shape": "30",
+      "mesh": "frontGuidesLOD1",
+      "material": "1628",
+      "color": "red",
+      "relative_world_centroid": [
+        0.10999312411905349,
+        0.07494222352006391,
+        -0.030526772803809443
+      ],
+      "emission_texture": "../lighting/red_emissive.dds"
+    },
+    {
+      "alias": "viking6Lod1AmberSide",
+      "path": "0>0|2|0|7|0|1|6",
+      "shape": "30",
+      "mesh": "amberSideGuidesLOD1",
+      "material": "1631",
+      "color": "amber",
+      "relative_world_centroid": [
+        0.14991068429415133,
+        0.07497688940802555,
+        -2.8280506940703276e-06
+      ],
+      "emission_texture": "../lighting/amber_emissive.dds"
+    }
+  ],
+  "amber_geometry": [
+    {
+      "alias": "viking1Lod0AmberSide",
+      "fixture_origin_world": [
+        -1.2399986016202342,
+        0.3779999552965999,
+        2.270001596391466
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        -0.14985034818804577,
+        0.07499999738159957,
+        8.414692942437796e-08
+      ],
+      "visible_outward_face_world_normal": [
+        -0.870524040256573,
+        0.273614077946502,
+        0.4090516247185162
+      ],
+      "outward_axis": "-X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    },
+    {
+      "alias": "viking1Lod1AmberSide",
+      "fixture_origin_world": [
+        -1.2399986016202342,
+        0.3779999552965999,
+        2.270001596391466
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        -0.14989867898055143,
+        0.07498320638050332,
+        6.325925030559176e-05
+      ],
+      "visible_outward_face_world_normal": [
+        -0.6289897220297634,
+        0.4189360787975423,
+        0.6548774629368921
+      ],
+      "outward_axis": "-X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    },
+    {
+      "alias": "viking2Lod0AmberSide",
+      "fixture_origin_world": [
+        -1.2459703179874493,
+        0.3775349552966003,
+        -0.7718114002394293
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        -0.14985034818804577,
+        0.07499999738159946,
+        8.414692931335566e-08
+      ],
+      "visible_outward_face_world_normal": [
+        -0.870524040256573,
+        0.273614077946502,
+        0.4090516247185162
+      ],
+      "outward_axis": "-X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    },
+    {
+      "alias": "viking2Lod1AmberSide",
+      "fixture_origin_world": [
+        -1.2459703179874493,
+        0.3775349552966003,
+        -0.7718114002394293
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        -0.1498986789805512,
+        0.07498320638050338,
+        6.32592503052587e-05
+      ],
+      "visible_outward_face_world_normal": [
+        -0.6289897220297634,
+        0.4189360787975423,
+        0.6548774629368921
+      ],
+      "outward_axis": "-X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    },
+    {
+      "alias": "viking3Lod0AmberSide",
+      "fixture_origin_world": [
+        -1.2560218923726882,
+        0.37799995529660063,
+        -3.5619983945681923
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        -0.14985034818804577,
+        0.07499999738159951,
+        8.414692942437796e-08
+      ],
+      "visible_outward_face_world_normal": [
+        -0.870524040256573,
+        0.273614077946502,
+        0.4090516247185162
+      ],
+      "outward_axis": "-X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    },
+    {
+      "alias": "viking3Lod1AmberSide",
+      "fixture_origin_world": [
+        -1.2560218923726882,
+        0.37799995529660063,
+        -3.5619983945681923
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        -0.1498986789805512,
+        0.07498320638050338,
+        6.325925030559176e-05
+      ],
+      "visible_outward_face_world_normal": [
+        -0.6289897220297634,
+        0.4189360787975423,
+        0.6548774629368921
+      ],
+      "outward_axis": "-X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    },
+    {
+      "alias": "viking4Lod0AmberSide",
+      "fixture_origin_world": [
+        1.240001398379371,
+        0.3779999552965996,
+        2.270000197031711
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        0.14985034818804532,
+        0.07499999738159946,
+        -8.496157599680032e-08
+      ],
+      "visible_outward_face_world_normal": [
+        0.8705245018772942,
+        0.27361407794650183,
+        0.40905064231800736
+      ],
+      "outward_axis": "+X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    },
+    {
+      "alias": "viking4Lod1AmberSide",
+      "fixture_origin_world": [
+        1.240001398379371,
+        0.3779999552965996,
+        2.270000197031711
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        0.14991068429415155,
+        0.0749768894080256,
+        -2.8280506936262384e-06
+      ],
+      "visible_outward_face_world_normal": [
+        0.7616693714195436,
+        0.37408103134280807,
+        0.5290776414013905
+      ],
+      "outward_axis": "+X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    },
+    {
+      "alias": "viking5Lod0AmberSide",
+      "fixture_origin_world": [
+        1.245999681906638,
+        0.37799995529659997,
+        -0.7719998063533525
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        0.1498503481880451,
+        0.07499999738159951,
+        -8.496157610782262e-08
+      ],
+      "visible_outward_face_world_normal": [
+        0.8705245018772942,
+        0.27361407794650183,
+        0.40905064231800736
+      ],
+      "outward_axis": "+X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    },
+    {
+      "alias": "viking5Lod1AmberSide",
+      "fixture_origin_world": [
+        1.245999681906638,
+        0.37799995529659997,
+        -0.7719998063533525
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        0.14991068429415133,
+        0.0749768894080255,
+        -2.8280506936262384e-06
+      ],
+      "visible_outward_face_world_normal": [
+        0.7616693714195436,
+        0.37408103134280807,
+        0.5290776414013905
+      ],
+      "outward_axis": "+X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    },
+    {
+      "alias": "viking6Lod0AmberSide",
+      "fixture_origin_world": [
+        1.2559981076269116,
+        0.3779999552966003,
+        -3.561999811995488
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        0.1498503481880451,
+        0.07499999738159946,
+        -8.496157644088953e-08
+      ],
+      "visible_outward_face_world_normal": [
+        0.8705245018772942,
+        0.27361407794650183,
+        0.40905064231800736
+      ],
+      "outward_axis": "+X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    },
+    {
+      "alias": "viking6Lod1AmberSide",
+      "fixture_origin_world": [
+        1.2559981076269116,
+        0.3779999552966003,
+        -3.561999811995488
+      ],
+      "ring_centroid_relative_to_fixture_world": [
+        0.14991068429415133,
+        0.07497688940802555,
+        -2.8280506940703276e-06
+      ],
+      "visible_outward_face_world_normal": [
+        0.7616693714195436,
+        0.37408103134280807,
+        0.5290776414013905
+      ],
+      "outward_axis": "+X",
+      "ring_diameter_m": 0.02424,
+      "ring_back_seated_into_existing_rubber": true
+    }
+  ],
+  "geometry_identical_to_previously_validated_trailer": [
+    {
+      "scania_shape_id": 3,
+      "trailer_shape_id": 24,
+      "identical_geometry_and_uvs": true
+    },
+    {
+      "scania_shape_id": 5,
+      "trailer_shape_id": 26,
+      "identical_geometry_and_uvs": true
+    },
+    {
+      "scania_shape_id": 11,
+      "trailer_shape_id": 32,
+      "identical_geometry_and_uvs": true
+    },
+    {
+      "scania_shape_id": 14,
+      "trailer_shape_id": 35,
+      "identical_geometry_and_uvs": true
+    },
+    {
+      "scania_shape_id": 18,
+      "trailer_shape_id": 39,
+      "identical_geometry_and_uvs": true
+    },
+    {
+      "scania_shape_id": 19,
+      "trailer_shape_id": 8,
+      "identical_geometry_and_uvs": true
+    },
+    {
+      "scania_shape_id": 21,
+      "trailer_shape_id": 10,
+      "identical_geometry_and_uvs": true
+    },
+    {
+      "scania_shape_id": 27,
+      "trailer_shape_id": 16,
+      "identical_geometry_and_uvs": true
+    },
+    {
+      "scania_shape_id": 30,
+      "trailer_shape_id": 19,
+      "identical_geometry_and_uvs": true
+    },
+    {
+      "scania_shape_id": 34,
+      "trailer_shape_id": 23,
+      "identical_geometry_and_uvs": true
+    }
+  ],
+  "preview_note": "Blender simulation using decoded source geometry and actual candidate parent rotation. Camera front means vehicleworld+Z. Not an FS25 game screenshot.",
+  "preview_image": "audit_geometry/preview/viking_three_views.jpg",
+  "live_game_test_performed": false
+}

@@ -1,5 +1,7 @@
 # Scania S 6x4 — corrected front sign and outdoor IC
 
+**Current full ZIP: version 1.0.2.2.** The owner's latest model now includes six three-way Viking markers: white forward, amber outward and red rearward. [Viking lighting code and current validation](../ScaniaS_VikingLights/README.md). The front-sign notes below describe the preserved 1.0.2.1 sign update.
+
 [Download FS25_ScaniaS.zip](../FS25_ScaniaS.zip?raw=true) · [Front-sign geometry preview](FrontSignPreview.jpg) · [Name/IC code](NamesICCode.xml) · [Validation](validation.json)
 
 **Version 1.0.2.1.** Exit FS25 fully, replace the old `FS25_ScaniaS.zip` without changing its filename, and restart. Enable **FS25_interactiveControl** to use the sign controls.
