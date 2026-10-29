@@ -1,0 +1,87 @@
+{
+  "all_checks_passed": true,
+  "both_original_side_logo_planes_restored": true,
+  "original_horizontal_dds_sha256": "7f0023b5f028cd2102b9fc6c5df9956dc79371cd5c841923c68ed419640bb418",
+  "horizontal_dds_byte_exact": true,
+  "source_plane_dimensions": [
+    1,
+    0.5
+  ],
+  "source_plane_uv_full_0_1": true,
+  "corrected_display_aspect_4_to_1": true,
+  "width_and_center_unchanged": true,
+  "both_normals_face_outward": true,
+  "lettering_upright_and_not_mirrored": true,
+  "binary_identical": true,
+  "logos": [
+    {
+      "node_id": "389",
+      "root_id": "388",
+      "world_center": [
+        1.23311,
+        0.491017,
+        2.2727
+      ],
+      "width_m": 0.724669,
+      "height_m": 0.18116725,
+      "display_aspect": 4.0,
+      "world_outward_normal": [
+        0.9999999999999999,
+        1.9198621771895293e-10,
+        6.123233995719658e-17
+      ],
+      "world_bounds_xyz": [
+        [
+          1.2331099999826092,
+          1.2331100000173907
+        ],
+        [
+          0.400433375,
+          0.581600625
+        ],
+        [
+          1.9103655,
+          2.6350344999999997
+        ]
+      ],
+      "uv_u_increases_local_x": true,
+      "uv_v_increases_world_y": true,
+      "negative_scale_used": false
+    },
+    {
+      "node_id": "393",
+      "root_id": "392",
+      "world_center": [
+        -1.233,
+        0.491017,
+        2.2727
+      ],
+      "width_m": 0.724669,
+      "height_m": 0.18116725,
+      "display_aspect": 4.0,
+      "world_outward_normal": [
+        -0.9999999999888246,
+        4.727660611322029e-06,
+        6.123233995719658e-17
+      ],
+      "world_bounds_xyz": [
+        [
+          -1.233000428248636,
+          -1.2329995717513642
+        ],
+        [
+          0.4004333750010123,
+          0.5816006249989877
+        ],
+        [
+          1.9103655,
+          2.6350344999999997
+        ]
+      ],
+      "uv_u_increases_local_x": true,
+      "uv_v_increases_world_y": true,
+      "negative_scale_used": false
+    }
+  ],
+  "live_fs25_test_performed": false
+}

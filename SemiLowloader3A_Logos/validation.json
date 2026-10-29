@@ -1,0 +1,28 @@
+{
+  "checks_passed": true,
+  "version": "1.0.0.4",
+  "horizontal_side_logo_count": 2,
+  "original_selected_dds_byte_identical": true,
+  "original_logo_alpha_and_mipmaps_preserved": true,
+  "side_logo_aspect_ratio": 4,
+  "side_centers_widths_and_rotations_preserved": true,
+  "no_missing_local_resources": true,
+  "all_existing_light_controls_and_vehicle_xml_byte_identical": true,
+  "original_shape_binary_byte_identical": true,
+  "changed_existing_files": [
+    "README_LIGHTS.txt",
+    "modDesc.xml",
+    "semiLowloader3A.i3d"
+  ],
+  "added_files": [
+    "logos/KKMaskin_logo_horizontal_diffuse.dds"
+  ],
+  "all_other_source_files_byte_identical": true,
+  "mudflap_graphic_awaiting_user_choice": true,
+  "archive": "FS25_semiLowloader3A.zip",
+  "archive_bytes": 22105049,
+  "archive_sha256": "51154151ac1410b8a069f39f2afd7f775734ae940514fd535d148247c7356af7",
+  "archive_files": 24,
+  "zip_crc_passed": true,
+  "live_fs25_test_performed": false
+}

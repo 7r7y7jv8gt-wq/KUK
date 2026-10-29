@@ -1,5 +1,7 @@
 # Semi Lowloader 3A — six three-way Viking markers
 
+**Current full ZIP: version 1.0.0.4.** The missing side-logo texture is now bundled using the owner's horizontal K&K Maskin variant. [Logo details and current validation](../SemiLowloader3A_Logos/README.md). The notes below describe the preserved version 1.0.0.3 lighting update.
+
 Full mod: [`FS25_semiLowloader3A.zip`](../FS25_semiLowloader3A.zip), version 1.0.0.3.
 
 Each of the six fitted lamps has white forward guides, amber outward side guides and red rear guides, intensity 20. Both LODs are controlled by the towing vehicle's normal lights through native `defaultLight lightTypes="0"`. Attach the trailer and turn on the truck's regular lights.

@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0.4",
+  "side_logo_variant": "horizontal",
+  "source_texture": "KKMaskin_logo_horizontal_diffuse.dds",
+  "source_dds_sha256": "7f0023b5f028cd2102b9fc6c5df9956dc79371cd5c841923c68ed419640bb418",
+  "texture_copied_byte_for_byte": true,
+  "side_logo_count": 2,
+  "side_placements": [
+    {
+      "root_node_id": "388",
+      "translation": "1.23311 0.491017 2.2727",
+      "rotation": "-0.000135443 90 -0.000135432",
+      "old_scale": [
+        0.724669,
+        0.485525,
+        1.0
+      ],
+      "new_scale": [
+        0.724669,
+        0.3623345,
+        1.0
+      ],
+      "physical_width_m": 0.724669,
+      "physical_height_m": 0.18116725
+    },
+    {
+      "root_node_id": "392",
+      "translation": "-1.233 0.491017 2.2727",
+      "rotation": "-0.000135443 -90 -0.000135432",
+      "old_scale": [
+        0.724669,
+        0.485525,
+        1.0
+      ],
+      "new_scale": [
+        0.724669,
+        0.3623345,
+        1.0
+      ],
+      "physical_width_m": 0.724669,
+      "physical_height_m": 0.18116725
+    }
+  ],
+  "mudflap_change_pending_user_text_or_logo_choice": true,
+  "six_three_way_viking_controls_unchanged": true,
+  "original_shape_binary_preserved": true,
+  "live_fs25_test_performed": false
+}
