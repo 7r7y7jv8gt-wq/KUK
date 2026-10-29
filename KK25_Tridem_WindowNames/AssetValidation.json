@@ -1,0 +1,55 @@
+{
+  "independent_checks_passed": true,
+  "version": "1.3.0.2",
+  "source_original_files": 156,
+  "candidate_files": 157,
+  "changed_existing_files": [
+    "i3d/Scania_S_HKL.i3d",
+    "modDesc.xml",
+    "xml/Scania_S_HKL.xml"
+  ],
+  "added_files": [
+    "README_WINDOW_NAMES.txt"
+  ],
+  "unchanged_original_files_byte_identical": 153,
+  "all_original_shape_binaries_and_dds_preserved": true,
+  "original_names_lettering_flags_alpha_mipmaps_byte_identical": true,
+  "original_dds_sha256": {
+    "J_KRISTENSEN_diffuse.dds": "2a7ac03c4dbc235b7f1d18e2bce17aef91e3d9234c29b78ce08357df77693c81",
+    "M_KOLBRAEK_diffuse.dds": "eff74c9961cf2147aa63c50629923debaa12cdf0f83a1232cc21525adfbb1fa2"
+  },
+  "window_name_dropdown_title": "Vindu navn",
+  "native_slot": "design13",
+  "choices": [
+    "J. Kristensen",
+    "M. Kolbræk"
+  ],
+  "default_choice": "J. Kristensen",
+  "save_ids": [
+    "J_KRISTENSEN",
+    "M_KOLBRAEK"
+  ],
+  "existing_door_name_layout_choices": 4,
+  "existing_door_config_independent": true,
+  "all_other_vehicle_xml_including_lights_and_configurations_exact_source_tree": true,
+  "initial_visibility": {
+    "0>0|8|12": "true",
+    "0>0|8|12|0": "false",
+    "0>0|8|12|1": "true"
+  },
+  "all_four_name_switch_transitions_pass": true,
+  "new_mappings": {
+    "windowNamesGroup": "0>0|8|12",
+    "windowNameMK": "0>0|8|12|0",
+    "windowNameJK": "0>0|8|12|1"
+  },
+  "source_mappings_unchanged": 503,
+  "candidate_unique_valid_mappings": 506,
+  "checked_vehicle_references": 1024,
+  "scene_node_paths_count": 1367,
+  "all_existing_node_paths_transforms_mesh_assignments_unchanged": true,
+  "local_i3d_resources": 82,
+  "native_png_to_dds_fallbacks": 0,
+  "missing_resources": [],
+  "live_fs25_test_performed": false
+}

@@ -1,0 +1,29 @@
+{
+  "checks_passed": true,
+  "version": "1.3.0.2",
+  "source": "New owner-uploaded KK25 split ZIP",
+  "shop_title": "Vindu navn",
+  "configuration_type": "design13",
+  "window_name_choices": [
+    "J. Kristensen",
+    "M. Kolbræk"
+  ],
+  "default_name": "J. Kristensen",
+  "door_name_layout_choices": 4,
+  "all_original_assets_and_shape_binaries_preserved": true,
+  "window_geometry_and_user_placement_preserved": true,
+  "original_name_and_flag_textures_byte_identical": true,
+  "missing_local_resources": [],
+  "valid_mappings": 506,
+  "checked_node_references": 1024,
+  "native_fs25_store_metadata_execution_passed": true,
+  "window_visibility_transitions_passed": 4,
+  "door_window_config_combinations_passed": 16,
+  "vehicle_lighting_and_existing_settings_preserved": true,
+  "archive": "KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip",
+  "archive_bytes": 68646421,
+  "archive_sha256": "55b33115650da33771ecdc46665fc2ca7a6a0ca47a781b93f63d7a55d54f895c",
+  "archive_files": 157,
+  "zip_crc_passed": true,
+  "live_fs25_test_performed": false
+}

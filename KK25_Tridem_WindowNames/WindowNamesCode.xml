@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<vehicle><design13Configurations title="Vindu navn">
+        <design13Configuration name="J. Kristensen" price="0" saveId="J_KRISTENSEN" isDefault="true">
+            <objectChange node="windowNamesGroup" visibilityActive="true"/>
+            <objectChange node="windowNameJK" visibilityActive="true"/>
+            <objectChange node="windowNameMK" visibilityActive="false"/>
+        </design13Configuration>
+        <design13Configuration name="M. Kolbræk" price="0" saveId="M_KOLBRAEK" isDefault="false">
+            <objectChange node="windowNamesGroup" visibilityActive="true"/>
+            <objectChange node="windowNameJK" visibilityActive="false"/>
+            <objectChange node="windowNameMK" visibilityActive="true"/>
+        </design13Configuration>
+    </design13Configurations>
+
+    <i3dMappings><i3dMapping id="windowNamesGroup" node="0&gt;0|8|12"/>
+        <i3dMapping id="windowNameMK" node="0&gt;0|8|12|0"/>
+        <i3dMapping id="windowNameJK" node="0&gt;0|8|12|1"/>
+        </i3dMappings></vehicle>
