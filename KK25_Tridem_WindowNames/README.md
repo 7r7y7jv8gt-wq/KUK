@@ -1,16 +1,16 @@
-# KK25 Scania S Tridem — window-name shop option
+# KK25 Scania S Tridem — only the owner-fitted window names
 
-Full mod: [`KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip`](../KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip), version **1.3.0.2**, built from the owner's latest three-part split ZIP.
+Full mod: [`KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip`](../KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip), version **1.3.0.3**.
 
-The shop has a separate **Vindu navn** dropdown:
+**Vindu navn** is the only name dropdown in the shop:
 
 - **J. Kristensen** — default.
 - **M. Kolbræk**.
 
-Exactly one name appears in the owner's `Vindu navn` transform group. This is independent of the existing four **Name layout** door choices. The new option uses the free native `design13` slot and stable save IDs; no extra script is needed.
+These are the names in the owner's new window-name group. Exactly one is visible. The imported door names and their four-choice **Name layout** dropdown are removed, together with their old transform group, four model loaders, ten aliases and unused external model/wrapper files.
 
-Both embedded window meshes now reference the original name DDS files already included under `decor/names/textures/`. Font, Norwegian flags, transparency and mipmaps are byte-identical to the owner-supplied originals. The model, window-name geometry and placements, shape binaries and all other original assets and vehicle settings are preserved.
+The native `design13` choices and stable save IDs are retained. The window group now occupies the vacated scene index; its three aliases are updated. Original name lettering, Norwegian flags, transparency, mipmaps, window geometry and placement are preserved. The original shape binaries, other lights, vehicle settings and other shop options are retained.
 
-Exit FS25 fully, replace **KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip**, keep the filename, and restart. Open this truck in the shop/customization screen and select **Vindu navn**.
+Exit FS25 fully, replace **KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip**, keep the filename, and restart. Select **Vindu navn** in this truck's shop/customization screen.
 
-Checks passed for all 506 mappings, 1,024 node references, all local texture resources and ZIP CRC. Unchanged GIANTS Lua configuration readers executed in liblua5.4 recognize both selectable names and the J. Kristensen default. All four window-name switching transitions and 16 door/window combinations passed visibility checks. The native-reader harness mocks game services and XML lookup; **no live FS25 game or shop-GUI test was performed**.
+Independent checks pass for 496 mappings, 986 node references, all local resources and ZIP CRC. Unchanged GIANTS native Lua readers recognize exactly one name dropdown, with both choices and J. Kristensen as the default; all four window-name switching transitions pass. Native metadata was executed with mocked game services and XML lookup. **No live FS25 game or shop-GUI test was performed.**

@@ -1,39 +1,60 @@
 {
-  "version": "1.3.0.2",
-  "source": "Latest user-uploaded KK25 split ZIP",
+  "version": "1.3.0.3",
+  "source": "Latest completed KK25 window-name build",
+  "only_name_configuration": "Vindu navn",
   "configuration_type": "design13",
-  "shop_title": "Vindu navn",
   "choices": [
     "J. Kristensen",
     "M. Kolbræk"
   ],
   "default": "J. Kristensen",
-  "save_ids": [
-    "J_KRISTENSEN",
-    "M_KOLBRAEK"
-  ],
-  "aliases": {
-    "windowNamesGroup": "0>0|8|12",
-    "windowNameMK": "0>0|8|12|0",
-    "windowNameJK": "0>0|8|12|1"
-  },
-  "door_name_layout_remains_independent": true,
-  "window_geometry_and_user_placement_preserved": true,
-  "all_original_dds_assets_and_shape_binaries_preserved": true,
-  "resolved_name_texture_references": [
+  "removed_old_door_dropdown": "design2Configurations / Name layout",
+  "removed_old_door_choices": 4,
+  "removed_old_scene_nodes": 11,
+  "removed_old_shared_loads": [
     {
-      "file_id": "145",
-      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/FS25_Norske_Navnelogoer/FS25_Norske_Navnelogoer/textures/M_KOLBRAEK_diffuse.dds",
-      "replacement": "../decor/names/textures/M_KOLBRAEK_diffuse.dds",
-      "original_dds_sha256": "eff74c9961cf2147aa63c50629923debaa12cdf0f83a1232cc21525adfbb1fa2"
+      "linkNode": "nameJKPassengerMeshMount",
+      "filename": "decor/names/J_KRISTENSEN.xml"
     },
     {
-      "file_id": "146",
-      "original": "../../../OneDrive/Dokumenter/BeamNG.drive/vehicles/prefabs fs25/FS25_Norske_Navnelogoer/FS25_Norske_Navnelogoer/textures/J_KRISTENSEN_diffuse.dds",
-      "replacement": "../decor/names/textures/J_KRISTENSEN_diffuse.dds",
-      "original_dds_sha256": "2a7ac03c4dbc235b7f1d18e2bce17aef91e3d9234c29b78ce08357df77693c81"
+      "linkNode": "nameMKDriverMeshMount",
+      "filename": "decor/names/M_KOLBRAEK.xml"
+    },
+    {
+      "linkNode": "nameMKPassengerMeshMount",
+      "filename": "decor/names/M_KOLBRAEK.xml"
+    },
+    {
+      "linkNode": "nameJKDriverMeshMount",
+      "filename": "decor/names/J_KRISTENSEN.xml"
     }
   ],
-  "new_script_required": false,
+  "removed_old_aliases": [
+    "nameLayoutMKLeft",
+    "nameJKPassenger",
+    "nameJKPassengerMeshMount",
+    "nameMKDriver",
+    "nameMKDriverMeshMount",
+    "nameLayoutJKLeft",
+    "nameMKPassenger",
+    "nameMKPassengerMeshMount",
+    "nameJKDriver",
+    "nameJKDriverMeshMount"
+  ],
+  "removed_files": [
+    "decor/names/J_KRISTENSEN.xml",
+    "decor/names/M_KOLBRAEK.xml",
+    "decor/names/J_KRISTENSEN.i3d",
+    "decor/names/M_KOLBRAEK.i3d",
+    "README_NAMELAYOUTS.txt"
+  ],
+  "updated_window_aliases": {
+    "windowNamesGroup": "0>0|8|11",
+    "windowNameMK": "0>0|8|11|0",
+    "windowNameJK": "0>0|8|11|1"
+  },
+  "window_geometry_transforms_and_original_dds_preserved": true,
+  "all_original_shape_binaries_preserved": true,
+  "other_scania_mod_archives_not_modified": true,
   "live_fs25_test_performed": false
 }

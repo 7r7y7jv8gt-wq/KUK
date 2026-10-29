@@ -35,24 +35,6 @@
           "save_id": "M_KOLBRAEK"
         }
       ],
-      "design2": [
-        {
-          "name": "J. Kristensen left / M. Kolbræk right",
-          "save_id": "1"
-        },
-        {
-          "name": "M. Kolbræk left / J. Kristensen right",
-          "save_id": "2"
-        },
-        {
-          "name": "J. Kristensen — driver door only",
-          "save_id": "3"
-        },
-        {
-          "name": "M. Kolbræk — driver door only",
-          "save_id": "4"
-        }
-      ],
       "design14": [
         {
           "name": "Red curtain",
@@ -84,10 +66,33 @@
     "J. Kristensen",
     "M. Kolbræk"
   ],
-  "existing_door_name_layout_choices": 4,
+  "old_design2_name_dropdown_absent_in_native_store": true,
+  "only_one_name_dropdown": true,
+  "old_door_name_shared_loads_and_scene_group_removed": true,
+  "other_configuration_groups_unchanged": [
+    "rimColorConfigurations",
+    "designConfigurations",
+    "design3Configurations",
+    "design4Configurations",
+    "design5Configurations",
+    "design6Configurations",
+    "design7Configurations",
+    "design8Configurations",
+    "design9Configurations",
+    "design10Configurations",
+    "design11Configurations",
+    "design12Configurations",
+    "design13Configurations",
+    "designColorConfigurations",
+    "designColor2Configurations",
+    "designColor3Configurations",
+    "designColor4Configurations",
+    "designColor5Configurations",
+    "design14Configurations"
+  ],
   "existing_curtain_choices": 5,
   "window_visibility_transitions_passed": 4,
-  "door_window_combinations_checked_in_both_orders": 16,
+  "native_configuration_number_gap_supported": true,
   "visibility_checks_note": "Direct simulation of explicit objectChange assignments in the actual XML, separate from native store-parser execution.",
   "initial_visible_window_name": "J. Kristensen",
   "fs25_runtime_or_shop_gui_test_performed": false
