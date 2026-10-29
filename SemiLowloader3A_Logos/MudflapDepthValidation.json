@@ -1,0 +1,33 @@
+{
+  "body_shape_id": 62,
+  "vertex_count": 75496,
+  "positions_exactly_match_prior_body": true,
+  "normals_exactly_match_prior_body": true,
+  "rubber_rear_face_vertices": [
+    [
+      -1.1989371777,
+      0.0835545808,
+      -6.088581562
+    ],
+    [
+      -1.1989371777,
+      0.3238098621,
+      -6.088581562
+    ],
+    [
+      1.1989371777,
+      0.0835545808,
+      -6.088581562
+    ],
+    [
+      1.1989371777,
+      0.3238098621,
+      -6.088581562
+    ]
+  ],
+  "rubber_face_z": -6.088581562,
+  "logo_plane_z": -6.0888,
+  "logo_outward_clearance_m": 0.0002184380000000985,
+  "proof_scope": "Original body vertices and rear-facing normals establish a planar rubber face; no triangle raycast. Main skinned triangle indexing remains unsupported by cached decoder.",
+  "native_fs25_test": false
+}

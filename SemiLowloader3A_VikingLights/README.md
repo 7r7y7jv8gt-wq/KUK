@@ -1,6 +1,6 @@
 # Semi Lowloader 3A — six three-way Viking markers
 
-**Current full ZIP: version 1.0.0.4.** The missing side-logo texture is now bundled using the owner's horizontal K&K Maskin variant. [Logo details and current validation](../SemiLowloader3A_Logos/README.md). The notes below describe the preserved version 1.0.0.3 lighting update.
+**Current full ZIP: version 1.0.0.5.** The owner's latest rear mudflap logo now uses the bundled horizontal K&K Maskin texture, together with the side logos. [Logo details and current validation](../SemiLowloader3A_Logos/README.md). The notes below describe the preserved version 1.0.0.3 lighting update.
 
 Full mod: [`FS25_semiLowloader3A.zip`](../FS25_semiLowloader3A.zip), version 1.0.0.3.
 

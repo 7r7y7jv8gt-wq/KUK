@@ -1,87 +1,66 @@
 {
-  "all_checks_passed": true,
-  "both_original_side_logo_planes_restored": true,
-  "original_horizontal_dds_sha256": "7f0023b5f028cd2102b9fc6c5df9956dc79371cd5c841923c68ed419640bb418",
-  "horizontal_dds_byte_exact": true,
-  "source_plane_dimensions": [
+  "checks_passed": true,
+  "source": "latest user-uploaded trailer with manuallyplacedmudflaplogo",
+  "minimal_i3d_change": "File63 nowresolves toalreadybundled File56horizontalDDS",
+  "logo_root_node_id": "574",
+  "logo_shape_node_id": "575",
+  "logo_shape_id": "95",
+  "logo_material_id": "571",
+  "new_logo_quad_dimensions": [
     1,
-    0.5
+    0.25
   ],
-  "source_plane_uv_full_0_1": true,
-  "corrected_display_aspect_4_to_1": true,
-  "width_and_center_unchanged": true,
-  "both_normals_face_outward": true,
-  "lettering_upright_and_not_mirrored": true,
-  "binary_identical": true,
-  "logos": [
-    {
-      "node_id": "389",
-      "root_id": "388",
-      "world_center": [
-        1.23311,
-        0.491017,
-        2.2727
-      ],
-      "width_m": 0.724669,
-      "height_m": 0.18116725,
-      "display_aspect": 4.0,
-      "world_outward_normal": [
-        0.9999999999999999,
-        1.9198621771895293e-10,
-        6.123233995719658e-17
-      ],
-      "world_bounds_xyz": [
-        [
-          1.2331099999826092,
-          1.2331100000173907
-        ],
-        [
-          0.400433375,
-          0.581600625
-        ],
-        [
-          1.9103655,
-          2.6350344999999997
-        ]
-      ],
-      "uv_u_increases_local_x": true,
-      "uv_v_increases_world_y": true,
-      "negative_scale_used": false
-    },
-    {
-      "node_id": "393",
-      "root_id": "392",
-      "world_center": [
-        -1.233,
-        0.491017,
-        2.2727
-      ],
-      "width_m": 0.724669,
-      "height_m": 0.18116725,
-      "display_aspect": 4.0,
-      "world_outward_normal": [
-        -0.9999999999888246,
-        4.727660611322029e-06,
-        6.123233995719658e-17
-      ],
-      "world_bounds_xyz": [
-        [
-          -1.233000428248636,
-          -1.2329995717513642
-        ],
-        [
-          0.4004333750010123,
-          0.5816006249989877
-        ],
-        [
-          1.9103655,
-          2.6350344999999997
-        ]
-      ],
-      "uv_u_increases_local_x": true,
-      "uv_v_increases_world_y": true,
-      "negative_scale_used": false
-    }
+  "source_user_logo_translation": "1.62909e-07 0.162511 -6.0888",
+  "source_user_logo_rotation": "0 -180 0",
+  "source_user_logo_scale": "3.17658 2.09653 1",
+  "all_scene_and_material_attributes_identical_to_upload": true,
+  "original_binary_byte_identical": true,
+  "original_vehicle_xml_and_native_viking_controls_byte_identical": true,
+  "texture_sha256": "7f0023b5f028cd2102b9fc6c5df9956dc79371cd5c841923c68ed419640bb418",
+  "owner_selected_horizontal_dds_byte_identical": true,
+  "logo_rear_facing_normal": [
+    0.0,
+    0.0,
+    -1.0
   ],
-  "live_fs25_test_performed": false
+  "logo_u_basis": [
+    -1.0,
+    0.0,
+    0.0
+  ],
+  "logo_v_basis": [
+    0.0,
+    1.0,
+    0.0
+  ],
+  "upright_unmirrored_outward": true,
+  "source_user_side_logo_resizing_preserved": true,
+  "source_user_old_decal_hidden_state_preserved": true,
+  "rear_rubber_face_z": -6.088581562,
+  "new_logo_plane_z": -6.0888,
+  "new_logo_outward_clearance_m": 0.0002184380000000985,
+  "body_pointcloud_exactly_matches_prior_model": true,
+  "depth_evidence_uses_vertex_plane_not_unreliable_skinned_triangle_indices": true,
+  "texture_alpha128_bounds": [
+    358,
+    129,
+    1696,
+    334
+  ],
+  "visible_logo_world_x_alpha128": [
+    -1.0423153125,
+    1.03300892578125
+  ],
+  "visible_logo_world_y_alpha128": [
+    0.082662689453125,
+    0.29252042871093753
+  ],
+  "visible_graphic_fits_mudflap_width": true,
+  "unresolved_local_resources": [],
+  "changed_source_files": [
+    "README_LIGHTS.txt",
+    "modDesc.xml",
+    "semiLowloader3A.i3d"
+  ],
+  "native_fs25_runtime_test": false
 }
