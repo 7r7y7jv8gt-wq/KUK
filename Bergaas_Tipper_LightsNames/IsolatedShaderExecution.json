@@ -1,0 +1,44 @@
+{
+  "checks_passed": true,
+  "execution": "Actual isolated compute shader compilation/execution through OpenGL4.3 EGL; not CPU formula mocks",
+  "gl_vendor": "Mesa",
+  "gl_renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "gl_version": "4.5 (Core Profile) Mesa 25.0.7-2+deb13u1",
+  "native_expression_unchanged": "saturate((sin(mTime) - max(fmod((mTime), ((object.blinkMulti.x*2) + object.blinkMulti.y*2)*pi) - (object.blinkMulti.x*2-1)*pi, 0)) + 0.2)",
+  "shader_native_type_literal": "2U",
+  "sample_count": 10001,
+  "cycle_seconds": 0.5026548245743669,
+  "pulses": [
+    {
+      "side": "Left",
+      "rising_edges": 2,
+      "rising_times_s": [
+        0.006132388859807277,
+        0.13179609500339903
+      ],
+      "minimum_emission_scale": 0.0,
+      "maximum_emission_scale": 12.0,
+      "fully_off_sample_count": 7299
+    },
+    {
+      "side": "Right",
+      "rising_edges": 2,
+      "rising_times_s": [
+        0.25745980114699074,
+        0.3831235072905825
+      ],
+      "minimum_emission_scale": 0.0,
+      "maximum_emission_scale": 12.0,
+      "fully_off_sample_count": 7300
+    }
+  ],
+  "both_sides_never_simultaneously_above_half_intensity": true,
+  "inactive_native_lightIds_exact_zero_at_every_time": true,
+  "source_uv_indices": {
+    "0": 3951,
+    "1": 1024
+  },
+  "every_visible_flash_vertex_uses_forced_multi_blink": true,
+  "giants_shader_full_compilation_performed": false,
+  "live_fs25_render_test_performed": false
+}

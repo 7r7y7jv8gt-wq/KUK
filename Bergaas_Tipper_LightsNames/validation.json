@@ -1,57 +1,40 @@
 {
-  "version": "1.0.0.2",
+  "version": "1.0.0.3",
   "archive": {
     "filename": "FS25_BergaasDesign_Scania_Tipper_Pack.zip",
-    "version": "1.0.0.2",
-    "bytes": 96286331,
-    "files": 81,
-    "sha256": "c8a88d37ec51a7a93a0d95601e7702fc76e011591972de3509e8c1f1d2c26dbe",
+    "version": "1.0.0.3",
+    "bytes": 96303035,
+    "files": 82,
+    "sha256": "41a52f55aa42f24b0d70e20efb27b413f56a0f5c31553df71a94327e814ab0ef",
     "zip_crc_passed": true,
-    "every_archived_file_matches_validated_candidate": true
+    "all_archived_files_match_validated_candidate": true
   },
   "validation": {
     "passed": true,
-    "version": "1.0.0.2",
-    "files": 81,
-    "changed_from_previous_release": [
+    "version": "1.0.0.3",
+    "files": 82,
+    "changed_from_v1_0_0_2": [
       "README_LIGHTS_NAMES.txt",
-      "ScaniaTipper.xml",
       "lighting/BergaasOptibeamFlash.i3d",
-      "lighting/BergaasOptibeamFlashLeft.xml",
-      "lighting/BergaasOptibeamFlashRight.xml",
       "modDesc.xml"
     ],
-    "all_other_files_byte_identical": true,
-    "all_original_models_binaries_textures_and_flags_preserved": true,
-    "both_trailers_preserved": true,
-    "all_original_vehicle_controls_and_configs_preserved": true,
-    "only_vehicle_xml_change_is_seventh_roof_marker_controller": true,
-    "seventh_roof_marker_matches_other_six": true,
-    "native_component_paths_fixed_in_both_beacon_wrappers": true,
-    "external_flash_geometry_uvs_materials_unchanged": true,
-    "external_flash_tangent_generation_declared": true,
-    "local_i3d_resources_resolved": 50,
+    "added": [
+      "lighting/BergaasOptibeamShader.xml"
+    ],
+    "unchanged_existing_files": 78,
+    "main_vehicle_i3d_xml_and_binaries_byte_identical": true,
+    "all_original_textures_models_and_names_preserved": true,
+    "native_beacon_wrappers_marker_and_cruise_controls_unchanged": true,
+    "both_included_trailers_unchanged": true,
+    "external_model_only_difference_is_shader_file_reference": true,
+    "shader_diff_is_exactly_one_native_expression": true,
+    "native_activation_atlas_and_double_blink_formula_preserved": true,
+    "local_i3d_resources_resolved": 51,
     "legitimate_png_dds_fallbacks": 1,
-    "node_references_checked": 719,
-    "vehicles": {
-      "ScaniaTipper": {
-        "nodes": 648,
-        "mappings": 117,
-        "node_references": 434
-      },
-      "3AkselTipper": {
-        "nodes": 234,
-        "mappings": 40,
-        "node_references": 136
-      },
-      "3AkselSlepTipp": {
-        "nodes": 236,
-        "mappings": 45,
-        "node_references": 149
-      }
-    },
-    "native_load_and_pulse_regression": "bar_audit/native_integrated/final_native_beacon_validation.json",
-    "live_fs25_or_gpu_test_performed": false
+    "node_references_unchanged_from_validated_v1_0_0_2": 719,
+    "full_giants_shader_compile_or_live_fs25_test_performed": false,
+    "isolated_native_shader_expression_tested_with_mesa": true
   },
-  "live_fs25_test_performed": false
+  "isolated_native_shader_expression_tested": true,
+  "full_giants_shader_compile_or_live_fs25_test_performed": false
 }

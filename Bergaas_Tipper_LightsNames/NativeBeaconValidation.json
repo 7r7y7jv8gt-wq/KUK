@@ -80,5 +80,6 @@
       "0>0"
     ],
     "old_wrapper_static_path_fails": true
-  }
+  },
+  "scope_note": "Controller loading and projected-light pulse audit retained from v1.0.0.2. This audit substituted an unsourced mask10 and did not establish the in-game GPU blink mode. Version1.0.0.3 uses an explicit bar-only native multiblink shader branch; see BarValidation.json and IsolatedShaderExecution.json."
 }

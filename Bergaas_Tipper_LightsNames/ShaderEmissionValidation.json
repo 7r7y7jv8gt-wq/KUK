@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "candidate": "/workspace/work/bergaas_blink_fix/bar/candidate_assets",
+  "shader_format_version": 5,
+  "reference_shader_sha256": "1c60cf7f3d9d5fd83b0a0b77590a8295def7e2e625972dc456ad064b9cf07c61",
+  "single_shader_expression_change": {
+    "old": "uint lightType = (lightTypeMaskU >> (In.vs.uvIndex * 2)) & 3U;",
+    "new": "uint lightType = 2U;"
+  },
+  "all_other_shader_bytes_identical": true,
+  "STATIC_LIGHT_variation_and_native_lightIds_activation_preserved": true,
+  "native_blinkMulti_parameter_and_entire_alpha_formula_unchanged": true,
+  "shader_independent_of_unknown_runtime_lightTypeBitMask": true,
+  "shader_uses_no_legacy_lightControl_branch": true,
+  "all_shader_includes_and_parameter_templates_are_absolute_engine_paths": true,
+  "external_model_only_change": "file6filename points to existing same-folder BergaasOptibeamShader.xml",
+  "external_geometry_uvs_normals_tangents_indices_materials_scene_transforms_preserved": true,
+  "final_external_model_schema_valid": true,
+  "main_scene_and_cruise_scope": "Not edited by bar candidate; root integrated candidate checked separately",
+  "GPU_compilation_or_live_FS25_test_performed": false
+}

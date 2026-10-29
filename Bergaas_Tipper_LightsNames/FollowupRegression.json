@@ -1,38 +1,22 @@
 {
   "passed": true,
-  "candidate": "/workspace/work/bergaas_followup/fixed",
-  "files": 81,
-  "changed_files": [
+  "candidate": "/workspace/work/bergaas_blink_fix/fixed",
+  "files": 82,
+  "new_files": [
+    "lighting/BergaasOptibeamShader.xml"
+  ],
+  "changed_existing_files": [
     "README_LIGHTS_NAMES.txt",
-    "ScaniaTipper.xml",
     "lighting/BergaasOptibeamFlash.i3d",
-    "lighting/BergaasOptibeamFlashLeft.xml",
-    "lighting/BergaasOptibeamFlashRight.xml",
     "modDesc.xml"
   ],
-  "unchanged_files": 75,
-  "main_scene_and_all_shape_binaries_byte_identical": true,
-  "external_geometry_uvs_normals_triangles_materials_and_transforms_unchanged": true,
-  "only_external_mesh_change": "tangent=true declaration",
-  "actual_wrapper_before_failure_after_success_reproduced_using_unchanged_native_resolution": true,
-  "wrapper_other_attributes_and_timing_preserved": true,
-  "vehicle_xml_only_change": "added missing center roof marker defaultLight with lightTypes=0,intensity=30",
-  "wrappers": [
-    {
-      "name": "lighting/BergaasOptibeamFlashLeft.xml",
-      "oldRoot": "0",
-      "oldStatic": "0|0",
-      "newRoot": "0>",
-      "newStatic": "0>0"
-    },
-    {
-      "name": "lighting/BergaasOptibeamFlashRight.xml",
-      "oldRoot": "0",
-      "oldStatic": "0|0",
-      "newRoot": "0>",
-      "newStatic": "0>0"
-    }
-  ],
-  "native_utility_source_version": "FS22; corroborated by FS25 beacon component-table API and existing FS25 beacon indices",
-  "live_fs25_render_test_performed": false
+  "all_other_78_existing_files_byte_identical": true,
+  "main_scene_and_vehicle_XML_byte_identical": true,
+  "all_original_models_shape_binaries_textures_names_and_flags_byte_identical": true,
+  "wrappers_left_and_right_paths_0_gt_and_0_gt_0_preserved": true,
+  "wrapper_intensity_12_and_alternating_native_timing_preserved": true,
+  "cruise_intensity_8_and_projector_range_100_and_center_marker_fix_preserved": true,
+  "integrated_shader_and_external_model_byte_identical_to_independently_audited_candidate": true,
+  "version": "1.0.0.3",
+  "GPU_compilation_or_live_FS25_test_performed": false
 }

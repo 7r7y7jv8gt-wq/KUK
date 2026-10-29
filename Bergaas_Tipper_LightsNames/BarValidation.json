@@ -1,47 +1,32 @@
 {
   "checks_passed": true,
-  "final_candidate": "/workspace/work/bergaas_followup/fixed",
-  "confirmed_defect": "Generated BeaconLight XML omitted the explicit 0> component selector. The old staticLight path traversed below the leaf Shape, found no node, and left the external beacon without any loaded static lights. Native load callback failed so no activation controller registered.",
-  "fix": {
-    "rootNode": "0>",
-    "staticLight": "0>0",
-    "tangent_generation_declared": true
+  "integrated_candidate": "/workspace/work/bergaas_blink_fix/fixed",
+  "shader_reference_sha256": "1c60cf7f3d9d5fd83b0a0b77590a8295def7e2e625972dc456ad064b9cf07c61",
+  "one_shader_expression_changed": {
+    "before": "uint lightType = (lightTypeMaskU >> (In.vs.uvIndex * 2)) & 3U;",
+    "after": "uint lightType = 2U;"
   },
-  "preserved": {
-    "native_staticLight_vehicleShader": true,
-    "source_bar_geometry_normals_uv0_triangles": true,
-    "uv1_continuous_u_minus_one": true,
-    "native_phase_left": "2 2 50 0",
-    "native_phase_right": "2 2 50 12.56637061435917",
-    "flash_intensity": 12,
-    "engine_cruise_intensity": 8,
-    "real_projector_range_m": 100,
-    "original_main_shape_binary_byte_identical": true
-  },
-  "official_i3d_schema_validation": true,
-  "native_lifecycle_result": {
-    "checks_passed": true,
-    "beacons_loaded": 6,
-    "external_native_beacons": 2,
-    "inline_pulse_controllers": 4,
-    "temporary_load_roots_deleted": 2,
-    "external_mesh_roots_survive": 2,
-    "main_projectors_survive": 6,
-    "timing_samples_per_controller": 1001,
-    "left_pulses_per_cycle": 2,
-    "right_pulses_per_cycle": 2,
-    "max_real_light_formula_error": 0,
-    "inactive_projectors_hidden": true,
-    "inactive_static_ids_zero": true,
-    "real_beacon_setting_suppresses_projectors": true,
-    "native_xml_warnings": 0
-  },
-  "node_resolver_evidence": "/workspace/work/bergaas_followup/bar_audit/reference_audit/path_regression.json",
-  "old_assets_fail_with_correct_resolver": true,
-  "corrected_native_audit": "/workspace/work/bergaas_followup/bar_audit/native_integrated/final_native_beacon_validation.json",
-  "geometry_winding_and_bounds_evidence": "/workspace/work/bergaas_followup/bar_audit/reference_audit/geometry_reference_audit.json",
-  "limitations": [
-    "GIANTS I3DUtil exact resolver source is FS22; published FS25 engine-bound function is unavailable, while the same standard component contract is independently shown in actual FS25 beacons and native FS25 BeaconLight.",
-    "No GPU compilation or in-game FS25 rendering has been performed."
-  ]
+  "external_i3d_only_filename_changed": true,
+  "all_main_models_and_vehicle_xml_binary_and_both_wrappers_byte_identical": true,
+  "shader_path_resolves_relative_to_external_i3d": true,
+  "gl_renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "actual_isolated_shader_execution_samples": 10001,
+  "masks_tested": [
+    0,
+    8,
+    10
+  ],
+  "both_used_uv_channels_tested": [
+    0,
+    1
+  ],
+  "native_mask0_old_both_channels_steady": true,
+  "native_mask8_old_channel0_steady_channel1_flash": true,
+  "native_mask10_old_both_channels_flash": true,
+  "patched_emission_always_flashes_for_both_channels_regardless_of_mask": true,
+  "inactive_id_zero_emission_for_all_times_channels_masks": true,
+  "phases_and_pulse_report": "/workspace/work/bergaas_blink_fix/bar/gpu_formula_result.json",
+  "cruise_front_projection": "Only2outerendsections; centralLEDpanels have no steady cruise surface overlap",
+  "cruise_projection_plot": "/workspace/work/bergaas_blink_fix/bar/front_surface_masks.png",
+  "giants_engine_shader_compile_or_live_render_performed": false
 }
