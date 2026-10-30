@@ -1,0 +1,99 @@
+name: Publish Volvo L90 as one complete ZIP
+on:
+  push:
+    branches:
+      - codex/volvo-l90-blitz-2x-single
+    paths:
+      - .github/workflows/volvo-l90-single-zip.yml
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Assemble and verify complete mod
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - parts output/FS25_volvoL90.zip <<'PYCODE'
+          from pathlib import Path
+          from urllib.request import urlopen
+          partdir = Path('parts')
+          partdir.mkdir(exist_ok=True)
+          base = 'https://raw.githubusercontent.com/7r7y7jv8gt-wq/KUK/26892c3e00b1343b961d7b868745ca679e375eb8/downloads/VolvoL90_blitz_2x_complete/'
+          for name in ['FS25_volvoL90.z01','FS25_volvoL90.z02','FS25_volvoL90.z03','FS25_volvoL90.z04','FS25_volvoL90.zip']:
+              with urlopen(base + name, timeout=120) as response:
+                  (partdir / name).write_bytes(response.read())
+          """Build the exact original ordinary ZIP from the five verified published segments."""
+          import hashlib
+          import io
+          from pathlib import Path
+          import struct
+          import sys
+          import zipfile
+          
+          EXPECTED = [
+              ('FS25_volvoL90.z01',11534336,'8db4a03a1dc9e5b1c5051733e1782766e0b299b21ed873e74a02deb86f35560d'),
+              ('FS25_volvoL90.z02',11534336,'c80de28473fb7727df7a5aabae0ebc177f2363a4d7b5b9aabb47852f89151f8e'),
+              ('FS25_volvoL90.z03',11534336,'9ba9cc5a35358ea15fae4731d30c73846408b349e4281a9ec8b62f4befd636d5'),
+              ('FS25_volvoL90.z04',11534336,'44241e277478c9de9e80e7504c4e9a114c77d201b21273db138182926f8a864e'),
+              ('FS25_volvoL90.zip',9547806,'197026a70c47765ad40e5b7413cb7d2951a64a50348f0927155392f1d1baf796'),
+          ]
+          FINAL_SHA='14da33df9f2f575050c70c5dc55d6f7f4c3f69ce63fb11b46e034de9802bf22f'
+          input_directory=Path(sys.argv[1]) if len(sys.argv)>1 else Path('.')
+          output=Path(sys.argv[2]) if len(sys.argv)>2 else Path('output/FS25_volvoL90.zip')
+          parts=[]
+          starts=[]
+          length=0
+          for name,size,digest in EXPECTED:
+              data=(input_directory/name).read_bytes()
+              assert len(data)==size and hashlib.sha256(data).hexdigest()==digest, name
+              starts.append(length)
+              length+=len(data)
+              parts.append(data)
+          buf=bytearray(b''.join(parts))
+          assert buf[:4]==b'PK\x07\x08'
+          eocd=buf.rfind(b'PK\x05\x06')
+          sig,disk,cd_disk,on_disk,total,cd_size,cd_offset,comment=struct.unpack_from('<4s4H2IH',buf,eocd)
+          assert disk==4 and cd_disk==4 and on_disk==total==51
+          assert eocd+22+comment==len(buf)
+          cd=starts[cd_disk]+cd_offset
+          pos=cd
+          for i in range(total):
+              assert buf[pos:pos+4]==b'PK\x01\x02'
+              n,x,c,d=struct.unpack_from('<4H',buf,pos+28)
+              relative=struct.unpack_from('<I',buf,pos+42)[0]
+              offset=starts[d]+relative
+              assert buf[offset:offset+4]==b'PK\x03\x04'
+              struct.pack_into('<H',buf,pos+34,0)
+              struct.pack_into('<I',buf,pos+42,offset-4)
+              pos+=46+n+x+c
+          assert pos==cd+cd_size
+          struct.pack_into('<4H',buf,eocd+4,0,0,total,total)
+          struct.pack_into('<I',buf,eocd+16,cd-4)
+          single=bytes(buf[4:])
+          assert len(single)==55685146
+          assert hashlib.sha256(single).hexdigest()==FINAL_SHA
+          with zipfile.ZipFile(io.BytesIO(single)) as archive:
+              assert len(archive.infolist())==51
+              assert 'modDesc.xml' in archive.namelist()
+              assert archive.testzip() is None
+          output.parent.mkdir(parents=True,exist_ok=True)
+          output.write_bytes(single)
+          print('Verified complete single ZIP:',output,len(single),FINAL_SHA)
+          
+          PYCODE
+      - name: Publish single mod file
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release create volvo-l90-blitz-2x-v1.0.0.5-20261030 \
+            output/FS25_volvoL90.zip \
+            --target "$GITHUB_SHA" \
+            --title "Volvo L90 – fikset blitz, dobbel blinkehastighet" \
+            --notes "Komplett mod i én ZIP. Rettet 45 utdaterte lyskoblinger og doblet blinkefrekvensen i blitzbjelka og begge OZZ-strobene. Begge L90-modellene og skuffa følger med. Legg FS25_volvoL90.zip direkte i mods-mappa og erstatt den gamle versjonen. XML-skjema, 348 nodekoblinger, blinkfrekvens, filenes integritet og ZIP-struktur er kontrollert; ikke testet i FS25. SHA256: 14da33df9f2f575050c70c5dc55d6f7f4c3f69ce63fb11b46e034de9802bf22f" \
+            --latest=false
