@@ -66,9 +66,9 @@
   },
   "fs_tridem": {
     "passed": true,
-    "version": "1.3.0.2",
+    "version": "1.3.0.3",
     "filename": "FS25_ScaniaS_Tridem.zip",
-    "files": 162,
+    "files": 160,
     "xml_documents": 18,
     "i3d_models": 18,
     "local_i3d_resources": {
@@ -86,17 +86,19 @@
     },
     "original_binary_files_preserved": 11,
     "original_dds_png_and_audited_lua_preserved": true,
-    "generated_binary_models": [
+    "live_fs25_test_performed": false,
+    "restored_inline_models": [
       "decor/names/M_KOLBRAEK.i3d",
       "decor/names/J_KRISTENSEN.i3d"
     ],
-    "live_fs25_test_performed": false
+    "generated_binary_models": [],
+    "rollback_validation": "InlineRollbackValidation.json"
   },
   "bergaas": {
     "passed": true,
-    "version": "1.0.0.4",
+    "version": "1.0.0.5",
     "filename": "FS25_BergaasDesign_Scania_Tipper_Pack.zip",
-    "files": 90,
+    "files": 87,
     "xml_documents": 12,
     "i3d_models": 6,
     "local_i3d_resources": {
@@ -129,11 +131,13 @@
     },
     "original_binary_files_preserved": 3,
     "original_dds_png_and_audited_lua_preserved": true,
-    "generated_binary_models": [
+    "live_fs25_test_performed": false,
+    "restored_inline_models": [
       "lighting/BergaasOptibeamFlash.i3d",
       "decor/windowNames/M_KOLBRAEK.i3d",
       "decor/windowNames/J_KRISTENSEN.i3d"
     ],
-    "live_fs25_test_performed": false
+    "generated_binary_models": [],
+    "rollback_validation": "InlineRollbackValidation.json"
   }
 }

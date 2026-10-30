@@ -1,0 +1,98 @@
+{
+  "checks_passed": true,
+  "packs": [
+    {
+      "pack": "bergaas",
+      "candidate": "/workspace/work/scania_binary_runtime_fix/fixed/bergaas",
+      "version": "1.0.0.5",
+      "models": [
+        {
+          "file": "lighting/BergaasOptibeamFlash.i3d",
+          "inline_geometry_matches_saved_source_FP32": true,
+          "all_vertex_flags_indices_subsets_bounds_shapeIDs_preserved": true,
+          "scene_materials_files_dynamics_match_prior_release": true,
+          "all_XML_bytes_outside_Shapes_match_prior_release": true,
+          "generated_binary_removed": true,
+          "vertices": 4975,
+          "triangles": 6444
+        },
+        {
+          "file": "decor/windowNames/J_KRISTENSEN.i3d",
+          "inline_geometry_matches_saved_source_FP32": true,
+          "all_vertex_flags_indices_subsets_bounds_shapeIDs_preserved": true,
+          "scene_materials_files_dynamics_match_prior_release": true,
+          "all_XML_bytes_outside_Shapes_match_prior_release": true,
+          "generated_binary_removed": true,
+          "vertices": 4,
+          "triangles": 2
+        },
+        {
+          "file": "decor/windowNames/M_KOLBRAEK.i3d",
+          "inline_geometry_matches_saved_source_FP32": true,
+          "all_vertex_flags_indices_subsets_bounds_shapeIDs_preserved": true,
+          "scene_materials_files_dynamics_match_prior_release": true,
+          "all_XML_bytes_outside_Shapes_match_prior_release": true,
+          "generated_binary_removed": true,
+          "vertices": 4,
+          "triangles": 2
+        }
+      ],
+      "changed_files": [
+        "README_ERRORS_FIXED.txt",
+        "decor/windowNames/J_KRISTENSEN.i3d",
+        "decor/windowNames/M_KOLBRAEK.i3d",
+        "lighting/BergaasOptibeamFlash.i3d",
+        "modDesc.xml"
+      ],
+      "removed_files": [
+        "decor/windowNames/J_KRISTENSEN.i3d.shapes",
+        "decor/windowNames/M_KOLBRAEK.i3d.shapes",
+        "lighting/BergaasOptibeamFlash.i3d.shapes"
+      ],
+      "added_files": [],
+      "other_previous_release_files_byte_identical": true,
+      "live_FS25_test_performed": false
+    },
+    {
+      "pack": "fs_tridem",
+      "candidate": "/workspace/work/scania_binary_runtime_fix/fixed/fs_tridem",
+      "version": "1.3.0.3",
+      "models": [
+        {
+          "file": "decor/names/J_KRISTENSEN.i3d",
+          "inline_geometry_matches_saved_source_FP32": true,
+          "all_vertex_flags_indices_subsets_bounds_shapeIDs_preserved": true,
+          "scene_materials_files_dynamics_match_prior_release": true,
+          "all_XML_bytes_outside_Shapes_match_prior_release": true,
+          "generated_binary_removed": true,
+          "vertices": 4,
+          "triangles": 2
+        },
+        {
+          "file": "decor/names/M_KOLBRAEK.i3d",
+          "inline_geometry_matches_saved_source_FP32": true,
+          "all_vertex_flags_indices_subsets_bounds_shapeIDs_preserved": true,
+          "scene_materials_files_dynamics_match_prior_release": true,
+          "all_XML_bytes_outside_Shapes_match_prior_release": true,
+          "generated_binary_removed": true,
+          "vertices": 4,
+          "triangles": 2
+        }
+      ],
+      "changed_files": [
+        "README_ERRORS_FIXED.txt",
+        "decor/names/J_KRISTENSEN.i3d",
+        "decor/names/M_KOLBRAEK.i3d",
+        "modDesc.xml"
+      ],
+      "removed_files": [
+        "decor/names/J_KRISTENSEN.i3d.shapes",
+        "decor/names/M_KOLBRAEK.i3d.shapes"
+      ],
+      "added_files": [],
+      "other_previous_release_files_byte_identical": true,
+      "live_FS25_test_performed": false
+    }
+  ],
+  "native_game_load_not_retested": true
+}

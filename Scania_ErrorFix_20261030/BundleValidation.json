@@ -1,8 +1,8 @@
 {
   "filename": "Scania_Feilrettet_20261030.zip",
-  "bytes": 301200336,
-  "sha256": "8250579e3682164ade6f2cddbef87b4f67e799a8dbfdafc94bdc4c4b1de6bd7f",
-  "inner_archives": 4,
+  "bytes": 301112497,
+  "sha256": "9bfef98621972463d97843211df4a871f951f0a31764f6cb9305ed1f94d1a8e9",
   "zip_crc_passed": true,
-  "all_inner_archives_byte_identical_to_validated_packages": true
+  "all_inner_archives_match_validated_packages": true,
+  "inner_archives": 4
 }

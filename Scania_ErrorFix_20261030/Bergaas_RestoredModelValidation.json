@@ -1,0 +1,154 @@
+{
+  "candidate": "/workspace/work/scania_binary_runtime_fix/fixed/bergaas",
+  "models": {
+    "lighting/BergaasOptibeamFlash.i3d": {
+      "restored_source_byte_identical": true,
+      "external_binary_reference_removed": true,
+      "inline_shape_count": 1,
+      "scene_shape_references_resolved": true,
+      "vertices": 4975,
+      "triangles": 6444,
+      "sha256": "ce11987e09d07905d590e7f70bdf52c4fe9e9a09149e5cb39de9e55957f3a61e",
+      "inline_geometry_performance_warning_expected": true
+    },
+    "decor/windowNames/J_KRISTENSEN.i3d": {
+      "restored_source_byte_identical": true,
+      "external_binary_reference_removed": true,
+      "inline_shape_count": 1,
+      "scene_shape_references_resolved": true,
+      "vertices": 4,
+      "triangles": 2,
+      "sha256": "7fad43edd2028290d6121c77daacd5e91c1ea9233ad31ed90301d9ac340a3345",
+      "inline_geometry_performance_warning_expected": true
+    },
+    "decor/windowNames/M_KOLBRAEK.i3d": {
+      "restored_source_byte_identical": true,
+      "external_binary_reference_removed": true,
+      "inline_shape_count": 1,
+      "scene_shape_references_resolved": true,
+      "vertices": 4,
+      "triangles": 2,
+      "sha256": "bcd741d1c3bcbb520871c9ae37034c93416cdbb9b3729bff837f8aa6593c7221",
+      "inline_geometry_performance_warning_expected": true
+    }
+  },
+  "wrappers": {
+    "lighting/BergaasOptibeamFlashLeft.xml": {
+      "source_byte_identical": true,
+      "root_path": "0>",
+      "shader_node_path": "0>0",
+      "root_name": "BergaasOptibeamFlashRoot",
+      "shader_node_name": "BergaasOptibeamFlash",
+      "shader_node_XML_class": "Shape",
+      "intensity": 12
+    },
+    "lighting/BergaasOptibeamFlashRight.xml": {
+      "source_byte_identical": true,
+      "root_path": "0>",
+      "shader_node_path": "0>0",
+      "root_name": "BergaasOptibeamFlashRoot",
+      "shader_node_name": "BergaasOptibeamFlash",
+      "shader_node_XML_class": "Shape",
+      "intensity": 12
+    }
+  },
+  "shader": {
+    "only_seven_filename_defaults_changed_from_v3": true,
+    "defaults": {
+      "detailSpecular": "$data/shaders/default_specular.png",
+      "detailNormal": "$data/shaders/default_normal.png",
+      "detailDiffuse": "$data/shaders/default_diffuse.png",
+      "dirtSpecular": "$data/shaders/dirt_specular.png",
+      "dirtNormal": "$data/shaders/dirt_normal.png",
+      "dirtDiffuse": "$data/shaders/dirt_diffuse.png",
+      "waterDroplets": "$data/shaders/waterDroplets_normal.png"
+    },
+    "double_blink_branch_explicit": true,
+    "blink_shader_expression_preserved": true
+  },
+  "known_failed_release": "/workspace/work/scania_all_errors/final/bergaas",
+  "live_fs25_test_performed": false,
+  "cause_boundaries": {
+    "failed_and_v3_wrappers_byte_identical": true,
+    "failed_and_v3_scene_materials_and_files_identical": true,
+    "only_flash_model_change_in_failed_release": "Inline Shapes replaced with newly authored external version-7 geometry",
+    "native_warning_condition": "Resolved node exists but getHasClassId(node, ClassIds.SHAPE) is false; BeaconLight skips that static light.",
+    "not_established": "Precise native rejection of generated external geometry; no native decoder/runtime available here."
+  },
+  "native_lifecycle": {
+    "checks_passed": true,
+    "candidate": "/workspace/work/scania_binary_runtime_fix/fixed/bergaas",
+    "native_lifecycle_result": {
+      "checks_passed": true,
+      "beacons_loaded": 6,
+      "external_native_beacons": 2,
+      "inline_pulse_controllers": 4,
+      "temporary_load_roots_deleted": 2,
+      "external_mesh_roots_survive": 2,
+      "main_projectors_survive": 6,
+      "timing_samples_per_controller": 1001,
+      "left_pulses_per_cycle": 2,
+      "right_pulses_per_cycle": 2,
+      "max_real_light_formula_error": 0,
+      "inactive_projectors_hidden": true,
+      "inactive_static_ids_zero": true,
+      "real_beacon_setting_suppresses_projectors": true,
+      "native_xml_warnings": 0
+    },
+    "executed_function_body_hashes": {
+      "new": "707e21f3b9c1ea8f568dc50a0a18e22489e665e26ff5ea35f8a768d546dc4ee9",
+      "setCallback": "908b6bc14d52ebb944fc89f0597ad3abb546a863b9ea411401cb605b342ed8e2",
+      "setXMLSettings": "37a87d08dca5d28578b5810d983c9586ec170964de0cb083fd5762abd7f0a930",
+      "setRealLight": "10386f00a5201fe777567429ca2ee7df48575af42579e77f3c0f818f17eeeae5",
+      "loadFromVehicleXML": "d500616863666fe7a9999f4d8cca4026383c782016f23c5934b52332daa9b47e",
+      "loadFromXML": "a856bde3d312d8bb6eb55fc99cb5334943c4a1f4524234307fcfe132e6c704ed",
+      "loadVariationFromXML": "abefda6fdfc4d256eb1c9ff86232291f4eee08df92e2ce9159de69f86b7ad971",
+      "onI3DLoaded": "26ceb51b942ff03c4ccd73ccc7d7aad5a5d86eca859a1908a4578ef87edf9e93",
+      "onFinished": "739702b19d17809b0bffcfe48d09031d97d656d2eed377c1f345ab024b03baf9",
+      "setIsActive": "7533d4c5fd347f3bd0e7ee0d9405e56381c23b765d25c8a6bb6f0943015e9977",
+      "update": "22580f61aa19d63c702b7b97c8aa4785fe6ab620139f2c0bcbddb839996524c6"
+    },
+    "native_functions_executed": [
+      "new",
+      "setCallback",
+      "setXMLSettings",
+      "setRealLight",
+      "loadFromVehicleXML",
+      "loadFromXML",
+      "loadVariationFromXML",
+      "onI3DLoaded",
+      "onFinished",
+      "setIsActive",
+      "update"
+    ],
+    "compatibility_translation": {
+      "function": "loadVariationFromXML",
+      "change": "Single GIANTS continue statement mechanically translated to Lua5.4 goto plus loop-end label.",
+      "branch_taken_during_test": false,
+      "other_function_bodies_changed": false
+    },
+    "mocked_services": [
+      "Node graph, I3D async loader performed synchronously, XMLFile actual-candidate lookup",
+      "Engine shader parameters, light color/range/visibility, camera/settings/update registration",
+      "LIGHT_TYPE_BITMASK chosen as zero only for this engine-service stub; no runtime mask value claimed. Candidate bar shader uses explicit lightType=2, independently checked."
+    ],
+    "actual_candidate_xml_used": true,
+    "external_flash_geometry": {
+      "vertices": 4975,
+      "triangles": 6444,
+      "positions_normals_uv0_and_triangles_float32_identical": true,
+      "uv1_continuous_integer_u_translation": -1.0,
+      "uv1_v_float32_identical": true,
+      "native_light_channels_zero_based": {
+        "0": 3951,
+        "1": 1024
+      },
+      "old_integer_boundary_triangles": 86,
+      "maximum_barycentric_integer_shift_error": 2.220446049250313e-16,
+      "original_vehicle_shape_binary_byte_identical": true
+    },
+    "native_gpu_shader_compilation_or_render_test": false,
+    "live_fs25_test_performed": false
+  },
+  "pass": true
+}

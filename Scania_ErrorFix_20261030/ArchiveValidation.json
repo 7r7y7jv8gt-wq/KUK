@@ -22,20 +22,20 @@
   {
     "pack": "fs_tridem",
     "filename": "FS25_ScaniaS_Tridem.zip",
-    "version": "1.3.0.2",
-    "bytes": 68341885,
-    "files": 162,
-    "sha256": "0be787a4e5764971cb55babdf87ec942f077107966acc1144eb1a36b0e1439b8",
+    "version": "1.3.0.3",
+    "bytes": 68341724,
+    "files": 160,
+    "sha256": "f563b421a00235a4a2fca927eb1f3988acf2f06914de41ddb536fa5576e2c256",
     "zip_crc_passed": true,
     "every_archived_file_matches_checked_candidate": true
   },
   {
     "pack": "bergaas",
     "filename": "FS25_BergaasDesign_Scania_Tipper_Pack.zip",
-    "version": "1.0.0.4",
-    "bytes": 96396481,
-    "files": 90,
-    "sha256": "102bde35acb20bc4931aecb766680b8756cc2b783c0cf01f0de2a37342062157",
+    "version": "1.0.0.5",
+    "bytes": 96308315,
+    "files": 87,
+    "sha256": "d52555dd7c8cccef822d25928c032b78a4a5dffd4a52fe2a69dbfb8df919c5cf",
     "zip_crc_passed": true,
     "every_archived_file_matches_checked_candidate": true
   }
