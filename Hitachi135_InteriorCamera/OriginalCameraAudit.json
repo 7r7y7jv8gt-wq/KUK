@@ -1,0 +1,113 @@
+{
+  "original_camera": {
+    "nodeId": 758,
+    "path": "0>0|5|0|0|0|0|1",
+    "scene_position": [
+      4.2089519843,
+      3.1022798,
+      3.91813146
+    ],
+    "translation": "3.65863 1.47738 3.6777",
+    "rotation_degrees": "-9.95996 48.3287 -1.37043e-05",
+    "ancestry": [
+      {
+        "name": "Caterpillar315",
+        "nodeId": "389",
+        "translation": null,
+        "rotation": null,
+        "visibility": null
+      },
+      {
+        "name": "transform",
+        "nodeId": "390",
+        "translation": "-0.163 0.751 0.005",
+        "rotation": null,
+        "visibility": null
+      },
+      {
+        "name": "Tourelle",
+        "nodeId": "749",
+        "translation": "-0.046 0.199 0.11",
+        "rotation": null,
+        "visibility": null
+      },
+      {
+        "name": "Cabine",
+        "nodeId": "750",
+        "translation": "0.865 1.074 0.324",
+        "rotation": null,
+        "visibility": null
+      },
+      {
+        "name": "Interieur",
+        "nodeId": "751",
+        "translation": "-0.162258 -0.39215 -0.186923",
+        "rotation": null,
+        "visibility": "false"
+      },
+      {
+        "name": "BaseSiege",
+        "nodeId": "752",
+        "translation": "0.056653 -0.0758001 0.00908206",
+        "rotation": null,
+        "visibility": null
+      },
+      {
+        "name": "Siege",
+        "nodeId": "753",
+        "translation": "-7.30157e-05 0.0688499 -0.0207276",
+        "rotation": null,
+        "visibility": null
+      },
+      {
+        "name": "indoorCamera1",
+        "nodeId": "758",
+        "translation": "3.65863 1.47738 3.6777",
+        "rotation": "-9.95996 48.3287 -1.37043e-05",
+        "visibility": null
+      }
+    ]
+  },
+  "mapped_driver": {
+    "nodeId": 1692,
+    "path": "0>0|5|15|6|4",
+    "scene_position": [
+      0.5300266899999999,
+      1.7425164,
+      0.17919870000000002
+    ]
+  },
+  "delta_camera_minus_driver": [
+    3.6789252943,
+    1.3597633999999998,
+    3.73893276
+  ],
+  "distance_camera_to_driver_m": 5.418769787398347,
+  "possible_camera_target": {
+    "basis": "same X as mapped driver pelvis; +0.72m eye height; +0.08m forward. Height is a sensible estimate, not FS25 runtime verified.",
+    "scene_position": [
+      0.5300266899999999,
+      2.4625164,
+      0.2591987
+    ],
+    "keep_existing_node_parent_translation": [
+      -0.02029529429999999,
+      0.8376166,
+      0.01876724000000002
+    ],
+    "move_to_active_seat_parent_1680_translation": [
+      -0.006195309999999954,
+      0.7948564000000002,
+      0.06786609999999998
+    ],
+    "rotation_degrees": [
+      -10,
+      180,
+      0
+    ]
+  },
+  "minimal_repair": "Adjust node758 translation and rotation in place, keeping mappings unchanged. Camera then follows Tourelle without touching other nodes. If seat suspension movement must be followed, append camera to node1680 children and update camera mapping to 0>0|5|15|6|7; do not insert ahead of any existing children.",
+  "camera_flags": "Indoor XML camera has isInside=true rotatable=true transMin=0 transMax=0 useMirror=true and valid node mapping. No flag defect found.",
+  "scripts": "No camera-related references found in supplied Lua scripts or i3d.anim.",
+  "verification_limit": "No FS25 runtime; camera eye offset and gameplay framing cannot be validated directly."
+}

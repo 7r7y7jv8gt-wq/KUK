@@ -1,0 +1,56 @@
+{
+  "186": {
+    "bounds_xyz": [
+      [
+        -0.47251299023628235,
+        0.4536609947681427
+      ],
+      [
+        -0.18912899494171143,
+        0.6869800090789795
+      ],
+      [
+        -0.7995060086250305,
+        0.7520589828491211
+      ]
+    ],
+    "stored_bounding_sphere": [
+      -0.009425938129425049,
+      0.2675052285194397,
+      -0.025682497769594193,
+      0.9509461522102356
+    ],
+    "vertex_count": 32144,
+    "position_buffer_offset": 210540,
+    "cached_parser_adjustment_bytes": 4,
+    "all_vertices_inside_stored_sphere": true,
+    "all_normals_unit_length": true
+  },
+  "197": {
+    "bounds_xyz": [
+      [
+        0.1729149967432022,
+        0.9156330227851868
+      ],
+      [
+        -0.14256000518798828,
+        0.5271810293197632
+      ],
+      [
+        -2.357290029525757,
+        -1.3848199844360352
+      ]
+    ],
+    "stored_bounding_sphere": [
+      0.5442745089530945,
+      0.17856037616729736,
+      -1.8202711343765259,
+      0.6237049698829651
+    ],
+    "vertex_count": 18326,
+    "position_buffer_offset": 138784,
+    "cached_parser_adjustment_bytes": 16,
+    "all_vertices_inside_stored_sphere": true,
+    "all_normals_unit_length": true
+  }
+}

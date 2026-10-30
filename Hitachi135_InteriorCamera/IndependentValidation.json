@@ -1,0 +1,28 @@
+{
+  "candidate": "/workspace/work/hitachi_interior_camera/fixed",
+  "original_files": 97,
+  "candidate_files": 98,
+  "new_files": [
+    "README_CAMERA_FIX.txt"
+  ],
+  "changed_files": [
+    "modDesc.xml",
+    "xmlFilename/Caterpillar315.xml",
+    "filename/Caterpillar_315.i3d"
+  ],
+  "all_original_unrelated_node_attributes_and_paths_preserved": true,
+  "camera_mapping": "0>0|5|15|6|7",
+  "camera_scene_path": "0>|0|5|15|6|7",
+  "camera_attributes": {
+    "name": "indoorCamera1",
+    "translation": "-0.00619531 0.7998564 0.0878661",
+    "rotation": "-5 180 0",
+    "nodeId": "758",
+    "fov": "60",
+    "nearClip": "0.05",
+    "farClip": "5000",
+    "orthographicHeight": "1"
+  },
+  "only_camera_xml_mapping_changed": true,
+  "FS25_runtime_tested": false
+}

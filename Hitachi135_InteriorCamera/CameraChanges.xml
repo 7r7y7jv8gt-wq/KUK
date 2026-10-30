@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cameraChanges version="1.1.0.1" referenceOnly="true">
+  <Camera name="indoorCamera1" nodeId="758" newParentNodeId="1680" translation="-0.00619531 0.7998564 0.0878661" rotation="-5 180 0" fov="60" nearClip="0.05" farClip="5000"/>
+  <i3dMapping id="indoorCamera1" node="0&gt;0|5|15|6|7"/>
+  <TransformGroup name="indoorCameraLegacySlot" nodeId="1808" retainedScenePath="0&gt;0|5|0|0|0|0|1"/>
+</cameraChanges>

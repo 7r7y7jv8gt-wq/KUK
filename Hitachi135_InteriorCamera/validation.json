@@ -1,0 +1,43 @@
+{
+  "version": "1.1.0.1",
+  "archive": {
+    "filename": "KK25_Hitachi_135_KRISTENSEN_EDIT.zip",
+    "bytes": 128572821,
+    "files": 98,
+    "sha256": "97bbdf4d1bbba3cec7513bf74f66c9ac38ea67b69ff143540eb278ebf0c54673",
+    "zip_crc_passed": true,
+    "every_archived_file_matches_validated_candidate": true,
+    "root_modDesc_version": "1.1.0.1"
+  },
+  "camera": {
+    "passed": true,
+    "version": "1.1.0.1",
+    "camera_mapping": "0>0|5|15|6|7",
+    "camera_node_id": "758",
+    "active_seat_parent": "1680",
+    "no_hidden_ancestors": true,
+    "follows_turret": true,
+    "forward_direction": [
+      0,
+      -0.08715574274765817,
+      0.9961946980917455
+    ],
+    "fov_degrees": 60,
+    "near_clip_m": 0.05,
+    "eye_scene_position": [
+      0.53002669,
+      2.4675164,
+      0.2791987
+    ],
+    "eye_offset_from_seated_driver": [
+      0,
+      0.725,
+      0.1
+    ],
+    "scene_node_ids_unique": true,
+    "source_assets_and_all_unrelated_paths_preserved": "audit/candidate_validation.json",
+    "live_fs25_test_performed": false
+  },
+  "independent_validation": "IndependentValidation.json",
+  "live_fs25_test_performed": false
+}
