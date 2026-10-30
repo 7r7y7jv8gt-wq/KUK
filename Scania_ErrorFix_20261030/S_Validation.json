@@ -1,0 +1,364 @@
+{
+  "checks_passed": true,
+  "source": "/workspace/work/scania_viking_3way/fixed",
+  "candidate": "s_pack/candidate",
+  "files": 121,
+  "changed_files": [
+    "i3d/ScaniaS6x4.i3d",
+    "xml/ScaniaS4x2.xml",
+    "xml/ScaniaS6x4.xml",
+    "xml/ScaniaS8x4.xml"
+  ],
+  "added_files": [],
+  "deleted_files": [],
+  "logged_warnings_addressed": {
+    "log_mod_name": "KK25_ScaniaS_KRISTENSEN_EDIT",
+    "log_lines": [
+      5150,
+      5151,
+      5152,
+      5153,
+      5154
+    ],
+    "cause": "Uniform orange PNG is raw800x600 with no mipmaps",
+    "replacement": "existing byte-unchanged16x16 DXT5 DDS5mips; exact same RGBA2551280 255"
+  },
+  "main_scene_nodes": 2309,
+  "vehicle_node_references": 2583,
+  "native_shader_materials_checked": 288,
+  "native_component_and_shader_checks": {
+    "vehicles": {
+      "ScaniaS4x2.xml": {
+        "wheelCounts": [
+          4,
+          4,
+          4
+        ],
+        "motorConfigurations": 6,
+        "fillUnits": 3,
+        "cameras": 3
+      },
+      "ScaniaS6x4.xml": {
+        "wheelCounts": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "motorConfigurations": 6,
+        "fillUnits": 3,
+        "cameras": 3
+      },
+      "ScaniaS8x4.xml": {
+        "wheelCounts": [
+          8,
+          8,
+          8
+        ],
+        "motorConfigurations": 6,
+        "fillUnits": 3,
+        "cameras": 3
+      }
+    },
+    "nativeClassChecks": 317,
+    "staticShaderChecks": 244,
+    "externalSoundReferences": 12,
+    "issues": []
+  },
+  "lighting_changes": [
+    {
+      "file": "ScaniaS4x2.xml",
+      "before": {
+        "frontLightLow": {
+          "node": "frontLightLow",
+          "lightTypes": "0",
+          "excludedLightTypes": "2"
+        },
+        "frontLightHigh": {
+          "node": "frontLightHigh",
+          "lightTypes": "0",
+          "excludedLightTypes": "2"
+        },
+        "workLightBackLow": {
+          "node": "workLightBackLow",
+          "lightTypes": "1"
+        },
+        "workLightFrontLow": {
+          "node": "workLightFrontLow",
+          "lightTypes": "2"
+        },
+        "highBeamLow": {
+          "node": "highBeamLow",
+          "lightTypes": "3"
+        },
+        "highBeamHigh": {
+          "node": "highBeamHigh",
+          "lightTypes": "2"
+        }
+      },
+      "after": {
+        "frontLightLow": {
+          "node": "frontLightLow",
+          "lightTypes": "0",
+          "excludedLightTypes": "3"
+        },
+        "frontLightHigh": {
+          "node": "frontLightHigh",
+          "lightTypes": "0",
+          "excludedLightTypes": "3"
+        },
+        "workLightBackLow": {
+          "node": "workLightBackLow",
+          "lightTypes": "2"
+        },
+        "workLightFrontLow": {
+          "node": "workLightFrontLow",
+          "lightTypes": "1"
+        },
+        "highBeamLow": {
+          "node": "highBeamLow",
+          "lightTypes": "3"
+        },
+        "highBeamHigh": {
+          "node": "highBeamHigh",
+          "lightTypes": "3"
+        }
+      },
+      "all_other_vehicle_content_semantically_identical": true
+    },
+    {
+      "file": "ScaniaS6x4.xml",
+      "before": {
+        "frontLightLow": {
+          "node": "frontLightLow",
+          "lightTypes": "0",
+          "excludedLightTypes": "3"
+        },
+        "frontLightHigh": {
+          "node": "frontLightHigh",
+          "lightTypes": "0",
+          "excludedLightTypes": "3"
+        },
+        "workLightBackLow": null,
+        "workLightFrontLow": {
+          "node": "workLightFrontLow",
+          "lightTypes": "2"
+        },
+        "highBeamLow": {
+          "node": "highBeamLow",
+          "lightTypes": "3"
+        },
+        "highBeamHigh": {
+          "node": "highBeamHigh",
+          "lightTypes": "3"
+        }
+      },
+      "after": {
+        "frontLightLow": {
+          "node": "frontLightLow",
+          "lightTypes": "0",
+          "excludedLightTypes": "3"
+        },
+        "frontLightHigh": {
+          "node": "frontLightHigh",
+          "lightTypes": "0",
+          "excludedLightTypes": "3"
+        },
+        "workLightBackLow": null,
+        "workLightFrontLow": {
+          "node": "workLightFrontLow",
+          "lightTypes": "2"
+        },
+        "highBeamLow": {
+          "node": "highBeamLow",
+          "lightTypes": "3"
+        },
+        "highBeamHigh": {
+          "node": "highBeamHigh",
+          "lightTypes": "3"
+        }
+      },
+      "all_other_vehicle_content_semantically_identical": true
+    },
+    {
+      "file": "ScaniaS8x4.xml",
+      "before": {
+        "frontLightLow": {
+          "node": "frontLightLow",
+          "lightTypes": "0",
+          "excludedLightTypes": "2"
+        },
+        "frontLightHigh": {
+          "node": "frontLightHigh",
+          "lightTypes": "0",
+          "excludedLightTypes": "2"
+        },
+        "workLightBackLow": {
+          "node": "workLightBackLow",
+          "lightTypes": "1"
+        },
+        "workLightFrontLow": {
+          "node": "workLightFrontLow",
+          "lightTypes": "2"
+        },
+        "highBeamLow": {
+          "node": "highBeamLow",
+          "lightTypes": "2"
+        },
+        "highBeamHigh": {
+          "node": "highBeamHigh",
+          "lightTypes": "2"
+        }
+      },
+      "after": {
+        "frontLightLow": {
+          "node": "frontLightLow",
+          "lightTypes": "0",
+          "excludedLightTypes": "3"
+        },
+        "frontLightHigh": {
+          "node": "frontLightHigh",
+          "lightTypes": "0",
+          "excludedLightTypes": "3"
+        },
+        "workLightBackLow": {
+          "node": "workLightBackLow",
+          "lightTypes": "2"
+        },
+        "workLightFrontLow": {
+          "node": "workLightFrontLow",
+          "lightTypes": "1"
+        },
+        "highBeamLow": {
+          "node": "highBeamLow",
+          "lightTypes": "3"
+        },
+        "highBeamHigh": {
+          "node": "highBeamHigh",
+          "lightTypes": "3"
+        }
+      },
+      "all_other_vehicle_content_semantically_identical": true
+    }
+  ],
+  "schema_report": {
+    "before": {
+      "ScaniaS6x4.xml": [
+        "Element 'power': '520 - 861' is not a valid value of the atomic type 'g_float'.",
+        "Element 'sounds', attribute 'volumeScale': The attribute 'volumeScale' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed.",
+        "Element 'interactiveControl': This element is not expected."
+      ],
+      "ScaniaS4x2.xml": [
+        "Element 'power': '520 - 861' is not a valid value of the atomic type 'g_float'.",
+        "Element 'sounds', attribute 'volumeScale': The attribute 'volumeScale' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed."
+      ],
+      "ScaniaS8x4.xml": [
+        "Element 'power': '520 - 861' is not a valid value of the atomic type 'g_float'.",
+        "Element 'sounds', attribute 'volumeScale': The attribute 'volumeScale' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed."
+      ]
+    },
+    "after": {
+      "ScaniaS6x4.xml": [
+        "Element 'sounds', attribute 'volumeScale': The attribute 'volumeScale' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed.",
+        "Element 'interactiveControl': This element is not expected."
+      ],
+      "ScaniaS4x2.xml": [
+        "Element 'sounds', attribute 'volumeScale': The attribute 'volumeScale' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed."
+      ],
+      "ScaniaS8x4.xml": [
+        "Element 'sounds', attribute 'volumeScale': The attribute 'volumeScale' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed.",
+        "Element 'characterNode', attribute 'spineRotation': The attribute 'spineRotation' is not allowed."
+      ]
+    }
+  },
+  "known_preserved_schema_exceptions": [
+    "Existing no-op base/sounds volumeScale and characterNode spineRotation preserved to avoid changing volume or character pose; user log reports neither as runtime warning",
+    "interactiveControl is an add-on extension not in GIANTS base schema"
+  ],
+  "geometry_binary_hashes": [
+    {
+      "file": "beacons/beacon.i3d.shapes",
+      "sha256": "2cd51a547e69bb56dcae67a918314d5469c92cf24835211e49edf12539d9cc95"
+    },
+    {
+      "file": "i3d/ScaniaS4x2.i3d.shapes",
+      "sha256": "95fdb8ea79b29ba55a2e671e5a3ac5aa8c9184b7a911432b061a010c185f50ed"
+    },
+    {
+      "file": "i3d/ScaniaS6x4.i3d.shapes",
+      "sha256": "0b970d36943f5a1065f27c51583cde43391b13bc48ddeeb84c1e38788972a6d9"
+    },
+    {
+      "file": "i3d/ScaniaS8x4.i3d.shapes",
+      "sha256": "61b5b9cbef0db092a34bf1853ecf81af7188a9a34397949b5a634568648dd93c"
+    },
+    {
+      "file": "i3d/prefabs/FS25_LizardFOR9T_prefab/FOR9T_Gravity.i3d.shapes",
+      "sha256": "34261a2063563cf0285a34c165cd8028ac44329211eeae1fe0da26bde58111ba"
+    },
+    {
+      "file": "i3d/prefabs/FS25_LizardFOR9T_prefab/FOR9T_illusion.i3d.shapes",
+      "sha256": "76dcf1dcea9ff04aa6b3a4215ac3928feecd215e90c03468c72b414084f4f937"
+    },
+    {
+      "file": "i3d/prefabs/FS25_LizardFOR9T_prefab/FOR9T_noGlare.i3d.shapes",
+      "sha256": "3044b4c2b67ff59e4369ded60f39b67c287557fddca670678605b8a8ecc1e1d6"
+    }
+  ],
+  "all_scene_and_material_nodes_preserved": true,
+  "all_lighting_intensities_and_configs_preserved": true,
+  "all_textures_and_lua_byte_identical": true,
+  "all_sounds_and_character_poses_preserved": true,
+  "native_ic_lua_tests_passed": {
+    "scope": "Delivered Scania S optional IC bridge and XML/specialization integration",
+    "source": "/workspace/work/scania_viking_3way/fixed",
+    "source_lua_sha256": "e53077bab7067f83258997c5c9106dbc404013423eeef2f8b94b0ef510d95e5b",
+    "execution_runtime": "system liblua5.4; unmodified native IC controller, function actor, registry, and network event code",
+    "mocked_services": [
+      "engine class/event registration",
+      "vehicle animation actor on controller 2",
+      "network transport queue and server/client identities",
+      "mission clock",
+      "vehicle update timer",
+      "XML parsing by ElementTree"
+    ],
+    "checks": {
+      "lua_syntax_and_execution": true,
+      "optional_ic_absence_safe": true,
+      "late_registration_and_idempotence": true,
+      "renamed_environment_mission_manager_fallback": true,
+      "native_server_click_three_mode_cycle": true,
+      "native_client_click_server_authoritative_three_mode_cycle": true,
+      "two_clients_receive_exactly_one_mode_update_per_click": true,
+      "native_join_stream_positive_button_replay_does_not_cycle_client": true,
+      "native_momentary_button_reset_without_event_or_function_execution": true,
+      "saved_state_float_rounding": true,
+      "native_event_arguments_and_controller_order": true,
+      "saved_analog_mode_controller_and_unsaved_function_button": true,
+      "modDesc_extra_source_file_and_enterable_tractor_parent": true
+    },
+    "native_event_evidence": "ICStateValueEvent.run invokes setInteractiveControllerStateValueByIndex(...,true) on receipt. The bridge intentionally accepts noEventSend=true on the server so client clicks advance mode there. isServer blocks client replay; adding a blanket noEventSend guard would break multiplayer client clicks.",
+    "specialization_evidence": "Native InteractiveControlManager.installSpecializations adds IC to any type with Enterable or Attachable; ScaniaLKW inherits tractor and requires no add-on-forcing placeholder.",
+    "proven_defects": [],
+    "suggested_source_changes": [],
+    "candidate_or_source_files_modified": false,
+    "fs25_runtime_tested": false,
+    "native_reference_urls": [
+      "https://raw.githubusercontent.com/TobiasF92/FS25_interactiveControl/develop/src/events/ICStateValueEvent.lua",
+      "https://raw.githubusercontent.com/TobiasF92/FS25_interactiveControl/develop/src/misc/InteractiveControlManager.lua"
+    ]
+  },
+  "live_fs25_test_performed": false
+}

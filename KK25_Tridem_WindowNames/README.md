@@ -1,3 +1,5 @@
+> Oppdatert feilretting: [Scania-pakkene 30.10.2026](../Scania_ErrorFix_20261030/README.md). Rapporten under gjelder den tidligere funksjonsoppdateringen.
+
 # KK25 Scania S Tridem — only the owner-fitted window names
 
 Full mod: [`KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip`](../KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip), version **1.3.0.3**.

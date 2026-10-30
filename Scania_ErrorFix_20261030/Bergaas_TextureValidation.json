@@ -1,0 +1,259 @@
+{
+  "conversion": "technical format/resolution/mipmap conversion only",
+  "originals_preserved": true,
+  "assets": [
+    {
+      "width": 1024,
+      "height": 1024,
+      "mip_levels": 11,
+      "format": "BC3 / DXT5",
+      "file_size": 1398256,
+      "payload_size_exact": true,
+      "sha256": "800e6bb1a340c112ea1de62548754edbdbb7e095ccbd2ce6bb41c4d6f33af67a",
+      "source": "textures/2.dds",
+      "destination": "textures/2_native.dds",
+      "source_size": [
+        800,
+        600
+      ],
+      "source_unique_rgba": [
+        [
+          74,
+          77,
+          74,
+          255
+        ],
+        [
+          76,
+          75,
+          76,
+          255
+        ]
+      ],
+      "source_color_pixel_counts": [
+        120000,
+        360000
+      ],
+      "method": "1024x1024 Lanczos resample in normalized UV coordinates, then BC3",
+      "alpha_exact": true,
+      "rgb_max_absolute_error_vs_resampled_source": 2,
+      "rgb_mean_absolute_error_vs_resampled_source": 1.4001235961914062,
+      "uniform_source_rgba_exact": false,
+      "decoded_mips": [
+        {
+          "level": 0,
+          "width": 1024,
+          "height": 1024,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 1,
+          "width": 512,
+          "height": 512,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 2,
+          "width": 256,
+          "height": 256,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 3,
+          "width": 128,
+          "height": 128,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 4,
+          "width": 64,
+          "height": 64,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 5,
+          "width": 32,
+          "height": 32,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 6,
+          "width": 16,
+          "height": 16,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 7,
+          "width": 8,
+          "height": 8,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 8,
+          "width": 4,
+          "height": 4,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 9,
+          "width": 2,
+          "height": 2,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 10,
+          "width": 1,
+          "height": 1,
+          "alpha_min": 255,
+          "alpha_max": 255
+        }
+      ]
+    },
+    {
+      "width": 16,
+      "height": 16,
+      "mip_levels": 5,
+      "format": "BC3 / DXT5",
+      "file_size": 496,
+      "payload_size_exact": true,
+      "sha256": "c419e5f495f057f36b42e97966965eef0cee07204a2aae4b2d38fb816e3c1197",
+      "source": "lighting/optibeam_glass.png",
+      "destination": "lighting/optibeam_glass_native.dds",
+      "source_size": [
+        800,
+        600
+      ],
+      "source_unique_rgba": [
+        [
+          0,
+          0,
+          0,
+          124
+        ]
+      ],
+      "source_color_pixel_counts": [
+        480000
+      ],
+      "method": "Uniform color encoded at 16x16 with exact RGBA",
+      "alpha_exact": true,
+      "rgb_max_absolute_error_vs_resampled_source": 0,
+      "rgb_mean_absolute_error_vs_resampled_source": 0.0,
+      "uniform_source_rgba_exact": true,
+      "decoded_mips": [
+        {
+          "level": 0,
+          "width": 16,
+          "height": 16,
+          "alpha_min": 124,
+          "alpha_max": 124
+        },
+        {
+          "level": 1,
+          "width": 8,
+          "height": 8,
+          "alpha_min": 124,
+          "alpha_max": 124
+        },
+        {
+          "level": 2,
+          "width": 4,
+          "height": 4,
+          "alpha_min": 124,
+          "alpha_max": 124
+        },
+        {
+          "level": 3,
+          "width": 2,
+          "height": 2,
+          "alpha_min": 124,
+          "alpha_max": 124
+        },
+        {
+          "level": 4,
+          "width": 1,
+          "height": 1,
+          "alpha_min": 124,
+          "alpha_max": 124
+        }
+      ]
+    },
+    {
+      "width": 16,
+      "height": 16,
+      "mip_levels": 5,
+      "format": "BC3 / DXT5",
+      "file_size": 496,
+      "payload_size_exact": true,
+      "sha256": "6e780035b84256cbac15cc3b340fb10ea5c69aab7ef834b3e50e87a9cfa09558",
+      "source": "lighting/ozz/orange.png",
+      "destination": "lighting/ozz/orange_native.dds",
+      "source_size": [
+        800,
+        600
+      ],
+      "source_unique_rgba": [
+        [
+          255,
+          128,
+          0,
+          255
+        ]
+      ],
+      "source_color_pixel_counts": [
+        480000
+      ],
+      "method": "Reuse existing exact-color BC3 amber emission map",
+      "alpha_exact": true,
+      "rgb_max_absolute_error_vs_resampled_source": 0,
+      "rgb_mean_absolute_error_vs_resampled_source": 0.0,
+      "uniform_source_rgba_exact": true,
+      "decoded_mips": [
+        {
+          "level": 0,
+          "width": 16,
+          "height": 16,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 1,
+          "width": 8,
+          "height": 8,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 2,
+          "width": 4,
+          "height": 4,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 3,
+          "width": 2,
+          "height": 2,
+          "alpha_min": 255,
+          "alpha_max": 255
+        },
+        {
+          "level": 4,
+          "width": 1,
+          "height": 1,
+          "alpha_min": 255,
+          "alpha_max": 255
+        }
+      ]
+    }
+  ]
+}

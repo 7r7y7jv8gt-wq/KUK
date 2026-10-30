@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "isolated_GLSL_translation_of_unmodified_native_multiblink_formula": true,
+  "samples": 10001,
+  "cycle_seconds": 0.5026548245743669,
+  "masks_tested": [
+    0,
+    8,
+    10
+  ],
+  "actual_mesh_UV_channels_tested": [
+    0,
+    1,
+    2
+  ],
+  "native_mask8_channel0_before": "steady",
+  "native_mask8_channel1_before": "multiBlink",
+  "native_channel2_before": "off because intensity channel2=0",
+  "all_used_channels_after": "same native multiblink pulse using beacon intensity slot0",
+  "left_pulses_per_cycle": 2,
+  "right_pulses_per_cycle": 2,
+  "left_right_pulses_do_not_overlap": true,
+  "all_channels_zero_when_beacon_off": true,
+  "GIANTS_full_shader_or_runtime_tested": false
+}

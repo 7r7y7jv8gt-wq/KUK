@@ -1,0 +1,142 @@
+{
+  "generated_outputs": [
+    {
+      "source": "/workspace/work/scania_all_errors/bergaas/candidate/decor/windowNames/J_KRISTENSEN.i3d",
+      "compiled": "/workspace/work/scania_all_errors/binary_compiler/compiled/J_KRISTENSEN.i3d",
+      "shape_name": "J_KRISTENSEN_plane",
+      "vertices": 4,
+      "corners": 6,
+      "options": "0x3",
+      "position_normal_all_uvs_triangles_bounds_exact_fp32_match": true,
+      "nonShapesXML_bytes_identical": true,
+      "three_independent_full_file_roundtrips": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "source": "/workspace/work/scania_all_errors/bergaas/candidate/decor/windowNames/M_KOLBRAEK.i3d",
+      "compiled": "/workspace/work/scania_all_errors/binary_compiler/compiled/M_KOLBRAEK.i3d",
+      "shape_name": "M_KOLBRAEK_plane",
+      "vertices": 4,
+      "corners": 6,
+      "options": "0x3",
+      "position_normal_all_uvs_triangles_bounds_exact_fp32_match": true,
+      "nonShapesXML_bytes_identical": true,
+      "three_independent_full_file_roundtrips": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "source": "/workspace/work/scania_all_errors/fs_tridem/candidate/decor/names/J_KRISTENSEN.i3d",
+      "compiled": "/workspace/work/scania_all_errors/binary_compiler/compiled/fs_tridem/J_KRISTENSEN.i3d",
+      "shape_name": "J_KRISTENSEN_plane",
+      "vertices": 4,
+      "corners": 6,
+      "options": "0x3",
+      "position_normal_all_uvs_triangles_bounds_exact_fp32_match": true,
+      "nonShapesXML_bytes_identical": true,
+      "three_independent_full_file_roundtrips": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "source": "/workspace/work/scania_all_errors/fs_tridem/candidate/decor/names/M_KOLBRAEK.i3d",
+      "compiled": "/workspace/work/scania_all_errors/binary_compiler/compiled/fs_tridem/M_KOLBRAEK.i3d",
+      "shape_name": "M_KOLBRAEK_plane",
+      "vertices": 4,
+      "corners": 6,
+      "options": "0x3",
+      "position_normal_all_uvs_triangles_bounds_exact_fp32_match": true,
+      "nonShapesXML_bytes_identical": true,
+      "three_independent_full_file_roundtrips": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "source": "/workspace/work/scania_all_errors/bergaas/candidate/lighting/BergaasOptibeamFlash.i3d",
+      "compiled": "/workspace/work/scania_all_errors/binary_compiler/compiled/BergaasOptibeamFlash.i3d",
+      "shape_name": "OptibeamFlashNativeChannels",
+      "vertices": 4975,
+      "corners": 19332,
+      "options": "0x87",
+      "position_normal_all_uvs_triangles_bounds_exact_fp32_match": true,
+      "nonShapesXML_bytes_identical": true,
+      "three_independent_full_file_roundtrips": [
+        true,
+        true,
+        true
+      ]
+    }
+  ],
+  "recovered_original_flash_v10_payload_reencode_exact": true,
+  "original_flash_positions_normals_tangents_UV0_indices_exact_fp32_match": true,
+  "original_flash_UV1_equals_generated_source": false,
+  "generated_UV1_exactly_matches_current_inline_source": true,
+  "original_binary_files_modified": false,
+  "preexisting_v7_beacon": {
+    "file": "/workspace/work/scania/publish/FS25_EcoforstTWinch/beacons/Lizard_RKLE_150_O.i3d.shapes",
+    "sha256": "dd307e4bcbdf470c176dd360276d7d9123f9cccb29c582d15242659296d1dbc4",
+    "version": 7,
+    "seed": 188,
+    "entity_count": 4,
+    "entities": [
+      {
+        "name": "Circle.002",
+        "shape_id": 4,
+        "vertices": 74,
+        "corners": 198,
+        "subsets": 1,
+        "options": "0xa3",
+        "payload_roundtrip_exact": true,
+        "native_leading": null,
+        "native_post": null
+      },
+      {
+        "name": "Circle",
+        "shape_id": 3,
+        "vertices": 178,
+        "corners": 432,
+        "subsets": 1,
+        "options": "0x83",
+        "payload_roundtrip_exact": true,
+        "native_leading": null,
+        "native_post": null
+      },
+      {
+        "name": "Cylinder",
+        "shape_id": 1,
+        "vertices": 372,
+        "corners": 1140,
+        "subsets": 1,
+        "options": "0x83",
+        "payload_roundtrip_exact": true,
+        "native_leading": null,
+        "native_post": null
+      },
+      {
+        "name": "Cylinder.001",
+        "shape_id": 2,
+        "vertices": 364,
+        "corners": 1440,
+        "subsets": 1,
+        "options": "0x83",
+        "payload_roundtrip_exact": true,
+        "native_leading": null,
+        "native_post": null
+      }
+    ],
+    "whole_container_encrypted_roundtrip_exact": true,
+    "fetched_codec_executed": false,
+    "fs25_runtime_executed": false
+  },
+  "fs25_runtime_or_compatibility_test_performed": false,
+  "limitation": "Version 7 format and geometry integrity verified. Available user log has no matching v7 asset load; native FS25 version 7 compatibility remains unverified here."
+}

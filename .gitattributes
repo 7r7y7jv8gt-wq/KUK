@@ -1,1 +1,2 @@
 /KK25_Hitachi_135_KRISTENSEN_EDIT.zip filter=lfs diff=lfs merge=lfs -text
+/downloads/Scania_Feilrettet_20261030.zip filter=lfs diff=lfs merge=lfs -text

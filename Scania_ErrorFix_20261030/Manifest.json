@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-30",
+  "scope": "All current Scania packages, with original installed filenames retained from the supplied game log.",
+  "packages": [
+    {
+      "pack": "s_pack",
+      "filename": "KK25_ScaniaS_KRISTENSEN_EDIT.zip",
+      "version": "1.0.2.3",
+      "bytes": 68118594,
+      "files": 122,
+      "sha256": "1f2b1059d8191a52e21201b64afd2b59c0442884cf38937b58ee0354113f225c",
+      "zip_crc_passed": true,
+      "every_archived_file_matches_checked_candidate": true
+    },
+    {
+      "pack": "kk_tridem",
+      "filename": "KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip",
+      "version": "1.3.0.4",
+      "bytes": 68339415,
+      "files": 156,
+      "sha256": "b9395d7068635d6390a59ce882d63bbd77d384e05e79523c57f462126fc188b7",
+      "zip_crc_passed": true,
+      "every_archived_file_matches_checked_candidate": true
+    },
+    {
+      "pack": "fs_tridem",
+      "filename": "FS25_ScaniaS_Tridem.zip",
+      "version": "1.3.0.2",
+      "bytes": 68341885,
+      "files": 162,
+      "sha256": "0be787a4e5764971cb55babdf87ec942f077107966acc1144eb1a36b0e1439b8",
+      "zip_crc_passed": true,
+      "every_archived_file_matches_checked_candidate": true
+    },
+    {
+      "pack": "bergaas",
+      "filename": "FS25_BergaasDesign_Scania_Tipper_Pack.zip",
+      "version": "1.0.0.4",
+      "bytes": 96396481,
+      "files": 90,
+      "sha256": "102bde35acb20bc4931aecb766680b8756cc2b783c0cf01f0de2a37342062157",
+      "zip_crc_passed": true,
+      "every_archived_file_matches_checked_candidate": true
+    }
+  ],
+  "bundle": {
+    "filename": "Scania_Feilrettet_20261030.zip",
+    "bytes": 301200336,
+    "sha256": "8250579e3682164ade6f2cddbef87b4f67e799a8dbfdafc94bdc4c4b1de6bd7f",
+    "inner_archives": 4,
+    "zip_crc_passed": true,
+    "all_inner_archives_byte_identical_to_validated_packages": true
+  },
+  "aliases": {
+    "FS25_ScaniaS.zip": "KK25_ScaniaS_KRISTENSEN_EDIT.zip"
+  },
+  "remaining": [
+    {
+      "pack": "bergaas",
+      "kind": "console_platform_size_warning",
+      "shape": 48,
+      "source_size_kb": 14842,
+      "console_limit_kb": 14336,
+      "original_geometry_preserved": true
+    }
+  ],
+  "other_mod_log_errors_are_outside_this_scania_repair": true,
+  "live_fs25_test_performed": false,
+  "raw_user_log_published": false
+}

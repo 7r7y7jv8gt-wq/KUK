@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "five_generated_models_byte_identical_to_independently_validated_outputs": true,
+  "jobs": [
+    {
+      "source": "/workspace/work/scania_all_errors/final/bergaas/lighting/BergaasOptibeamFlash.i3d",
+      "output": "/workspace/work/scania_all_errors/final_compile_stage/bergaas/lighting/BergaasOptibeamFlash.i3d",
+      "shapes": "/workspace/work/scania_all_errors/final_compile_stage/bergaas/lighting/BergaasOptibeamFlash.i3d.shapes",
+      "version": 7,
+      "seed": 0,
+      "meshes": [
+        {
+          "name": "OptibeamFlashNativeChannels",
+          "shapeId": 1,
+          "vertices": 4975,
+          "triangles": 6444,
+          "options": "0x87",
+          "tangents": {
+            "method": "verified original binary tangents reused",
+            "source": "/workspace/work/scania_all_errors/binary_compiler/original_flash_173.json",
+            "geometry_normals_uv0_triangles_match_fp32": true
+          }
+        }
+      ],
+      "nonShapesXMLBytesPreserved": true,
+      "originalBinaryEdited": false,
+      "liveFS25Test": false
+    },
+    {
+      "source": "/workspace/work/scania_all_errors/final/bergaas/decor/windowNames/J_KRISTENSEN.i3d",
+      "output": "/workspace/work/scania_all_errors/final_compile_stage/bergaas/decor/windowNames/J_KRISTENSEN.i3d",
+      "shapes": "/workspace/work/scania_all_errors/final_compile_stage/bergaas/decor/windowNames/J_KRISTENSEN.i3d.shapes",
+      "version": 7,
+      "seed": 0,
+      "meshes": [
+        {
+          "name": "J_KRISTENSEN_plane",
+          "shapeId": 1,
+          "vertices": 4,
+          "triangles": 2,
+          "options": "0x3",
+          "tangents": {
+            "method": "not declared in inline mesh"
+          }
+        }
+      ],
+      "nonShapesXMLBytesPreserved": true,
+      "originalBinaryEdited": false,
+      "liveFS25Test": false
+    },
+    {
+      "source": "/workspace/work/scania_all_errors/final/bergaas/decor/windowNames/M_KOLBRAEK.i3d",
+      "output": "/workspace/work/scania_all_errors/final_compile_stage/bergaas/decor/windowNames/M_KOLBRAEK.i3d",
+      "shapes": "/workspace/work/scania_all_errors/final_compile_stage/bergaas/decor/windowNames/M_KOLBRAEK.i3d.shapes",
+      "version": 7,
+      "seed": 0,
+      "meshes": [
+        {
+          "name": "M_KOLBRAEK_plane",
+          "shapeId": 1,
+          "vertices": 4,
+          "triangles": 2,
+          "options": "0x3",
+          "tangents": {
+            "method": "not declared in inline mesh"
+          }
+        }
+      ],
+      "nonShapesXMLBytesPreserved": true,
+      "originalBinaryEdited": false,
+      "liveFS25Test": false
+    },
+    {
+      "source": "/workspace/work/scania_all_errors/final/fs_tridem/decor/names/J_KRISTENSEN.i3d",
+      "output": "/workspace/work/scania_all_errors/final_compile_stage/fs_tridem/decor/names/J_KRISTENSEN.i3d",
+      "shapes": "/workspace/work/scania_all_errors/final_compile_stage/fs_tridem/decor/names/J_KRISTENSEN.i3d.shapes",
+      "version": 7,
+      "seed": 0,
+      "meshes": [
+        {
+          "name": "J_KRISTENSEN_plane",
+          "shapeId": 1,
+          "vertices": 4,
+          "triangles": 2,
+          "options": "0x3",
+          "tangents": {
+            "method": "not declared in inline mesh"
+          }
+        }
+      ],
+      "nonShapesXMLBytesPreserved": true,
+      "originalBinaryEdited": false,
+      "liveFS25Test": false
+    },
+    {
+      "source": "/workspace/work/scania_all_errors/final/fs_tridem/decor/names/M_KOLBRAEK.i3d",
+      "output": "/workspace/work/scania_all_errors/final_compile_stage/fs_tridem/decor/names/M_KOLBRAEK.i3d",
+      "shapes": "/workspace/work/scania_all_errors/final_compile_stage/fs_tridem/decor/names/M_KOLBRAEK.i3d.shapes",
+      "version": 7,
+      "seed": 0,
+      "meshes": [
+        {
+          "name": "M_KOLBRAEK_plane",
+          "shapeId": 1,
+          "vertices": 4,
+          "triangles": 2,
+          "options": "0x3",
+          "tangents": {
+            "method": "not declared in inline mesh"
+          }
+        }
+      ],
+      "nonShapesXMLBytesPreserved": true,
+      "originalBinaryEdited": false,
+      "liveFS25Test": false
+    }
+  ],
+  "original_geometry_binaries_modified": false,
+  "live_fs25_test_performed": false
+}

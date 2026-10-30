@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "native_functions_executed_unchanged": [
+    "RealLight.new",
+    "RealLight.loadFromXML",
+    "RealLight.loadLightsFromXML",
+    "RealLight.merge",
+    "RealLight.setLightTypesMask",
+    "RealLight.setState",
+    "RealLight.setCharge",
+    "Lights.getRealLightFromNode",
+    "Lights.setLightsTypesMask"
+  ],
+  "results": {
+    "before": {
+      "overlapping_source_node_count": 5,
+      "overlapping_source_nodeIds": [
+        "1039",
+        "1040",
+        "1041",
+        "1042",
+        "1043"
+      ],
+      "checks": 64,
+      "state_mismatches": 24
+    },
+    "after": {
+      "overlapping_source_node_count": 0,
+      "overlapping_source_nodeIds": [],
+      "checks": 64,
+      "state_mismatches": 0
+    }
+  },
+  "iteration_orders_tested": [
+    "low then high",
+    "high then low"
+  ],
+  "active_profiles_tested": [
+    "low",
+    "high"
+  ],
+  "masks_tested": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "mocked_services": [
+    "actual XML attributes, scene node IDs, local visibility and traversal",
+    "XML iteration and engine light color/visibility calls",
+    "IES/scattering bypassed; range1 avoids unrelated generated shadow lights",
+    "network, sounds and dashboard services disabled"
+  ],
+  "FS25_runtime": false
+}

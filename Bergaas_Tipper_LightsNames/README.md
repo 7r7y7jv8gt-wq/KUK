@@ -1,3 +1,5 @@
+> Oppdatert feilretting: [Scania-pakkene 30.10.2026](../Scania_ErrorFix_20261030/README.md). Rapporten under gjelder den tidligere funksjonsoppdateringen.
+
 # Bergaas Scania Tipper Pack — lights and window names
 
 [Download the complete mod](../FS25_BergaasDesign_Scania_Tipper_Pack.zip), version **1.0.0.3**. Both original tipper trailers are included.

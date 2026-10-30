@@ -1,0 +1,42 @@
+[
+  {
+    "pack": "s_pack",
+    "filename": "KK25_ScaniaS_KRISTENSEN_EDIT.zip",
+    "version": "1.0.2.3",
+    "bytes": 68118594,
+    "files": 122,
+    "sha256": "1f2b1059d8191a52e21201b64afd2b59c0442884cf38937b58ee0354113f225c",
+    "zip_crc_passed": true,
+    "every_archived_file_matches_checked_candidate": true
+  },
+  {
+    "pack": "kk_tridem",
+    "filename": "KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip",
+    "version": "1.3.0.4",
+    "bytes": 68339415,
+    "files": 156,
+    "sha256": "b9395d7068635d6390a59ce882d63bbd77d384e05e79523c57f462126fc188b7",
+    "zip_crc_passed": true,
+    "every_archived_file_matches_checked_candidate": true
+  },
+  {
+    "pack": "fs_tridem",
+    "filename": "FS25_ScaniaS_Tridem.zip",
+    "version": "1.3.0.2",
+    "bytes": 68341885,
+    "files": 162,
+    "sha256": "0be787a4e5764971cb55babdf87ec942f077107966acc1144eb1a36b0e1439b8",
+    "zip_crc_passed": true,
+    "every_archived_file_matches_checked_candidate": true
+  },
+  {
+    "pack": "bergaas",
+    "filename": "FS25_BergaasDesign_Scania_Tipper_Pack.zip",
+    "version": "1.0.0.4",
+    "bytes": 96396481,
+    "files": 90,
+    "sha256": "102bde35acb20bc4931aecb766680b8756cc2b783c0cf01f0de2a37342062157",
+    "zip_crc_passed": true,
+    "every_archived_file_matches_checked_candidate": true
+  }
+]

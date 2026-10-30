@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "changed_files": [
+    "OzzorgLykt/Briodlampe.i3d",
+    "OzzorgLykt/Parts/piece_0.i3d",
+    "i3d/Scania_S_HKL.i3d",
+    "modDesc.xml",
+    "scripts/HookLiftTrailerExtension.lua",
+    "xml/Scania_S_HKL.xml"
+  ],
+  "added_files": [
+    "OzzorgLykt/Lights/amber_emissive.dds",
+    "icons/Scania_HKL.dds",
+    "lighting/ScaniaOptibeamShader.xml"
+  ],
+  "unchanged_file_count": 150,
+  "all_binary_geometry_textures_unchanged": true,
+  "all_existing_node_geometry_transforms_and_flags_preserved": true,
+  "changed_existing_node_attributes": [
+    {
+      "nodeId": "1041",
+      "name": "workLightFrontHigh2",
+      "changes": {
+        "visibility": [
+          "false",
+          null
+        ]
+      }
+    },
+    {
+      "nodeId": "1042",
+      "name": "workLightFrontHigh3",
+      "changes": {
+        "visibility": [
+          "false",
+          null
+        ]
+      }
+    },
+    {
+      "nodeId": "1043",
+      "name": "workLightFrontHigh4",
+      "changes": {
+        "visibility": [
+          "false",
+          null
+        ]
+      }
+    }
+  ],
+  "added_node_count": 10,
+  "added_low_profile_Light_nodes": 5,
+  "low_profile_clones_preserve_exact_high_profile_light_parameters": true,
+  "all_original_component_paths_and_children_preserved": true,
+  "scene_roots_before": 3,
+  "scene_roots_after": 1,
+  "extra_editor_roots_preserved_hidden": true,
+  "all_configuration_groups_preserved_exactly": true,
+  "name_options": 4,
+  "name_transitions_checked": 16,
+  "curtain_options": 5,
+  "red_curtain_default": true,
+  "all_four_sharedlight_curtain_anchors_locally_visible": true,
+  "native_realLight_roots_checked": 45,
+  "hidden_realLight_descendants_after": 0,
+  "shader_native_reference_only_flash_type_and_intensity_expressions_and_7_resource_default_paths_changed": true,
+  "runtime_tested": false
+}

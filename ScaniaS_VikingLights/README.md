@@ -1,3 +1,5 @@
+> Oppdatert feilretting: [Scania-pakkene 30.10.2026](../Scania_ErrorFix_20261030/README.md). Rapporten under gjelder den tidligere funksjonsoppdateringen.
+
 # Scania S — three-way Viking markers
 
 Complete mod: [`FS25_ScaniaS.zip`](../FS25_ScaniaS.zip), version **1.0.2.2**, built from the owner's new three-part RAR.

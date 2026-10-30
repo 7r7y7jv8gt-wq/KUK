@@ -1,0 +1,139 @@
+{
+  "s_pack": {
+    "passed": true,
+    "version": "1.0.2.3",
+    "filename": "KK25_ScaniaS_KRISTENSEN_EDIT.zip",
+    "files": 122,
+    "xml_documents": 9,
+    "i3d_models": 7,
+    "local_i3d_resources": {
+      "present": 144,
+      "native_png_to_dds": 8
+    },
+    "shader_default_images_checked": 3,
+    "vehicles": {
+      "xml/ScaniaS4x2.xml": {
+        "nodes": 587,
+        "mappings": 465,
+        "node_references": 755,
+        "components": 1,
+        "duplicate_animations": 0
+      },
+      "xml/ScaniaS6x4.xml": {
+        "nodes": 1224,
+        "mappings": 640,
+        "node_references": 1108,
+        "components": 1,
+        "duplicate_animations": 0
+      },
+      "xml/ScaniaS8x4.xml": {
+        "nodes": 498,
+        "mappings": 463,
+        "node_references": 726,
+        "components": 1,
+        "duplicate_animations": 0
+      }
+    },
+    "original_binary_files_preserved": 7,
+    "original_dds_png_and_audited_lua_preserved": true,
+    "generated_binary_models": [],
+    "live_fs25_test_performed": false
+  },
+  "kk_tridem": {
+    "passed": true,
+    "version": "1.3.0.4",
+    "filename": "KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip",
+    "files": 156,
+    "xml_documents": 16,
+    "i3d_models": 16,
+    "local_i3d_resources": {
+      "present": 81
+    },
+    "shader_default_images_checked": 16,
+    "vehicles": {
+      "xml/Scania_S_HKL.xml": {
+        "nodes": 1366,
+        "mappings": 500,
+        "node_references": 1001,
+        "components": 1,
+        "duplicate_animations": 0
+      }
+    },
+    "original_binary_files_preserved": 11,
+    "original_dds_png_and_audited_lua_preserved": true,
+    "generated_binary_models": [],
+    "live_fs25_test_performed": false
+  },
+  "fs_tridem": {
+    "passed": true,
+    "version": "1.3.0.2",
+    "filename": "FS25_ScaniaS_Tridem.zip",
+    "files": 162,
+    "xml_documents": 18,
+    "i3d_models": 18,
+    "local_i3d_resources": {
+      "present": 81
+    },
+    "shader_default_images_checked": 16,
+    "vehicles": {
+      "xml/Scania_S_HKL.xml": {
+        "nodes": 1372,
+        "mappings": 507,
+        "node_references": 1030,
+        "components": 1,
+        "duplicate_animations": 0
+      }
+    },
+    "original_binary_files_preserved": 11,
+    "original_dds_png_and_audited_lua_preserved": true,
+    "generated_binary_models": [
+      "decor/names/M_KOLBRAEK.i3d",
+      "decor/names/J_KRISTENSEN.i3d"
+    ],
+    "live_fs25_test_performed": false
+  },
+  "bergaas": {
+    "passed": true,
+    "version": "1.0.0.4",
+    "filename": "FS25_BergaasDesign_Scania_Tipper_Pack.zip",
+    "files": 90,
+    "xml_documents": 12,
+    "i3d_models": 6,
+    "local_i3d_resources": {
+      "present": 50,
+      "native_png_to_dds": 1
+    },
+    "shader_default_images_checked": 10,
+    "vehicles": {
+      "ScaniaTipper.xml": {
+        "nodes": 648,
+        "mappings": 117,
+        "node_references": 434,
+        "components": 1,
+        "duplicate_animations": 0
+      },
+      "3AkselTipper.xml": {
+        "nodes": 234,
+        "mappings": 40,
+        "node_references": 136,
+        "components": 1,
+        "duplicate_animations": 0
+      },
+      "3AkselSlepTipp.xml": {
+        "nodes": 236,
+        "mappings": 45,
+        "node_references": 149,
+        "components": 3,
+        "duplicate_animations": 0
+      }
+    },
+    "original_binary_files_preserved": 3,
+    "original_dds_png_and_audited_lua_preserved": true,
+    "generated_binary_models": [
+      "lighting/BergaasOptibeamFlash.i3d",
+      "decor/windowNames/M_KOLBRAEK.i3d",
+      "decor/windowNames/J_KRISTENSEN.i3d"
+    ],
+    "live_fs25_test_performed": false
+  }
+}

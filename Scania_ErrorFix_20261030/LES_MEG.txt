@@ -1,0 +1,32 @@
+SCANIA — FEILRETTET SAMLEPAKKE 30.10.2026
+
+1. Avslutt FS25.
+2. Pakk ut denne samlepakken utenfor mods-mappa.
+3. Kopier de tre mod-ZIP-ene i 1_MODDER_FRA_LOGGEN til mods-mappa og erstatt
+   de gamle filene med samme navn.
+4. Start FS25 på nytt. De enkelte mod-ZIP-ene skal beholdes som ZIP-filer.
+
+De tre filene samsvarer med navnene i loggen din:
+- KK25_ScaniaS_KRISTENSEN_EDIT.zip — S 4x2, 6x4 og 8x4, versjon 1.0.2.3
+- KK25_ScaniaS_Tridem_KRISTENSEN_EDIT.zip — versjon 1.3.0.4
+- FS25_BergaasDesign_Scania_Tipper_Pack.zip — bil og to hengere, 1.0.0.4
+
+2_ELDRE_TRIDEM_VALGFRI inneholder også en rettet FS25_ScaniaS_Tridem.zip,
+versjon 1.3.0.2. Bruk den dersom du fortsatt bruker den eldre modden med
+dette filnavnet. KK25-versjonen over beholder dine to nye vindusnavn.
+
+Rettet: manglende shader-fallbackbilder, registreringsfeil, dupliserte
+animasjoner, gardinlasting, koblinger for arbeidslys/lysprofiler, Lua-/
+flerspillerfeil, feil ikonnøkkel og tekstur-/mipmapadvarsler. Genererte
+navne- og blinkmodeller er skrevet til binært meshformat med samme
+FP32-geometri, UV-er, indekser, materialer og opprinnelige navneteksturer.
+Originale navn/flagg, valg, plasseringer og lysintensiteter er bevart.
+
+Kontrollert: 8 kjøretøy, 5339 nodereferanser, originale binærdata,
+teksturressurser, native Lua-/butikk-/lyskontrakter og ZIP-integritet.
+Ingen ny test inne i FS25 er utført. Ny lastelogging i spillet trengs
+for å bekrefte resultatet i den lokale modsamlingen.
+
+Gjenstår: Bergaas' opprinnelige store mesh har en konsolladvarsel om
+størrelse. Originalgeometrien er beholdt. Dette er ikke en manglende fil
+eller Lua-feil på PC. Loggen har også feil fra andre modder enn Scaniaene.

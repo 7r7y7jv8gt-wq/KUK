@@ -1,0 +1,440 @@
+{
+  "root": "bergaas/candidate",
+  "xml_parse_errors": [],
+  "missing_local_resources": [],
+  "external_game_resources": [
+    "$data/fs22support/shared/detailArray_diffuse.png",
+    "$data/fs22support/shared/detailArray_normal.png",
+    "$data/fs22support/shared/detailArray_specular.png",
+    "$data/shaders/default_diffuse.png",
+    "$data/shaders/default_normal.png",
+    "$data/shaders/default_specular.png",
+    "$data/shaders/dirt_diffuse.png",
+    "$data/shaders/dirt_normal.png",
+    "$data/shaders/dirt_specular.png",
+    "$data/shaders/glowShader.xml",
+    "$data/shaders/mirrorShader.xml",
+    "$data/shaders/vehicleShader.xml",
+    "$data/shaders/waterDroplets_normal.png",
+    "$data/shared/assets/beaconLights/lizard/beaconLight18.xml",
+    "$data/shared/assets/beaconLights/lizard/beaconLight18_emissive.dds",
+    "$data/shared/assets/lights/hella/hellaWorkingLight05.xml",
+    "$data/shared/assets/lights/lizard/sideMarker05Orange.xml",
+    "$data/shared/assets/lights/lizard/sideMarker10Red.xml",
+    "$data/shared/assets/lights/lizard/sideMarker10White.xml",
+    "$data/shared/assets/lights/lizard/sideMarker11Orange.xml",
+    "$data/shared/assets/lights/lizard/sideMarker12.xml",
+    "$data/shared/assets/lights/lizard/sideMarker20White.xml",
+    "$data/shared/assets/reflectors/lizard/reflectors_vmask.png",
+    "$data/shared/brandMaterialTemplates.xml",
+    "$data/shared/clearGlass_diffuse.png",
+    "$data/shared/connectionHoses/connectors_normal.png",
+    "$data/shared/connectionHoses/connectors_vmask.png",
+    "$data/shared/default_normal.dds",
+    "$data/shared/default_specular.dds",
+    "$data/shared/default_vmask.dds",
+    "$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png",
+    "$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png",
+    "$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png",
+    "$data/shared/detailLibrary/calibrated/grainSmall_specular.png",
+    "$data/shared/detailLibrary/flat_normal.png",
+    "$data/shared/detailLibrary/metallic/clear_diffuse.png",
+    "$data/shared/detailLibrary/metallic/clear_specular.png",
+    "$data/shared/detailLibrary/metallic/glass/glassHeadlight_specular.dds",
+    "$data/shared/detailLibrary/metallic/metalGalvanized_diffuse.png",
+    "$data/shared/detailLibrary/metallic/metalGalvanized_normal.png",
+    "$data/shared/detailLibrary/metallic/metalGalvanized_specular.png",
+    "$data/shared/detailLibrary/metallic/rough_specular.png",
+    "$data/shared/detailLibrary/metallic/scratched_diffuse.png",
+    "$data/shared/detailLibrary/metallic/scratched_specular.png",
+    "$data/shared/detailLibrary/metallic/silverBumpy_normal.png",
+    "$data/shared/detailLibrary/metallic/silverBumpy_specular.png",
+    "$data/shared/detailLibrary/metallic/silverScratched_diffuse.png",
+    "$data/shared/detailLibrary/metallic/silverScratched_specular.png",
+    "$data/shared/detailLibrary/metallic/steelTreadPlate_diffuse.dds",
+    "$data/shared/detailLibrary/metallic/steelTreadPlate_diffuse.png",
+    "$data/shared/detailLibrary/metallic/steelTreadPlate_normal.dds",
+    "$data/shared/detailLibrary/metallic/steelTreadPlate_normal.png",
+    "$data/shared/detailLibrary/metallic/steelTreadPlate_specular.dds",
+    "$data/shared/detailLibrary/metallic/steelTreadPlate_specular.png",
+    "$data/shared/detailLibrary/nonMetallic/fabric/fabric1_diffuse.png",
+    "$data/shared/detailLibrary/nonMetallic/fabric/fabric1_normal.png",
+    "$data/shared/detailLibrary/nonMetallic/fabric/fabric1_specular.png",
+    "$data/shared/detailLibrary/nonMetallic/leather/leather1_diffuse.png",
+    "$data/shared/detailLibrary/nonMetallic/leather/leather1_normal.png",
+    "$data/shared/detailLibrary/nonMetallic/leather/leather1_specular.png",
+    "$data/shared/detailLibrary/nonMetallic/metal/metalPaintedRough_normal.dds",
+    "$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png",
+    "$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png",
+    "$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_diffuse.png",
+    "$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_specular.png",
+    "$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png",
+    "$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png",
+    "$data/shared/detailLibrary/nonMetallic/reflector/reflector_diffuse.png",
+    "$data/shared/detailLibrary/nonMetallic/reflector/reflector_specular.png",
+    "$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png",
+    "$data/shared/detailLibrary/nonMetallic/rubber/rubber_diffuse.png",
+    "$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png",
+    "$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png",
+    "$data/shared/white_diffuse.dds",
+    "$data/shared/window02_specular.dds",
+    "$data/shared/window_diffuse.dds",
+    "$dataS/scripts/vehicles/Vehicle.lua"
+  ],
+  "png_dds_fallbacks": [
+    [
+      "ScaniaTipper.i3d",
+      "textures/1.png"
+    ]
+  ],
+  "vehicles": {
+    "3AkselSlepTipp.xml": {
+      "scene_nodes": 236,
+      "mapping_count": 45,
+      "node_references": 149,
+      "invalid_node_references": [],
+      "duplicate_animations": {},
+      "native_schema_without_TerraFarm_extension": true,
+      "schema_errors": [],
+      "fill_unit_count": [
+        4
+      ],
+      "fill_unit_indices": [
+        4,
+        4
+      ]
+    },
+    "3AkselTipper.xml": {
+      "scene_nodes": 234,
+      "mapping_count": 40,
+      "node_references": 136,
+      "invalid_node_references": [],
+      "duplicate_animations": {},
+      "native_schema_without_TerraFarm_extension": true,
+      "schema_errors": [],
+      "fill_unit_count": [
+        4
+      ],
+      "fill_unit_indices": [
+        4,
+        4
+      ]
+    },
+    "ScaniaTipper.xml": {
+      "scene_nodes": 648,
+      "mapping_count": 117,
+      "node_references": 436,
+      "invalid_node_references": [],
+      "duplicate_animations": {},
+      "native_schema_without_TerraFarm_extension": true,
+      "schema_errors": [],
+      "fill_unit_count": [
+        4
+      ],
+      "fill_unit_indices": [
+        1,
+        2,
+        4,
+        4
+      ]
+    }
+  },
+  "relative_shader_defaults": [],
+  "modDesc.xml_schema_valid": true,
+  "sounds/ScaniaV8open.xml_schema_valid": true,
+  "sounds/scania.xml_schema_valid": true,
+  "external_specialization_declarations": [],
+  "native_external_specialization_test": {
+    "native_TypeManager_source": "research/TypeManager.lua",
+    "scenarios": [
+      "none",
+      "terraFarm",
+      "globalLight",
+      "localLight"
+    ],
+    "repeated_validation_idempotent": true,
+    "non_vehicle_manager_not_modified": true,
+    "pass": true
+  },
+  "texture_conversion": {
+    "conversion": "technical format/resolution/mipmap conversion only",
+    "originals_preserved": true,
+    "assets": [
+      {
+        "width": 1024,
+        "height": 1024,
+        "mip_levels": 11,
+        "format": "BC3 / DXT5",
+        "file_size": 1398256,
+        "payload_size_exact": true,
+        "sha256": "800e6bb1a340c112ea1de62548754edbdbb7e095ccbd2ce6bb41c4d6f33af67a",
+        "source": "textures/2.dds",
+        "destination": "textures/2_native.dds",
+        "source_size": [
+          800,
+          600
+        ],
+        "source_unique_rgba": [
+          [
+            74,
+            77,
+            74,
+            255
+          ],
+          [
+            76,
+            75,
+            76,
+            255
+          ]
+        ],
+        "source_color_pixel_counts": [
+          120000,
+          360000
+        ],
+        "method": "1024x1024 Lanczos resample in normalized UV coordinates, then BC3",
+        "alpha_exact": true,
+        "rgb_max_absolute_error_vs_resampled_source": 2,
+        "rgb_mean_absolute_error_vs_resampled_source": 1.4001235961914062,
+        "uniform_source_rgba_exact": false,
+        "decoded_mips": [
+          {
+            "level": 0,
+            "width": 1024,
+            "height": 1024,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 1,
+            "width": 512,
+            "height": 512,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 2,
+            "width": 256,
+            "height": 256,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 3,
+            "width": 128,
+            "height": 128,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 4,
+            "width": 64,
+            "height": 64,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 5,
+            "width": 32,
+            "height": 32,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 6,
+            "width": 16,
+            "height": 16,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 7,
+            "width": 8,
+            "height": 8,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 8,
+            "width": 4,
+            "height": 4,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 9,
+            "width": 2,
+            "height": 2,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 10,
+            "width": 1,
+            "height": 1,
+            "alpha_min": 255,
+            "alpha_max": 255
+          }
+        ]
+      },
+      {
+        "width": 16,
+        "height": 16,
+        "mip_levels": 5,
+        "format": "BC3 / DXT5",
+        "file_size": 496,
+        "payload_size_exact": true,
+        "sha256": "c419e5f495f057f36b42e97966965eef0cee07204a2aae4b2d38fb816e3c1197",
+        "source": "lighting/optibeam_glass.png",
+        "destination": "lighting/optibeam_glass_native.dds",
+        "source_size": [
+          800,
+          600
+        ],
+        "source_unique_rgba": [
+          [
+            0,
+            0,
+            0,
+            124
+          ]
+        ],
+        "source_color_pixel_counts": [
+          480000
+        ],
+        "method": "Uniform color encoded at 16x16 with exact RGBA",
+        "alpha_exact": true,
+        "rgb_max_absolute_error_vs_resampled_source": 0,
+        "rgb_mean_absolute_error_vs_resampled_source": 0.0,
+        "uniform_source_rgba_exact": true,
+        "decoded_mips": [
+          {
+            "level": 0,
+            "width": 16,
+            "height": 16,
+            "alpha_min": 124,
+            "alpha_max": 124
+          },
+          {
+            "level": 1,
+            "width": 8,
+            "height": 8,
+            "alpha_min": 124,
+            "alpha_max": 124
+          },
+          {
+            "level": 2,
+            "width": 4,
+            "height": 4,
+            "alpha_min": 124,
+            "alpha_max": 124
+          },
+          {
+            "level": 3,
+            "width": 2,
+            "height": 2,
+            "alpha_min": 124,
+            "alpha_max": 124
+          },
+          {
+            "level": 4,
+            "width": 1,
+            "height": 1,
+            "alpha_min": 124,
+            "alpha_max": 124
+          }
+        ]
+      },
+      {
+        "width": 16,
+        "height": 16,
+        "mip_levels": 5,
+        "format": "BC3 / DXT5",
+        "file_size": 496,
+        "payload_size_exact": true,
+        "sha256": "6e780035b84256cbac15cc3b340fb10ea5c69aab7ef834b3e50e87a9cfa09558",
+        "source": "lighting/ozz/orange.png",
+        "destination": "lighting/ozz/orange_native.dds",
+        "source_size": [
+          800,
+          600
+        ],
+        "source_unique_rgba": [
+          [
+            255,
+            128,
+            0,
+            255
+          ]
+        ],
+        "source_color_pixel_counts": [
+          480000
+        ],
+        "method": "Reuse existing exact-color BC3 amber emission map",
+        "alpha_exact": true,
+        "rgb_max_absolute_error_vs_resampled_source": 0,
+        "rgb_mean_absolute_error_vs_resampled_source": 0.0,
+        "uniform_source_rgba_exact": true,
+        "decoded_mips": [
+          {
+            "level": 0,
+            "width": 16,
+            "height": 16,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 1,
+            "width": 8,
+            "height": 8,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 2,
+            "width": 4,
+            "height": 4,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 3,
+            "width": 2,
+            "height": 2,
+            "alpha_min": 255,
+            "alpha_max": 255
+          },
+          {
+            "level": 4,
+            "width": 1,
+            "height": 1,
+            "alpha_min": 255,
+            "alpha_max": 255
+          }
+        ]
+      }
+    ]
+  },
+  "changed_files": [
+    "3AkselSlepTipp.xml",
+    "3AkselTipper.xml",
+    "ScaniaTipper.i3d",
+    "ScaniaTipper.xml",
+    "lighting/BergaasOptibeamShader.xml",
+    "modDesc.xml"
+  ],
+  "added_files": [
+    "lighting/optibeam_glass_native.dds",
+    "lighting/ozz/orange_native.dds",
+    "scripts/OptionalSpecializations.lua",
+    "textures/2_native.dds"
+  ],
+  "removed_files": [],
+  "original_textures_sounds_geometry_binaries_byte_identical": true,
+  "original_scene_only_changed_for_three_native_DDS_redirects": true,
+  "original_lighting_configs_controls_names_flags_physics_preserved": true,
+  "all_animation_parts_and_times_preserved": true,
+  "live_FS25_test_performed": false,
+  "remaining_platform_warning": "Original main shape 48 exceeds the console shape size limit (14842 KB > 14336 KB); retained to preserve geometry.",
+  "inline_shape_warnings": "Root is evaluating binary compilation separately; this agent preserved inline meshes."
+}
