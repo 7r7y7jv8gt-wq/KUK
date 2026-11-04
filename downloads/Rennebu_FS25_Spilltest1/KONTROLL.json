@@ -1,0 +1,151 @@
+{
+  "status": "passed_static_first_game_candidate_review",
+  "stage": "FS25 game test 1 candidate",
+  "editor_tested": false,
+  "game_tested": false,
+  "confirmed_working_in_game": false,
+  "production_ready": false,
+  "issues": [],
+  "hard_blockers_found_by_static_review": [],
+  "counts": {
+    "original_mod_files_present": 1270,
+    "candidate_mod_files": 1811,
+    "xml_i3d_documents_parsed": 422,
+    "official_schema_validations_passed": 112,
+    "active_xml_i3d_shader_files_checked": 310,
+    "active_i3d_files_checked": 191,
+    "active_local_reference_occurrences_checked": 3352,
+    "missing_active_local_references": 0,
+    "new_dds_files_decoded": 521,
+    "dds_hashes_matched_to_generation_plans": 445,
+    "own_foliage_rgba_alpha_masks_checked": 75,
+    "original_non_xml_i3d_assets_unchanged": 864,
+    "original_non_xml_i3d_assets_intentionally_changed": 2,
+    "original_xml_i3d_files_modified": 235,
+    "main_scene_shape_records_preserved": 441229,
+    "embedded_tree_exports_checked": 13,
+    "fields": 145,
+    "field_polygon_points": 17210,
+    "farmlands": 190,
+    "initial_grass_fields": 102,
+    "initial_cultivated_fields": 43,
+    "shared_foliage_type_entries": 29,
+    "shared_foliage_type_bits": 5,
+    "default_placeables": 103,
+    "farm1_starter_buildings": 5,
+    "farm1_starter_vehicles": 3,
+    "decorative_original_animal_barns": 12,
+    "collectible_callbacks_disabled": 101,
+    "compat_foliage_shader_material_references_in_whole_project": 105,
+    "compat_foliage_shader_material_references_in_active_scenes": 68
+  },
+  "mod_identity": {
+    "expected_zip_basenames": [
+      "FS25_Rennebu_WIP.zip",
+      "FS25_BuildingsOfNorway_WIP.zip"
+    ],
+    "modDesc_at_each_mod_root": true,
+    "descVersion": 92,
+    "map_dependency": "FS25_BuildingsOfNorway_WIP",
+    "dependency_and_cross_mod_paths_consistent": true,
+    "candidate_titles_and_190_farmland_descriptions_checked": true
+  },
+  "resource_checks": {
+    "active_local_xml_models_store_images_and_shader_targets_resolve": true,
+    "implicit_dds_density_and_audio_filename_resolution_included": true,
+    "all_13_embedded_tree_models_reachable_and_share_original_shapes": true,
+    "active_file_ids_unique_and_material_references_defined": true,
+    "all_105_local_compat_shader_material_targets_exist": true,
+    "initial_281_missing_texture_paths_replaced": true,
+    "additional_126_unproven_legacy_texture_paths_replaced": true,
+    "remaining_paths_from_additional_legacy_review": 0,
+    "new_dds_decode_as_rgba_bc3": true,
+    "own_foliage_masks_have_nontrivial_alpha": true,
+    "unregistered_source_xml_with_missing_models": [
+      "FS25_BuildingsOfNorway_WIP/xml/oppstuggu.xml",
+      "FS25_BuildingsOfNorway_WIP/xml/sandbrekka.xml",
+      "FS25_BuildingsOfNorway_WIP/xml/voll_1341.xml"
+    ],
+    "external_fs25_stock_resources_tested_against_local_game_installation": false
+  },
+  "geometry_data_checks": {
+    "all_original_file_names_retained": true,
+    "original_dem_textures_audio_lua_and_shapes_unchanged": true,
+    "only_original_binary_changes": [
+      {
+        "file": "FS25_Rennebu_WIP/mapRennebu/data/infoLayer_farmland.grle",
+        "original_sha256": "b91015402c6a4b289f734fdc6797bede02326950ef531c44182ab968f3044bc4",
+        "candidate_sha256": "9433ca3a067fe22dbb641e3a33efab268eaa58a32eba685d5075f8f90020e92d",
+        "candidate_bytes": 591963
+      },
+      {
+        "file": "FS25_Rennebu_WIP/mapRennebu/data/densityMap_ground.gdm",
+        "original_sha256": "c8d7b3cfaf7b4fb2734f85f2045929bc6e06a5fb9d838151dc239303b12bbfd9",
+        "candidate_sha256": "6427dd9328507e0cbb6ff316c4358d33b764f59ac9e1d1ad49520862090de418",
+        "candidate_bytes": 820364
+      }
+    ],
+    "original_ground_and_farmland_backups_exact": true,
+    "main_shape_attributes_preserved_except_two_declared_trigger_filter_updates": true,
+    "main_shape_attribute_digest": "77d216751bd164ece0983f9eca1edfce5f450eac5728b9beff2cbe84db36f228",
+    "tree_split_type_ids_and_main_reference_placements_preserved": true,
+    "field_group_native_polygon_and_raster_ownership_validation_passed": true,
+    "fields_and_farmlands_xml_match_validated_final_artifacts": true,
+    "farmland_raster_dimensions": [
+      8192,
+      8192
+    ],
+    "farmland_channels": 8,
+    "farmland_pixel_size_metres": 1,
+    "all_145_field_polygons_intersect_only_assigned_parcel_pixels": true,
+    "all_145_initial_state_ids_are_unique_native_farmland_ids": true,
+    "source_21_shared_foliage_type_entries_preserved_in_order": true,
+    "eight_native_fs25_crop_types_appended_without_reencoding_original_fruit_gdm": true,
+    "remaining_old_meadow_imports_removed_while_1696_embedded_shapes_preserved": true
+  },
+  "gameplay_static_checks": {
+    "critical_scene_callbacks_present": {
+      "Environment.onCreateSunLight": 1,
+      "Mission00.onCreateStartPoint": 1,
+      "AnimalLoadingTrigger.onCreate": 1,
+      "BaseMission.onCreateStoreSpawnPlace": 2,
+      "ShopTrigger.onCreate": 1,
+      "AISystem.onCreateAIRoadSpline": 1,
+      "TrafficSystem.onCreate": 1,
+      "PedestrianSystem.onCreate": 1,
+      "FieldUtil.onCreate": 1
+    },
+    "unsupported_collectible_callbacks_and_registration_disabled": true,
+    "shop_and_animal_dealer_trigger_filters_match_native_reference": true,
+    "traffic_and_pedestrian_xml_paths_match_native_reference": true,
+    "default_placeable_ids_unique": true,
+    "farm1_starter_buildings_and_vehicles_registered": true,
+    "grass_initial_ground_state_uses_native_GRASS": true,
+    "building_node_references_checked": 1683,
+    "known_trigger_collision_shapes_migrated": 79,
+    "seasonal_colors_paused": true,
+    "standard_fs25_crop_and_climate_definitions_selected": true
+  },
+  "publication_checks": {
+    "excluded_log_or_credential_filenames_found": [],
+    "private_workspace_user_path_or_token_pattern_matches": []
+  },
+  "ground_state_exception": {
+    "all_67108864_ground_pixels_previously_independently_decoded_and_transform_verified": true,
+    "unknown_source_state15_pixels": 209629,
+    "source_semantics_fully_verified": false,
+    "policy": "Unknown source state15 remains numeric15; FS25 interprets it as Grass(Cut). Source14 also maps to15, so the transformed map alone is not invertible. The exact original GDM backup is included."
+  },
+  "limitations": [
+    "This candidate has not been loaded in GIANTS Editor or FS25 here. Static checks cannot prove successful career loading, rendering, multiplayer, collision, forestry, triggers or production gameplay.",
+    "An actual new FS25 save and its game log are required before claiming that the converted map works in game.",
+    "Twelve original animal barn definitions are decorative; animal husbandry gameplay is disabled in them.",
+    "The map now has 190 parcels instead of 124 because FS25 requires an individual containing parcel for every field; original parcel metadata and ownership are retained through splits.",
+    "The candidate uses standard FS25 climate and crops. Norwegian seasonal climate behavior is not implemented.",
+    "Legacy foliage seasonal colors and 101 collectible callbacks are paused. Own replacement textures and alpha masks are approximate; tree and vegetation appearance can differ from FS22.",
+    "The 209,629 pixels with undefined original ground state15 have explicitly unresolved semantics; exact original ground and farmland data backups are included.",
+    "Old physics and tree split metadata are preserved where no verified native role mapping was available. In-game collision, cutting and growth behavior remain untested.",
+    "Three unused source building XMLs retain missing original models but are unregistered and unreachable from active mod configuration.",
+    "Four original generated terrain cache files are retained byte-for-byte. Their FS25 invalidation and regeneration behavior has not been runtime tested."
+  ]
+}
