@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "sourceAuthor": "Arek",
+  "prefabVersion": "1.0.0.0",
+  "sourceMod": "FS25_newHollandT6 1.0.0.0",
+  "dimensionsMetres": [
+    0.08103835582733154,
+    0.16132876276969887,
+    0.09546196824973141
+  ],
+  "models": [
+    "t6IndicatorLeft.i3d",
+    "t6IndicatorRight.i3d"
+  ],
+  "meshTrianglesPerLamp": 762,
+  "texturesBundled": [
+    "t6Lights_emissive.dds",
+    "t6SharedLights_normal.dds",
+    "t6SharedLights_vmask.dds"
+  ],
+  "sourceFormatRoundtripByteExact": true,
+  "geometryIndependentVerification": {
+    "status": "PASS",
+    "version": 10,
+    "shapeCount": 4,
+    "modelsChecked": 2,
+    "exactSourceSubsetExtraction": true,
+    "sourceMaterialsPreserved": true,
+    "nativeSharedDetailAndShaderReferencesPreserved": true,
+    "staticLightAtlasUV1Preserved": true,
+    "sourceSpotWorldPosesPreservedAfterMountPivot": true,
+    "sourceLocalDDSByteExact": true,
+    "noPartialTrianglesOrExtraTractorGeometry": true,
+    "meshes": [
+      {
+        "side": "left",
+        "sourceShapeId": 33,
+        "emittedShapeId": 1,
+        "vertices": 647,
+        "triangles": 636,
+        "maxPositionErrorMetres": 3.6185325846815886e-09,
+        "maxNormalError": 2.9723101979683975e-08,
+        "maxTangentError": 0.0,
+        "uv0AndUV1ByteExact": true,
+        "trianglesAndSubsetMaterialsExact": true
+      },
+      {
+        "side": "left",
+        "sourceShapeId": 34,
+        "emittedShapeId": 2,
+        "vertices": 114,
+        "triangles": 126,
+        "maxPositionErrorMetres": 3.6882940035454226e-09,
+        "maxNormalError": 2.9529954148621584e-08,
+        "maxTangentError": 0.0,
+        "uv0AndUV1ByteExact": true,
+        "trianglesAndSubsetMaterialsExact": true
+      },
+      {
+        "side": "right",
+        "sourceShapeId": 33,
+        "emittedShapeId": 3,
+        "vertices": 637,
+        "triangles": 636,
+        "maxPositionErrorMetres": 3.6185450191794644e-09,
+        "maxNormalError": 2.9722993732939074e-08,
+        "maxTangentError": 0.0,
+        "uv0AndUV1ByteExact": true,
+        "trianglesAndSubsetMaterialsExact": true
+      },
+      {
+        "side": "right",
+        "sourceShapeId": 34,
+        "emittedShapeId": 4,
+        "vertices": 115,
+        "triangles": 126,
+        "maxPositionErrorMetres": 3.6883023302181073e-09,
+        "maxNormalError": 2.9529937495276215e-08,
+        "maxTangentError": 0.0,
+        "uv0AndUV1ByteExact": true,
+        "trianglesAndSubsetMaterialsExact": true
+      }
+    ],
+    "binarySha256": "431e38fbf09eb30d185465a0af7161eb039881ee2228d474f347185be64c64f6",
+    "editorOrRuntimeTested": false
+  },
+  "prefabContractIndependentVerification": {
+    "status": "PASS",
+    "checks": {
+      "materials_exact_original_source": true,
+      "iconExists": true,
+      "twoCorrectPrefabRoots": true,
+      "allLocalReferencesResolved": true,
+      "threeLocalDDSByteIdenticalToSource": true,
+      "allNativeReferencesVerifiedAgainstSourceI3D": true,
+      "allSixExampleBindingsMatchActualChildOrder": true,
+      "nativeLightExampleNestingAndIntensities": true,
+      "creditPreserved": true,
+      "examplePathsAreDocumentedInstallationPlaceholders": true,
+      "gameOrEditorExecuted": false,
+      "bothI3DsOfficialSchemaPassed": true,
+      "prefabDescMatchesWorkingFS25Template": true,
+      "icon512BC3Full10MipChainValidated": true,
+      "previewPNGDecodes": true
+    },
+    "roots": {
+      "Left": {
+        "root": "T6_Indicator_Left",
+        "children": [
+          "housing",
+          "lens",
+          "turnLight"
+        ],
+        "childRelativePaths": [
+          "|0",
+          "|1",
+          "|2"
+        ],
+        "bodyMaterialIds": "71,72,74",
+        "lensMaterialIds": "77,78"
+      },
+      "Right": {
+        "root": "T6_Indicator_Right",
+        "children": [
+          "housing",
+          "lens",
+          "turnLight"
+        ],
+        "childRelativePaths": [
+          "|0",
+          "|1",
+          "|2"
+        ],
+        "bodyMaterialIds": "71,72,74",
+        "lensMaterialIds": "77,78"
+      }
+    },
+    "localReferences": [
+      "t6Indicator.i3d.shapes",
+      "textures/t6Lights_emissive.dds",
+      "textures/t6SharedLights_normal.dds",
+      "textures/t6SharedLights_vmask.dds"
+    ],
+    "nativeReferences": [
+      "$data/shaders/vehicleShader.xml",
+      "$data/shared/clearGlass_diffuse.png",
+      "$data/shared/detailLibrary/flat_normal.png",
+      "$data/shared/detailLibrary/metallic/clear_diffuse.png",
+      "$data/shared/detailLibrary/metallic/clear_specular.png",
+      "$data/shared/detailLibrary/metallic/glass/glassClear03_specular.png",
+      "$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_diffuse.png",
+      "$data/shared/detailLibrary/nonMetallic/plastic/plasticGraniteGrainSmall_specular.png",
+      "$data/shared/white_diffuse.png"
+    ],
+    "issues": [],
+    "prefabDescOfficialSchema": {
+      "url": "https://validation.gdn.giants-software.com/xml/fs25/prefabDesc.xsd",
+      "available": false,
+      "httpStatus": 404
+    },
+    "icon": {
+      "name": "icon_t6Indicator.dds",
+      "width": 512,
+      "height": 512,
+      "mipLevels": 10,
+      "format": "BC3/DXT5",
+      "size": 349680,
+      "sha256": "0c3d5e07d65d9e4e26887001169ba8a1b75729714538c5aa4f442413d41c2e27"
+    },
+    "preview": {
+      "name": "preview.png",
+      "size": 155772,
+      "dimensions": [
+        1200,
+        700
+      ],
+      "nativeGIANTSShaderExecuted": false
+    }
+  },
+  "runtimeGameOrEditorTested": false
+}
