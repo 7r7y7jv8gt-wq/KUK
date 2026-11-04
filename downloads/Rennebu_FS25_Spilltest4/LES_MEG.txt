@@ -1,0 +1,79 @@
+RETTELSER I SPILLTEST 4
+- Aatte native fjoes lastes direkte fra originalpakken; ingen XML-arv mellom modder.
+- Den tidligere fungerende terreng-occludercachen foelger med igjen.
+- Bakkevegetasjon bruker $data/foliage/forestPlants/groundFoliage.xml.
+- Faa oppstartsmarkoerer skrives i spilloggen; ingen funksjon eller returverdi endres.
+- Loesning paa lastestoppen maa fortsatt bekreftes i spillet.
+
+RENNEBU FS25 – SPILLTEST 4
+
+Dette er en uoffisiell konvertering av hele det opprinnelige 8 x 8 km-kartet.
+Denne kandidaten er ikke testet i FS25 her. Feilfri drift og 120 FPS er ikke
+bekreftet. Spilltest 2 kom inn i spillet; denne utgaven retter flere av feilene
+fra den loggen og bytter flere systemer og modeller til native FS25-ressurser.
+
+INSTALLASJON – TRE MODDER MÅ VÆRE AKTIVE
+1. Erstatt begge tidligere WIP-filer med:
+   FS25_Rennebu_WIP.zip                  versjon 1.0.4.1
+   FS25_BuildingsOfNorway_WIP.zip        versjon 1.0.3.1
+2. Behold ZIP-filene uendret i:
+   Dokumenter\My Games\FarmingSimulator2025\mods
+   Ikke pakk dem ut og ikke legg (1) eller andre tillegg i filnavnene.
+3. Aktiver også ORIGINALEN FS25_BuildingsOfNorway fra OlaHaldor.
+   Den er nå en nødvendig avhengighet. Koblingene er kontrollert mot 1.0.0.3.
+   https://www.farming-simulator.com/mod.php?mod_id=341258&title=fs2025
+4. Start EN HELT NY enspillerlagring på «Rennebu - FS25 spilltest 4».
+   Bruk bare disse tre moddene under første test.
+   Gamle lagringer og kopierte savegame-ZIP-er passer ikke til den nye skogen.
+
+I DENNE UTGAVEN
+- 145 901 trær er komplette native FS25-modellreferanser. Treplasseringene
+  er bevart. Noen arter er erstattet med native motstykker; størrelse,
+  utseende og tømmerutbytte kan derfor være annerledes.
+- 1 979 eksisterende faste kollisjonsformer har fått eksplisitte FS25-filtre.
+  Geometri og transformasjoner for bygg og terreng er bevart.
+- Begge tip/heap-kollisjonskart er rettet fra 8194 til 8192 piksler.
+  De opprinnelige maskene er sikkerhetskopiert i conversion_backup.
+- 197 nye manglende teksturbaner er erstattet. Fire manglende lyder har fått
+  lokale erstatninger. Eldre pallreferanser og flere triggerfeil er rettet.
+- Gress, eng og verdensvegetasjon bruker native FS25-beskrivelser.
+  Avlinger og faktiske fylltyper følger FS25s egne registre. 31 eldre statiske
+  fyllflater kobles til spillets native fyllmaterialer ved oppstart.
+- Ni dyrebygg bruker komplette native FS25-definisjoner, med ferdige native
+  modeller og navmesher der de leveres av originalpakken.
+- 145 felt og 190 parseller er bevart fra feltkonverteringen.
+- Skogens tegneavstand er minst 750 m, med eksisterende lengre grenser bevart.
+  Terrengdetaljer er økt til 750 m og jorddetaljer til 125 m. Native gress- og
+  tremodeller beholder egne detaljnivåer og påvirkes av spillets grafikkvalg.
+- 911 genererte DDS-teksturer har fått fulle mip-kjeder. Hovednivåets
+  komprimerte bildeinnhold er uendret. Dette er en strukturell optimalisering;
+  det er ikke en FPS-måling.
+- Gamle avledede LOD-/normalcacher og ubrukte redigeringskonfigurasjoner
+  følger ikke med mod-ZIP-ene. Første lasting kan bruke tid på ny generering
+  og AI-skanning.
+
+FORELØPIGE BEGRENSNINGER
+- Bergtun hester, Norigard barn og Teigan barn er fortsatt dekorasjoner.
+  Bruk native FS25-dyrebygg fra byggemenyen for disse funksjonene.
+- Standard FS25 USA-klima brukes; samleobjekter er deaktivert.
+- Enkelte gamle statiske dekorplanter bruker fortsatt kompatibilitetsmateriale.
+- En liten lokal salgsmarkør bruker XML-geometri. Den kan fortsatt gi
+  mesh-/runtime-cooking-advarsler; denne utgaven er beregnet på PC-spilltest.
+- Den tette skogen kan møte spillets grense for planting av nye trær.
+- 209 629 piksler med gammel, udefinert marktype 15 tolkes som GrassCut.
+  Den opprinnelige markdatafilen er sikkerhetskopiert i conversion_backup.
+- Rapporter om at spilleren står over/under bakken må prøves på nytt i spillet.
+  Høydekart, høydeskala og opprinnelige plasseringer er ikke flyttet.
+- Lasting, kollisjoner, pløying, såing, slått, høsting, dyr, hogst, handel og
+  lagring må fortsatt kontrolleres i FS25. Ingen FPS-garanti er gitt.
+
+VED TEST
+Prøv først vegger, gulv og dører på startgården, deretter kjøring/pløying,
+slått, tømming av gress og hogst. Lagre, avslutt og last lagringen igjen.
+Se også om figuren står riktig på vei og i en åker.
+Ved feil: avslutt spillet og send Dokumenter\My Games\FarmingSimulator2025\log.txt.
+Oppgi gjerne FPS med samme kameravinkel før og etter. Editor-loggen erstatter
+ikke spilloggen.
+
+Originale krediteringer er beholdt. Den originale FS25-bygningspakken og
+FS25-spillressurser er eksterne avhengigheter og er ikke kopiert inn her.

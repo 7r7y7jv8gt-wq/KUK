@@ -1,0 +1,533 @@
+{
+  "status": "PASS",
+  "stage": "FS25 spilltest 4",
+  "game_tested": false,
+  "fps_benchmarked": false,
+  "fps_120_guaranteed": false,
+  "reported_global_player_height_issue_runtime_resolved": false,
+  "counts": {
+    "xml_i3d_documents": 423,
+    "i3d_files": 260,
+    "resolved_local_references": 4050,
+    "main_native_tree_references": 145899,
+    "verified_native_pack_references": 8
+  },
+  "official_schema_checks": 104,
+  "official_schema_passed": 104,
+  "required_mods": [
+    "FS25_Rennebu_WIP",
+    "FS25_BuildingsOfNorway_WIP",
+    "FS25_BuildingsOfNorway"
+  ],
+  "native_husbandry_aliases": 9,
+  "legacy_decorative_barns": [
+    "bergtun_horses",
+    "norigard_barn",
+    "teigan_barn"
+  ],
+  "full_original_dem_preserved": true,
+  "native_tree_assets_and_positions_verified": true,
+  "direct_native_husbandry_fix": {
+    "status": "PASS",
+    "officialModDescSchema": true,
+    "officialDefaultPlaceablesSchema": true,
+    "canonicalOriginalStoreTargetsVerified": 8,
+    "forbiddenCrossModWrappersActiveMapReferences": 0,
+    "forbiddenCrossModWrappersStoreRegistrations": 0,
+    "transformsAndOwnershipPreserved": true,
+    "nativeBaseOwnershipMatchesExisting": true,
+    "ninthBaseGameParentUnchanged": true,
+    "badWrapperFilesStillOnDiskForRootExclusion": [
+      "FS25_BuildingsOfNorway_WIP/xml/bergtun_barn_new.xml",
+      "FS25_BuildingsOfNorway_WIP/xml/bergtun_barn_old.xml",
+      "FS25_BuildingsOfNorway_WIP/xml/bruholt_barn_new.xml",
+      "FS25_BuildingsOfNorway_WIP/xml/hol_barn_bunker.xml",
+      "FS25_BuildingsOfNorway_WIP/xml/hoveng_barn.xml",
+      "FS25_BuildingsOfNorway_WIP/xml/ivar_barn.xml",
+      "FS25_BuildingsOfNorway_WIP/xml/svendsgarden_sheepbarn.xml",
+      "FS25_BuildingsOfNorway_WIP/xml/voll_voll_barn.xml"
+    ]
+  },
+  "native_placed_trees": 145901,
+  "native_crop_layers_plus_meadow": 26,
+  "native_fill_callback_tests_passed": 10,
+  "generated_dds_full_mip_chains_verified": 911,
+  "schema_results": [
+    {
+      "file": "modDesc.xml",
+      "passed": true
+    },
+    {
+      "file": "mapRennebu/map.xml",
+      "passed": true
+    },
+    {
+      "file": "mapRennebu/weed.xml",
+      "passed": true
+    },
+    {
+      "file": "mapRennebu/aiSystem.xml",
+      "passed": true
+    },
+    {
+      "file": "mapRennebu/farmlands.xml",
+      "passed": true
+    },
+    {
+      "file": "mapRennebu/vehicles.xml",
+      "passed": true
+    },
+    {
+      "file": "mapRennebu/items.xml",
+      "passed": true
+    },
+    {
+      "file": "mapRennebu/handTools.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/modDesc.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/bergtun_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/bergtun_horses.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/bergtun_shed.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/bortstuggu.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/bruholt_barn_old.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/bruholt_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/bruholt_farmhouse_old.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/bunkerSiloMedium.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/fs22_sheepBarnBig.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/grainmill.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/grainmill_buyingstation.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/greenhouseSmall.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/grotan_barn.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/grotan_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/grotan_farmhouse_old.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/grotan_garage.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/grotan_guesthouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/grotan_pigshed.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/grotan_stabbur_1.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/grotan_stabbur_2.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/grotan_stabbur_3.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/hol_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/holilokk_barn.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/holilokk_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/holilokk_garage.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/hoveng_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/hoveng_farmhouse_old.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/hoveng_shed.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/innstuggu.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/ivar_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/ivar_farmhouse_default.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/ivar_garage.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/joker.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/lokkja_barn.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/lokkja_farmhouse_1.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/lokkja_farmhouse_2.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/lokkja_workshop.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/myra.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/myrastuggu.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/myrmo_barn.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/myrmo_barn2.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/myrmo_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/myrmo_farmhouse2.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/myrmo_farmhousenew.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/myrmo_farmhouseold.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/myrmo_garage.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/myrmo_neighbor.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/norigard_barn.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/norigard_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/norigard_house.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/norigard_workshop.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/norum_barn.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/norum_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/norum_stabbur.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/oppstuggu.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/oppstuggu_barn.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/oppstuggu_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/oppstuggu_farmhouseold.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/rennebusnekkeri.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/samlaget.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/samlaget_nabo.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/sandbrekka.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/sandbrekka_bakery.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/sandbrekka_big.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/sellingstation_animaldealer.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/shop.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/soergard.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/stamneshaggan_barn.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/stamneshaggan_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/stamneshaggan_longhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/stavne.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/teigan_barn.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/torsgarden_barn.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/torsgarden_garage.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/torsgarden_mainhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll1341_barn.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll1341_farmhouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll1341_guesthouse.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll_1341.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll_1426.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll_biblioteket.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll_bolig.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll_boligfelt.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll_haarstad.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll_kirkebrua.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll_misjonshuset.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/voll_skole.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_Rennebu_WIP/mapRennebu/import/chargingStation/chargingStation.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_Rennebu_WIP/mapRennebu/import/debrisCrusher.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_Rennebu_WIP/mapRennebu/import/sawmillEU/containerTrigger.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_Rennebu_WIP/mapRennebu/import/sawmillEU/sellingStationWood.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_Rennebu_WIP/mapRennebu/import/sawmillUS/sawmillUS.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_Rennebu_WIP/mapRennebu/placeables/fuelStation.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_Rennebu_WIP/mapRennebu/placeables/sellingStationVehicles.xml",
+      "passed": true
+    },
+    {
+      "file": "FS25_Rennebu_WIP/mapRennebu/placeables.xml",
+      "passed": true
+    }
+  ],
+  "local_reference_failures": [],
+  "issues": [],
+  "inactive_original_xml_not_loaded": [
+    "FS25_BuildingsOfNorway_WIP/xml/bergtun_barn_new.xml",
+    "FS25_BuildingsOfNorway_WIP/xml/bergtun_barn_old.xml",
+    "FS25_BuildingsOfNorway_WIP/xml/bruholt_barn_new.xml",
+    "FS25_BuildingsOfNorway_WIP/xml/hol_barn_bunker.xml",
+    "FS25_BuildingsOfNorway_WIP/xml/hoveng_barn.xml",
+    "FS25_BuildingsOfNorway_WIP/xml/ivar_barn.xml",
+    "FS25_BuildingsOfNorway_WIP/xml/oppstuggu.xml",
+    "FS25_BuildingsOfNorway_WIP/xml/sandbrekka.xml",
+    "FS25_BuildingsOfNorway_WIP/xml/svendsgarden_sheepbarn.xml",
+    "FS25_BuildingsOfNorway_WIP/xml/voll_1341.xml",
+    "FS25_BuildingsOfNorway_WIP/xml/voll_voll_barn.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/grass_longDry.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/grass_medium.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/grass_short.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/meadowBrush.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/meadowflower.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/meadowweed.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/smallDenseMixBrush.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/oakSmall1.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/oakSmall2.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/oakSmall3.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/pineClearCut1.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/pineClearCut2.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/pineClearCut3.xml",
+    "FS25_Rennebu_WIP/mapRennebu/maps_bales.xml",
+    "FS25_Rennebu_WIP/mapRennebu/placeables/dairyNO/dairyNO.xml",
+    "FS25_Rennebu_WIP/mapRennebu/sound.xml"
+  ],
+  "excluded_editor_only_xml": [
+    "FS25_Rennebu_WIP/mapRennebu/foliage/grass_longDry.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/grass_medium.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/grass_short.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/meadowBrush.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/meadowflower.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/meadowweed.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/smallDenseMixBrush.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/oakSmall1.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/oakSmall2.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/oakSmall3.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/pineClearCut1.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/pineClearCut2.xml",
+    "FS25_Rennebu_WIP/mapRennebu/import/holmakratrees/xml/pineClearCut3.xml",
+    "FS25_Rennebu_WIP/mapRennebu/maps_bales.xml",
+    "FS25_Rennebu_WIP/mapRennebu/placeables/dairyNO/dairyNO.xml",
+    "FS25_Rennebu_WIP/mapRennebu/sound.xml"
+  ],
+  "packaging_excludes_derived_fs22_terrain_cache_files": true,
+  "tested_terrain_occluder_cache_restored": true,
+  "limits": [
+    "This candidate needs a fresh FS25 game test; static checks are not engine verification.",
+    "Native tree analogues change some species, size and wood yield while preserving tree anchors.",
+    "Three legacy animal buildings remain decorative; nine use full native parents.",
+    "Some decorative foliage and the climate differ from the original FS22 map.",
+    "A small authored bale-market mesh is nonbinary XML geometry; runtime cooking/console warnings can remain on that mesh.",
+    "The reported player/ground alignment needs runtime confirmation; the original DEM and transforms were preserved.",
+    "No client FPS benchmark or 120 FPS guarantee is available."
+  ]
+}

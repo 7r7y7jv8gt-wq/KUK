@@ -1,0 +1,83 @@
+name: Rennebu FS25 game test 4
+
+on:
+  push:
+    branches:
+      - codex/rennebu-fs25-ingame4
+    paths:
+      - downloads/Rennebu_FS25_Spilltest4/**
+      - .github/scripts/reconstruct_ingame.py
+      - .github/workflows/rennebu-ingame4.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rennebu-fs25-ingame4-release
+  cancel-in-progress: false
+
+jobs:
+  reconstruct-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Read builder and manifest from this exact commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          from urllib.request import urlopen
+          prefix = 'https://raw.githubusercontent.com/' + os.environ['GITHUB_REPOSITORY'] + '/' + os.environ['GITHUB_SHA'] + '/'
+          for name in ('.github/scripts/reconstruct_ingame.py', 'downloads/Rennebu_FS25_Spilltest4/manifest.json'):
+              target = Path(name)
+              target.parent.mkdir(parents=True, exist_ok=True)
+              with urlopen(prefix + name, timeout=90) as source:
+                  target.write_bytes(source.read())
+          PY
+
+      - name: Verify sources and rebuild both real mod ZIPs
+        shell: bash
+        run: |
+          set -euo pipefail
+          python .github/scripts/reconstruct_ingame.py \
+            --manifest downloads/Rennebu_FS25_Spilltest4/manifest.json \
+            --source-prefix "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_SHA}/downloads/Rennebu_FS25_Spilltest4" \
+            --output artifacts
+
+      - name: Publish verified game-test assets
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: rennebu-fs25-ingame-4-20261104
+        run: |
+          set -euo pipefail
+          gh release view "${RELEASE_TAG}" --repo "${GITHUB_REPOSITORY}" --json tagName,isDraft,isPrerelease,url
+          gh release upload "${RELEASE_TAG}" \
+            --repo "${GITHUB_REPOSITORY}" \
+            artifacts/FS25_Rennebu_WIP.zip \
+            artifacts/FS25_BuildingsOfNorway_WIP.zip \
+            artifacts/LES_MEG.txt \
+            artifacts/KONTROLL.json \
+            artifacts/PUBLISHED_ARCHIVES.json \
+            --clobber
+          gh release edit "${RELEASE_TAG}" --repo "${GITHUB_REPOSITORY}" \
+            --target "${GITHUB_SHA}" --draft=false --prerelease --latest=false
+          gh release view "${RELEASE_TAG}" --repo "${GITHUB_REPOSITORY}" --json tagName,isDraft,isPrerelease,url,assets
+          {
+            echo '### Verified release files'
+            python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('artifacts/PUBLISHED_ARCHIVES.json').read_text())
+          for archive in report['archives']:
+              print(f"- {archive['name']}: {archive['size']} bytes; SHA-256 `{archive['sha256']}`")
+          print('\nAll planned payload bytes, ZIP metadata and CRCs passed verification. FS25 gameplay was not run here.')
+          PY
+          } >> "${GITHUB_STEP_SUMMARY}"
