@@ -1,0 +1,134 @@
+name: Publish Rennebu FS25 terrain test 1
+
+on:
+  push:
+    branches:
+      - codex/rennebu-fs25-terrain-test1
+    paths:
+      - .github/workflows/rennebu-terrain-test1.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rennebu-fs25-terrain-test1-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Assemble and verify the exact terrain-test ZIP
+        env:
+          SOURCE_REPOSITORY: ${{ github.repository }}
+          SOURCE_COMMIT: ${{ github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import Path, PurePosixPath
+          import time
+          from urllib.parse import quote
+          from urllib.request import Request, urlopen
+          import zipfile
+
+          EXPECTED_NAME = "Rennebu_FS25_Terrengtest1.zip"
+          EXPECTED_SIZE = 791650611
+          EXPECTED_SHA = "efbd4e7f488cc2985170a426d65ba2829220095f8de7215eedd57f20aa936d3d"
+          repository = os.environ["SOURCE_REPOSITORY"]
+          commit = os.environ["SOURCE_COMMIT"]
+          base = (
+              "https://raw.githubusercontent.com/"
+              + repository + "/" + commit
+              + "/downloads/Rennebu_FS25_Terrengtest1/"
+          )
+
+          def open_public(name):
+              url = base + quote(name, safe="")
+              return urlopen(Request(url, headers={"User-Agent": "Rennebu-terrain-test-builder"}), timeout=180)
+
+          manifest = None
+          for attempt in range(4):
+              try:
+                  with open_public("manifest.json") as response:
+                      raw = response.read(1048577)
+                  assert len(raw) <= 1048576, "Manifest too large"
+                  manifest = json.loads(raw)
+                  break
+              except Exception:
+                  if attempt == 3:
+                      raise
+                  time.sleep(2 ** attempt)
+
+          assert manifest["archive"] == EXPECTED_NAME
+          assert manifest["size"] == EXPECTED_SIZE
+          assert manifest["sha256"] == EXPECTED_SHA
+          parts = manifest["parts"]
+          assert len(parts) == 48, "Unexpected part count"
+          assert sum(part["size"] for part in parts) == EXPECTED_SIZE
+          names = [part["name"] for part in parts]
+          assert len(set(names)) == len(names), "Duplicate parts"
+          output = Path("output") / EXPECTED_NAME
+          output.parent.mkdir(parents=True, exist_ok=True)
+
+          with output.open("wb") as target:
+              for index, part in enumerate(parts, 1):
+                  name = part["name"]
+                  assert isinstance(name, str) and name not in ("", ".", "..")
+                  assert PurePosixPath(name).name == name and "/" not in name and "\\" not in name
+                  assert isinstance(part["size"], int) and 0 < part["size"] <= 16777216
+                  assert isinstance(part["sha256"], str) and len(part["sha256"]) == 64
+                  start = target.tell()
+                  for attempt in range(4):
+                      target.seek(start)
+                      target.truncate()
+                      digest = hashlib.sha256()
+                      count = 0
+                      try:
+                          with open_public(name) as response:
+                              while block := response.read(1048576):
+                                  count += len(block)
+                                  assert count <= part["size"], "Part exceeds expected size"
+                                  digest.update(block)
+                                  target.write(block)
+                          assert count == part["size"], name
+                          assert digest.hexdigest() == part["sha256"], name
+                          break
+                      except Exception:
+                          if attempt == 3:
+                              raise
+                          time.sleep(2 ** attempt)
+                  print(f"Verified part {index}/{len(parts)}", flush=True)
+
+          assert output.stat().st_size == EXPECTED_SIZE
+          with output.open("rb") as stream:
+              assert hashlib.file_digest(stream, "sha256").hexdigest() == EXPECTED_SHA
+          with zipfile.ZipFile(output) as archive:
+              names = archive.namelist()
+              assert len(names) == len(set(names)) == 1272
+              assert "LES_MEG.txt" in names and "KONTROLL.json" in names
+              assert "FS25_Rennebu_WIP/modDesc.xml" in names
+              assert "FS25_BuildingsOfNorway_WIP/modDesc.xml" in names
+              for name in names:
+                  path = PurePosixPath(name)
+                  assert not path.is_absolute() and ".." not in path.parts and "\\" not in name
+              assert archive.testzip() is None, "ZIP CRC validation failed"
+          print("Verified complete terrain-test ZIP:", output, EXPECTED_SIZE, EXPECTED_SHA, flush=True)
+          PY
+
+      - name: Upload and publish the terrain-test prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: rennebu-fs25-terrain-test1-20261104
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release view "$RELEASE_TAG" --json tagName,isDraft,isPrerelease,url
+          gh release upload "$RELEASE_TAG" output/Rennebu_FS25_Terrengtest1.zip --clobber
+          gh release edit "$RELEASE_TAG" --target "$GITHUB_SHA" --draft=false --prerelease --latest=false
+          gh release view "$RELEASE_TAG" --json tagName,isDraft,isPrerelease,url,assets
