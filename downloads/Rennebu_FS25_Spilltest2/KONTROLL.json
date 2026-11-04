@@ -1,0 +1,121 @@
+{
+  "stage": "FS25 game test 2 candidate",
+  "review_type": "changed-file static review and 112 official current schema validations",
+  "schema_validation_count": 112,
+  "schemas_passed": 112,
+  "schema_failures": [],
+  "changed_scene_xml_parses": true,
+  "native_displacement": {
+    "attributes": {
+      "name": "terrainDisplacement",
+      "size": "16384",
+      "tileSize": "16",
+      "numChannels": "6",
+      "cellSize": "2",
+      "viewDistance": "25",
+      "blendOutDistance": "5",
+      "maxHeight": "0.2",
+      "densityMapShaderNames": "terrainDisplacementMap"
+    },
+    "matches_uploaded_native_layer_exactly": true,
+    "is_direct_child_of_terrain_layers": true,
+    "has_no_source_file_reference_to_remap": true,
+    "removing_only_new_snippet_recovers_recorded_test1_scene_sha256": true,
+    "test1_recorded_scene_sha256": "4dc0a1bf600d9f5c197358b7b9c4b26292753fdb43635c4f8fb1f7cdd4f7ffef",
+    "candidate2_scene_sha256": "2136bb91d27a47ceab30a797dd829f2efe0fb101c4ffee4e374a6a5cb7b93ae5",
+    "existing_scene_data_preserved_by_insertion": true
+  },
+  "four_parent_placeable_wrappers": [
+    {
+      "file": "FS25_Rennebu_WIP/mapRennebu/import/debrisCrusher.xml",
+      "direct_species": "PLACEABLE",
+      "direct_name_present": true,
+      "direct_image": "$moddir$FS25_Rennebu_WIP/icon_rennebu.dds",
+      "direct_image_resolves": true,
+      "show_in_store": "false",
+      "native_parent": "$data/placeables/brandless/sellingStationGeneric/debrisCrusher/debrisCrusher.xml"
+    },
+    {
+      "file": "FS25_Rennebu_WIP/mapRennebu/import/chargingStation/chargingStation.xml",
+      "direct_species": "PLACEABLE",
+      "direct_name_present": true,
+      "direct_image": "$moddir$FS25_Rennebu_WIP/icon_rennebu.dds",
+      "direct_image_resolves": true,
+      "show_in_store": "false",
+      "native_parent": "$data/placeables/brandless/chargingStation/chargingStation.xml"
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/greenhouseSmall.xml",
+      "direct_species": "PLACEABLE",
+      "direct_name_present": true,
+      "direct_image": "$moddir$FS25_BuildingsOfNorway_WIP/icon_buildingsofnorway.dds",
+      "direct_image_resolves": true,
+      "show_in_store": "false",
+      "native_parent": "$data/placeables/brandless/greenhouses/greenHouseGlass/greenHouseGlassSmall.xml"
+    },
+    {
+      "file": "FS25_BuildingsOfNorway_WIP/xml/bunkerSiloMedium.xml",
+      "direct_species": "PLACEABLE",
+      "direct_name_present": true,
+      "direct_image": "$moddir$FS25_BuildingsOfNorway_WIP/icon_buildingsofnorway.dds",
+      "direct_image_resolves": true,
+      "show_in_store": "false",
+      "native_parent": "$data/placeables/brandless/bunkerSilos/bunkerSiloMedium/bunkerSiloMedium.xml"
+    }
+  ],
+  "mod_metadata": [
+    {
+      "mod": "FS25_Rennebu_WIP",
+      "version": "1.0.3.1",
+      "root_titles": [
+        "Rennebu - FS25 game test 2",
+        "Rennebu - FS25 Spieltest 2",
+        "Rennebu - FS25 spilltest 2"
+      ],
+      "map_titles": [
+        "Rennebu - FS25 game test 2",
+        "Rennebu - FS25 Spieltest 2",
+        "Rennebu - FS25 spilltest 2"
+      ],
+      "dependency_names": [
+        "FS25_BuildingsOfNorway_WIP"
+      ],
+      "modDesc_sha256": "e22101dc69e98283973b22b3658cf92b1a088816b16f233aca0dd1bc1e808d9a"
+    },
+    {
+      "mod": "FS25_BuildingsOfNorway_WIP",
+      "version": "1.0.2.6",
+      "root_titles": [
+        "Buildings Of Norway - FS25 game test 2",
+        "Buildings Of Norway - FS25 Spieltest 2",
+        "Buildings Of Norway - FS25 spilltest 2"
+      ],
+      "map_titles": [],
+      "dependency_names": [],
+      "modDesc_sha256": "cbc5df93c0b107224b57e60899b98a38dbeb8b02217c475492bc1971d65d18f5"
+    }
+  ],
+  "candidate_mod_file_count": 1811,
+  "issues": [],
+  "candidate2_game_tested": false,
+  "candidate2_editor_tested": false,
+  "candidate2_successful_runtime_load_confirmed": false,
+  "candidate1_runtime_result": {
+    "reached_playable_career": false,
+    "reported_stop_percent": 57,
+    "confirmed_log_failure": "getTerrainDetailNumChannels received unknown entity0, followed by FieldGroundSystem:initTerrain arithmetic on nil. Four parent placeables were also ignored after vehicle-schema classification errors."
+  },
+  "diagnostic_inference": {
+    "missing_native_displacement_is_suspected_cause_of_candidate1_terrain_failure": true,
+    "root_cause_independently_confirmed_at_unpublished_line206": false,
+    "new_runtime_confirmation_required": true
+  },
+  "unchanged_asset_validation_scope": "Prior candidate1 asset, geometry, field, local-reference and backup checks remain historical evidence. This review does not repeat 521 unchanged DDS decodes and does not claim candidate2 loaded in game.",
+  "limitations": [
+    "Native displacement is copied exactly from the user FS25 reference; its insertion still needs a fresh game-load test to confirm it fixes the stop.",
+    "Direct PLACEABLE species now satisfies the verified StoreManager pre-inheritance classification contract. Runtime success of the inherited stock definitions is not yet confirmed.",
+    "Existing candidate limitations remain: 12 decorative animal buildings, 190 parcels, paused old foliage seasonal colors/collectibles, standard FS25 climate, unresolved 209,629 original ground-state15 semantics."
+  ],
+  "all_test1_title_and_description_mentions_updated": true,
+  "status": "passed_static_candidate2_review"
+}

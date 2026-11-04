@@ -1,0 +1,51 @@
+RENNEBU FS25 – SPILLTEST 2
+
+Dette er andre kandidat for testing inne i Farming Simulator 25.
+Spilltest 1 stoppet ved 57 % under oppstart av jord-/terrengsystemet.
+Denne utgaven legger til manglende FS25-terrengdeformasjon og retter
+fire bygningsdefinisjoner som butikken feilaktig leste som kjøretøy.
+Kartet er ikke testet i spillet her. Det kan fortsatt oppstå lastefeil,
+visuelle feil eller problemer med spillfunksjoner.
+
+INSTALLASJON
+1. Last ned begge filene:
+   FS25_Rennebu_WIP.zip
+   FS25_BuildingsOfNorway_WIP.zip
+2. Legg begge ZIP-filene direkte i:
+   Dokumenter\My Games\FarmingSimulator2025\mods
+   Ikke pakk dem ut og ikke endre filnavnene.
+3. Erstatt begge tidligere WIP-ZIP-er med filene fra spilltest 2.
+   Flytt andre Rennebu-testmapper/-ZIP-er ut av mods-mappen.
+4. Start FS25 og opprett EN NY enspillerlagring på Rennebu.
+   Aktiver begge moddene. Bruk bare disse to moddene i første test.
+
+VED FEIL
+Avslutt spillet etter forsøket og send denne filen:
+Dokumenter\My Games\FarmingSimulator2025\log.txt
+Det er spillets log.txt som trengs, ikke editor_log.txt.
+Skriv også om du kom til kartvalg, lasting eller inn på kartet.
+
+I DENNE UTGAVEN
+- Egne erstatningsteksturer for manglende eldre spillressurser.
+- Terreng, skog og eksisterende plasseringer er bevart.
+- 145 felt er konvertert til FS25-feltpolygoner. Eierkartet er delt i
+  190 parseller fordi FS25 trenger ett felt per feltparsell.
+- Oppstart med native FS25-avlinger, miljø og tre startmaskiner.
+- Bygningspakken følger med som en egen mod og trengs av kartet.
+
+FORELØPIGE BEGRENSNINGER
+- De 12 eldre dyrebyggene er dekorative. Bruk FS25-dyrebygg fra
+  byggemenyen for dyrehold.
+- Samleobjekter er deaktivert, men modellene står på kartet.
+- Standard FS25 USA-miljø brukes. Det opprinnelige norske klimaet er
+  ikke ferdig tilpasset, og årstidsfarger i eldre vegetasjon er ikke ferdige.
+- Nye erstatningsteksturer kan gi et annet utseende enn FS22.
+- AI-kjøring, oppdrag, produksjoner, handel og lagring må testes i spillet.
+- Den store skogen kan treffe spillets grense for planting av nye trær.
+- Konverteringen bevarer gammel markdata med et særtilfelle: 209 629
+  piksler hadde gammel, udefinert marktype 15 og tolkes nå som GrassCut.
+  Originale mark- og eierkart ligger i kartets conversion_backup-mappe.
+
+Dette er en uoffisiell konverteringskandidat. Originale krediteringer er
+beholdt i moddene. XML- og filkontroller er ikke en bekreftelse på at
+kartet fungerer i spillet.
