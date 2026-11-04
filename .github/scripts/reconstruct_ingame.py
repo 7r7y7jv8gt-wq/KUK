@@ -7,6 +7,7 @@ The workflow separately uploads outputs after every payload check has passed.
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from contextlib import ExitStack
 from datetime import datetime, timezone
 import hashlib
@@ -16,6 +17,7 @@ from pathlib import Path, PurePosixPath
 import shutil
 import sys
 import tempfile
+import time
 from urllib.parse import quote, urlparse
 from urllib.request import Request, urlopen
 import zipfile
@@ -75,16 +77,56 @@ def join_url(prefix: str, path: str) -> str:
     return prefix.rstrip("/") + "/" + quote(relative_path(path, "download path"), safe="/")
 
 
-def download(url: str, destination: Path) -> None:
+def download(url: str, destination: Path, expected_size: int | None = None) -> None:
     parsed = urlparse(url)
     require(parsed.scheme == "https" and parsed.hostname in ALLOWED_DOWNLOAD_HOSTS,
             "Only HTTPS GitHub/raw.githubusercontent.com download sources are accepted")
     destination.parent.mkdir(parents=True, exist_ok=True)
-    request = Request(url, headers={"User-Agent": "Rennebu-FS25-Release-Builder/1"})
     partial = destination.with_name(destination.name + ".download")
     try:
-        with urlopen(request, timeout=90) as source, partial.open("wb") as target:
-            shutil.copyfileobj(source, target, BUFFER)
+        if expected_size is not None and expected_size > 32 * BUFFER:
+            chunk_size = 16 * BUFFER
+            ranges = [(start, min(start + chunk_size, expected_size) - 1)
+                      for start in range(0, expected_size, chunk_size)]
+            def read_range(bounds):
+                start, end = bounds
+                for attempt in range(4):
+                    try:
+                        headers = {"User-Agent": "Rennebu-FS25-Release-Builder/1",
+                                   "Range": f"bytes={start}-{end}"}
+                        # A distinct public URL per range avoids stale redirect/range caches.
+                        ranged_url = url + ("&" if "?" in url else "?") + f"rennebu_range={start}"
+                        with urlopen(Request(ranged_url, headers=headers), timeout=90) as source:
+                            require(source.status == 206, "Base source ignored the requested byte range")
+                            require(source.headers.get("Content-Range") == f"bytes {start}-{end}/{expected_size}",
+                                    "Base source returned a different byte range")
+                            data = source.read(end - start + 2)
+                        require(len(data) == end - start + 1, "Incomplete base byte range")
+                        return start, data
+                    except Exception:
+                        if attempt == 3:
+                            raise
+                        time.sleep(2 ** attempt)
+            with partial.open("w+b") as target, ThreadPoolExecutor(max_workers=4) as pool:
+                target.truncate(expected_size)
+                futures = [pool.submit(read_range, bounds) for bounds in ranges]
+                for count, future in enumerate(as_completed(futures), 1):
+                    start, data = future.result()
+                    target.seek(start)
+                    target.write(data)
+                    if count % 8 == 0 or count == len(ranges):
+                        print(f"Downloaded base ranges {count}/{len(ranges)}", flush=True)
+        else:
+            for attempt in range(4):
+                try:
+                    request = Request(url, headers={"User-Agent": "Rennebu-FS25-Release-Builder/1"})
+                    with urlopen(request, timeout=90) as source, partial.open("wb") as target:
+                        shutil.copyfileobj(source, target, BUFFER)
+                    break
+                except Exception:
+                    if attempt == 3:
+                        raise
+                    time.sleep(2 ** attempt)
         partial.replace(destination)
     finally:
         partial.unlink(missing_ok=True)
@@ -255,7 +297,7 @@ def main(argv: list[str] | None = None) -> int:
         base = args.base
         if base is None:
             base = scratch / "base.zip"
-            download(manifest["base"]["url"], base)
+            download(manifest["base"]["url"], base, manifest["base"]["size"])
         verify_digest(base, manifest["base"], "base archive")
         overlay = args.overlay
         if overlay is None:
