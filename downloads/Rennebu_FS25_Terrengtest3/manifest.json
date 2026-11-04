@@ -1,0 +1,36 @@
+{
+  "format": "verified_zip_prefix_suffix_v1",
+  "archive": "Rennebu_FS25_Terrengtest3.zip",
+  "size": 808592359,
+  "sha256": "8220e9675ba3220bf6d99e220f1d38316b545bc31c6f3120f5d7de54c18dffc5",
+  "entries": 1275,
+  "base": {
+    "url": "https://github.com/7r7y7jv8gt-wq/KUK/releases/download/rennebu-fs25-terrain-test2-20261104/Rennebu_FS25_Terrengtest2.zip",
+    "size": 800072106,
+    "sha256": "25b53a21a97ddef3ee89b09059af30b2f546d6bb91945bd9242664e1bf612122",
+    "prefix_size": 799928644,
+    "prefix_sha256": "1b64f157aeedc6979961cc5bce60e64180dff3ec775e96879960b1ffb470e982"
+  },
+  "suffix": {
+    "size": 8663715,
+    "sha256": "6f5f3269783883067cb578d862f8655473e1dff21772519664e4e5810adf74c6",
+    "parts": [
+      {
+        "name": "suffix001.bin",
+        "size": 8663715,
+        "sha256": "6f5f3269783883067cb578d862f8655473e1dff21772519664e4e5810adf74c6"
+      }
+    ]
+  },
+  "replaced_or_added_entries": [
+    "CONVERSION_NOTICES.txt",
+    "FS25_Rennebu_WIP/mapRennebu/conversion_backup/densityMap_ground_FS22.gdm",
+    "FS25_Rennebu_WIP/mapRennebu/data/densityMap_ground.gdm",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/rennebuLegacyFoliageShader.xml",
+    "FS25_Rennebu_WIP/mapRennebu/map_rennebu.i3d",
+    "KONTROLL.json",
+    "LES_MEG.txt"
+  ],
+  "status": "unfinished_fs25_editor_test_not_game_ready",
+  "unchanged_entries_count": 1268
+}
