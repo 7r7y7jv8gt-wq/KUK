@@ -1,0 +1,54 @@
+RENNEBU FS25 – SPILLTEST 5
+Kart: 1.0.5.0. WIP-bygningspakke: 1.0.3.1 (uendret fra spilltest 4).
+
+DENNE RETTELSEN
+- 17 veikollisjoner bruker nå nøyaktig samme geometri som den synlige veien.
+  Et lite asfaltkryss har også fått en fast kollisjonsflate.
+- Nye, faste veifyllinger møter omtrent 71,5 km asfalt- og skogsveikanter.
+  De bruker FS25s egne grusteksturer og er delt i 195 deler for avstandskulling.
+- Geometrikontrollen bekrefter at overkantene møter de gamle veikantene,
+  og at underkantene ligger minst 29,99 cm under høydekartets interpolasjoner.
+  Alle kontrollerte skjøter mellom fyllingene møtes uten åpning.
+- Broer, tunneler, bygg og vanskelige veikryss er skjermet. Svært bratte eller
+  lange kantsegmenter er utelatt. Slike steder kan fortsatt trenge håndarbeid.
+- Det originale høydekartet, veienes plassering og treplasseringene er bevart.
+  Prøvene med endret høydekart er forkastet og følger ikke med i modden.
+
+SVEVINGEN ER IKKE BEKREFTET LØST
+Målingene av veigeometrien forklarer ikke at spilleren svever overalt.
+Pakken må derfor ikke regnes som feilfri. En ny passiv måling skriver spillerens
+fothøyde, terrenghøyde og to uavhengige kollisjonstreff til spilloggen.
+Den flytter ikke spilleren og endrer ingen av spillets fysikkfunksjoner.
+Målingene tas ved oppstart og etter 1, 10 og 30 sekunder, og stopper deretter.
+Valgfritt: konsollkommandoen rennebuGround tar en ny måling på stedet du står.
+
+INSTALLASJON
+1. Erstatt FS25_Rennebu_WIP.zip i mods-mappen. Ikke pakk ut ZIP-filen.
+2. Behold FS25_BuildingsOfNorway_WIP.zip 1.0.3.1 fra spilltest 4.
+   Den samme filen er lagt ved her dersom du mangler den.
+3. Original FS25_BuildingsOfNorway fra OlaHaldor må også være aktivert.
+   Referansene er kontrollert mot originalpakken 1.0.0.3:
+   https://www.farming-simulator.com/mod.php?mod_id=341258&title=fs2025
+4. Lag en NY enspillerlagring på «Rennebu - FS25 spilltest 5».
+   Behold gamle lagringer som de er. Bruk først bare de tre nevnte moddene.
+5. Prøv en veikant og gå på både asfalt og vanlig bakke. Vent minst 30 sekunder
+   inne i spillet før du avslutter. Ved fortsatt feil: send den nye filen
+   Dokumenter\My Games\FarmingSimulator2025\log.txt.
+
+KONTROLLER OG GRENSER
+XML, filkoblinger, ZIP-innhold, sjekksummer og ny binær geometri er kontrollert.
+Normaler, tangenter, teksturkoordinater og terrengtilslutning er kontrollert
+etter at de faktiske binærfilene er lest tilbake.
+FS25 og GIANTS Editor er ikke kjørt her. Nye statiske flater må fortsatt
+kontrolleres i spillets fysikkmotor; PC-en kan generere kollisjonsdata ved lasting.
+De mer presise veikollisjonene øker antall fysikktriangler fra 24 816 til
+159 189. Veifyllingene legger til 31 552. Det er ikke målt noen FPS-forbedring.
+120 FPS og feilfri drift er ikke bekreftet.
+
+Kartet er fortsatt den uoffisielle konverteringen av hele originale Rennebu
+8 x 8 km med 145 felt og 190 parseller. Tidligere FS25-avlinger, trær og
+fyllmaterialer er beholdt. Bergtun hester, Norigard barn og Teigan barn er
+fortsatt dekorasjoner. Standard FS25 USA-klima brukes og samleobjekter er
+deaktivert. Enkelte eldre dekorplanter bruker kompatibilitetsmaterialer.
+Originale krediteringer er beholdt. FS25-spillressurser og den originale
+FS25-bygningspakken er eksterne avhengigheter og følger ikke med i ZIP-filene.
