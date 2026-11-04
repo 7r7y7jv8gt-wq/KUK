@@ -95,7 +95,7 @@ def download(url: str, destination: Path, expected_size: int | None = None) -> N
                         headers = {"User-Agent": "Rennebu-FS25-Release-Builder/1",
                                    "Range": f"bytes={start}-{end}"}
                         # A distinct public URL per range avoids stale redirect/range caches.
-                        ranged_url = url + ("&" if "?" in url else "?") + f"rennebu_range={start}"
+                        ranged_url = url + ("&" if "?" in url else "?") + f"rennebu_range={start}-{end}"
                         with urlopen(Request(ranged_url, headers=headers), timeout=90) as source:
                             require(source.status == 206, "Base source ignored the requested byte range")
                             require(source.headers.get("Content-Range") == f"bytes {start}-{end}/{expected_size}",
