@@ -1,0 +1,188 @@
+name: Publish Rennebu FS25 terrain test 2
+
+on:
+  push:
+    branches:
+      - codex/rennebu-fs25-terrain-test2
+    paths:
+      - .github/workflows/rennebu-terrain-test2.yml
+      - downloads/Rennebu_FS25_Terrengtest2/**
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rennebu-fs25-terrain-test2-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Reconstruct and verify the complete test ZIP
+        env:
+          SOURCE_REPOSITORY: ${{ github.repository }}
+          SOURCE_COMMIT: ${{ github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import os
+          from pathlib import Path, PurePosixPath
+          import re
+          import time
+          from urllib.parse import quote
+          from urllib.request import Request, urlopen
+          import zipfile
+
+          repository = os.environ['SOURCE_REPOSITORY']
+          commit = os.environ['SOURCE_COMMIT']
+          expected_name = 'Rennebu_FS25_Terrengtest2.zip'
+          expected_base_size = 791650611
+          expected_base_sha = 'efbd4e7f488cc2985170a426d65ba2829220095f8de7215eedd57f20aa936d3d'
+          expected_prefix_size = 791507261
+          expected_base_url = (
+              'https://github.com/' + repository
+              + '/releases/download/rennebu-fs25-terrain-test1-20261104/Rennebu_FS25_Terrengtest1.zip'
+          )
+          raw_base = (
+              'https://raw.githubusercontent.com/' + repository + '/' + commit
+              + '/downloads/Rennebu_FS25_Terrengtest2/'
+          )
+
+          def open_url(url):
+              return urlopen(Request(url, headers={'User-Agent': 'Rennebu-verified-ZIP-builder'}), timeout=180)
+
+          def open_part(name):
+              assert isinstance(name, str) and re.fullmatch(r'suffix[0-9]{3}\.bin', name)
+              return open_url(raw_base + quote(name, safe=''))
+
+          for attempt in range(4):
+              try:
+                  with open_url(raw_base + 'manifest.json') as response:
+                      raw = response.read(1048577)
+                  assert len(raw) <= 1048576
+                  manifest = json.loads(raw)
+                  break
+              except Exception:
+                  if attempt == 3:
+                      raise
+                  time.sleep(2 ** attempt)
+
+          assert manifest['format'] == 'verified_zip_prefix_suffix_v1'
+          assert manifest['archive'] == expected_name
+          assert re.fullmatch('[0-9a-f]{64}', manifest['sha256'])
+          assert isinstance(manifest['entries'], int) and 1 <= manifest['entries'] <= 10000
+          base = manifest['base']
+          suffix = manifest['suffix']
+          assert base['url'] == expected_base_url
+          assert base['size'] == expected_base_size and base['sha256'] == expected_base_sha
+          assert base['prefix_size'] == expected_prefix_size
+          assert re.fullmatch('[0-9a-f]{64}', base['prefix_sha256'])
+          assert re.fullmatch('[0-9a-f]{64}', suffix['sha256'])
+          parts = suffix['parts']
+          assert 1 <= len(parts) <= 100
+          assert [p['name'] for p in parts] == [f'suffix{i:03}.bin' for i in range(1, len(parts)+1)]
+          assert all(isinstance(p['size'], int) and 0 < p['size'] <= 16777216 for p in parts)
+          assert all(re.fullmatch('[0-9a-f]{64}', p['sha256']) for p in parts)
+          assert sum(p['size'] for p in parts) == suffix['size']
+          assert expected_prefix_size + suffix['size'] == manifest['size']
+          assert manifest['size'] < 2 * 1024 * 1024 * 1024
+          output = Path('output') / expected_name
+          output.parent.mkdir(parents=True, exist_ok=True)
+
+          # Check every byte of the base download, but retain only the unchanged
+          # prefix. The original base ZIP remains published and is not altered.
+          with output.open('w+b') as target:
+              for attempt in range(4):
+                  target.seek(0)
+                  target.truncate()
+                  base_digest = hashlib.sha256()
+                  prefix_digest = hashlib.sha256()
+                  count = 0
+                  copied = 0
+                  try:
+                      with open_url(expected_base_url) as response:
+                          while block := response.read(1048576):
+                              count += len(block)
+                              assert count <= expected_base_size
+                              base_digest.update(block)
+                              prefix = block[:max(0, min(len(block), expected_prefix_size - copied))]
+                              if prefix:
+                                  target.write(prefix)
+                                  prefix_digest.update(prefix)
+                                  copied += len(prefix)
+                      assert count == expected_base_size
+                      assert base_digest.hexdigest() == expected_base_sha
+                      assert copied == expected_prefix_size
+                      assert prefix_digest.hexdigest() == base['prefix_sha256']
+                      break
+                  except Exception:
+                      if attempt == 3:
+                          raise
+                      time.sleep(2 ** attempt)
+              print('Verified unchanged base ZIP and copied prefix', flush=True)
+
+              for index, part in enumerate(parts, 1):
+                  start = target.tell()
+                  for attempt in range(4):
+                      target.seek(start)
+                      target.truncate()
+                      digest = hashlib.sha256()
+                      count = 0
+                      try:
+                          with open_part(part['name']) as response:
+                              while block := response.read(1048576):
+                                  count += len(block)
+                                  assert count <= part['size']
+                                  digest.update(block)
+                                  target.write(block)
+                          assert count == part['size']
+                          assert digest.hexdigest() == part['sha256']
+                          break
+                      except Exception:
+                          if attempt == 3:
+                              raise
+                          time.sleep(2 ** attempt)
+                  print(f'Verified suffix part {index}/{len(parts)}', flush=True)
+
+              assert target.tell() == manifest['size']
+              target.flush()
+              target.seek(expected_prefix_size)
+              suffix_digest = hashlib.sha256()
+              while block := target.read(1048576):
+                  suffix_digest.update(block)
+              assert suffix_digest.hexdigest() == suffix['sha256']
+
+          assert output.stat().st_size == manifest['size']
+          with output.open('rb') as stream:
+              assert hashlib.file_digest(stream, 'sha256').hexdigest() == manifest['sha256']
+          with zipfile.ZipFile(output) as archive:
+              names = archive.namelist()
+              assert len(names) == len(set(names)) == len({n.casefold() for n in names}) == manifest['entries']
+              for name in names:
+                  assert name and '\\' not in name and ':' not in name and not any(ord(c) < 32 for c in name)
+                  assert not PurePosixPath(name).is_absolute()
+                  assert all(p not in ('', '.', '..') for p in name.rstrip('/').split('/'))
+              assert 'LES_MEG.txt' in names and 'KONTROLL.json' in names
+              assert 'FS25_Rennebu_WIP/modDesc.xml' in names
+              assert 'FS25_BuildingsOfNorway_WIP/modDesc.xml' in names
+              assert archive.testzip() is None
+          print('Verified complete ZIP:', output, manifest['size'], manifest['sha256'], flush=True)
+          PY
+
+      - name: Upload and publish the test prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: rennebu-fs25-terrain-test2-20261104
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release view "$RELEASE_TAG" --json tagName,isDraft,isPrerelease,url
+          gh release upload "$RELEASE_TAG" output/Rennebu_FS25_Terrengtest2.zip --clobber
+          gh release edit "$RELEASE_TAG" --target "$GITHUB_SHA" --draft=false --prerelease --latest=false
+          gh release view "$RELEASE_TAG" --json tagName,isDraft,isPrerelease,url,assets

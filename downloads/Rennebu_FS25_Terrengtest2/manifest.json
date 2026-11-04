@@ -1,0 +1,58 @@
+{
+  "format": "verified_zip_prefix_suffix_v1",
+  "archive": "Rennebu_FS25_Terrengtest2.zip",
+  "size": 800072106,
+  "sha256": "25b53a21a97ddef3ee89b09059af30b2f546d6bb91945bd9242664e1bf612122",
+  "entries": 1273,
+  "base": {
+    "url": "https://github.com/7r7y7jv8gt-wq/KUK/releases/download/rennebu-fs25-terrain-test1-20261104/Rennebu_FS25_Terrengtest1.zip",
+    "size": 791650611,
+    "sha256": "efbd4e7f488cc2985170a426d65ba2829220095f8de7215eedd57f20aa936d3d",
+    "prefix_size": 791507261,
+    "prefix_sha256": "94d39023a3b7245d2bebd656ae157e081620e4e621f7b9f83f14dd6ef7c0d060"
+  },
+  "suffix": {
+    "size": 8564845,
+    "sha256": "7d20c7544ffccc46ffa9726d76045e0b35d53340c65fee56a70e606f17288594",
+    "parts": [
+      {
+        "name": "suffix001.bin",
+        "size": 8564845,
+        "sha256": "7d20c7544ffccc46ffa9726d76045e0b35d53340c65fee56a70e606f17288594"
+      }
+    ]
+  },
+  "replaced_or_added_entries": [
+    "FS25_BuildingsOfNorway_WIP/shaders/backgroundTerrainShaderPlus.xml",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/blueberry_short.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/decoFoliageDLC.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/decoFoliageUS.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/meadowDLC.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/meadowflower.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/foliage/rennebuLegacyFoliageShader.xml",
+    "FS25_Rennebu_WIP/mapRennebu/map_rennebu.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/bgExtension.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/cliffs/cliff_01_tiling_dirty.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/cliffs/cliff_01_tiling_moss.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/cliffs/cliff_02_tiling_dirty.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/cliffs/cliff_02_tiling_moss.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/cliffs/cliff_03_tiling_dirty.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/cliffs/cliff_03_tiling_moss.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/cliffs/cliffs.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/cliffs/rock_1_dirt.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/cliffs/rock_1_moss.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/cliffs/rock_2_dirty.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/cliffs/rock_2_moss.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/forestrocks/SM_mountain_rock_big_01_2.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/forestrocks/cliff_mossy.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/forestrocks/cliff_mossy_01_variant.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/forestrocks/forestrock_01.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/forestrocks/rock_cluster.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/prefabs/rocks/forestrocks/rock_customshader.i3d",
+    "FS25_Rennebu_WIP/mapRennebu/shaders/backgroundTerrainShaderPlus.xml",
+    "KONTROLL.json",
+    "LES_MEG.txt"
+  ],
+  "status": "unfinished_fs25_editor_test_not_game_ready",
+  "unchanged_entries_count": 1244
+}
